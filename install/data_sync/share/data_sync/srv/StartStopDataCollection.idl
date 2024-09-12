@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from data_sync/srv/StartStopDataCollection.srv
+// generated code does not contain a copyright notice
+
+
+module data_sync {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request")
+    struct StartStopDataCollection_Request {
+      boolean start;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct StartStopDataCollection_Response {
+      boolean success;
+    };
+  };
+};

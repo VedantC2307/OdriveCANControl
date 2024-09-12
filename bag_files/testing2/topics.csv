@@ -1,0 +1,16 @@
+id,name,type,serialization_format,offered_qos_profiles
+1,/chatter,std_msgs/msg/String,cdr,"- history: 1
+  depth: 7
+  reliability: 1
+  durability: 2
+  deadline:
+    sec: 9223372036
+    nsec: 854775807
+  lifespan:
+    sec: 9223372036
+    nsec: 854775807
+  liveliness: 1
+  liveliness_lease_duration:
+    sec: 9223372036
+    nsec: 854775807
+  avoid_ros_namespace_conventions: false"
