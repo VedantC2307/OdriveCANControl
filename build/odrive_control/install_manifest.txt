@@ -1,0 +1,15 @@
+/home/vedant/gaitlab_ws/install/odrive_control/share/ament_index/resource_index/package_run_dependencies/odrive_control
+/home/vedant/gaitlab_ws/install/odrive_control/share/ament_index/resource_index/parent_prefix_path/odrive_control
+/home/vedant/gaitlab_ws/install/odrive_control/share/odrive_control/environment/ament_prefix_path.sh
+/home/vedant/gaitlab_ws/install/odrive_control/share/odrive_control/environment/ament_prefix_path.dsv
+/home/vedant/gaitlab_ws/install/odrive_control/share/odrive_control/environment/path.sh
+/home/vedant/gaitlab_ws/install/odrive_control/share/odrive_control/environment/path.dsv
+/home/vedant/gaitlab_ws/install/odrive_control/share/odrive_control/local_setup.bash
+/home/vedant/gaitlab_ws/install/odrive_control/share/odrive_control/local_setup.sh
+/home/vedant/gaitlab_ws/install/odrive_control/share/odrive_control/local_setup.zsh
+/home/vedant/gaitlab_ws/install/odrive_control/share/odrive_control/local_setup.dsv
+/home/vedant/gaitlab_ws/install/odrive_control/share/odrive_control/package.dsv
+/home/vedant/gaitlab_ws/install/odrive_control/share/ament_index/resource_index/packages/odrive_control
+/home/vedant/gaitlab_ws/install/odrive_control/share/odrive_control/cmake/odrive_controlConfig.cmake
+/home/vedant/gaitlab_ws/install/odrive_control/share/odrive_control/cmake/odrive_controlConfig-version.cmake
+/home/vedant/gaitlab_ws/install/odrive_control/share/odrive_control/package.xml

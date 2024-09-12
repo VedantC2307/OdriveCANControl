@@ -1,0 +1,239 @@
+[0.020s] Invoking command in '/home/vedant/gaitlab_ws/build/data_sync': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vedant/gaitlab_ws/install/odrive_control_py:/home/vedant/gaitlab_ws/install/bag_recorder_nodes_py:/opt/ros/humble /usr/bin/cmake --build /home/vedant/gaitlab_ws/build/data_sync -- -j4 -l4
+[0.055s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.243s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.246s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.250s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.292s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.705s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.972s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.331s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.365s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.398s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.398s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.399s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.418s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.431s] -- Added test 'lint_cmake' to check CMake code style
+[1.432s] -- Added test 'xmllint' to check XML markup files
+[1.434s] -- Configuring done
+[1.474s] -- Generating done
+[1.481s] -- Build files have been written to: /home/vedant/gaitlab_ws/build/data_sync
+[1.512s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.527s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.542s] [  6%] Built target ament_cmake_python_copy_data_sync
+[2.039s] running egg_info
+[2.041s] writing data_sync.egg-info/PKG-INFO
+[2.041s] writing dependency_links to data_sync.egg-info/dependency_links.txt
+[2.042s] writing top-level names to data_sync.egg-info/top_level.txt
+[2.046s] reading manifest file 'data_sync.egg-info/SOURCES.txt'
+[2.048s] writing manifest file 'data_sync.egg-info/SOURCES.txt'
+[2.062s] [35m[1mConsolidate compiler generated dependencies of target data_sync__rosidl_generator_c[0m
+[2.078s] [  6%] Built target data_sync__cpp
+[2.080s] [  9%] [32mBuilding C object CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.o[0m
+[2.095s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.095s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.104s] [ 16%] Built target ament_cmake_python_build_data_sync_egg
+[2.136s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.190s] [ 22%] [32m[1mLinking C shared library libdata_sync__rosidl_generator_c.so[0m
+[2.266s] [ 22%] Built target data_sync__rosidl_generator_c
+[2.286s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.591s] [35m[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_cpp[0m
+[2.612s] [ 29%] [32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.o[0m
+[2.710s] [35m[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_introspection_cpp[0m
+[2.729s] [35m[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_fastrtps_cpp[0m
+[2.732s] [ 32%] [32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/data_sync/srv/detail/trigger__type_support.cpp.o[0m
+[2.761s] [ 35%] [32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/data_sync/srv/detail/dds_fastrtps/trigger__type_support.cpp.o[0m
+[2.954s] [35m[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_fastrtps_c[0m
+[2.979s] [ 38%] [32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/data_sync/srv/detail/trigger__type_support_c.cpp.o[0m
+[3.160s] [ 41%] [32m[1mLinking CXX shared library libdata_sync__rosidl_typesupport_cpp.so[0m
+[3.259s] [ 41%] Built target data_sync__rosidl_typesupport_cpp
+[3.283s] [ 45%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.710s] [ 48%] [32m[1mLinking CXX shared library libdata_sync__rosidl_typesupport_introspection_cpp.so[0m
+[3.723s] [ 51%] [32m[1mLinking CXX shared library libdata_sync__rosidl_typesupport_fastrtps_c.so[0m
+[3.726s] [ 54%] [32m[1mLinking CXX shared library libdata_sync__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.794s] [ 54%] Built target data_sync__rosidl_typesupport_introspection_cpp
+[3.816s] [ 58%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.910s] [ 58%] Built target data_sync__rosidl_typesupport_fastrtps_cpp
+[3.950s] [ 58%] Built target data_sync__rosidl_typesupport_fastrtps_c
+[3.971s] [35m[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_introspection_c[0m
+[3.988s] [ 61%] [32mBuilding C object CMakeFiles/data_sync__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/data_sync/srv/detail/trigger__type_support.c.o[0m
+[4.042s] [ 64%] [32m[1mLinking C shared library libdata_sync__rosidl_typesupport_introspection_c.so[0m
+[4.088s] [ 64%] Built target data_sync__rosidl_typesupport_introspection_c
+[4.259s] [35m[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_c[0m
+[4.275s] [ 67%] [32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_c.dir/rosidl_typesupport_c/data_sync/srv/trigger__type_support.cpp.o[0m
+[4.316s] [ 70%] [32m[1mLinking CXX shared library libdata_sync__rosidl_typesupport_c.so[0m
+[4.372s] [ 70%] Built target data_sync__rosidl_typesupport_c
+[4.402s] [ 70%] Built target data_sync
+[4.428s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.021s] [ 74%] Built target data_sync__py
+[5.035s] [35m[1mConsolidate compiler generated dependencies of target data_sync__rosidl_generator_py[0m
+[5.052s] [ 77%] [32mBuilding C object CMakeFiles/data_sync__rosidl_generator_py.dir/rosidl_generator_py/data_sync/srv/_trigger_s.c.o[0m
+[5.198s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/data_sync/libdata_sync__rosidl_generator_py.so[0m
+[5.250s] [ 80%] Built target data_sync__rosidl_generator_py
+[5.265s] [35m[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_introspection_c__pyext[0m
+[5.266s] [35m[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_fastrtps_c__pyext[0m
+[5.268s] [35m[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_c__pyext[0m
+[5.283s] [ 87%] [32mBuilding C object CMakeFiles/data_sync__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.283s] [ 87%] [32mBuilding C object CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.287s] [ 90%] [32mBuilding C object CMakeFiles/data_sync__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_c.c.o[0m
+[5.429s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/data_sync/data_sync_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.430s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/data_sync/data_sync_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.437s] [100%] [32m[1mLinking C shared library rosidl_generator_py/data_sync/data_sync_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.483s] [100%] Built target data_sync__rosidl_typesupport_c__pyext
+[5.485s] [100%] Built target data_sync__rosidl_typesupport_fastrtps_c__pyext
+[5.498s] [100%] Built target data_sync__rosidl_typesupport_introspection_c__pyext
+[5.514s] Invoked command in '/home/vedant/gaitlab_ws/build/data_sync' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vedant/gaitlab_ws/install/odrive_control_py:/home/vedant/gaitlab_ws/install/bag_recorder_nodes_py:/opt/ros/humble /usr/bin/cmake --build /home/vedant/gaitlab_ws/build/data_sync -- -j4 -l4
+[5.600s] Invoking command in '/home/vedant/gaitlab_ws/build/data_sync': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vedant/gaitlab_ws/install/odrive_control_py:/home/vedant/gaitlab_ws/install/bag_recorder_nodes_py:/opt/ros/humble /usr/bin/cmake --install /home/vedant/gaitlab_ws/build/data_sync
+[5.610s] -- Install configuration: ""
+[5.610s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/ament_index/resource_index/rosidl_interfaces/data_sync
+[5.611s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync
+[5.611s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv
+[5.611s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/trigger.h
+[5.611s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail
+[5.611s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__struct.h
+[5.611s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__functions.h
+[5.611s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__functions.h
+[5.612s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__struct.h
+[5.612s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__type_support.h
+[5.612s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__functions.c
+[5.612s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__type_support.h
+[5.612s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__functions.c
+[5.612s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/start_stop_data_collection.h
+[5.613s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/msg
+[5.613s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/msg/rosidl_generator_c__visibility_control.h
+[5.613s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/environment/library_path.sh
+[5.613s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/environment/library_path.dsv
+[5.613s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_generator_c.so
+[5.614s] -- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_generator_c.so" to ""
+[5.614s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync
+[5.614s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv
+[5.614s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail
+[5.614s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__rosidl_typesupport_fastrtps_c.h
+[5.614s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__rosidl_typesupport_fastrtps_c.h
+[5.614s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/msg
+[5.614s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.614s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_fastrtps_c.so
+[5.615s] -- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_fastrtps_c.so" to ""
+[5.615s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync
+[5.615s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv
+[5.615s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail
+[5.615s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__type_support.c
+[5.615s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__rosidl_typesupport_introspection_c.h
+[5.615s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__type_support.c
+[5.616s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__rosidl_typesupport_introspection_c.h
+[5.616s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/msg
+[5.616s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.616s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_introspection_c.so
+[5.616s] -- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_introspection_c.so" to ""
+[5.616s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_c.so
+[5.616s] -- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_c.so" to ""
+[5.617s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync
+[5.617s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv
+[5.617s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/trigger.hpp
+[5.617s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail
+[5.617s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__struct.hpp
+[5.617s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__builder.hpp
+[5.617s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__struct.hpp
+[5.617s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__traits.hpp
+[5.617s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__builder.hpp
+[5.618s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__traits.hpp
+[5.618s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/start_stop_data_collection.hpp
+[5.618s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync
+[5.618s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv
+[5.618s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail
+[5.618s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__rosidl_typesupport_fastrtps_cpp.hpp
+[5.618s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__rosidl_typesupport_fastrtps_cpp.hpp
+[5.618s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/dds_fastrtps
+[5.618s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/msg
+[5.619s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.619s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_fastrtps_cpp.so
+[5.619s] -- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.619s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync
+[5.619s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv
+[5.619s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail
+[5.619s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__type_support.cpp
+[5.619s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__rosidl_typesupport_introspection_cpp.hpp
+[5.619s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__type_support.cpp
+[5.619s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__rosidl_typesupport_introspection_cpp.hpp
+[5.620s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_introspection_cpp.so
+[5.620s] -- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_introspection_cpp.so" to ""
+[5.620s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_cpp.so
+[5.620s] -- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_cpp.so" to ""
+[5.620s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/environment/pythonpath.sh
+[5.620s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/environment/pythonpath.dsv
+[5.620s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info
+[5.620s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info/top_level.txt
+[5.620s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info/dependency_links.txt
+[5.621s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info/SOURCES.txt
+[5.621s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info/PKG-INFO
+[5.621s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync
+[5.621s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv
+[5.621s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/_start_stop_data_collection_s.c
+[5.621s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/__init__.py
+[5.621s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/_start_stop_data_collection.py
+[5.621s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/_trigger.py
+[5.622s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/_trigger_s.c
+[5.622s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.622s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/__init__.py
+[5.622s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.622s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/libdata_sync__rosidl_generator_py.so
+[5.622s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.622s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/_data_sync_s.ep.rosidl_typesupport_c.c
+[5.622s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.622s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/_data_sync_s.ep.rosidl_typesupport_introspection_c.c
+[5.678s] Listing '/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync'...
+[5.678s] Compiling '/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/__init__.py'...
+[5.678s] Listing '/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv'...
+[5.679s] Compiling '/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/__init__.py'...
+[5.679s] Compiling '/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/_trigger.py'...
+[5.686s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.686s] -- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.687s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.687s] -- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.687s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.687s] -- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.688s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_generator_py.so
+[5.688s] -- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_generator_py.so" to ""
+[5.688s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/srv/Trigger.idl
+[5.688s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/srv/Trigger.srv
+[5.688s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/srv/Trigger_Request.msg
+[5.689s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/srv/Trigger_Response.msg
+[5.689s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/ament_index/resource_index/package_run_dependencies/data_sync
+[5.689s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/ament_index/resource_index/parent_prefix_path/data_sync
+[5.689s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/environment/ament_prefix_path.sh
+[5.689s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/environment/ament_prefix_path.dsv
+[5.689s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/environment/path.sh
+[5.689s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/environment/path.dsv
+[5.690s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/local_setup.bash
+[5.690s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/local_setup.sh
+[5.690s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/local_setup.zsh
+[5.690s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/local_setup.dsv
+[5.690s] -- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/package.dsv
+[5.690s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/ament_index/resource_index/packages/data_sync
+[5.690s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_cExport.cmake
+[5.690s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_cExport-noconfig.cmake
+[5.690s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_typesupport_fastrtps_cExport.cmake
+[5.690s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.691s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_introspection_cExport.cmake
+[5.691s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.691s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_cExport.cmake
+[5.691s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_cExport-noconfig.cmake
+[5.691s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_cppExport.cmake
+[5.691s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.692s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.692s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_introspection_cppExport.cmake
+[5.692s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.692s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_cppExport.cmake
+[5.692s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_cppExport-noconfig.cmake
+[5.692s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_pyExport.cmake
+[5.693s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_pyExport-noconfig.cmake
+[5.693s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/rosidl_cmake-extras.cmake
+[5.693s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.693s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/ament_cmake_export_libraries-extras.cmake
+[5.693s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/ament_cmake_export_targets-extras.cmake
+[5.694s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.694s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.694s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.694s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_syncConfig.cmake
+[5.694s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_syncConfig-version.cmake
+[5.694s] -- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/package.xml
+[5.696s] Invoked command in '/home/vedant/gaitlab_ws/build/data_sync' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vedant/gaitlab_ws/install/odrive_control_py:/home/vedant/gaitlab_ws/install/bag_recorder_nodes_py:/opt/ros/humble /usr/bin/cmake --install /home/vedant/gaitlab_ws/build/data_sync

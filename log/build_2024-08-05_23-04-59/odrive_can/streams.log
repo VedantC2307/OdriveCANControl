@@ -1,0 +1,221 @@
+[0.018s] Invoking command in '/home/vedant/gaitlab_ws/build/odrive_can': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vedant/gaitlab_ws/install/odrive_control_py:/opt/ros/humble /usr/bin/cmake --build /home/vedant/gaitlab_ws/build/odrive_can -- -j4 -l4
+[0.096s] [  1%] Built target odrive_can__cpp
+[0.101s] [ 11%] Built target odrive_can__rosidl_generator_c
+[0.112s] [ 11%] Built target ament_cmake_python_copy_odrive_can
+[0.130s] [ 21%] Built target odrive_can__rosidl_typesupport_cpp
+[0.140s] [ 31%] Built target odrive_can__rosidl_typesupport_fastrtps_cpp
+[0.150s] [ 41%] Built target odrive_can__rosidl_typesupport_fastrtps_c
+[0.153s] [ 51%] Built target odrive_can__rosidl_typesupport_introspection_cpp
+[0.162s] [ 61%] Built target odrive_can__rosidl_typesupport_introspection_c
+[0.173s] [ 71%] Built target odrive_can__rosidl_typesupport_c
+[0.193s] [ 80%] Built target odrive_can_node
+[0.201s] [ 80%] Built target odrive_can
+[0.236s] [ 81%] Built target odrive_can__py
+[0.268s] [ 90%] Built target odrive_can__rosidl_generator_py
+[0.300s] [ 96%] Built target odrive_can__rosidl_typesupport_fastrtps_c__pyext
+[0.300s] [ 96%] Built target odrive_can__rosidl_typesupport_c__pyext
+[0.301s] [100%] Built target odrive_can__rosidl_typesupport_introspection_c__pyext
+[0.514s] running egg_info
+[0.515s] writing odrive_can.egg-info/PKG-INFO
+[0.516s] writing dependency_links to odrive_can.egg-info/dependency_links.txt
+[0.517s] writing top-level names to odrive_can.egg-info/top_level.txt
+[0.521s] reading manifest file 'odrive_can.egg-info/SOURCES.txt'
+[0.522s] writing manifest file 'odrive_can.egg-info/SOURCES.txt'
+[0.563s] [100%] Built target ament_cmake_python_build_odrive_can_egg
+[0.579s] Invoked command in '/home/vedant/gaitlab_ws/build/odrive_can' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vedant/gaitlab_ws/install/odrive_control_py:/opt/ros/humble /usr/bin/cmake --build /home/vedant/gaitlab_ws/build/odrive_can -- -j4 -l4
+[0.728s] Invoking command in '/home/vedant/gaitlab_ws/build/odrive_can': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vedant/gaitlab_ws/install/odrive_control_py:/opt/ros/humble /usr/bin/cmake --install /home/vedant/gaitlab_ws/build/odrive_can
+[0.745s] -- Install configuration: ""
+[0.746s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/ament_index/resource_index/rosidl_interfaces/odrive_can
+[0.747s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can
+[0.747s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv
+[0.747s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail
+[0.747s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__functions.h
+[0.748s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__functions.c
+[0.748s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__type_support.h
+[0.748s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__struct.h
+[0.748s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/axis_state.h
+[0.749s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg
+[0.749s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/controller_status.h
+[0.749s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail
+[0.749s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__functions.h
+[0.750s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__type_support.h
+[0.750s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__functions.c
+[0.750s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__struct.h
+[0.751s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__functions.c
+[0.751s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__functions.h
+[0.751s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__functions.h
+[0.751s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__struct.h
+[0.752s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__type_support.h
+[0.752s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__functions.c
+[0.752s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__struct.h
+[0.753s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__type_support.h
+[0.753s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_generator_c__visibility_control.h
+[0.753s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/o_drive_status.h
+[0.753s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/control_message.h
+[0.753s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/environment/library_path.sh
+[0.754s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/environment/library_path.dsv
+[0.754s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/lib/libodrive_can__rosidl_generator_c.so
+[0.754s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can
+[0.754s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv
+[0.755s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail
+[0.755s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__rosidl_typesupport_fastrtps_c.h
+[0.755s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg
+[0.755s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail
+[0.755s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__rosidl_typesupport_fastrtps_c.h
+[0.755s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_fastrtps_c.h
+[0.755s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__rosidl_typesupport_fastrtps_c.h
+[0.755s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.755s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/lib/libodrive_can__rosidl_typesupport_fastrtps_c.so
+[0.756s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can
+[0.756s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv
+[0.756s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail
+[0.756s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__traits.hpp
+[0.756s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__builder.hpp
+[0.756s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__struct.hpp
+[0.756s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/axis_state.hpp
+[0.757s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg
+[0.757s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/controller_status.hpp
+[0.757s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/control_message.hpp
+[0.757s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail
+[0.757s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__struct.hpp
+[0.757s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__builder.hpp
+[0.757s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__traits.hpp
+[0.757s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__traits.hpp
+[0.757s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__builder.hpp
+[0.758s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__struct.hpp
+[0.758s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__struct.hpp
+[0.758s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__builder.hpp
+[0.758s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__traits.hpp
+[0.758s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/o_drive_status.hpp
+[0.758s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can
+[0.758s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv
+[0.758s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail
+[0.758s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__rosidl_typesupport_fastrtps_cpp.hpp
+[0.759s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail/dds_fastrtps
+[0.759s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg
+[0.759s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail
+[0.759s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__rosidl_typesupport_fastrtps_cpp.hpp
+[0.759s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_fastrtps_cpp.hpp
+[0.759s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/dds_fastrtps
+[0.759s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__rosidl_typesupport_fastrtps_cpp.hpp
+[0.759s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.759s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/lib/libodrive_can__rosidl_typesupport_fastrtps_cpp.so
+[0.759s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can
+[0.760s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv
+[0.760s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail
+[0.760s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__type_support.c
+[0.760s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__rosidl_typesupport_introspection_c.h
+[0.760s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg
+[0.760s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail
+[0.760s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_introspection_c.h
+[0.760s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__rosidl_typesupport_introspection_c.h
+[0.760s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__rosidl_typesupport_introspection_c.h
+[0.760s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__type_support.c
+[0.760s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__type_support.c
+[0.760s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__type_support.c
+[0.761s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.761s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/lib/libodrive_can__rosidl_typesupport_introspection_c.so
+[0.761s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/lib/libodrive_can__rosidl_typesupport_c.so
+[0.761s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can
+[0.761s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv
+[0.761s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail
+[0.761s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__type_support.cpp
+[0.761s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__rosidl_typesupport_introspection_cpp.hpp
+[0.761s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg
+[0.761s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail
+[0.762s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_introspection_cpp.hpp
+[0.762s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__rosidl_typesupport_introspection_cpp.hpp
+[0.762s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__type_support.cpp
+[0.762s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__type_support.cpp
+[0.762s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__rosidl_typesupport_introspection_cpp.hpp
+[0.762s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__type_support.cpp
+[0.762s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/lib/libodrive_can__rosidl_typesupport_introspection_cpp.so
+[0.762s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/lib/libodrive_can__rosidl_typesupport_cpp.so
+[0.762s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/environment/pythonpath.sh
+[0.762s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/environment/pythonpath.dsv
+[0.762s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info
+[0.763s] -- Installing: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info/top_level.txt
+[0.763s] -- Installing: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info/dependency_links.txt
+[0.763s] -- Installing: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info/SOURCES.txt
+[0.763s] -- Installing: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info/PKG-INFO
+[0.763s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can
+[0.763s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv
+[0.763s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv/__init__.py
+[0.763s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv/_axis_state.py
+[0.763s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv/_axis_state_s.c
+[0.763s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/__init__.py
+[0.763s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/_odrive_can_s.ep.rosidl_typesupport_c.c
+[0.764s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/_odrive_can_s.ep.rosidl_typesupport_introspection_c.c
+[0.764s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg
+[0.764s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/__init__.py
+[0.764s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_control_message.py
+[0.764s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_controller_status_s.c
+[0.764s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_control_message_s.c
+[0.764s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_o_drive_status_s.c
+[0.764s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_controller_status.py
+[0.764s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_o_drive_status.py
+[0.764s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/libodrive_can__rosidl_generator_py.so
+[0.765s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.765s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.765s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.765s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/_odrive_can_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.802s] Listing '/home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can'...
+[0.802s] Listing '/home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg'...
+[0.802s] Listing '/home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv'...
+[0.808s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.808s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.808s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.809s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/lib/libodrive_can__rosidl_generator_py.so
+[0.809s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/msg/ControlMessage.idl
+[0.809s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/msg/ControllerStatus.idl
+[0.809s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/msg/ODriveStatus.idl
+[0.809s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/srv/AxisState.idl
+[0.809s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/msg/ControlMessage.msg
+[0.809s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/msg/ControllerStatus.msg
+[0.809s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/msg/ODriveStatus.msg
+[0.810s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/srv/AxisState.srv
+[0.810s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/srv/AxisState_Request.msg
+[0.810s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/srv/AxisState_Response.msg
+[0.810s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/lib/odrive_can/odrive_can_node
+[0.810s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/launch
+[0.810s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/launch/example_launch.yaml
+[0.810s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/ament_index/resource_index/package_run_dependencies/odrive_can
+[0.810s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/ament_index/resource_index/parent_prefix_path/odrive_can
+[0.811s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/environment/ament_prefix_path.sh
+[0.811s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/environment/ament_prefix_path.dsv
+[0.811s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/environment/path.sh
+[0.811s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/environment/path.dsv
+[0.811s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/local_setup.bash
+[0.811s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/local_setup.sh
+[0.811s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/local_setup.zsh
+[0.811s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/local_setup.dsv
+[0.812s] -- Installing: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/package.dsv
+[0.812s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/ament_index/resource_index/packages/odrive_can
+[0.812s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_cExport.cmake
+[0.812s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_cExport-noconfig.cmake
+[0.812s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_typesupport_fastrtps_cExport.cmake
+[0.812s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.812s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_cppExport.cmake
+[0.813s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.813s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.813s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_introspection_cExport.cmake
+[0.813s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.813s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_cExport.cmake
+[0.813s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_cExport-noconfig.cmake
+[0.813s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_introspection_cppExport.cmake
+[0.813s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.813s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_cppExport.cmake
+[0.813s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_cppExport-noconfig.cmake
+[0.813s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_pyExport.cmake
+[0.814s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_pyExport-noconfig.cmake
+[0.814s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/rosidl_cmake-extras.cmake
+[0.814s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.814s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/ament_cmake_export_libraries-extras.cmake
+[0.814s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/ament_cmake_export_targets-extras.cmake
+[0.814s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.814s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.814s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.814s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/odrive_canConfig.cmake
+[0.814s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake/odrive_canConfig-version.cmake
+[0.815s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/package.xml
+[0.817s] Invoked command in '/home/vedant/gaitlab_ws/build/odrive_can' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vedant/gaitlab_ws/install/odrive_control_py:/opt/ros/humble /usr/bin/cmake --install /home/vedant/gaitlab_ws/build/odrive_can

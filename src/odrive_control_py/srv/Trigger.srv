@@ -1,0 +1,3 @@
+bool start  # true to start, false to stop
+---
+bool success  # true if the operation was successful

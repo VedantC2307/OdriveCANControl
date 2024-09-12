@@ -1,0 +1,3 @@
+[console_scripts]
+simple_bag_recorder = bag_recorder_nodes_py.simple_bag_recorder:main
+

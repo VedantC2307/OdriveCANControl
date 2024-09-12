@@ -1,0 +1,23 @@
+[0.916s] Invoking command in '/home/vedant/gaitlab_ws/src/odrive_control_py': AMENT_PREFIX_PATH=/home/vedant/gaitlab_ws/install/odrive_can:/home/vedant/gaitlab_ws/install/data_sync:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/install/odrive_can:/home/vedant/gaitlab_ws/install/data_sync LD_LIBRARY_PATH=/home/vedant/gaitlab_ws/install/odrive_can/lib:/home/vedant/gaitlab_ws/install/data_sync/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vedant/gaitlab_ws/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages:/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages:/home/vedant/gaitlab_ws/install/data_sync/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odrive_control_py build --build-base /home/vedant/gaitlab_ws/build/odrive_control_py/build install --record /home/vedant/gaitlab_ws/build/odrive_control_py/install.log --single-version-externally-managed install_data
+[1.274s] running egg_info
+[1.275s] writing ../../build/odrive_control_py/odrive_control_py.egg-info/PKG-INFO
+[1.277s] writing dependency_links to ../../build/odrive_control_py/odrive_control_py.egg-info/dependency_links.txt
+[1.277s] writing entry points to ../../build/odrive_control_py/odrive_control_py.egg-info/entry_points.txt
+[1.277s] writing requirements to ../../build/odrive_control_py/odrive_control_py.egg-info/requires.txt
+[1.277s] writing top-level names to ../../build/odrive_control_py/odrive_control_py.egg-info/top_level.txt
+[1.282s] reading manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'
+[1.283s] writing manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'
+[1.283s] running build
+[1.283s] running build_py
+[1.284s] running install
+[1.284s] running install_lib
+[1.287s] running install_data
+[1.287s] copying package.xml -> /home/vedant/gaitlab_ws/install/odrive_control_py/share/odrive_control_py
+[1.287s] running install_egg_info
+[1.289s] removing '/home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info' (and everything under it)
+[1.290s] Copying ../../build/odrive_control_py/odrive_control_py.egg-info to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info
+[1.291s] running install_scripts
+[1.320s] Installing odrive_control_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py
+[1.320s] Installing trial_odrive_control_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py
+[1.321s] writing list of installed files to '/home/vedant/gaitlab_ws/build/odrive_control_py/install.log'
+[1.358s] Invoked command in '/home/vedant/gaitlab_ws/src/odrive_control_py' returned '0': AMENT_PREFIX_PATH=/home/vedant/gaitlab_ws/install/odrive_can:/home/vedant/gaitlab_ws/install/data_sync:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/install/odrive_can:/home/vedant/gaitlab_ws/install/data_sync LD_LIBRARY_PATH=/home/vedant/gaitlab_ws/install/odrive_can/lib:/home/vedant/gaitlab_ws/install/data_sync/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vedant/gaitlab_ws/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages:/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages:/home/vedant/gaitlab_ws/install/data_sync/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odrive_control_py build --build-base /home/vedant/gaitlab_ws/build/odrive_control_py/build install --record /home/vedant/gaitlab_ws/build/odrive_control_py/install.log --single-version-externally-managed install_data

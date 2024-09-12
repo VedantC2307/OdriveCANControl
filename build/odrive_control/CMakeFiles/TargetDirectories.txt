@@ -1,0 +1,9 @@
+/home/vedant/gaitlab_ws/build/odrive_control/CMakeFiles/uninstall.dir
+/home/vedant/gaitlab_ws/build/odrive_control/CMakeFiles/odrive_control_uninstall.dir
+/home/vedant/gaitlab_ws/build/odrive_control/CMakeFiles/test.dir
+/home/vedant/gaitlab_ws/build/odrive_control/CMakeFiles/edit_cache.dir
+/home/vedant/gaitlab_ws/build/odrive_control/CMakeFiles/rebuild_cache.dir
+/home/vedant/gaitlab_ws/build/odrive_control/CMakeFiles/list_install_components.dir
+/home/vedant/gaitlab_ws/build/odrive_control/CMakeFiles/install.dir
+/home/vedant/gaitlab_ws/build/odrive_control/CMakeFiles/install/local.dir
+/home/vedant/gaitlab_ws/build/odrive_control/CMakeFiles/install/strip.dir

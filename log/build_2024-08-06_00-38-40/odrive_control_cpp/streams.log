@@ -1,0 +1,30 @@
+[0.019s] Invoking command in '/home/vedant/gaitlab_ws/build/odrive_control_cpp': CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/install/odrive_can:/home/vedant/gaitlab_ws/install/odrive_control_cpp:/home/vedant/gaitlab_ws/install/odrive_control:/home/vedant/gaitlab_ws/install/odrive_control_py:/opt/ros/humble /usr/bin/cmake --build /home/vedant/gaitlab_ws/build/odrive_control_cpp -- -j4 -l4
+[0.073s] [35m[1mConsolidate compiler generated dependencies of target receive_send[0m
+[0.090s] [ 33%] Built target subscribe_send
+[0.091s] [ 66%] Built target control_node
+[0.098s] [ 83%] [32mBuilding CXX object CMakeFiles/receive_send.dir/src/receive_send.cpp.o[0m
+[12.420s] [100%] [32m[1mLinking CXX executable receive_send[0m
+[13.001s] [100%] Built target receive_send
+[13.015s] Invoked command in '/home/vedant/gaitlab_ws/build/odrive_control_cpp' returned '0': CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/install/odrive_can:/home/vedant/gaitlab_ws/install/odrive_control_cpp:/home/vedant/gaitlab_ws/install/odrive_control:/home/vedant/gaitlab_ws/install/odrive_control_py:/opt/ros/humble /usr/bin/cmake --build /home/vedant/gaitlab_ws/build/odrive_control_cpp -- -j4 -l4
+[13.060s] Invoking command in '/home/vedant/gaitlab_ws/build/odrive_control_cpp': CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/install/odrive_can:/home/vedant/gaitlab_ws/install/odrive_control_cpp:/home/vedant/gaitlab_ws/install/odrive_control:/home/vedant/gaitlab_ws/install/odrive_control_py:/opt/ros/humble /usr/bin/cmake --install /home/vedant/gaitlab_ws/build/odrive_control_cpp
+[13.069s] -- Install configuration: ""
+[13.070s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_control_cpp/lib/odrive_control_cpp/control_node
+[13.070s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_control_cpp/lib/odrive_control_cpp/subscribe_send
+[13.070s] -- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/lib/odrive_control_cpp/receive_send
+[13.076s] -- Set runtime path of "/home/vedant/gaitlab_ws/install/odrive_control_cpp/lib/odrive_control_cpp/receive_send" to ""
+[13.076s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/ament_index/resource_index/package_run_dependencies/odrive_control_cpp
+[13.076s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/ament_index/resource_index/parent_prefix_path/odrive_control_cpp
+[13.076s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/environment/ament_prefix_path.sh
+[13.076s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/environment/ament_prefix_path.dsv
+[13.076s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/environment/path.sh
+[13.077s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/environment/path.dsv
+[13.077s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/local_setup.bash
+[13.077s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/local_setup.sh
+[13.077s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/local_setup.zsh
+[13.077s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/local_setup.dsv
+[13.077s] -- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/package.dsv
+[13.077s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/ament_index/resource_index/packages/odrive_control_cpp
+[13.077s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/cmake/odrive_control_cppConfig.cmake
+[13.078s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/cmake/odrive_control_cppConfig-version.cmake
+[13.078s] -- Up-to-date: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/package.xml
+[13.079s] Invoked command in '/home/vedant/gaitlab_ws/build/odrive_control_cpp' returned '0': CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/install/odrive_can:/home/vedant/gaitlab_ws/install/odrive_control_cpp:/home/vedant/gaitlab_ws/install/odrive_control:/home/vedant/gaitlab_ws/install/odrive_control_py:/opt/ros/humble /usr/bin/cmake --install /home/vedant/gaitlab_ws/build/odrive_control_cpp

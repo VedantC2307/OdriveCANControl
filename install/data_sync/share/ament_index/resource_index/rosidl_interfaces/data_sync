@@ -1,0 +1,4 @@
+srv/Trigger.idl
+srv/Trigger.srv
+srv/Trigger_Request.msg
+srv/Trigger_Response.msg

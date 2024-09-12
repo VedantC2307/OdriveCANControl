@@ -1,0 +1,234 @@
+[0.000000] (-) TimerEvent: {}
+[0.000288] (-) JobUnselected: {'identifier': 'odrive_botwheel_explorer'}
+[0.000329] (-) JobUnselected: {'identifier': 'odrive_can'}
+[0.000387] (-) JobUnselected: {'identifier': 'odrive_control'}
+[0.000577] (-) JobUnselected: {'identifier': 'odrive_control_py'}
+[0.000618] (-) JobUnselected: {'identifier': 'odrive_ros2_control'}
+[0.000644] (odrive_control_cpp) JobQueued: {'identifier': 'odrive_control_cpp', 'dependencies': OrderedDict([('odrive_can', '/home/vedant/gaitlab_ws/install/odrive_can')])}
+[0.001325] (odrive_control_cpp) JobStarted: {'identifier': 'odrive_control_cpp'}
+[0.014069] (odrive_control_cpp) JobProgress: {'identifier': 'odrive_control_cpp', 'progress': 'cmake'}
+[0.014263] (odrive_control_cpp) Command: {'cmd': ['/usr/bin/cmake', '/home/vedant/gaitlab_ws/src/odrive_control_cpp', '-DCMAKE_INSTALL_PREFIX=/home/vedant/gaitlab_ws/install/odrive_control_cpp'], 'cwd': '/home/vedant/gaitlab_ws/build/odrive_control_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/vedant/gaitlab_ws/install/odrive_can/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '959'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/vedant/gaitlab_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vedant'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/vedant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/vedant/.local/bin:/home/vedant/.local/bin'), ('SESSION_MANAGER', 'local/vedant-LattePanda-3-Delta:@/tmp/.ICE-unix/918,unix/vedant-LattePanda-3-Delta:/tmp/.ICE-unix/918'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7b404f68_5a8f_4d3f_8d73_62f66e101dc4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TMPCS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.180'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/vedant/gaitlab_ws/install/odrive_control_py:/home/vedant/gaitlab_ws/install/odrive_control:/home/vedant/gaitlab_ws/install/odrive_can:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:b0d92738-2caf-41ae-863e-7ea7627910fc'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vedant/gaitlab_ws/build/odrive_control_cpp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/vedant/gaitlab_ws/install/odrive_can:/home/vedant/gaitlab_ws/install/odrive_control:/home/vedant/gaitlab_ws/install/odrive_control_py:/opt/ros/humble')]), 'shell': False}
+[0.099793] (-) TimerEvent: {}
+[0.200272] (-) TimerEvent: {}
+[0.298028] (odrive_control_cpp) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.300355] (-) TimerEvent: {}
+[0.400761] (-) TimerEvent: {}
+[0.501448] (-) TimerEvent: {}
+[0.524393] (odrive_control_cpp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.542395] (odrive_control_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.601599] (-) TimerEvent: {}
+[0.636870] (odrive_control_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.647182] (odrive_control_cpp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.648887] (odrive_control_cpp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.649829] (odrive_control_cpp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.655499] (odrive_control_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.701719] (-) TimerEvent: {}
+[0.763325] (odrive_control_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.773756] (odrive_control_cpp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.774138] (odrive_control_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.774818] (odrive_control_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.793636] (odrive_control_cpp) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.801893] (-) TimerEvent: {}
+[0.902197] (-) TimerEvent: {}
+[1.002533] (-) TimerEvent: {}
+[1.011121] (odrive_control_cpp) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.102681] (-) TimerEvent: {}
+[1.188156] (odrive_control_cpp) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.202824] (-) TimerEvent: {}
+[1.290176] (odrive_control_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.299760] (odrive_control_cpp) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.303014] (-) TimerEvent: {}
+[1.318371] (odrive_control_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.349020] (odrive_control_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.385494] (odrive_control_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.403167] (-) TimerEvent: {}
+[1.503550] (-) TimerEvent: {}
+[1.514260] (odrive_control_cpp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.520513] (odrive_control_cpp) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.589457] (odrive_control_cpp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.603768] (-) TimerEvent: {}
+[1.612086] (odrive_control_cpp) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.703892] (-) TimerEvent: {}
+[1.708685] (odrive_control_cpp) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.709057] (odrive_control_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.803718] (odrive_control_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.803944] (-) TimerEvent: {}
+[1.805062] (odrive_control_cpp) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.904073] (-) TimerEvent: {}
+[2.004410] (-) TimerEvent: {}
+[2.064034] (odrive_control_cpp) StdoutLine: {'line': b'-- Found odrive_can: 0.0.1 (/home/vedant/gaitlab_ws/install/odrive_can/share/odrive_can/cmake)\n'}
+[2.095893] (odrive_control_cpp) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.104547] (-) TimerEvent: {}
+[2.204946] (-) TimerEvent: {}
+[2.246651] (odrive_control_cpp) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.246915] (odrive_control_cpp) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.247024] (odrive_control_cpp) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.248462] (odrive_control_cpp) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.250560] (odrive_control_cpp) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.250872] (odrive_control_cpp) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.251996] (odrive_control_cpp) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.254514] (odrive_control_cpp) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.265514] (odrive_control_cpp) StdoutLine: {'line': b'-- Generating done\n'}
+[2.267536] (odrive_control_cpp) StdoutLine: {'line': b'-- Build files have been written to: /home/vedant/gaitlab_ws/build/odrive_control_cpp\n'}
+[2.277937] (odrive_control_cpp) CommandEnded: {'returncode': 0}
+[2.278692] (odrive_control_cpp) JobProgress: {'identifier': 'odrive_control_cpp', 'progress': 'build'}
+[2.279562] (odrive_control_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vedant/gaitlab_ws/build/odrive_control_cpp', '--', '-j4', '-l4'], 'cwd': '/home/vedant/gaitlab_ws/build/odrive_control_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/vedant/gaitlab_ws/install/odrive_can/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '959'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/vedant/gaitlab_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vedant'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/vedant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/vedant/.local/bin:/home/vedant/.local/bin'), ('SESSION_MANAGER', 'local/vedant-LattePanda-3-Delta:@/tmp/.ICE-unix/918,unix/vedant-LattePanda-3-Delta:/tmp/.ICE-unix/918'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7b404f68_5a8f_4d3f_8d73_62f66e101dc4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TMPCS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.180'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/vedant/gaitlab_ws/install/odrive_control_py:/home/vedant/gaitlab_ws/install/odrive_control:/home/vedant/gaitlab_ws/install/odrive_can:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:b0d92738-2caf-41ae-863e-7ea7627910fc'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vedant/gaitlab_ws/build/odrive_control_cpp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/vedant/gaitlab_ws/install/odrive_can:/home/vedant/gaitlab_ws/install/odrive_control:/home/vedant/gaitlab_ws/install/odrive_control_py:/opt/ros/humble')]), 'shell': False}
+[2.305078] (-) TimerEvent: {}
+[2.346805] (odrive_control_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/control_node.dir/src/control_node.cpp.o\x1b[0m\n'}
+[2.405232] (-) TimerEvent: {}
+[2.505610] (-) TimerEvent: {}
+[2.606015] (-) TimerEvent: {}
+[2.706391] (-) TimerEvent: {}
+[2.806880] (-) TimerEvent: {}
+[2.907268] (-) TimerEvent: {}
+[3.007642] (-) TimerEvent: {}
+[3.108042] (-) TimerEvent: {}
+[3.208413] (-) TimerEvent: {}
+[3.308882] (-) TimerEvent: {}
+[3.409278] (-) TimerEvent: {}
+[3.509684] (-) TimerEvent: {}
+[3.610092] (-) TimerEvent: {}
+[3.710513] (-) TimerEvent: {}
+[3.810922] (-) TimerEvent: {}
+[3.911312] (-) TimerEvent: {}
+[4.011819] (-) TimerEvent: {}
+[4.112213] (-) TimerEvent: {}
+[4.212556] (-) TimerEvent: {}
+[4.312948] (-) TimerEvent: {}
+[4.413324] (-) TimerEvent: {}
+[4.513697] (-) TimerEvent: {}
+[4.614097] (-) TimerEvent: {}
+[4.714486] (-) TimerEvent: {}
+[4.814882] (-) TimerEvent: {}
+[4.915259] (-) TimerEvent: {}
+[5.015777] (-) TimerEvent: {}
+[5.116121] (-) TimerEvent: {}
+[5.216471] (-) TimerEvent: {}
+[5.316852] (-) TimerEvent: {}
+[5.417207] (-) TimerEvent: {}
+[5.517592] (-) TimerEvent: {}
+[5.618002] (-) TimerEvent: {}
+[5.718395] (-) TimerEvent: {}
+[5.818751] (-) TimerEvent: {}
+[5.919138] (-) TimerEvent: {}
+[6.019493] (-) TimerEvent: {}
+[6.119907] (-) TimerEvent: {}
+[6.220288] (-) TimerEvent: {}
+[6.320618] (-) TimerEvent: {}
+[6.421025] (-) TimerEvent: {}
+[6.521377] (-) TimerEvent: {}
+[6.621759] (-) TimerEvent: {}
+[6.722153] (-) TimerEvent: {}
+[6.822578] (-) TimerEvent: {}
+[6.923014] (-) TimerEvent: {}
+[7.023407] (-) TimerEvent: {}
+[7.123840] (-) TimerEvent: {}
+[7.224209] (-) TimerEvent: {}
+[7.324600] (-) TimerEvent: {}
+[7.425014] (-) TimerEvent: {}
+[7.525419] (-) TimerEvent: {}
+[7.625822] (-) TimerEvent: {}
+[7.726212] (-) TimerEvent: {}
+[7.826570] (-) TimerEvent: {}
+[7.926982] (-) TimerEvent: {}
+[8.027372] (-) TimerEvent: {}
+[8.127791] (-) TimerEvent: {}
+[8.228192] (-) TimerEvent: {}
+[8.328548] (-) TimerEvent: {}
+[8.428897] (-) TimerEvent: {}
+[8.529278] (-) TimerEvent: {}
+[8.629656] (-) TimerEvent: {}
+[8.730061] (-) TimerEvent: {}
+[8.830433] (-) TimerEvent: {}
+[8.930816] (-) TimerEvent: {}
+[9.031206] (-) TimerEvent: {}
+[9.131579] (-) TimerEvent: {}
+[9.231965] (-) TimerEvent: {}
+[9.332350] (-) TimerEvent: {}
+[9.432698] (-) TimerEvent: {}
+[9.533052] (-) TimerEvent: {}
+[9.633438] (-) TimerEvent: {}
+[9.733807] (-) TimerEvent: {}
+[9.834298] (-) TimerEvent: {}
+[9.934679] (-) TimerEvent: {}
+[10.035108] (-) TimerEvent: {}
+[10.135498] (-) TimerEvent: {}
+[10.235884] (-) TimerEvent: {}
+[10.336238] (-) TimerEvent: {}
+[10.436629] (-) TimerEvent: {}
+[10.536994] (-) TimerEvent: {}
+[10.637406] (-) TimerEvent: {}
+[10.737805] (-) TimerEvent: {}
+[10.838207] (-) TimerEvent: {}
+[10.938615] (-) TimerEvent: {}
+[11.039022] (-) TimerEvent: {}
+[11.139432] (-) TimerEvent: {}
+[11.239854] (-) TimerEvent: {}
+[11.340235] (-) TimerEvent: {}
+[11.440600] (-) TimerEvent: {}
+[11.540965] (-) TimerEvent: {}
+[11.641358] (-) TimerEvent: {}
+[11.741740] (-) TimerEvent: {}
+[11.842280] (-) TimerEvent: {}
+[11.942647] (-) TimerEvent: {}
+[12.043047] (-) TimerEvent: {}
+[12.143442] (-) TimerEvent: {}
+[12.243827] (-) TimerEvent: {}
+[12.344179] (-) TimerEvent: {}
+[12.444538] (-) TimerEvent: {}
+[12.544885] (-) TimerEvent: {}
+[12.645302] (-) TimerEvent: {}
+[12.745715] (-) TimerEvent: {}
+[12.846126] (-) TimerEvent: {}
+[12.946530] (-) TimerEvent: {}
+[13.046933] (-) TimerEvent: {}
+[13.147335] (-) TimerEvent: {}
+[13.247727] (-) TimerEvent: {}
+[13.348102] (-) TimerEvent: {}
+[13.448459] (-) TimerEvent: {}
+[13.548822] (-) TimerEvent: {}
+[13.649202] (-) TimerEvent: {}
+[13.749567] (-) TimerEvent: {}
+[13.850056] (-) TimerEvent: {}
+[13.950668] (-) TimerEvent: {}
+[14.051045] (-) TimerEvent: {}
+[14.151400] (-) TimerEvent: {}
+[14.251801] (-) TimerEvent: {}
+[14.352156] (-) TimerEvent: {}
+[14.452539] (-) TimerEvent: {}
+[14.552891] (-) TimerEvent: {}
+[14.653228] (-) TimerEvent: {}
+[14.741067] (odrive_control_cpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable control_node\x1b[0m\n'}
+[14.753341] (-) TimerEvent: {}
+[14.853755] (-) TimerEvent: {}
+[14.954315] (-) TimerEvent: {}
+[15.054817] (-) TimerEvent: {}
+[15.155187] (-) TimerEvent: {}
+[15.255587] (-) TimerEvent: {}
+[15.356009] (-) TimerEvent: {}
+[15.395464] (odrive_control_cpp) StdoutLine: {'line': b'[100%] Built target control_node\n'}
+[15.410080] (odrive_control_cpp) CommandEnded: {'returncode': 0}
+[15.438507] (odrive_control_cpp) JobProgress: {'identifier': 'odrive_control_cpp', 'progress': 'install'}
+[15.450637] (odrive_control_cpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vedant/gaitlab_ws/build/odrive_control_cpp'], 'cwd': '/home/vedant/gaitlab_ws/build/odrive_control_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/vedant/gaitlab_ws/install/odrive_can/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '959'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/vedant/gaitlab_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vedant'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/vedant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/vedant/.local/bin:/home/vedant/.local/bin'), ('SESSION_MANAGER', 'local/vedant-LattePanda-3-Delta:@/tmp/.ICE-unix/918,unix/vedant-LattePanda-3-Delta:/tmp/.ICE-unix/918'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7b404f68_5a8f_4d3f_8d73_62f66e101dc4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TMPCS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.180'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/vedant/gaitlab_ws/install/odrive_control_py:/home/vedant/gaitlab_ws/install/odrive_control:/home/vedant/gaitlab_ws/install/odrive_can:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:b0d92738-2caf-41ae-863e-7ea7627910fc'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vedant/gaitlab_ws/build/odrive_control_cpp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/vedant/gaitlab_ws/install/odrive_can:/home/vedant/gaitlab_ws/install/odrive_control:/home/vedant/gaitlab_ws/install/odrive_control_py:/opt/ros/humble')]), 'shell': False}
+[15.456105] (-) TimerEvent: {}
+[15.460081] (odrive_control_cpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.460493] (odrive_control_cpp) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/lib/odrive_control_cpp/control_node\n'}
+[15.465113] (odrive_control_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/odrive_control_cpp/lib/odrive_control_cpp/control_node" to ""\n'}
+[15.465343] (odrive_control_cpp) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/ament_index/resource_index/package_run_dependencies/odrive_control_cpp\n'}
+[15.465479] (odrive_control_cpp) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/ament_index/resource_index/parent_prefix_path/odrive_control_cpp\n'}
+[15.465671] (odrive_control_cpp) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/environment/ament_prefix_path.sh\n'}
+[15.465825] (odrive_control_cpp) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/environment/ament_prefix_path.dsv\n'}
+[15.465989] (odrive_control_cpp) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/environment/path.sh\n'}
+[15.466128] (odrive_control_cpp) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/environment/path.dsv\n'}
+[15.466277] (odrive_control_cpp) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/local_setup.bash\n'}
+[15.466422] (odrive_control_cpp) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/local_setup.sh\n'}
+[15.466606] (odrive_control_cpp) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/local_setup.zsh\n'}
+[15.466826] (odrive_control_cpp) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/local_setup.dsv\n'}
+[15.466973] (odrive_control_cpp) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/package.dsv\n'}
+[15.467194] (odrive_control_cpp) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/ament_index/resource_index/packages/odrive_control_cpp\n'}
+[15.467388] (odrive_control_cpp) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/cmake/odrive_control_cppConfig.cmake\n'}
+[15.467527] (odrive_control_cpp) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/cmake/odrive_control_cppConfig-version.cmake\n'}
+[15.467668] (odrive_control_cpp) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/odrive_control_cpp/share/odrive_control_cpp/package.xml\n'}
+[15.470258] (odrive_control_cpp) CommandEnded: {'returncode': 0}
+[15.521455] (odrive_control_cpp) JobEnded: {'identifier': 'odrive_control_cpp', 'rc': 0}
+[15.522231] (-) EventReactorShutdown: {}

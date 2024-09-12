@@ -1,0 +1,365 @@
+[0.000000] (-) TimerEvent: {}
+[0.000806] (-) JobUnselected: {'identifier': 'bag_recorder_nodes_py'}
+[0.001018] (-) JobUnselected: {'identifier': 'odrive_botwheel_explorer'}
+[0.001047] (-) JobUnselected: {'identifier': 'odrive_can'}
+[0.001072] (-) JobUnselected: {'identifier': 'odrive_control'}
+[0.001095] (-) JobUnselected: {'identifier': 'odrive_control_cpp'}
+[0.001119] (-) JobUnselected: {'identifier': 'odrive_ros2_control'}
+[0.001145] (data_sync) JobQueued: {'identifier': 'data_sync', 'dependencies': OrderedDict()}
+[0.001174] (odrive_control_py) JobQueued: {'identifier': 'odrive_control_py', 'dependencies': OrderedDict([('data_sync', '/home/vedant/gaitlab_ws/install/data_sync'), ('odrive_can', '/home/vedant/gaitlab_ws/install/odrive_can')])}
+[0.001205] (data_sync) JobStarted: {'identifier': 'data_sync'}
+[0.020172] (data_sync) JobProgress: {'identifier': 'data_sync', 'progress': 'cmake'}
+[0.022044] (data_sync) JobProgress: {'identifier': 'data_sync', 'progress': 'build'}
+[0.023048] (data_sync) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vedant/gaitlab_ws/build/data_sync', '--', '-j4', '-l4'], 'cwd': '/home/vedant/gaitlab_ws/build/data_sync', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1090'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vedant'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/vedant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/vedant/.local/bin:/home/vedant/.local/bin'), ('SESSION_MANAGER', 'local/vedant-LattePanda-3-Delta:@/tmp/.ICE-unix/1063,unix/vedant-LattePanda-3-Delta:/tmp/.ICE-unix/1063'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b8cf0812_e5ea_45e6_8637_19fd6ae6f73f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:4cad1d02-5ec0-4a1a-ad11-ee5b93ba8372'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vedant/gaitlab_ws/build/data_sync'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099686] (-) TimerEvent: {}
+[0.137180] (data_sync) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199797] (-) TimerEvent: {}
+[0.300120] (-) TimerEvent: {}
+[0.362352] (data_sync) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.368807] (data_sync) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.376218] (data_sync) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.400240] (-) TimerEvent: {}
+[0.448039] (data_sync) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500366] (-) TimerEvent: {}
+[0.600816] (-) TimerEvent: {}
+[0.701346] (-) TimerEvent: {}
+[0.802018] (-) TimerEvent: {}
+[0.902385] (-) TimerEvent: {}
+[0.904662] (data_sync) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.002538] (-) TimerEvent: {}
+[1.102873] (-) TimerEvent: {}
+[1.183400] (data_sync) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.203016] (-) TimerEvent: {}
+[1.303338] (-) TimerEvent: {}
+[1.403688] (-) TimerEvent: {}
+[1.504061] (-) TimerEvent: {}
+[1.551617] (data_sync) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.592510] (data_sync) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.604175] (-) TimerEvent: {}
+[1.626743] (data_sync) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.626948] (data_sync) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.627037] (data_sync) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.645320] (data_sync) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.682158] (data_sync) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.684332] (data_sync) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.691404] (data_sync) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.704309] (-) TimerEvent: {}
+[1.803264] (data_sync) StdoutLine: {'line': b'-- Generating done\n'}
+[1.804370] (-) TimerEvent: {}
+[1.808826] (data_sync) StdoutLine: {'line': b'-- Build files have been written to: /home/vedant/gaitlab_ws/build/data_sync\n'}
+[1.840265] (data_sync) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.854615] (data_sync) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.879316] (data_sync) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_data_sync\n'}
+[1.904988] (-) TimerEvent: {}
+[2.005386] (-) TimerEvent: {}
+[2.105889] (-) TimerEvent: {}
+[2.206227] (-) TimerEvent: {}
+[2.306753] (-) TimerEvent: {}
+[2.338279] (data_sync) StdoutLine: {'line': b'running egg_info\n'}
+[2.339941] (data_sync) StdoutLine: {'line': b'writing data_sync.egg-info/PKG-INFO\n'}
+[2.340413] (data_sync) StdoutLine: {'line': b'writing dependency_links to data_sync.egg-info/dependency_links.txt\n'}
+[2.341048] (data_sync) StdoutLine: {'line': b'writing top-level names to data_sync.egg-info/top_level.txt\n'}
+[2.347971] (data_sync) StdoutLine: {'line': b"reading manifest file 'data_sync.egg-info/SOURCES.txt'\n"}
+[2.349792] (data_sync) StdoutLine: {'line': b"writing manifest file 'data_sync.egg-info/SOURCES.txt'\n"}
+[2.406180] (data_sync) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_data_sync_egg\n'}
+[2.406848] (-) TimerEvent: {}
+[2.433134] (data_sync) StdoutLine: {'line': b'[  6%] Built target data_sync__cpp\n'}
+[2.437550] (data_sync) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target data_sync__rosidl_generator_c\x1b[0m\n'}
+[2.449456] (data_sync) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.449763] (data_sync) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.455241] (data_sync) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.458665] (data_sync) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.o\x1b[0m\n'}
+[2.507052] (-) TimerEvent: {}
+[2.608585] (-) TimerEvent: {}
+[2.684278] (data_sync) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libdata_sync__rosidl_generator_c.so\x1b[0m\n'}
+[2.708711] (-) TimerEvent: {}
+[2.800929] (data_sync) StdoutLine: {'line': b'[ 22%] Built target data_sync__rosidl_generator_c\n'}
+[2.811705] (-) TimerEvent: {}
+[2.820385] (data_sync) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.911826] (-) TimerEvent: {}
+[2.944480] (data_sync) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.976099] (data_sync) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.o\x1b[0m\n'}
+[3.005100] (data_sync) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[3.011955] (-) TimerEvent: {}
+[3.025368] (data_sync) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/data_sync/srv/detail/trigger__type_support.cpp.o\x1b[0m\n'}
+[3.047470] (data_sync) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[3.076593] (data_sync) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/data_sync/srv/detail/dds_fastrtps/trigger__type_support.cpp.o\x1b[0m\n'}
+[3.112067] (-) TimerEvent: {}
+[3.214743] (-) TimerEvent: {}
+[3.316067] (-) TimerEvent: {}
+[3.413791] (data_sync) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[3.416198] (-) TimerEvent: {}
+[3.466471] (data_sync) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/data_sync/srv/detail/trigger__type_support_c.cpp.o\x1b[0m\n'}
+[3.516336] (-) TimerEvent: {}
+[3.616940] (-) TimerEvent: {}
+[3.719249] (-) TimerEvent: {}
+[3.727581] (data_sync) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libdata_sync__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.819396] (-) TimerEvent: {}
+[3.842610] (data_sync) StdoutLine: {'line': b'[ 41%] Built target data_sync__rosidl_typesupport_cpp\n'}
+[3.863132] (data_sync) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.921445] (-) TimerEvent: {}
+[3.940676] (data_sync) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libdata_sync__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.974757] (data_sync) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libdata_sync__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.021590] (-) TimerEvent: {}
+[4.123986] (-) TimerEvent: {}
+[4.128278] (data_sync) StdoutLine: {'line': b'[ 51%] Built target data_sync__rosidl_typesupport_introspection_cpp\n'}
+[4.140833] (data_sync) StdoutLine: {'line': b'[ 51%] Built target data_sync__rosidl_typesupport_fastrtps_cpp\n'}
+[4.151303] (data_sync) StdoutLine: {'line': b'[ 54%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.225627] (-) TimerEvent: {}
+[4.229388] (data_sync) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libdata_sync__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.326259] (-) TimerEvent: {}
+[4.372738] (data_sync) StdoutLine: {'line': b'[ 58%] Built target data_sync__rosidl_typesupport_fastrtps_c\n'}
+[4.426383] (-) TimerEvent: {}
+[4.444917] (data_sync) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[4.460064] (data_sync) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/data_sync__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/data_sync/srv/detail/trigger__type_support.c.o\x1b[0m\n'}
+[4.511258] (data_sync) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library libdata_sync__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.526492] (-) TimerEvent: {}
+[4.553682] (data_sync) StdoutLine: {'line': b'[ 64%] Built target data_sync__rosidl_typesupport_introspection_c\n'}
+[4.594376] (data_sync) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_c\x1b[0m\n'}
+[4.607992] (data_sync) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_c.dir/rosidl_typesupport_c/data_sync/srv/trigger__type_support.cpp.o\x1b[0m\n'}
+[4.626595] (-) TimerEvent: {}
+[4.651021] (data_sync) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libdata_sync__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.718659] (data_sync) StdoutLine: {'line': b'[ 70%] Built target data_sync__rosidl_typesupport_c\n'}
+[4.726714] (-) TimerEvent: {}
+[4.744966] (data_sync) StdoutLine: {'line': b'[ 70%] Built target data_sync\n'}
+[4.771873] (data_sync) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.826852] (-) TimerEvent: {}
+[4.927164] (-) TimerEvent: {}
+[5.027489] (-) TimerEvent: {}
+[5.127858] (-) TimerEvent: {}
+[5.228179] (-) TimerEvent: {}
+[5.328532] (-) TimerEvent: {}
+[5.413116] (data_sync) StdoutLine: {'line': b'[ 74%] Built target data_sync__py\n'}
+[5.426587] (data_sync) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target data_sync__rosidl_generator_py\x1b[0m\n'}
+[5.430343] (-) TimerEvent: {}
+[5.448843] (data_sync) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/data_sync__rosidl_generator_py.dir/rosidl_generator_py/data_sync/srv/_trigger_s.c.o\x1b[0m\n'}
+[5.530476] (-) TimerEvent: {}
+[5.611963] (data_sync) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/data_sync/libdata_sync__rosidl_generator_py.so\x1b[0m\n'}
+[5.630673] (-) TimerEvent: {}
+[5.672678] (data_sync) StdoutLine: {'line': b'[ 80%] Built target data_sync__rosidl_generator_py\n'}
+[5.688946] (data_sync) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[5.690047] (data_sync) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[5.690254] (data_sync) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target data_sync__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[5.708244] (data_sync) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.708534] (data_sync) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/data_sync__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.708779] (data_sync) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/data_sync__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.731586] (-) TimerEvent: {}
+[5.832019] (-) TimerEvent: {}
+[5.845929] (data_sync) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/data_sync/data_sync_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.850748] (data_sync) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/data_sync/data_sync_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.854685] (data_sync) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/data_sync/data_sync_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.902913] (data_sync) StdoutLine: {'line': b'[100%] Built target data_sync__rosidl_typesupport_introspection_c__pyext\n'}
+[5.907484] (data_sync) StdoutLine: {'line': b'[100%] Built target data_sync__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.915511] (data_sync) StdoutLine: {'line': b'[100%] Built target data_sync__rosidl_typesupport_c__pyext\n'}
+[5.932167] (-) TimerEvent: {}
+[5.933087] (data_sync) CommandEnded: {'returncode': 0}
+[5.999002] (data_sync) JobProgress: {'identifier': 'data_sync', 'progress': 'install'}
+[6.010741] (data_sync) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vedant/gaitlab_ws/build/data_sync'], 'cwd': '/home/vedant/gaitlab_ws/build/data_sync', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1090'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vedant'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/vedant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/vedant/.local/bin:/home/vedant/.local/bin'), ('SESSION_MANAGER', 'local/vedant-LattePanda-3-Delta:@/tmp/.ICE-unix/1063,unix/vedant-LattePanda-3-Delta:/tmp/.ICE-unix/1063'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b8cf0812_e5ea_45e6_8637_19fd6ae6f73f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:4cad1d02-5ec0-4a1a-ad11-ee5b93ba8372'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vedant/gaitlab_ws/build/data_sync'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.022088] (data_sync) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.031310] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/ament_index/resource_index/rosidl_interfaces/data_sync\n'}
+[6.032229] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync\n'}
+[6.032379] (-) TimerEvent: {}
+[6.032734] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv\n'}
+[6.033237] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/trigger.h\n'}
+[6.033463] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail\n'}
+[6.033981] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__struct.h\n'}
+[6.034186] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__functions.h\n'}
+[6.034408] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__functions.h\n'}
+[6.034541] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__struct.h\n'}
+[6.034753] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__type_support.h\n'}
+[6.034868] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__functions.c\n'}
+[6.034961] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__type_support.h\n'}
+[6.035206] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__functions.c\n'}
+[6.035333] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/start_stop_data_collection.h\n'}
+[6.035490] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/msg\n'}
+[6.035714] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.035854] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/environment/library_path.sh\n'}
+[6.035940] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/environment/library_path.dsv\n'}
+[6.036719] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_generator_c.so\n'}
+[6.037203] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_generator_c.so" to ""\n'}
+[6.037390] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync\n'}
+[6.037511] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv\n'}
+[6.037738] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail\n'}
+[6.037864] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__rosidl_typesupport_fastrtps_c.h\n'}
+[6.037968] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__rosidl_typesupport_fastrtps_c.h\n'}
+[6.038071] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/msg\n'}
+[6.038172] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.038599] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_fastrtps_c.so\n'}
+[6.039145] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.039327] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync\n'}
+[6.039518] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv\n'}
+[6.039659] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail\n'}
+[6.039797] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__type_support.c\n'}
+[6.040019] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__rosidl_typesupport_introspection_c.h\n'}
+[6.040149] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__type_support.c\n'}
+[6.040247] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__rosidl_typesupport_introspection_c.h\n'}
+[6.040335] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/msg\n'}
+[6.040495] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.040957] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_introspection_c.so\n'}
+[6.041411] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.042229] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_c.so\n'}
+[6.042639] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_c.so" to ""\n'}
+[6.042812] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync\n'}
+[6.042928] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv\n'}
+[6.043116] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/trigger.hpp\n'}
+[6.043215] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail\n'}
+[6.043309] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__struct.hpp\n'}
+[6.043427] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__builder.hpp\n'}
+[6.043576] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__struct.hpp\n'}
+[6.043728] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__traits.hpp\n'}
+[6.043848] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__builder.hpp\n'}
+[6.043948] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__traits.hpp\n'}
+[6.044039] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/start_stop_data_collection.hpp\n'}
+[6.044130] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync\n'}
+[6.044247] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv\n'}
+[6.044405] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail\n'}
+[6.044492] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.044600] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.044732] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/dds_fastrtps\n'}
+[6.044818] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/msg\n'}
+[6.044896] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.045450] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.045936] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[6.046066] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync\n'}
+[6.046190] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv\n'}
+[6.046281] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail\n'}
+[6.046368] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__type_support.cpp\n'}
+[6.046482] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.046624] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/start_stop_data_collection__type_support.cpp\n'}
+[6.046713] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.047689] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_introspection_cpp.so\n'}
+[6.048147] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[6.048990] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_cpp.so\n'}
+[6.049397] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_typesupport_cpp.so" to ""\n'}
+[6.049516] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/environment/pythonpath.sh\n'}
+[6.049635] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/environment/pythonpath.dsv\n'}
+[6.051583] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info\n'}
+[6.052067] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[6.052282] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.052449] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.052663] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[6.052927] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync\n'}
+[6.053596] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv\n'}
+[6.054039] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/_start_stop_data_collection_s.c\n'}
+[6.054189] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/__init__.py\n'}
+[6.054313] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/_start_stop_data_collection.py\n'}
+[6.054437] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/_trigger.py\n'}
+[6.054566] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/_trigger_s.c\n'}
+[6.054693] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.054844] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/__init__.py\n'}
+[6.054970] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.055149] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/libdata_sync__rosidl_generator_py.so\n'}
+[6.055322] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.055478] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/_data_sync_s.ep.rosidl_typesupport_c.c\n'}
+[6.055656] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.055921] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/_data_sync_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.112264] (data_sync) StdoutLine: {'line': b"Listing '/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync'...\n"}
+[6.112493] (data_sync) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/__init__.py'...\n"}
+[6.112644] (data_sync) StdoutLine: {'line': b"Listing '/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv'...\n"}
+[6.112751] (data_sync) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/__init__.py'...\n"}
+[6.112854] (data_sync) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/_trigger.py'...\n"}
+[6.119107] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.119510] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.119887] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.120426] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.120790] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.121205] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.122395] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_generator_py.so\n'}
+[6.122927] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/data_sync/lib/libdata_sync__rosidl_generator_py.so" to ""\n'}
+[6.123624] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/srv/Trigger.idl\n'}
+[6.123863] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/srv/Trigger.srv\n'}
+[6.124029] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/srv/Trigger_Request.msg\n'}
+[6.124218] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/srv/Trigger_Response.msg\n'}
+[6.124829] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/ament_index/resource_index/package_run_dependencies/data_sync\n'}
+[6.125318] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/ament_index/resource_index/parent_prefix_path/data_sync\n'}
+[6.125666] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/environment/ament_prefix_path.sh\n'}
+[6.125899] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/environment/ament_prefix_path.dsv\n'}
+[6.126048] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/environment/path.sh\n'}
+[6.126186] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/environment/path.dsv\n'}
+[6.126282] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/local_setup.bash\n'}
+[6.126397] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/local_setup.sh\n'}
+[6.126546] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/local_setup.zsh\n'}
+[6.126649] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/local_setup.dsv\n'}
+[6.126737] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/package.dsv\n'}
+[6.127365] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/ament_index/resource_index/packages/data_sync\n'}
+[6.128347] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_cExport.cmake\n'}
+[6.128512] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.128977] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.129730] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.129937] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.130059] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.130275] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_cExport.cmake\n'}
+[6.130429] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.130648] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_cppExport.cmake\n'}
+[6.131187] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.131436] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.131808] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.131993] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.132378] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_cppExport.cmake\n'}
+[6.132951] (-) TimerEvent: {}
+[6.133129] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.133671] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_pyExport.cmake\n'}
+[6.134013] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.134174] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/rosidl_cmake-extras.cmake\n'}
+[6.134362] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.134478] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.134634] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.134753] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.134854] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.134963] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.135068] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_syncConfig.cmake\n'}
+[6.135186] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/cmake/data_syncConfig-version.cmake\n'}
+[6.135292] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/data_sync/share/data_sync/package.xml\n'}
+[6.137281] (data_sync) CommandEnded: {'returncode': 0}
+[6.233055] (-) TimerEvent: {}
+[6.263651] (data_sync) JobEnded: {'identifier': 'data_sync', 'rc': 0}
+[6.265128] (odrive_control_py) JobStarted: {'identifier': 'odrive_control_py'}
+[6.333176] (-) TimerEvent: {}
+[6.433548] (-) TimerEvent: {}
+[6.533907] (-) TimerEvent: {}
+[6.634241] (-) TimerEvent: {}
+[6.734583] (-) TimerEvent: {}
+[6.834933] (-) TimerEvent: {}
+[6.935258] (-) TimerEvent: {}
+[7.035643] (-) TimerEvent: {}
+[7.136025] (-) TimerEvent: {}
+[7.236339] (-) TimerEvent: {}
+[7.336676] (-) TimerEvent: {}
+[7.437007] (-) TimerEvent: {}
+[7.453572] (odrive_control_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/odrive_control_py', 'build', '--build-base', '/home/vedant/gaitlab_ws/build/odrive_control_py/build', 'install', '--record', '/home/vedant/gaitlab_ws/build/odrive_control_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/vedant/gaitlab_ws/src/odrive_control_py', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'vedant', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/vedant/gaitlab_ws/install/odrive_can/lib:/home/vedant/gaitlab_ws/install/data_sync/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/vedant', 'OLDPWD': '/home/vedant', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1090', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'vedant', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'vedant', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/vedant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/vedant/.local/bin:/home/vedant/.local/bin', 'SESSION_MANAGER': 'local/vedant-LattePanda-3-Delta:@/tmp/.ICE-unix/1063,unix/vedant-LattePanda-3-Delta:/tmp/.ICE-unix/1063', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b8cf0812_e5ea_45e6_8637_19fd6ae6f73f', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.91', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/vedant/gaitlab_ws/install/odrive_can:/home/vedant/gaitlab_ws/install/data_sync:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:4cad1d02-5ec0-4a1a-ad11-ee5b93ba8372', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/vedant/gaitlab_ws/build/odrive_control_py', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vedant/gaitlab_ws/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages:/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages:/home/vedant/gaitlab_ws/install/data_sync/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/vedant/gaitlab_ws/install/odrive_can:/home/vedant/gaitlab_ws/install/data_sync'}, 'shell': False}
+[7.537108] (-) TimerEvent: {}
+[7.637420] (-) TimerEvent: {}
+[7.737753] (-) TimerEvent: {}
+[7.838057] (-) TimerEvent: {}
+[7.855816] (odrive_control_py) StdoutLine: {'line': b'running egg_info\n'}
+[7.857009] (odrive_control_py) StdoutLine: {'line': b'writing ../../build/odrive_control_py/odrive_control_py.egg-info/PKG-INFO\n'}
+[7.864481] (odrive_control_py) StdoutLine: {'line': b'writing dependency_links to ../../build/odrive_control_py/odrive_control_py.egg-info/dependency_links.txt\n'}
+[7.864759] (odrive_control_py) StdoutLine: {'line': b'writing entry points to ../../build/odrive_control_py/odrive_control_py.egg-info/entry_points.txt\n'}
+[7.865170] (odrive_control_py) StdoutLine: {'line': b'writing requirements to ../../build/odrive_control_py/odrive_control_py.egg-info/requires.txt\n'}
+[7.865411] (odrive_control_py) StdoutLine: {'line': b'writing top-level names to ../../build/odrive_control_py/odrive_control_py.egg-info/top_level.txt\n'}
+[7.868970] (odrive_control_py) StdoutLine: {'line': b"reading manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'\n"}
+[7.870742] (odrive_control_py) StdoutLine: {'line': b"writing manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'\n"}
+[7.870971] (odrive_control_py) StdoutLine: {'line': b'running build\n'}
+[7.871065] (odrive_control_py) StdoutLine: {'line': b'running build_py\n'}
+[7.872926] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/record_odrive_data.py -> /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.873239] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/matlab_tcp_node.py -> /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.873703] (odrive_control_py) StdoutLine: {'line': b'running install\n'}
+[7.874178] (odrive_control_py) StdoutLine: {'line': b'running install_lib\n'}
+[7.876198] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py/record_odrive_data.py -> /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.876541] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py/matlab_tcp_node.py -> /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.878073] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/record_odrive_data.py to record_odrive_data.cpython-310.pyc\n'}
+[7.879406] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/matlab_tcp_node.py to matlab_tcp_node.cpython-310.pyc\n'}
+[7.881495] (odrive_control_py) StdoutLine: {'line': b'running install_data\n'}
+[7.883237] (odrive_control_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.886042] (odrive_control_py) StdoutLine: {'line': b"removing '/home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[7.887386] (odrive_control_py) StdoutLine: {'line': b'Copying ../../build/odrive_control_py/odrive_control_py.egg-info to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info\n'}
+[7.888951] (odrive_control_py) StdoutLine: {'line': b'running install_scripts\n'}
+[7.921678] (odrive_control_py) StdoutLine: {'line': b'Installing matlab_tcp_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py\n'}
+[7.923524] (odrive_control_py) StdoutLine: {'line': b'Installing odrive_control_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py\n'}
+[7.923805] (odrive_control_py) StdoutLine: {'line': b'Installing record_data_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py\n'}
+[7.923991] (odrive_control_py) StdoutLine: {'line': b'Installing trial_odrive_control_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py\n'}
+[7.924758] (odrive_control_py) StdoutLine: {'line': b"writing list of installed files to '/home/vedant/gaitlab_ws/build/odrive_control_py/install.log'\n"}
+[7.938183] (-) TimerEvent: {}
+[7.964306] (odrive_control_py) CommandEnded: {'returncode': 0}
+[7.976746] (odrive_control_py) JobEnded: {'identifier': 'odrive_control_py', 'rc': 0}
+[7.977640] (-) EventReactorShutdown: {}

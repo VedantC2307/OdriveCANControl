@@ -1,0 +1,23 @@
+[1.026s] Invoking command in '/home/vedant/gaitlab_ws/src/odrive_control_py': CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/install/odrive_can:/home/vedant/gaitlab_ws/install/data_sync:/home/vedant/gaitlab_ws/install/odrive_control_cpp:/home/vedant/gaitlab_ws/install/odrive_control PYTHONPATH=/home/vedant/gaitlab_ws/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/install/data_sync/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages:/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages:/home/vedant/gaitlab_ws/install/bag_recorder_nodes_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odrive_control_py build --build-base /home/vedant/gaitlab_ws/build/odrive_control_py/build install --record /home/vedant/gaitlab_ws/build/odrive_control_py/install.log --single-version-externally-managed install_data
+[1.414s] running egg_info
+[1.416s] writing ../../build/odrive_control_py/odrive_control_py.egg-info/PKG-INFO
+[1.417s] writing dependency_links to ../../build/odrive_control_py/odrive_control_py.egg-info/dependency_links.txt
+[1.417s] writing entry points to ../../build/odrive_control_py/odrive_control_py.egg-info/entry_points.txt
+[1.417s] writing requirements to ../../build/odrive_control_py/odrive_control_py.egg-info/requires.txt
+[1.417s] writing top-level names to ../../build/odrive_control_py/odrive_control_py.egg-info/top_level.txt
+[1.421s] reading manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'
+[1.422s] writing manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'
+[1.423s] running build
+[1.423s] running build_py
+[1.423s] running install
+[1.424s] running install_lib
+[1.426s] running install_data
+[1.426s] running install_egg_info
+[1.429s] removing '/home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info' (and everything under it)
+[1.429s] Copying ../../build/odrive_control_py/odrive_control_py.egg-info to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info
+[1.431s] running install_scripts
+[1.463s] Installing odrive_control_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py
+[1.464s] Installing record_data_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py
+[1.464s] Installing trial_odrive_control_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py
+[1.464s] writing list of installed files to '/home/vedant/gaitlab_ws/build/odrive_control_py/install.log'
+[1.503s] Invoked command in '/home/vedant/gaitlab_ws/src/odrive_control_py' returned '0': CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/install/odrive_can:/home/vedant/gaitlab_ws/install/data_sync:/home/vedant/gaitlab_ws/install/odrive_control_cpp:/home/vedant/gaitlab_ws/install/odrive_control PYTHONPATH=/home/vedant/gaitlab_ws/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/install/data_sync/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/install/odrive_can/local/lib/python3.10/dist-packages:/home/vedant/gaitlab_ws/install/data_sync/local/lib/python3.10/dist-packages:/home/vedant/gaitlab_ws/install/bag_recorder_nodes_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odrive_control_py build --build-base /home/vedant/gaitlab_ws/build/odrive_control_py/build install --record /home/vedant/gaitlab_ws/build/odrive_control_py/install.log --single-version-externally-managed install_data
