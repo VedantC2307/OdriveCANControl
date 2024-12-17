@@ -1,6 +1,0 @@
-[console_scripts]
-matlab_tcp_node = odrive_control_py.matlab_tcp_node:main
-odrive_control_node = odrive_control_py.control_node:main
-record_data_node = odrive_control_py.record_odrive_data:main
-trial_odrive_control_node = odrive_control_py.trial_controlnode:main
-

@@ -21,9 +21,11 @@ setup(
     entry_points={
         'console_scripts': [
             'odrive_control_node = odrive_control_py.control_node:main',
-            'trial_odrive_control_node = odrive_control_py.trial_controlnode:main',
-            'record_data_node = odrive_control_py.record_odrive_data:main',
-            'matlab_tcp_node = odrive_control_py.matlab_tcp_node:main',
+            'encoder_read_node = odrive_control_py.encoder_read_node:main',
+            'data_recording_node = odrive_control_py.data_recording_node:main',
+            # 'trial_odrive_control_node = odrive_control_py.trial_controlnode:main',
+            # 'record_data_node = odrive_control_py.record_odrive_data_test:main',
+            # 'matlab_tcp_node = odrive_control_py.matlab_tcp_node_test:main',
         ],
     },
 )

@@ -1,4 +1,0 @@
-Invoking command in '/home/vedant/gaitlab_ws/build/data_sync': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vedant/gaitlab_ws/build/data_sync -- -j4 -l4
-Invoked command in '/home/vedant/gaitlab_ws/build/data_sync' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vedant/gaitlab_ws/build/data_sync -- -j4 -l4
-Invoking command in '/home/vedant/gaitlab_ws/build/data_sync': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vedant/gaitlab_ws/build/data_sync
-Invoked command in '/home/vedant/gaitlab_ws/build/data_sync' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vedant/gaitlab_ws/build/data_sync

@@ -1,0 +1,6 @@
+Invoking command in '/home/vedant/gaitlab_ws/build/odrive_can': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/vedant/gaitlab_ws/src/ros_odrive/odrive_node -DCMAKE_INSTALL_PREFIX=/home/vedant/gaitlab_ws/install/odrive_can
+Invoked command in '/home/vedant/gaitlab_ws/build/odrive_can' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/vedant/gaitlab_ws/src/ros_odrive/odrive_node -DCMAKE_INSTALL_PREFIX=/home/vedant/gaitlab_ws/install/odrive_can
+Invoking command in '/home/vedant/gaitlab_ws/build/odrive_can': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vedant/gaitlab_ws/build/odrive_can -- -j4 -l4
+Invoked command in '/home/vedant/gaitlab_ws/build/odrive_can' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vedant/gaitlab_ws/build/odrive_can -- -j4 -l4
+Invoking command in '/home/vedant/gaitlab_ws/build/odrive_can': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vedant/gaitlab_ws/build/odrive_can
+Invoked command in '/home/vedant/gaitlab_ws/build/odrive_can' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vedant/gaitlab_ws/build/odrive_can
