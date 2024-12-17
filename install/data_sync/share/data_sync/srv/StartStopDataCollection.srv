@@ -1,5 +1,0 @@
-#Request
-bool start
----
-#Response
-bool success

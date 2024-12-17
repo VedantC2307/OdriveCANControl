@@ -1,3 +1,0 @@
-[console_scripts]
-data_collection_service = data_sync.StartStopDataCollection:main
-
