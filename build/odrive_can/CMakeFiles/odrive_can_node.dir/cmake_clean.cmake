@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/odrive_can_node.dir/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o"
-  "CMakeFiles/odrive_can_node.dir/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o.d"
-  "CMakeFiles/odrive_can_node.dir/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src/socket_can.cpp.o"
-  "CMakeFiles/odrive_can_node.dir/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src/socket_can.cpp.o.d"
+  "CMakeFiles/odrive_can_node.dir/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o"
+  "CMakeFiles/odrive_can_node.dir/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o.d"
+  "CMakeFiles/odrive_can_node.dir/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_base/src/socket_can.cpp.o"
+  "CMakeFiles/odrive_can_node.dir/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_base/src/socket_can.cpp.o.d"
   "CMakeFiles/odrive_can_node.dir/src/main.cpp.o"
   "CMakeFiles/odrive_can_node.dir/src/main.cpp.o.d"
   "CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o"

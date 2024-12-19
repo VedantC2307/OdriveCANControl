@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/src/data_sync
+CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/build/data_sync
+CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync
 
 # Include any dependencies generated for this target.
 include CMakeFiles/data_sync__rosidl_generator_c.dir/depend.make
@@ -83,8 +83,8 @@ rosidl_generator_c/data_sync/srv/trigger.h: /opt/ros/humble/share/rosidl_generat
 rosidl_generator_c/data_sync/srv/trigger.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
 rosidl_generator_c/data_sync/srv/trigger.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/data_sync/srv/trigger.h: rosidl_adapter/data_sync/srv/Trigger.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vedant/gaitlab_ws/build/data_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/vedant/gaitlab_ws/build/data_sync/rosidl_generator_c__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/data_sync/srv/detail/trigger__functions.h: rosidl_generator_c/data_sync/srv/trigger.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/data_sync/srv/detail/trigger__functions.h
@@ -101,16 +101,16 @@ rosidl_generator_c/data_sync/srv/detail/trigger__functions.c: rosidl_generator_c
 CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.o: CMakeFiles/data_sync__rosidl_generator_c.dir/flags.make
 CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.o: rosidl_generator_c/data_sync/srv/detail/trigger__functions.c
 CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.o: CMakeFiles/data_sync__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vedant/gaitlab_ws/build/data_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.o -MF CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.o.d -o CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.o -c /home/vedant/gaitlab_ws/build/data_sync/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.o -MF CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.o.d -o CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.o -c /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c
 
 CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vedant/gaitlab_ws/build/data_sync/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c > CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c > CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.i
 
 CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vedant/gaitlab_ws/build/data_sync/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c -o CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c -o CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.s
 
 # Object files for target data_sync__rosidl_generator_c
 data_sync__rosidl_generator_c_OBJECTS = \
@@ -124,7 +124,7 @@ libdata_sync__rosidl_generator_c.so: CMakeFiles/data_sync__rosidl_generator_c.di
 libdata_sync__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libdata_sync__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libdata_sync__rosidl_generator_c.so: CMakeFiles/data_sync__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vedant/gaitlab_ws/build/data_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libdata_sync__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libdata_sync__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/data_sync__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -140,6 +140,6 @@ CMakeFiles/data_sync__rosidl_generator_c.dir/depend: rosidl_generator_c/data_syn
 CMakeFiles/data_sync__rosidl_generator_c.dir/depend: rosidl_generator_c/data_sync/srv/detail/trigger__struct.h
 CMakeFiles/data_sync__rosidl_generator_c.dir/depend: rosidl_generator_c/data_sync/srv/detail/trigger__type_support.h
 CMakeFiles/data_sync__rosidl_generator_c.dir/depend: rosidl_generator_c/data_sync/srv/trigger.h
-	cd /home/vedant/gaitlab_ws/build/data_sync && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vedant/gaitlab_ws/src/data_sync /home/vedant/gaitlab_ws/src/data_sync /home/vedant/gaitlab_ws/build/data_sync /home/vedant/gaitlab_ws/build/data_sync /home/vedant/gaitlab_ws/build/data_sync/CMakeFiles/data_sync__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles/data_sync__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/data_sync__rosidl_generator_c.dir/depend
 

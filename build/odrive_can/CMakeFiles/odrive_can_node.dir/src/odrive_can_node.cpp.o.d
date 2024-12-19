@@ -1,7 +1,7 @@
 CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o: \
- /home/vedant/gaitlab_ws/src/ros_odrive/odrive_node/src/odrive_can_node.cpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/src/odrive_can_node.cpp \
  /usr/include/stdc-predef.h \
- /home/vedant/gaitlab_ws/src/ros_odrive/odrive_node/include/odrive_can_node.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/include/odrive_can_node.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -629,28 +629,28 @@ CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /home/vedant/gaitlab_ws/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/o_drive_status.hpp \
- /home/vedant/gaitlab_ws/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/o_drive_status__struct.hpp \
- /home/vedant/gaitlab_ws/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/o_drive_status__builder.hpp \
- /home/vedant/gaitlab_ws/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/o_drive_status__traits.hpp \
- /home/vedant/gaitlab_ws/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/controller_status.hpp \
- /home/vedant/gaitlab_ws/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/controller_status__struct.hpp \
- /home/vedant/gaitlab_ws/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/controller_status__builder.hpp \
- /home/vedant/gaitlab_ws/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/controller_status__traits.hpp \
- /home/vedant/gaitlab_ws/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/control_message.hpp \
- /home/vedant/gaitlab_ws/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/control_message__struct.hpp \
- /home/vedant/gaitlab_ws/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/control_message__builder.hpp \
- /home/vedant/gaitlab_ws/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/control_message__traits.hpp \
- /home/vedant/gaitlab_ws/build/odrive_can/rosidl_generator_cpp/odrive_can/srv/axis_state.hpp \
- /home/vedant/gaitlab_ws/build/odrive_can/rosidl_generator_cpp/odrive_can/srv/detail/axis_state__struct.hpp \
- /home/vedant/gaitlab_ws/build/odrive_can/rosidl_generator_cpp/odrive_can/srv/detail/axis_state__builder.hpp \
- /home/vedant/gaitlab_ws/build/odrive_can/rosidl_generator_cpp/odrive_can/srv/detail/axis_state__traits.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/o_drive_status.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/o_drive_status__struct.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/o_drive_status__builder.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/o_drive_status__traits.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/controller_status.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/controller_status__struct.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/controller_status__builder.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/controller_status__traits.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/control_message.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/control_message__struct.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/control_message__builder.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_cpp/odrive_can/msg/detail/control_message__traits.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_cpp/odrive_can/srv/axis_state.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_cpp/odrive_can/srv/detail/axis_state__struct.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_cpp/odrive_can/srv/detail/axis_state__builder.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_cpp/odrive_can/srv/detail/axis_state__traits.hpp \
  /opt/ros/humble/include/std_srvs/std_srvs/srv/empty.hpp \
  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__struct.hpp \
  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__builder.hpp \
  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__traits.hpp \
- /home/vedant/gaitlab_ws/src/ros_odrive/odrive_node/../odrive_base/include/socket_can.hpp \
- /home/vedant/gaitlab_ws/src/ros_odrive/odrive_node/../odrive_base/include/epoll_event_loop.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/../odrive_base/include/socket_can.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/../odrive_base/include/epoll_event_loop.hpp \
  /usr/include/x86_64-linux-gnu/sys/epoll.h \
  /usr/include/x86_64-linux-gnu/bits/epoll.h \
  /usr/include/x86_64-linux-gnu/sys/eventfd.h \
@@ -664,6 +664,6 @@ CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o: \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h /usr/include/linux/socket.h \
  /usr/include/linux/can/raw.h \
- /home/vedant/gaitlab_ws/src/ros_odrive/odrive_node/../odrive_base/include/odrive_enums.h \
- /home/vedant/gaitlab_ws/src/ros_odrive/odrive_node/../odrive_base/include/epoll_event_loop.hpp \
- /home/vedant/gaitlab_ws/src/ros_odrive/odrive_node/include/byte_swap.hpp
+ /home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/../odrive_base/include/odrive_enums.h \
+ /home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/../odrive_base/include/epoll_event_loop.hpp \
+ /home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/include/byte_swap.hpp

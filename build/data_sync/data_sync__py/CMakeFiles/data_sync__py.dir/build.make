@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/src/data_sync
+CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/build/data_sync
+CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync
 
 # Utility rule file for data_sync__py.
 
@@ -87,8 +87,8 @@ rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c: /
 rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/data_sync/srv/Trigger.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vedant/gaitlab_ws/build/data_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/vedant/gaitlab_ws/build/data_sync/data_sync__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/vedant/gaitlab_ws/build/data_sync/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/data_sync__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_introspection_c.c
@@ -120,10 +120,10 @@ data_sync__py/CMakeFiles/data_sync__py.dir/build: data_sync__py
 .PHONY : data_sync__py/CMakeFiles/data_sync__py.dir/build
 
 data_sync__py/CMakeFiles/data_sync__py.dir/clean:
-	cd /home/vedant/gaitlab_ws/build/data_sync/data_sync__py && $(CMAKE_COMMAND) -P CMakeFiles/data_sync__py.dir/cmake_clean.cmake
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/data_sync__py && $(CMAKE_COMMAND) -P CMakeFiles/data_sync__py.dir/cmake_clean.cmake
 .PHONY : data_sync__py/CMakeFiles/data_sync__py.dir/clean
 
 data_sync__py/CMakeFiles/data_sync__py.dir/depend:
-	cd /home/vedant/gaitlab_ws/build/data_sync && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vedant/gaitlab_ws/src/data_sync /home/vedant/gaitlab_ws/build/data_sync/data_sync__py /home/vedant/gaitlab_ws/build/data_sync /home/vedant/gaitlab_ws/build/data_sync/data_sync__py /home/vedant/gaitlab_ws/build/data_sync/data_sync__py/CMakeFiles/data_sync__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/data_sync__py /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/data_sync__py /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/data_sync__py/CMakeFiles/data_sync__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : data_sync__py/CMakeFiles/data_sync__py.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/src/data_sync
+CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/build/data_sync
+CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync
 
 # Include any dependencies generated for this target.
 include CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/depend.make
@@ -76,22 +76,22 @@ rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp: /opt/ros/humble/
 rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em
 rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em
 rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp: rosidl_adapter/data_sync/srv/Trigger.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vedant/gaitlab_ws/build/data_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ type support dispatch for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp --generator-arguments-file /home/vedant/gaitlab_ws/build/data_sync/rosidl_typesupport_cpp__arguments.json --typesupports rosidl_typesupport_fastrtps_cpp rosidl_typesupport_introspection_cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ type support dispatch for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp --generator-arguments-file /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/rosidl_typesupport_cpp__arguments.json --typesupports rosidl_typesupport_fastrtps_cpp rosidl_typesupport_introspection_cpp
 
 CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.o: CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/flags.make
 CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.o: rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp
 CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.o: CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vedant/gaitlab_ws/build/data_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.o -MF CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.o.d -o CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.o -c /home/vedant/gaitlab_ws/build/data_sync/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.o -MF CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.o.d -o CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.o -c /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp
 
 CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vedant/gaitlab_ws/build/data_sync/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp > CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp > CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.i
 
 CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vedant/gaitlab_ws/build/data_sync/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp -o CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp -o CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.s
 
 # Object files for target data_sync__rosidl_typesupport_cpp
 data_sync__rosidl_typesupport_cpp_OBJECTS = \
@@ -107,7 +107,7 @@ libdata_sync__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/librosidl_typesuppo
 libdata_sync__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libdata_sync__rosidl_typesupport_cpp.so: /opt/ros/humble/lib/librcutils.so
 libdata_sync__rosidl_typesupport_cpp.so: CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vedant/gaitlab_ws/build/data_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libdata_sync__rosidl_typesupport_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libdata_sync__rosidl_typesupport_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -119,6 +119,6 @@ CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/clean:
 .PHONY : CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/clean
 
 CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp
-	cd /home/vedant/gaitlab_ws/build/data_sync && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vedant/gaitlab_ws/src/data_sync /home/vedant/gaitlab_ws/src/data_sync /home/vedant/gaitlab_ws/build/data_sync /home/vedant/gaitlab_ws/build/data_sync /home/vedant/gaitlab_ws/build/data_sync/CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/depend
 

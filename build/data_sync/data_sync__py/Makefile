@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/src/data_sync
+CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/build/data_sync
+CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vedant/gaitlab_ws/build/data_sync && $(CMAKE_COMMAND) -E cmake_progress_start /home/vedant/gaitlab_ws/build/data_sync/CMakeFiles /home/vedant/gaitlab_ws/build/data_sync/data_sync__py//CMakeFiles/progress.marks
-	cd /home/vedant/gaitlab_ws/build/data_sync && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data_sync__py/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vedant/gaitlab_ws/build/data_sync/CMakeFiles 0
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync && $(CMAKE_COMMAND) -E cmake_progress_start /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/data_sync__py//CMakeFiles/progress.marks
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data_sync__py/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vedant/gaitlab_ws/build/data_sync && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data_sync__py/clean
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data_sync__py/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vedant/gaitlab_ws/build/data_sync && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data_sync__py/preinstall
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data_sync__py/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vedant/gaitlab_ws/build/data_sync && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data_sync__py/preinstall
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data_sync__py/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vedant/gaitlab_ws/build/data_sync && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 data_sync__py/CMakeFiles/data_sync__py.dir/rule:
-	cd /home/vedant/gaitlab_ws/build/data_sync && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data_sync__py/CMakeFiles/data_sync__py.dir/rule
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data_sync__py/CMakeFiles/data_sync__py.dir/rule
 .PHONY : data_sync__py/CMakeFiles/data_sync__py.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ data_sync__py: data_sync__py/CMakeFiles/data_sync__py.dir/rule
 
 # fast build rule for target.
 data_sync__py/fast:
-	cd /home/vedant/gaitlab_ws/build/data_sync && $(MAKE) $(MAKESILENT) -f data_sync__py/CMakeFiles/data_sync__py.dir/build.make data_sync__py/CMakeFiles/data_sync__py.dir/build
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync && $(MAKE) $(MAKESILENT) -f data_sync__py/CMakeFiles/data_sync__py.dir/build.make data_sync__py/CMakeFiles/data_sync__py.dir/build
 .PHONY : data_sync__py/fast
 
 # Help Target
@@ -210,6 +210,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vedant/gaitlab_ws/build/data_sync && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

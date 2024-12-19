@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/src/data_sync
+CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/build/data_sync
+CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync
 
 # Utility rule file for ament_cmake_python_copy_data_sync.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_data_sync.dir/compiler_depend.make
 include CMakeFiles/ament_cmake_python_copy_data_sync.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_data_sync:
-	/usr/bin/cmake -E copy_directory /home/vedant/gaitlab_ws/build/data_sync/rosidl_generator_py/data_sync /home/vedant/gaitlab_ws/build/data_sync/ament_cmake_python/data_sync/data_sync
+	/usr/bin/cmake -E copy_directory /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/rosidl_generator_py/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/ament_cmake_python/data_sync/data_sync
 
 ament_cmake_python_copy_data_sync: CMakeFiles/ament_cmake_python_copy_data_sync
 ament_cmake_python_copy_data_sync: CMakeFiles/ament_cmake_python_copy_data_sync.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_data_sync.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_data_sync.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_data_sync.dir/depend:
-	cd /home/vedant/gaitlab_ws/build/data_sync && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vedant/gaitlab_ws/src/data_sync /home/vedant/gaitlab_ws/src/data_sync /home/vedant/gaitlab_ws/build/data_sync /home/vedant/gaitlab_ws/build/data_sync /home/vedant/gaitlab_ws/build/data_sync/CMakeFiles/ament_cmake_python_copy_data_sync.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles/ament_cmake_python_copy_data_sync.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_copy_data_sync.dir/depend
 

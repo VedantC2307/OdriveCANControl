@@ -1,9 +1,9 @@
 {
   "package_name": "data_sync",
-  "output_dir": "/home/vedant/gaitlab_ws/build/data_sync/rosidl_generator_c/data_sync",
+  "output_dir": "/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/rosidl_generator_c/data_sync",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/vedant/gaitlab_ws/build/data_sync/rosidl_adapter/data_sync:srv/Trigger.idl"
+    "/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/rosidl_adapter/data_sync:srv/Trigger.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -19,6 +19,6 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/vedant/gaitlab_ws/build/data_sync/rosidl_adapter/data_sync/srv/Trigger.idl"
+    "/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/rosidl_adapter/data_sync/srv/Trigger.idl"
   ]
 }

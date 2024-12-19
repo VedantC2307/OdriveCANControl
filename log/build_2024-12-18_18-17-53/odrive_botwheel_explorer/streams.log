@@ -1,0 +1,47 @@
+[0.199s] Invoking command in '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_botwheel_explorer': AMENT_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_botwheel_explorer -DCMAKE_INSTALL_PREFIX=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer
+[0.476s] -- The C compiler identification is GNU 11.4.0
+[1.687s] -- The CXX compiler identification is GNU 11.4.0
+[2.523s] -- Detecting C compiler ABI info
+[2.669s] -- Detecting C compiler ABI info - done
+[2.673s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.673s] -- Detecting C compile features
+[2.674s] -- Detecting C compile features - done
+[2.676s] -- Detecting CXX compiler ABI info
+[2.853s] -- Detecting CXX compiler ABI info - done
+[2.858s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.858s] -- Detecting CXX compile features
+[2.858s] -- Detecting CXX compile features - done
+[2.860s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.099s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.198s] -- Configuring done
+[3.200s] -- Generating done
+[3.201s] -- Build files have been written to: /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_botwheel_explorer
+[3.203s] Invoked command in '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_botwheel_explorer' returned '0': AMENT_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_botwheel_explorer -DCMAKE_INSTALL_PREFIX=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer
+[3.204s] Invoking command in '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_botwheel_explorer': AMENT_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_botwheel_explorer -- -j20 -l20
+[3.225s] Invoked command in '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_botwheel_explorer' returned '0': AMENT_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_botwheel_explorer -- -j20 -l20
+[3.237s] Invoking command in '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_botwheel_explorer': AMENT_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_botwheel_explorer
+[3.241s] -- Install configuration: ""
+[3.242s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/urdf
+[3.242s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/urdf/diffbot_description.urdf.xacro
+[3.242s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/urdf/diffbot.ros2_control.xacro
+[3.242s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/urdf/diffbot.urdf.xacro
+[3.242s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/config
+[3.242s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/config/diffbot_controllers.yaml
+[3.242s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/launch
+[3.242s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/launch/botwheel_explorer.launch.py
+[3.242s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/ament_index/resource_index/package_run_dependencies/odrive_botwheel_explorer
+[3.243s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/ament_index/resource_index/parent_prefix_path/odrive_botwheel_explorer
+[3.243s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/environment/ament_prefix_path.sh
+[3.243s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/environment/ament_prefix_path.dsv
+[3.243s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/environment/path.sh
+[3.243s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/environment/path.dsv
+[3.243s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/local_setup.bash
+[3.243s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/local_setup.sh
+[3.243s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/local_setup.zsh
+[3.243s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/local_setup.dsv
+[3.243s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/package.dsv
+[3.244s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/ament_index/resource_index/packages/odrive_botwheel_explorer
+[3.244s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/cmake/odrive_botwheel_explorerConfig.cmake
+[3.244s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/cmake/odrive_botwheel_explorerConfig-version.cmake
+[3.244s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_botwheel_explorer/share/odrive_botwheel_explorer/package.xml
+[3.245s] Invoked command in '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_botwheel_explorer' returned '0': AMENT_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_botwheel_explorer

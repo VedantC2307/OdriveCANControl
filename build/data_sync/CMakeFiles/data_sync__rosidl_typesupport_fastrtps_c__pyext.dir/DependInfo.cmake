@@ -8,15 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/vedant/gaitlab_ws/build/data_sync/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c" "CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c.o" "gcc" "CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c.o.d"
+  "/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c" "CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c.o" "gcc" "CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/vedant/gaitlab_ws/build/data_sync/CMakeFiles/data_sync__rosidl_generator_py.dir/DependInfo.cmake"
-  "/home/vedant/gaitlab_ws/build/data_sync/CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake"
-  "/home/vedant/gaitlab_ws/build/data_sync/CMakeFiles/data_sync__rosidl_typesupport_c.dir/DependInfo.cmake"
-  "/home/vedant/gaitlab_ws/build/data_sync/CMakeFiles/data_sync__rosidl_generator_c.dir/DependInfo.cmake"
+  "/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles/data_sync__rosidl_generator_py.dir/DependInfo.cmake"
+  "/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake"
+  "/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles/data_sync__rosidl_typesupport_c.dir/DependInfo.cmake"
+  "/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles/data_sync__rosidl_generator_c.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

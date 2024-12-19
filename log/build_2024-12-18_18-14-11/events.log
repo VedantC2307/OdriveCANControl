@@ -1,0 +1,519 @@
+[0.000000] (-) TimerEvent: {}
+[0.000504] (data_sync) JobQueued: {'identifier': 'data_sync', 'dependencies': OrderedDict()}
+[0.000536] (odrive_control_cpp) JobQueued: {'identifier': 'odrive_control_cpp', 'dependencies': OrderedDict()}
+[0.000561] (odrive_control_py) JobQueued: {'identifier': 'odrive_control_py', 'dependencies': OrderedDict([('data_sync', '/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync')])}
+[0.000587] (data_sync) JobStarted: {'identifier': 'data_sync'}
+[0.009581] (odrive_control_cpp) JobStarted: {'identifier': 'odrive_control_cpp'}
+[0.012445] (data_sync) JobProgress: {'identifier': 'data_sync', 'progress': 'cmake'}
+[0.012766] (data_sync) Command: {'cmd': ['/usr/bin/cmake', '/home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync', '-DCMAKE_INSTALL_PREFIX=/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync'], 'cwd': '/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/vedant'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/vedant/gaitlab_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('NAME', 'Vedant'), ('WSL_INTEROP', '/run/WSL/408_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/vedant/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vedant/.local/bin:/home/vedant/miniconda3/condabin:/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/vedan/miniconda3:/mnt/c/Users/vedan/miniconda3/Library/mingw-w64/bin:/mnt/c/Users/vedan/miniconda3/Library/usr/bin:/mnt/c/Users/vedan/miniconda3/Library/bin:/mnt/c/Users/vedan/miniconda3/Scripts:/mnt/c/Users/vedan/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/vedan/.dotnet/tools:/mnt/c/Users/vedan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/vedan/AppData/Roaming/npm:/mnt/c/Program Files/mosquitto:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/vedant/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync'), ('TURTLEBOT3_MODEL', 'waffle'), ('CONDA_EXE', '/home/vedant/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.015778] (odrive_control_cpp) JobProgress: {'identifier': 'odrive_control_cpp', 'progress': 'cmake'}
+[0.016176] (odrive_control_cpp) Command: {'cmd': ['/usr/bin/cmake', '/home/vedant/gaitlab_ws/OdriveCANControl/src/odrive_control_cpp', '-DCMAKE_INSTALL_PREFIX=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_cpp'], 'cwd': '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/vedant'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/vedant/gaitlab_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('NAME', 'Vedant'), ('WSL_INTEROP', '/run/WSL/408_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/vedant/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vedant/.local/bin:/home/vedant/miniconda3/condabin:/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/vedan/miniconda3:/mnt/c/Users/vedan/miniconda3/Library/mingw-w64/bin:/mnt/c/Users/vedan/miniconda3/Library/usr/bin:/mnt/c/Users/vedan/miniconda3/Library/bin:/mnt/c/Users/vedan/miniconda3/Scripts:/mnt/c/Users/vedan/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/vedan/.dotnet/tools:/mnt/c/Users/vedan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/vedan/AppData/Roaming/npm:/mnt/c/Program Files/mosquitto:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/vedant/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_cpp'), ('TURTLEBOT3_MODEL', 'waffle'), ('CONDA_EXE', '/home/vedant/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099857] (-) TimerEvent: {}
+[0.200945] (-) TimerEvent: {}
+[0.223506] (data_sync) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.223760] (odrive_control_cpp) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.303048] (-) TimerEvent: {}
+[0.405824] (-) TimerEvent: {}
+[0.508634] (-) TimerEvent: {}
+[0.611492] (-) TimerEvent: {}
+[0.714249] (-) TimerEvent: {}
+[0.814803] (-) TimerEvent: {}
+[0.918009] (-) TimerEvent: {}
+[0.946229] (data_sync) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.946573] (odrive_control_cpp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.018222] (-) TimerEvent: {}
+[1.120549] (-) TimerEvent: {}
+[1.221774] (-) TimerEvent: {}
+[1.324515] (-) TimerEvent: {}
+[1.386951] (odrive_control_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.387072] (data_sync) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.424655] (-) TimerEvent: {}
+[1.525266] (-) TimerEvent: {}
+[1.543823] (odrive_control_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.543947] (data_sync) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.547854] (odrive_control_cpp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.548009] (data_sync) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.548899] (odrive_control_cpp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.548999] (data_sync) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.549805] (data_sync) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.549867] (odrive_control_cpp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.552721] (data_sync) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.552974] (odrive_control_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.625438] (-) TimerEvent: {}
+[1.725856] (-) TimerEvent: {}
+[1.731177] (data_sync) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.732007] (odrive_control_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.735569] (data_sync) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.735790] (data_sync) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.735996] (data_sync) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.736135] (odrive_control_cpp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.736294] (odrive_control_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.736622] (odrive_control_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.742382] (data_sync) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.742475] (odrive_control_cpp) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.826066] (-) TimerEvent: {}
+[1.928991] (-) TimerEvent: {}
+[1.963354] (odrive_control_cpp) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.964454] (data_sync) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.030680] (-) TimerEvent: {}
+[2.042616] (data_sync) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.043263] (odrive_control_cpp) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.047056] (data_sync) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.054565] (data_sync) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.132662] (-) TimerEvent: {}
+[2.167508] (odrive_control_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.170555] (odrive_control_cpp) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.176005] (data_sync) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.176813] (odrive_control_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.190116] (odrive_control_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.199477] (odrive_control_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.233572] (-) TimerEvent: {}
+[2.243653] (odrive_control_cpp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.246529] (odrive_control_cpp) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.335813] (-) TimerEvent: {}
+[2.360717] (data_sync) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.437778] (-) TimerEvent: {}
+[2.481575] (data_sync) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.539305] (-) TimerEvent: {}
+[2.627183] (data_sync) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.639730] (-) TimerEvent: {}
+[2.742421] (-) TimerEvent: {}
+[2.845139] (-) TimerEvent: {}
+[2.853440] (data_sync) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.855726] (data_sync) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.947423] (-) TimerEvent: {}
+[3.050103] (-) TimerEvent: {}
+[3.152800] (-) TimerEvent: {}
+[3.255562] (-) TimerEvent: {}
+[3.358326] (-) TimerEvent: {}
+[3.443952] (data_sync) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.444164] (data_sync) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.444221] (data_sync) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.444253] (data_sync) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[3.457500] (data_sync) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.458419] (-) TimerEvent: {}
+[3.525735] (data_sync) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.551821] (data_sync) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.552934] (data_sync) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.554965] (data_sync) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.558579] (-) TimerEvent: {}
+[3.573667] (data_sync) StdoutLine: {'line': b'-- Generating done\n'}
+[3.575164] (data_sync) StdoutLine: {'line': b'-- Build files have been written to: /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync\n'}
+[3.578841] (data_sync) CommandEnded: {'returncode': 0}
+[3.579360] (data_sync) JobProgress: {'identifier': 'data_sync', 'progress': 'build'}
+[3.579785] (data_sync) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync', '--', '-j20', '-l20'], 'cwd': '/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/vedant'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/vedant/gaitlab_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('NAME', 'Vedant'), ('WSL_INTEROP', '/run/WSL/408_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/vedant/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vedant/.local/bin:/home/vedant/miniconda3/condabin:/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/vedan/miniconda3:/mnt/c/Users/vedan/miniconda3/Library/mingw-w64/bin:/mnt/c/Users/vedan/miniconda3/Library/usr/bin:/mnt/c/Users/vedan/miniconda3/Library/bin:/mnt/c/Users/vedan/miniconda3/Scripts:/mnt/c/Users/vedan/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/vedan/.dotnet/tools:/mnt/c/Users/vedan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/vedan/AppData/Roaming/npm:/mnt/c/Program Files/mosquitto:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/vedant/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync'), ('TURTLEBOT3_MODEL', 'waffle'), ('CONDA_EXE', '/home/vedant/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.598779] (data_sync) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.603262] (data_sync) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.607935] (data_sync) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_data_sync\n'}
+[3.658833] (-) TimerEvent: {}
+[3.747202] (data_sync) StdoutLine: {'line': b'running egg_info\n'}
+[3.758487] (data_sync) StdoutLine: {'line': b'creating data_sync.egg-info\n'}
+[3.758649] (data_sync) StdoutLine: {'line': b'writing data_sync.egg-info/PKG-INFO\n'}
+[3.758841] (data_sync) StdoutLine: {'line': b'writing dependency_links to data_sync.egg-info/dependency_links.txt\n'}
+[3.758898] (-) TimerEvent: {}
+[3.759039] (data_sync) StdoutLine: {'line': b'writing top-level names to data_sync.egg-info/top_level.txt\n'}
+[3.759083] (data_sync) StdoutLine: {'line': b"writing manifest file 'data_sync.egg-info/SOURCES.txt'\n"}
+[3.780099] (data_sync) StderrLine: {'line': b"gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_generator_c.dir/flags.make' has modification time 0.55 s in the future\n"}
+[3.780986] (data_sync) StdoutLine: {'line': b'[  6%] Built target data_sync__cpp\n'}
+[3.782052] (data_sync) StderrLine: {'line': b"gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_fastrtps_cpp.dir/flags.make' has modification time 0.56 s in the future\n"}
+[3.782495] (data_sync) StderrLine: {'line': b"gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_introspection_cpp.dir/flags.make' has modification time 0.56 s in the future\n"}
+[3.782559] (data_sync) StderrLine: {'line': b"gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/flags.make' has modification time 0.56 s in the future\n"}
+[3.785906] (data_sync) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.786099] (data_sync) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.786441] (data_sync) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.787026] (data_sync) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.o\x1b[0m\n'}
+[3.797166] (data_sync) StdoutLine: {'line': b"reading manifest file 'data_sync.egg-info/SOURCES.txt'\n"}
+[3.797894] (data_sync) StdoutLine: {'line': b"writing manifest file 'data_sync.egg-info/SOURCES.txt'\n"}
+[3.814592] (data_sync) StdoutLine: {'line': b'[ 19%] Built target ament_cmake_python_build_data_sync_egg\n'}
+[3.847288] (data_sync) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libdata_sync__rosidl_generator_c.so\x1b[0m\n'}
+[3.859198] (-) TimerEvent: {}
+[3.925337] (data_sync) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[3.925988] (data_sync) StderrLine: {'line': b"gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/flags.make' has modification time 0.42 s in the future\n"}
+[3.929855] (data_sync) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.o\x1b[0m\n'}
+[3.937305] (data_sync) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[3.938034] (data_sync) StderrLine: {'line': b"gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_introspection_cpp.dir/flags.make' has modification time 0.41 s in the future\n"}
+[3.941623] (data_sync) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/data_sync/srv/detail/trigger__type_support.cpp.o\x1b[0m\n'}
+[3.945163] (data_sync) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[3.945854] (data_sync) StderrLine: {'line': b"gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_fastrtps_cpp.dir/flags.make' has modification time 0.4 s in the future\n"}
+[3.949605] (data_sync) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/data_sync/srv/detail/dds_fastrtps/trigger__type_support.cpp.o\x1b[0m\n'}
+[3.959447] (-) TimerEvent: {}
+[4.060868] (-) TimerEvent: {}
+[4.109787] (data_sync) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX shared library libdata_sync__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.120336] (data_sync) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[4.124331] (data_sync) StdoutLine: {'line': b'[ 35%] Built target data_sync__rosidl_generator_c\n'}
+[4.125391] (data_sync) StderrLine: {'line': b"gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c.dir/flags.make' has modification time 0.21 s in the future\n"}
+[4.125576] (data_sync) StderrLine: {'line': b"gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_introspection_c.dir/flags.make' has modification time 0.21 s in the future\n"}
+[4.125923] (data_sync) StderrLine: {'line': b"gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_c.dir/flags.make' has modification time 0.21 s in the future\n"}
+[4.129259] (data_sync) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.129466] (data_sync) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.129842] (data_sync) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.161183] (-) TimerEvent: {}
+[4.185825] (data_sync) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libdata_sync__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.215847] (data_sync) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libdata_sync__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.262402] (-) TimerEvent: {}
+[4.281163] (data_sync) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[4.282421] (data_sync) StderrLine: {'line': b"gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_c.dir/flags.make' has modification time 0.052 s in the future\n"}
+[4.286711] (data_sync) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_c.dir/rosidl_typesupport_c/data_sync/srv/trigger__type_support.cpp.o\x1b[0m\n'}
+[4.300785] (data_sync) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[4.300907] (data_sync) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[4.301401] (data_sync) StderrLine: {'line': b"gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_introspection_c.dir/flags.make' has modification time 0.033 s in the future\n"}
+[4.301584] (data_sync) StderrLine: {'line': b"gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c.dir/flags.make' has modification time 0.033 s in the future\n"}
+[4.305304] (data_sync) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/data_sync/srv/detail/trigger__type_support_c.cpp.o\x1b[0m\n'}
+[4.305538] (data_sync) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/data_sync__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/data_sync/srv/detail/trigger__type_support.c.o\x1b[0m\n'}
+[4.307419] (data_sync) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libdata_sync__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.324452] (data_sync) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking C shared library libdata_sync__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.362893] (-) TimerEvent: {}
+[4.384349] (data_sync) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[4.388261] (data_sync) StdoutLine: {'line': b'[ 67%] Built target data_sync__rosidl_typesupport_cpp\n'}
+[4.430162] (odrive_control_cpp) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.460732] (data_sync) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[4.462970] (-) TimerEvent: {}
+[4.465007] (data_sync) StdoutLine: {'line': b'[ 67%] Built target data_sync__rosidl_typesupport_introspection_cpp\n'}
+[4.482850] (data_sync) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libdata_sync__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.499753] (data_sync) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[4.503733] (data_sync) StdoutLine: {'line': b'[ 70%] Built target data_sync__rosidl_typesupport_fastrtps_cpp\n'}
+[4.563118] (-) TimerEvent: {}
+[4.592012] (data_sync) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[4.596355] (data_sync) StdoutLine: {'line': b'[ 70%] Built target data_sync__rosidl_typesupport_introspection_c\n'}
+[4.599343] (data_sync) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[4.603335] (data_sync) StdoutLine: {'line': b'[ 70%] Built target data_sync__rosidl_typesupport_c\n'}
+[4.663454] (-) TimerEvent: {}
+[4.765682] (-) TimerEvent: {}
+[4.860283] (data_sync) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[4.864497] (data_sync) StdoutLine: {'line': b'[ 70%] Built target data_sync__rosidl_typesupport_fastrtps_c\n'}
+[4.865941] (-) TimerEvent: {}
+[4.873931] (data_sync) StdoutLine: {'line': b'[ 70%] Built target data_sync\n'}
+[4.883597] (data_sync) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.966134] (-) TimerEvent: {}
+[5.068450] (-) TimerEvent: {}
+[5.104590] (data_sync) StdoutLine: {'line': b'[ 74%] Built target data_sync__py\n'}
+[5.113200] (data_sync) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/data_sync__rosidl_generator_py.dir/rosidl_generator_py/data_sync/srv/_trigger_s.c.o\x1b[0m\n'}
+[5.168550] (-) TimerEvent: {}
+[5.219513] (data_sync) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/data_sync/libdata_sync__rosidl_generator_py.so\x1b[0m\n'}
+[5.268660] (-) TimerEvent: {}
+[5.368954] (-) TimerEvent: {}
+[5.446266] (data_sync) StdoutLine: {'line': b'[ 80%] Built target data_sync__rosidl_generator_py\n'}
+[5.455517] (data_sync) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/data_sync__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.455697] (data_sync) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/data_sync__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.455930] (data_sync) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.469066] (-) TimerEvent: {}
+[5.503986] (data_sync) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/data_sync/data_sync_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.504114] (data_sync) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/data_sync/data_sync_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.504149] (data_sync) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/data_sync/data_sync_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.569218] (-) TimerEvent: {}
+[5.669508] (-) TimerEvent: {}
+[5.739660] (data_sync) StdoutLine: {'line': b'[100%] Built target data_sync__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.741191] (data_sync) StdoutLine: {'line': b'[100%] Built target data_sync__rosidl_typesupport_introspection_c__pyext\n'}
+[5.769607] (-) TimerEvent: {}
+[5.814184] (data_sync) StdoutLine: {'line': b'[100%] Built target data_sync__rosidl_typesupport_c__pyext\n'}
+[5.819569] (data_sync) CommandEnded: {'returncode': 0}
+[5.848112] (data_sync) JobProgress: {'identifier': 'data_sync', 'progress': 'install'}
+[5.852116] (data_sync) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync'], 'cwd': '/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/vedant'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/vedant/gaitlab_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('NAME', 'Vedant'), ('WSL_INTEROP', '/run/WSL/408_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/vedant/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vedant/.local/bin:/home/vedant/miniconda3/condabin:/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/vedan/miniconda3:/mnt/c/Users/vedan/miniconda3/Library/mingw-w64/bin:/mnt/c/Users/vedan/miniconda3/Library/usr/bin:/mnt/c/Users/vedan/miniconda3/Library/bin:/mnt/c/Users/vedan/miniconda3/Scripts:/mnt/c/Users/vedan/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/vedan/.dotnet/tools:/mnt/c/Users/vedan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/vedan/AppData/Roaming/npm:/mnt/c/Program Files/mosquitto:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/vedant/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync'), ('TURTLEBOT3_MODEL', 'waffle'), ('CONDA_EXE', '/home/vedant/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.856415] (data_sync) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.856686] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/ament_index/resource_index/rosidl_interfaces/data_sync\n'}
+[5.856788] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync\n'}
+[5.856964] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv\n'}
+[5.857162] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/trigger.h\n'}
+[5.857255] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail\n'}
+[5.857385] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__struct.h\n'}
+[5.857481] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__type_support.h\n'}
+[5.857511] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__functions.c\n'}
+[5.857538] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__functions.h\n'}
+[5.857565] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/msg\n'}
+[5.857590] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.857791] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/environment/library_path.sh\n'}
+[5.857882] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/environment/library_path.dsv\n'}
+[5.858051] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_generator_c.so\n'}
+[5.858106] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_generator_c.so" to ""\n'}
+[5.858139] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync\n'}
+[5.858167] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv\n'}
+[5.858194] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail\n'}
+[5.858304] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__rosidl_typesupport_fastrtps_c.h\n'}
+[5.858343] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/msg\n'}
+[5.858371] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.858468] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_fastrtps_c.so\n'}
+[5.858505] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.858590] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync\n'}
+[5.858651] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv\n'}
+[5.858682] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail\n'}
+[5.858761] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__type_support.c\n'}
+[5.858914] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__rosidl_typesupport_introspection_c.h\n'}
+[5.858987] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/msg\n'}
+[5.859081] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.859134] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_introspection_c.so\n'}
+[5.859223] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.859309] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_c.so\n'}
+[5.859385] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_c.so" to ""\n'}
+[5.859472] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync\n'}
+[5.859557] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv\n'}
+[5.859655] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/trigger.hpp\n'}
+[5.859740] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail\n'}
+[5.859824] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__struct.hpp\n'}
+[5.859950] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__builder.hpp\n'}
+[5.860125] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__traits.hpp\n'}
+[5.860170] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync\n'}
+[5.860202] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv\n'}
+[5.860231] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail\n'}
+[5.860301] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/dds_fastrtps\n'}
+[5.860369] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.860404] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/msg\n'}
+[5.860489] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.860566] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.860746] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.860818] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync\n'}
+[5.860905] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv\n'}
+[5.860989] (data_sync) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail\n'}
+[5.861078] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__type_support.cpp\n'}
+[5.861163] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.861255] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_introspection_cpp.so\n'}
+[5.861339] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.861424] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_cpp.so\n'}
+[5.861507] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_cpp.so" to ""\n'}
+[5.861589] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/environment/pythonpath.sh\n'}
+[5.861664] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/environment/pythonpath.dsv\n'}
+[5.861748] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info\n'}
+[5.861795] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[5.861825] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[5.861853] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.861937] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.862009] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync\n'}
+[5.862166] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.862354] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/libdata_sync__rosidl_generator_py.so\n'}
+[5.862396] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/_data_sync_s.ep.rosidl_typesupport_c.c\n'}
+[5.862425] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.862453] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv\n'}
+[5.862481] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/_trigger.py\n'}
+[5.862507] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/_trigger_s.c\n'}
+[5.862539] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/__init__.py\n'}
+[5.862564] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/_data_sync_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.862589] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.862613] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.862671] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/__init__.py\n'}
+[5.869787] (-) TimerEvent: {}
+[5.882726] (data_sync) StdoutLine: {'line': b"Listing '/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync'...\n"}
+[5.882822] (data_sync) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/__init__.py'...\n"}
+[5.882855] (data_sync) StdoutLine: {'line': b"Listing '/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv'...\n"}
+[5.882889] (data_sync) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/__init__.py'...\n"}
+[5.882916] (data_sync) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/_trigger.py'...\n"}
+[5.885713] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.885893] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.886023] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.886213] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.886280] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.886386] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.886456] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_generator_py.so\n'}
+[5.886537] (data_sync) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_generator_py.so" to ""\n'}
+[5.886616] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/srv/Trigger.idl\n'}
+[5.886771] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/srv/Trigger.srv\n'}
+[5.886857] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/srv/Trigger_Request.msg\n'}
+[5.887000] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/srv/Trigger_Response.msg\n'}
+[5.887042] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/ament_index/resource_index/package_run_dependencies/data_sync\n'}
+[5.887166] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/ament_index/resource_index/parent_prefix_path/data_sync\n'}
+[5.887204] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/environment/ament_prefix_path.sh\n'}
+[5.887296] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/environment/ament_prefix_path.dsv\n'}
+[5.887368] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/environment/path.sh\n'}
+[5.887446] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/environment/path.dsv\n'}
+[5.887573] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/local_setup.bash\n'}
+[5.887671] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/local_setup.sh\n'}
+[5.887801] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/local_setup.zsh\n'}
+[5.887903] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/local_setup.dsv\n'}
+[5.888029] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/package.dsv\n'}
+[5.888123] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/ament_index/resource_index/packages/data_sync\n'}
+[5.888286] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_cExport.cmake\n'}
+[5.888384] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.888471] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.888558] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.888704] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.888741] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.888768] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_cExport.cmake\n'}
+[5.888845] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.888877] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_cppExport.cmake\n'}
+[5.888935] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.889019] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.889090] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.889172] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.889371] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_cppExport.cmake\n'}
+[5.889541] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.889640] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_pyExport.cmake\n'}
+[5.889726] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.889772] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/rosidl_cmake-extras.cmake\n'}
+[5.889943] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.889979] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.890006] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.890034] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.890060] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.890085] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.890110] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_syncConfig.cmake\n'}
+[5.890135] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_syncConfig-version.cmake\n'}
+[5.890159] (data_sync) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/package.xml\n'}
+[5.891067] (data_sync) CommandEnded: {'returncode': 0}
+[5.937198] (data_sync) JobEnded: {'identifier': 'data_sync', 'rc': 0}
+[5.937637] (odrive_control_py) JobStarted: {'identifier': 'odrive_control_py'}
+[5.969933] (-) TimerEvent: {}
+[6.070376] (-) TimerEvent: {}
+[6.170638] (-) TimerEvent: {}
+[6.270886] (-) TimerEvent: {}
+[6.371138] (-) TimerEvent: {}
+[6.471399] (-) TimerEvent: {}
+[6.571637] (-) TimerEvent: {}
+[6.671901] (-) TimerEvent: {}
+[6.772231] (-) TimerEvent: {}
+[6.873305] (-) TimerEvent: {}
+[6.903218] (odrive_control_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/odrive_control_py', 'build', '--build-base', '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build', 'install', '--record', '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/vedant/gaitlab_ws/OdriveCANControl/src/odrive_control_py', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'vedant', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib:/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/vedant', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/vedant/gaitlab_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_CE_M': '', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'vedant', 'NAME': 'Vedant', 'WSL_INTEROP': '/run/WSL/408_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/local/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/home/vedant/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/vedant/.local/bin:/home/vedant/miniconda3/condabin:/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/vedan/miniconda3:/mnt/c/Users/vedan/miniconda3/Library/mingw-w64/bin:/mnt/c/Users/vedan/miniconda3/Library/usr/bin:/mnt/c/Users/vedan/miniconda3/Library/bin:/mnt/c/Users/vedan/miniconda3/Scripts:/mnt/c/Users/vedan/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/vedan/.dotnet/tools:/mnt/c/Users/vedan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/vedan/AppData/Roaming/npm:/mnt/c/Program Files/mosquitto:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync:/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/vedant/miniconda3/bin/python', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py', 'TURTLEBOT3_MODEL': 'waffle', 'CONDA_EXE': '/home/vedant/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/prefix_override:/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': '', 'CMAKE_PREFIX_PATH': '/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync'}, 'shell': False}
+[6.973409] (-) TimerEvent: {}
+[6.993452] (odrive_control_py) StderrLine: {'line': b"/home/vedant/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[6.993583] (odrive_control_py) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[7.062742] (odrive_control_py) StdoutLine: {'line': b'running egg_info\n'}
+[7.073491] (-) TimerEvent: {}
+[7.073726] (odrive_control_py) StdoutLine: {'line': b'creating ../../build/odrive_control_py/odrive_control_py.egg-info\n'}
+[7.073893] (odrive_control_py) StdoutLine: {'line': b'writing ../../build/odrive_control_py/odrive_control_py.egg-info/PKG-INFO\n'}
+[7.074181] (odrive_control_py) StdoutLine: {'line': b'writing dependency_links to ../../build/odrive_control_py/odrive_control_py.egg-info/dependency_links.txt\n'}
+[7.074338] (odrive_control_py) StdoutLine: {'line': b'writing entry points to ../../build/odrive_control_py/odrive_control_py.egg-info/entry_points.txt\n'}
+[7.074527] (odrive_control_py) StdoutLine: {'line': b'writing requirements to ../../build/odrive_control_py/odrive_control_py.egg-info/requires.txt\n'}
+[7.074574] (odrive_control_py) StdoutLine: {'line': b'writing top-level names to ../../build/odrive_control_py/odrive_control_py.egg-info/top_level.txt\n'}
+[7.074605] (odrive_control_py) StdoutLine: {'line': b"writing manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'\n"}
+[7.097179] (odrive_control_py) StdoutLine: {'line': b"reading manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'\n"}
+[7.097969] (odrive_control_py) StdoutLine: {'line': b"writing manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'\n"}
+[7.098085] (odrive_control_py) StdoutLine: {'line': b'running build\n'}
+[7.098257] (odrive_control_py) StdoutLine: {'line': b'running build_py\n'}
+[7.098296] (odrive_control_py) StdoutLine: {'line': b'creating /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.098562] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/record_odrive_data_test.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.098700] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/data_recording_node.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.098817] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/app_tcp_server.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.098945] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/trial_controlnode.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.099130] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/matlab_tcp_node_test.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.099222] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/control_node.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.099311] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/encoder_read_node.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.099454] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/__init__.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.099498] (odrive_control_py) StdoutLine: {'line': b'running install\n'}
+[7.102149] (odrive_control_py) StdoutLine: {'line': b'running install_lib\n'}
+[7.114790] (odrive_control_py) StdoutLine: {'line': b'creating /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.115097] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py/record_odrive_data_test.py -> /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.115200] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py/data_recording_node.py -> /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.115357] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py/app_tcp_server.py -> /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.115438] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py/trial_controlnode.py -> /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.115470] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py/matlab_tcp_node_test.py -> /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.115499] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py/control_node.py -> /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.115526] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py/encoder_read_node.py -> /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.115562] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py/__init__.py -> /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.115751] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/record_odrive_data_test.py to record_odrive_data_test.cpython-310.pyc\n'}
+[7.116241] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/data_recording_node.py to data_recording_node.cpython-310.pyc\n'}
+[7.116349] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/app_tcp_server.py to app_tcp_server.cpython-310.pyc\n'}
+[7.116947] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/trial_controlnode.py to trial_controlnode.cpython-310.pyc\n'}
+[7.117305] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/matlab_tcp_node_test.py to matlab_tcp_node_test.cpython-310.pyc\n'}
+[7.117994] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/control_node.py to control_node.cpython-310.pyc\n'}
+[7.118227] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/encoder_read_node.py to encoder_read_node.cpython-310.pyc\n'}
+[7.118361] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/__init__.py to __init__.cpython-310.pyc\n'}
+[7.118472] (odrive_control_py) StdoutLine: {'line': b'running install_data\n'}
+[7.118600] (odrive_control_py) StdoutLine: {'line': b'creating /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/share/ament_index/resource_index/packages\n'}
+[7.118902] (odrive_control_py) StdoutLine: {'line': b'copying resource/odrive_control_py -> /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/share/ament_index/resource_index/packages\n'}
+[7.119078] (odrive_control_py) StdoutLine: {'line': b'copying package.xml -> /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/share/odrive_control_py\n'}
+[7.119208] (odrive_control_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.132402] (odrive_control_py) StdoutLine: {'line': b'Copying ../../build/odrive_control_py/odrive_control_py.egg-info to /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info\n'}
+[7.132954] (odrive_control_py) StdoutLine: {'line': b'running install_scripts\n'}
+[7.176969] (-) TimerEvent: {}
+[7.239211] (odrive_control_py) StdoutLine: {'line': b'Installing data_recording_node script to /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py\n'}
+[7.239466] (odrive_control_py) StdoutLine: {'line': b'Installing encoder_read_node script to /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py\n'}
+[7.239681] (odrive_control_py) StdoutLine: {'line': b'Installing odrive_control_node script to /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py\n'}
+[7.239979] (odrive_control_py) StdoutLine: {'line': b"writing list of installed files to '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/install.log'\n"}
+[7.257293] (odrive_control_py) CommandEnded: {'returncode': 0}
+[7.260608] (odrive_control_py) JobEnded: {'identifier': 'odrive_control_py', 'rc': 0}
+[7.277388] (-) TimerEvent: {}
+[7.384649] (-) TimerEvent: {}
+[7.427806] (odrive_control_cpp) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[7.489486] (-) TimerEvent: {}
+[7.598113] (-) TimerEvent: {}
+[7.706771] (-) TimerEvent: {}
+[7.815781] (-) TimerEvent: {}
+[7.924470] (-) TimerEvent: {}
+[8.033186] (-) TimerEvent: {}
+[8.141927] (-) TimerEvent: {}
+[8.250688] (-) TimerEvent: {}
+[8.355655] (-) TimerEvent: {}
+[8.463664] (-) TimerEvent: {}
+[8.572288] (-) TimerEvent: {}
+[8.680915] (-) TimerEvent: {}
+[8.789672] (-) TimerEvent: {}
+[8.898287] (-) TimerEvent: {}
+[9.006908] (-) TimerEvent: {}
+[9.115562] (-) TimerEvent: {}
+[9.224190] (-) TimerEvent: {}
+[9.332810] (-) TimerEvent: {}
+[9.441561] (-) TimerEvent: {}
+[9.550088] (-) TimerEvent: {}
+[9.658692] (-) TimerEvent: {}
+[9.767334] (-) TimerEvent: {}
+[9.876049] (-) TimerEvent: {}
+[9.984781] (-) TimerEvent: {}
+[10.093529] (-) TimerEvent: {}
+[10.202169] (-) TimerEvent: {}
+[10.310911] (-) TimerEvent: {}
+[10.412893] (-) TimerEvent: {}
+[10.521522] (-) TimerEvent: {}
+[10.630060] (-) TimerEvent: {}
+[10.738748] (-) TimerEvent: {}
+[10.847541] (-) TimerEvent: {}
+[10.956338] (-) TimerEvent: {}
+[11.065032] (-) TimerEvent: {}
+[11.173704] (-) TimerEvent: {}
+[11.282459] (-) TimerEvent: {}
+[11.391268] (-) TimerEvent: {}
+[11.500139] (-) TimerEvent: {}
+[11.608811] (-) TimerEvent: {}
+[11.717107] (-) TimerEvent: {}
+[11.825719] (-) TimerEvent: {}
+[11.934332] (-) TimerEvent: {}
+[12.043009] (-) TimerEvent: {}
+[12.151696] (-) TimerEvent: {}
+[12.260413] (-) TimerEvent: {}
+[12.369036] (-) TimerEvent: {}
+[12.384867] (odrive_control_cpp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[12.398338] (odrive_control_cpp) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[12.471350] (-) TimerEvent: {}
+[12.580038] (-) TimerEvent: {}
+[12.621025] (odrive_control_cpp) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[12.621256] (odrive_control_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[12.680712] (-) TimerEvent: {}
+[12.770650] (odrive_control_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[12.771401] (odrive_control_cpp) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[12.781407] (-) TimerEvent: {}
+[12.882317] (-) TimerEvent: {}
+[12.991111] (-) TimerEvent: {}
+[13.092247] (-) TimerEvent: {}
+[13.192612] (-) TimerEvent: {}
+[13.292894] (-) TimerEvent: {}
+[13.393146] (-) TimerEvent: {}
+[13.493411] (-) TimerEvent: {}
+[13.593665] (-) TimerEvent: {}
+[13.693947] (-) TimerEvent: {}
+[13.794250] (-) TimerEvent: {}
+[13.894561] (-) TimerEvent: {}
+[13.994862] (-) TimerEvent: {}
+[14.095194] (-) TimerEvent: {}
+[14.195481] (-) TimerEvent: {}
+[14.295760] (-) TimerEvent: {}
+[14.396048] (-) TimerEvent: {}
+[14.496303] (-) TimerEvent: {}
+[14.596565] (-) TimerEvent: {}
+[14.605127] (odrive_control_cpp) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:12 (find_package):\n'}
+[14.605240] (odrive_control_cpp) StderrLine: {'line': b'  By not providing "Findodrive_can.cmake" in CMAKE_MODULE_PATH this project\n'}
+[14.605272] (odrive_control_cpp) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[14.605298] (odrive_control_cpp) StderrLine: {'line': b'  "odrive_can", but CMake did not find one.\n'}
+[14.605323] (odrive_control_cpp) StderrLine: {'line': b'\n'}
+[14.605347] (odrive_control_cpp) StderrLine: {'line': b'  Could not find a package configuration file provided by "odrive_can" with\n'}
+[14.605373] (odrive_control_cpp) StderrLine: {'line': b'  any of the following names:\n'}
+[14.605397] (odrive_control_cpp) StderrLine: {'line': b'\n'}
+[14.605420] (odrive_control_cpp) StderrLine: {'line': b'    odrive_canConfig.cmake\n'}
+[14.605444] (odrive_control_cpp) StderrLine: {'line': b'    odrive_can-config.cmake\n'}
+[14.605469] (odrive_control_cpp) StderrLine: {'line': b'\n'}
+[14.605492] (odrive_control_cpp) StderrLine: {'line': b'  Add the installation prefix of "odrive_can" to CMAKE_PREFIX_PATH or set\n'}
+[14.605514] (odrive_control_cpp) StderrLine: {'line': b'  "odrive_can_DIR" to a directory containing one of the above files.  If\n'}
+[14.605557] (odrive_control_cpp) StderrLine: {'line': b'  "odrive_can" provides a separate development package or SDK, be sure it has\n'}
+[14.605591] (odrive_control_cpp) StderrLine: {'line': b'  been installed.\n'}
+[14.605621] (odrive_control_cpp) StderrLine: {'line': b'\n'}
+[14.605646] (odrive_control_cpp) StderrLine: {'line': b'\x1b[0m\n'}
+[14.605749] (odrive_control_cpp) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[14.605796] (odrive_control_cpp) StdoutLine: {'line': b'See also "/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_cpp/CMakeFiles/CMakeOutput.log".\n'}
+[14.610457] (odrive_control_cpp) CommandEnded: {'returncode': 1}
+[14.618946] (odrive_control_cpp) JobEnded: {'identifier': 'odrive_control_cpp', 'rc': 1}
+[14.629349] (-) EventReactorShutdown: {}

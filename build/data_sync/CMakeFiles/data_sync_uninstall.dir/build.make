@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/src/data_sync
+CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/build/data_sync
+CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync
 
 # Utility rule file for data_sync_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/data_sync_uninstall.dir/compiler_depend.make
 include CMakeFiles/data_sync_uninstall.dir/progress.make
 
 CMakeFiles/data_sync_uninstall:
-	/usr/bin/cmake -P /home/vedant/gaitlab_ws/build/data_sync/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 data_sync_uninstall: CMakeFiles/data_sync_uninstall
 data_sync_uninstall: CMakeFiles/data_sync_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/data_sync_uninstall.dir/clean:
 .PHONY : CMakeFiles/data_sync_uninstall.dir/clean
 
 CMakeFiles/data_sync_uninstall.dir/depend:
-	cd /home/vedant/gaitlab_ws/build/data_sync && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vedant/gaitlab_ws/src/data_sync /home/vedant/gaitlab_ws/src/data_sync /home/vedant/gaitlab_ws/build/data_sync /home/vedant/gaitlab_ws/build/data_sync /home/vedant/gaitlab_ws/build/data_sync/CMakeFiles/data_sync_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles/data_sync_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/data_sync_uninstall.dir/depend
 

@@ -1,9 +1,9 @@
 {
   "package_name": "odrive_can",
   "non_idl_tuples": [
-    "/home/vedant/gaitlab_ws/src/ros_odrive/odrive_node:msg/ControlMessage.msg",
-    "/home/vedant/gaitlab_ws/src/ros_odrive/odrive_node:msg/ControllerStatus.msg",
-    "/home/vedant/gaitlab_ws/src/ros_odrive/odrive_node:msg/ODriveStatus.msg",
-    "/home/vedant/gaitlab_ws/src/ros_odrive/odrive_node:srv/AxisState.srv"
+    "/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node:msg/ControlMessage.msg",
+    "/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node:msg/ControllerStatus.msg",
+    "/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node:msg/ODriveStatus.msg",
+    "/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node:srv/AxisState.srv"
   ]
 }

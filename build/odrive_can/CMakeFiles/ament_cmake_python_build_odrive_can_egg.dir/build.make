@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/src/ros_odrive/odrive_node
+CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/build/odrive_can
+CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can
 
 # Utility rule file for ament_cmake_python_build_odrive_can_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_odrive_can_egg.dir/compiler_depend.m
 include CMakeFiles/ament_cmake_python_build_odrive_can_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_odrive_can_egg:
-	cd /home/vedant/gaitlab_ws/build/odrive_can/ament_cmake_python/odrive_can && /usr/bin/python3 setup.py egg_info
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/ament_cmake_python/odrive_can && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_odrive_can_egg: CMakeFiles/ament_cmake_python_build_odrive_can_egg
 ament_cmake_python_build_odrive_can_egg: CMakeFiles/ament_cmake_python_build_odrive_can_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_odrive_can_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_odrive_can_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_odrive_can_egg.dir/depend:
-	cd /home/vedant/gaitlab_ws/build/odrive_can && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vedant/gaitlab_ws/src/ros_odrive/odrive_node /home/vedant/gaitlab_ws/src/ros_odrive/odrive_node /home/vedant/gaitlab_ws/build/odrive_can /home/vedant/gaitlab_ws/build/odrive_can /home/vedant/gaitlab_ws/build/odrive_can/CMakeFiles/ament_cmake_python_build_odrive_can_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node /home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/CMakeFiles/ament_cmake_python_build_odrive_can_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_odrive_can_egg.dir/depend
 

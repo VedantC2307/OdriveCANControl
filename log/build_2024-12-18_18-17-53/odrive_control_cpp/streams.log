@@ -1,0 +1,49 @@
+[0.095s] Invoking command in '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_cpp': AMENT_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can:/opt/ros/humble LD_LIBRARY_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/vedant/gaitlab_ws/OdriveCANControl/src/odrive_control_cpp -DCMAKE_INSTALL_PREFIX=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_cpp
+[0.102s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.197s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.405s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.406s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.410s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.417s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.425s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.446s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.446s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[9.095s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.126s] -- Found odrive_can: 0.0.1 (/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake)
+[9.133s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[9.183s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.183s] -- Configured cppcheck include dirs: 
+[9.183s] -- Configured cppcheck exclude dirs and/or files: 
+[9.184s] -- Added test 'lint_cmake' to check CMake code style
+[9.184s] -- Added test 'uncrustify' to check C / C++ code style
+[9.184s] -- Configured uncrustify additional arguments: 
+[9.185s] -- Added test 'xmllint' to check XML markup files
+[9.185s] -- Configuring done
+[9.187s] [31mCMake Error at CMakeLists.txt:22 (add_executable):
+[9.187s]   Cannot find source file:
+[9.187s] 
+[9.187s]     src/subscribe_send.cpp
+[9.187s] 
+[9.188s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[9.188s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[9.188s] 
+[9.188s] [0m
+[9.188s] [31mCMake Error at CMakeLists.txt:25 (add_executable):
+[9.188s]   Cannot find source file:
+[9.188s] 
+[9.188s]     src/receive_send.cpp
+[9.188s] 
+[9.188s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[9.188s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[9.188s] 
+[9.188s] [0m
+[9.188s] [31mCMake Error at CMakeLists.txt:22 (add_executable):
+[9.188s]   No SOURCES given to target: subscribe_send
+[9.188s] 
+[9.188s] [0m
+[9.188s] [31mCMake Error at CMakeLists.txt:25 (add_executable):
+[9.188s]   No SOURCES given to target: receive_send
+[9.188s] 
+[9.188s] [0m
+[9.188s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[9.193s] Invoked command in '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_cpp' returned '1': AMENT_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can:/opt/ros/humble LD_LIBRARY_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/vedant/gaitlab_ws/OdriveCANControl/src/odrive_control_cpp -DCMAKE_INSTALL_PREFIX=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_control_cpp

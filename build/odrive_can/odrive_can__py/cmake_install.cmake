@@ -1,8 +1,8 @@
-# Install script for directory: /home/vedant/gaitlab_ws/build/odrive_can/odrive_can__py
+# Install script for directory: /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/odrive_can__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vedant/gaitlab_ws/install/odrive_can")
+  set(CMAKE_INSTALL_PREFIX "/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

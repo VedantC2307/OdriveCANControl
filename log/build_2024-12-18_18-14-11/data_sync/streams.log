@@ -1,0 +1,257 @@
+[0.015s] Invoking command in '/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync -DCMAKE_INSTALL_PREFIX=/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync
+[0.223s] -- The C compiler identification is GNU 11.4.0
+[0.946s] -- The CXX compiler identification is GNU 11.4.0
+[1.387s] -- Detecting C compiler ABI info
+[1.543s] -- Detecting C compiler ABI info - done
+[1.547s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.548s] -- Detecting C compile features
+[1.549s] -- Detecting C compile features - done
+[1.552s] -- Detecting CXX compiler ABI info
+[1.731s] -- Detecting CXX compiler ABI info - done
+[1.735s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.735s] -- Detecting CXX compile features
+[1.735s] -- Detecting CXX compile features - done
+[1.742s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.964s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.042s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.047s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.054s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.175s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.360s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.481s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.627s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.853s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.855s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.443s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.444s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.444s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.444s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.457s] -- Found PythonExtra: .so  
+[3.525s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.551s] -- Added test 'lint_cmake' to check CMake code style
+[3.552s] -- Added test 'xmllint' to check XML markup files
+[3.554s] -- Configuring done
+[3.573s] -- Generating done
+[3.575s] -- Build files have been written to: /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync
+[3.578s] Invoked command in '/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync -DCMAKE_INSTALL_PREFIX=/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync
+[3.580s] Invoking command in '/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync -- -j20 -l20
+[3.598s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.603s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.607s] [  6%] Built target ament_cmake_python_copy_data_sync
+[3.747s] running egg_info
+[3.758s] creating data_sync.egg-info
+[3.758s] writing data_sync.egg-info/PKG-INFO
+[3.758s] writing dependency_links to data_sync.egg-info/dependency_links.txt
+[3.758s] writing top-level names to data_sync.egg-info/top_level.txt
+[3.759s] writing manifest file 'data_sync.egg-info/SOURCES.txt'
+[3.780s] gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_generator_c.dir/flags.make' has modification time 0.55 s in the future
+[3.780s] [  6%] Built target data_sync__cpp
+[3.782s] gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_fastrtps_cpp.dir/flags.make' has modification time 0.56 s in the future
+[3.782s] gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_introspection_cpp.dir/flags.make' has modification time 0.56 s in the future
+[3.782s] gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/flags.make' has modification time 0.56 s in the future
+[3.785s] [  9%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.786s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.786s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.786s] [ 19%] [32mBuilding C object CMakeFiles/data_sync__rosidl_generator_c.dir/rosidl_generator_c/data_sync/srv/detail/trigger__functions.c.o[0m
+[3.797s] reading manifest file 'data_sync.egg-info/SOURCES.txt'
+[3.797s] writing manifest file 'data_sync.egg-info/SOURCES.txt'
+[3.814s] [ 19%] Built target ament_cmake_python_build_data_sync_egg
+[3.847s] [ 22%] [32m[1mLinking C shared library libdata_sync__rosidl_generator_c.so[0m
+[3.925s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[3.925s] gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/flags.make' has modification time 0.42 s in the future
+[3.929s] [ 25%] [32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_sync/srv/trigger__type_support.cpp.o[0m
+[3.937s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[3.938s] gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_introspection_cpp.dir/flags.make' has modification time 0.41 s in the future
+[3.941s] [ 29%] [32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/data_sync/srv/detail/trigger__type_support.cpp.o[0m
+[3.945s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[3.945s] gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_fastrtps_cpp.dir/flags.make' has modification time 0.4 s in the future
+[3.949s] [ 32%] [32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/data_sync/srv/detail/dds_fastrtps/trigger__type_support.cpp.o[0m
+[4.109s] [ 35%] [32m[1mLinking CXX shared library libdata_sync__rosidl_typesupport_cpp.so[0m
+[4.120s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[4.124s] [ 35%] Built target data_sync__rosidl_generator_c
+[4.125s] gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c.dir/flags.make' has modification time 0.21 s in the future
+[4.125s] gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_introspection_c.dir/flags.make' has modification time 0.21 s in the future
+[4.125s] gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_c.dir/flags.make' has modification time 0.21 s in the future
+[4.129s] [ 41%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.129s] [ 41%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.129s] [ 45%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.185s] [ 48%] [32m[1mLinking CXX shared library libdata_sync__rosidl_typesupport_introspection_cpp.so[0m
+[4.215s] [ 51%] [32m[1mLinking CXX shared library libdata_sync__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.281s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[4.282s] gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_c.dir/flags.make' has modification time 0.052 s in the future
+[4.286s] [ 54%] [32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_c.dir/rosidl_typesupport_c/data_sync/srv/trigger__type_support.cpp.o[0m
+[4.300s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[4.300s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[4.301s] gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_introspection_c.dir/flags.make' has modification time 0.033 s in the future
+[4.301s] gmake[2]: Warning: File 'CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c.dir/flags.make' has modification time 0.033 s in the future
+[4.305s] [ 58%] [32mBuilding CXX object CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/data_sync/srv/detail/trigger__type_support_c.cpp.o[0m
+[4.305s] [ 61%] [32mBuilding C object CMakeFiles/data_sync__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/data_sync/srv/detail/trigger__type_support.c.o[0m
+[4.307s] [ 64%] [32m[1mLinking CXX shared library libdata_sync__rosidl_typesupport_c.so[0m
+[4.324s] [ 67%] [32m[1mLinking C shared library libdata_sync__rosidl_typesupport_introspection_c.so[0m
+[4.384s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[4.388s] [ 67%] Built target data_sync__rosidl_typesupport_cpp
+[4.460s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[4.464s] [ 67%] Built target data_sync__rosidl_typesupport_introspection_cpp
+[4.482s] [ 70%] [32m[1mLinking CXX shared library libdata_sync__rosidl_typesupport_fastrtps_c.so[0m
+[4.499s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[4.503s] [ 70%] Built target data_sync__rosidl_typesupport_fastrtps_cpp
+[4.592s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[4.596s] [ 70%] Built target data_sync__rosidl_typesupport_introspection_c
+[4.599s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[4.603s] [ 70%] Built target data_sync__rosidl_typesupport_c
+[4.860s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[4.864s] [ 70%] Built target data_sync__rosidl_typesupport_fastrtps_c
+[4.873s] [ 70%] Built target data_sync
+[4.883s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.104s] [ 74%] Built target data_sync__py
+[5.113s] [ 77%] [32mBuilding C object CMakeFiles/data_sync__rosidl_generator_py.dir/rosidl_generator_py/data_sync/srv/_trigger_s.c.o[0m
+[5.219s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/data_sync/libdata_sync__rosidl_generator_py.so[0m
+[5.446s] [ 80%] Built target data_sync__rosidl_generator_py
+[5.455s] [ 87%] [32mBuilding C object CMakeFiles/data_sync__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_c.c.o[0m
+[5.455s] [ 87%] [32mBuilding C object CMakeFiles/data_sync__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.455s] [ 90%] [32mBuilding C object CMakeFiles/data_sync__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.503s] [100%] [32m[1mLinking C shared library rosidl_generator_py/data_sync/data_sync_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.504s] [100%] [32m[1mLinking C shared library rosidl_generator_py/data_sync/data_sync_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.504s] [100%] [32m[1mLinking C shared library rosidl_generator_py/data_sync/data_sync_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.739s] [100%] Built target data_sync__rosidl_typesupport_fastrtps_c__pyext
+[5.741s] [100%] Built target data_sync__rosidl_typesupport_introspection_c__pyext
+[5.814s] [100%] Built target data_sync__rosidl_typesupport_c__pyext
+[5.820s] Invoked command in '/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync -- -j20 -l20
+[5.852s] Invoking command in '/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync
+[5.856s] -- Install configuration: ""
+[5.856s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/ament_index/resource_index/rosidl_interfaces/data_sync
+[5.856s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync
+[5.856s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv
+[5.857s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/trigger.h
+[5.857s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail
+[5.857s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__struct.h
+[5.857s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__type_support.h
+[5.857s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__functions.c
+[5.857s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__functions.h
+[5.857s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/msg
+[5.857s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/msg/rosidl_generator_c__visibility_control.h
+[5.857s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/environment/library_path.sh
+[5.857s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/environment/library_path.dsv
+[5.857s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_generator_c.so
+[5.858s] -- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_generator_c.so" to ""
+[5.858s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync
+[5.858s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv
+[5.858s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail
+[5.858s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__rosidl_typesupport_fastrtps_c.h
+[5.858s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/msg
+[5.858s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.858s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_fastrtps_c.so
+[5.858s] -- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_fastrtps_c.so" to ""
+[5.858s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync
+[5.858s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv
+[5.858s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail
+[5.858s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__type_support.c
+[5.858s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__rosidl_typesupport_introspection_c.h
+[5.858s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/msg
+[5.859s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.859s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_introspection_c.so
+[5.859s] -- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_introspection_c.so" to ""
+[5.859s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_c.so
+[5.859s] -- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_c.so" to ""
+[5.859s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync
+[5.859s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv
+[5.859s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/trigger.hpp
+[5.859s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail
+[5.859s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__struct.hpp
+[5.859s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__builder.hpp
+[5.860s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__traits.hpp
+[5.860s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync
+[5.860s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv
+[5.860s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail
+[5.860s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/dds_fastrtps
+[5.860s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__rosidl_typesupport_fastrtps_cpp.hpp
+[5.860s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/msg
+[5.860s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.860s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_fastrtps_cpp.so
+[5.860s] -- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.860s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync
+[5.860s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv
+[5.860s] -- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail
+[5.861s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__type_support.cpp
+[5.861s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/include/data_sync/data_sync/srv/detail/trigger__rosidl_typesupport_introspection_cpp.hpp
+[5.861s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_introspection_cpp.so
+[5.861s] -- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_introspection_cpp.so" to ""
+[5.861s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_cpp.so
+[5.861s] -- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_typesupport_cpp.so" to ""
+[5.861s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/environment/pythonpath.sh
+[5.861s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/environment/pythonpath.dsv
+[5.861s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info
+[5.861s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info/PKG-INFO
+[5.861s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info/top_level.txt
+[5.861s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info/SOURCES.txt
+[5.861s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync-0.0.0-py3.10.egg-info/dependency_links.txt
+[5.861s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync
+[5.862s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.862s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/libdata_sync__rosidl_generator_py.so
+[5.862s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/_data_sync_s.ep.rosidl_typesupport_c.c
+[5.862s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/_data_sync_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.862s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv
+[5.862s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/_trigger.py
+[5.862s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/_trigger_s.c
+[5.862s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/__init__.py
+[5.862s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/_data_sync_s.ep.rosidl_typesupport_introspection_c.c
+[5.862s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.862s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.862s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/__init__.py
+[5.882s] Listing '/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync'...
+[5.882s] Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/__init__.py'...
+[5.882s] Listing '/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv'...
+[5.882s] Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/__init__.py'...
+[5.882s] Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/srv/_trigger.py'...
+[5.885s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.885s] -- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.885s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.886s] -- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.886s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.886s] -- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/local/lib/python3.10/dist-packages/data_sync/data_sync_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.886s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_generator_py.so
+[5.886s] -- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/lib/libdata_sync__rosidl_generator_py.so" to ""
+[5.886s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/srv/Trigger.idl
+[5.886s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/srv/Trigger.srv
+[5.886s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/srv/Trigger_Request.msg
+[5.886s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/srv/Trigger_Response.msg
+[5.886s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/ament_index/resource_index/package_run_dependencies/data_sync
+[5.887s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/ament_index/resource_index/parent_prefix_path/data_sync
+[5.887s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/environment/ament_prefix_path.sh
+[5.887s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/environment/ament_prefix_path.dsv
+[5.887s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/environment/path.sh
+[5.887s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/environment/path.dsv
+[5.887s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/local_setup.bash
+[5.887s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/local_setup.sh
+[5.887s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/local_setup.zsh
+[5.887s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/local_setup.dsv
+[5.887s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/package.dsv
+[5.888s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/ament_index/resource_index/packages/data_sync
+[5.888s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_cExport.cmake
+[5.888s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_cExport-noconfig.cmake
+[5.888s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_typesupport_fastrtps_cExport.cmake
+[5.888s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.888s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_introspection_cExport.cmake
+[5.888s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.888s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_cExport.cmake
+[5.888s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_cExport-noconfig.cmake
+[5.888s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_cppExport.cmake
+[5.888s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.888s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.889s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_introspection_cppExport.cmake
+[5.889s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.889s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_cppExport.cmake
+[5.889s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_sync__rosidl_typesupport_cppExport-noconfig.cmake
+[5.889s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_pyExport.cmake
+[5.889s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/export_data_sync__rosidl_generator_pyExport-noconfig.cmake
+[5.889s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/rosidl_cmake-extras.cmake
+[5.889s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.889s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/ament_cmake_export_libraries-extras.cmake
+[5.889s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/ament_cmake_export_targets-extras.cmake
+[5.889s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.889s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.890s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.890s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_syncConfig.cmake
+[5.890s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/cmake/data_syncConfig-version.cmake
+[5.890s] -- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync/share/data_sync/package.xml
+[5.891s] Invoked command in '/home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync

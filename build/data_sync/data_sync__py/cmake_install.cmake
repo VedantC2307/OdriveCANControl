@@ -1,8 +1,8 @@
-# Install script for directory: /home/vedant/gaitlab_ws/build/data_sync/data_sync__py
+# Install script for directory: /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/data_sync__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vedant/gaitlab_ws/install/data_sync")
+  set(CMAKE_INSTALL_PREFIX "/home/vedant/gaitlab_ws/OdriveCANControl/install/data_sync")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

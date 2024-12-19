@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/src/data_sync
+CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/build/data_sync
+CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync
 
 # Utility rule file for data_sync.
 
@@ -66,7 +66,7 @@ include CMakeFiles/data_sync.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/data_sync.dir/progress.make
 
-CMakeFiles/data_sync: /home/vedant/gaitlab_ws/src/data_sync/srv/Trigger.srv
+CMakeFiles/data_sync: /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync/srv/Trigger.srv
 CMakeFiles/data_sync: rosidl_cmake/srv/Trigger_Request.msg
 CMakeFiles/data_sync: rosidl_cmake/srv/Trigger_Response.msg
 
@@ -83,6 +83,6 @@ CMakeFiles/data_sync.dir/clean:
 .PHONY : CMakeFiles/data_sync.dir/clean
 
 CMakeFiles/data_sync.dir/depend:
-	cd /home/vedant/gaitlab_ws/build/data_sync && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vedant/gaitlab_ws/src/data_sync /home/vedant/gaitlab_ws/src/data_sync /home/vedant/gaitlab_ws/build/data_sync /home/vedant/gaitlab_ws/build/data_sync /home/vedant/gaitlab_ws/build/data_sync/CMakeFiles/data_sync.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync /home/vedant/gaitlab_ws/OdriveCANControl/build/data_sync/CMakeFiles/data_sync.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/data_sync.dir/depend
 
