@@ -1,0 +1,8 @@
+setup.py
+data_sync/__init__.py
+data_sync.egg-info/PKG-INFO
+data_sync.egg-info/SOURCES.txt
+data_sync.egg-info/dependency_links.txt
+data_sync.egg-info/top_level.txt
+data_sync/srv/__init__.py
+data_sync/srv/_trigger.py
