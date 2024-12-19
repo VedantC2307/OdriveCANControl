@@ -1,4 +1,3 @@
-
 ```bash
 git clone https://github.com/VedantC2307/OdriveCANControl.git
 rm -rf build/ log/ install/
