@@ -7,5 +7,6 @@
 #include "odrive_can/msg/detail/controller_status__struct.hpp"
 #include "odrive_can/msg/detail/controller_status__builder.hpp"
 #include "odrive_can/msg/detail/controller_status__traits.hpp"
+#include "odrive_can/msg/detail/controller_status__type_support.hpp"
 
 #endif  // ODRIVE_CAN__MSG__CONTROLLER_STATUS_HPP_

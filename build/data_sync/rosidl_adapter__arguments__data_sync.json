@@ -1,6 +1,0 @@
-{
-  "package_name": "data_sync",
-  "non_idl_tuples": [
-    "/home/vedant/gaitlab_ws/OdriveCANControl/src/data_sync:srv/Trigger.srv"
-  ]
-}

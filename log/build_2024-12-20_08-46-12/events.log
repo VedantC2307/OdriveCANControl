@@ -1,0 +1,72 @@
+[0.000000] (-) TimerEvent: {}
+[0.001653] (-) JobUnselected: {'identifier': 'data_sync'}
+[0.002702] (-) JobUnselected: {'identifier': 'odrive_botwheel_explorer'}
+[0.002901] (-) JobUnselected: {'identifier': 'odrive_can'}
+[0.003176] (-) JobUnselected: {'identifier': 'odrive_ros2_control'}
+[0.003343] (odrive_control_py) JobQueued: {'identifier': 'odrive_control_py', 'dependencies': OrderedDict()}
+[0.003453] (odrive_control_py) JobStarted: {'identifier': 'odrive_control_py'}
+[0.098973] (-) TimerEvent: {}
+[0.199728] (-) TimerEvent: {}
+[0.300470] (-) TimerEvent: {}
+[0.401198] (-) TimerEvent: {}
+[0.501958] (-) TimerEvent: {}
+[0.602822] (-) TimerEvent: {}
+[0.703514] (-) TimerEvent: {}
+[0.804182] (-) TimerEvent: {}
+[0.904860] (-) TimerEvent: {}
+[1.005705] (-) TimerEvent: {}
+[1.106775] (-) TimerEvent: {}
+[1.207510] (-) TimerEvent: {}
+[1.308193] (-) TimerEvent: {}
+[1.408923] (-) TimerEvent: {}
+[1.509719] (-) TimerEvent: {}
+[1.610542] (-) TimerEvent: {}
+[1.711218] (-) TimerEvent: {}
+[1.811893] (-) TimerEvent: {}
+[1.912537] (-) TimerEvent: {}
+[2.013197] (-) TimerEvent: {}
+[2.113989] (-) TimerEvent: {}
+[2.214721] (-) TimerEvent: {}
+[2.315437] (-) TimerEvent: {}
+[2.416279] (-) TimerEvent: {}
+[2.458558] (odrive_control_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/odrive_control_py', 'build', '--build-base', '/home/vedant/OdriveCANControl/build/odrive_control_py/build', 'install', '--record', '/home/vedant/OdriveCANControl/build/odrive_control_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/vedant/OdriveCANControl/src/odrive_control_py', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'vedant', 'SSH_CLIENT': '192.168.0.167 57850 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/vedant/OdriveCANControl/install/odrive_can/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/vedant', 'OLDPWD': '/home/vedant', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/vedant/OdriveCANControl/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'vedant', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/odrive_can:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/vedant/OdriveCANControl/build/odrive_control_py', 'SSH_CONNECTION': '192.168.0.167 57850 192.168.0.133 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vedant/OdriveCANControl/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/vedant/OdriveCANControl/install/odrive_can'}, 'shell': False}
+[2.516425] (-) TimerEvent: {}
+[2.617223] (-) TimerEvent: {}
+[2.718035] (-) TimerEvent: {}
+[2.818831] (-) TimerEvent: {}
+[2.920006] (-) TimerEvent: {}
+[3.020668] (-) TimerEvent: {}
+[3.121373] (-) TimerEvent: {}
+[3.222082] (-) TimerEvent: {}
+[3.322758] (-) TimerEvent: {}
+[3.423454] (-) TimerEvent: {}
+[3.431887] (odrive_control_py) StdoutLine: {'line': b'running egg_info\n'}
+[3.435544] (odrive_control_py) StdoutLine: {'line': b'writing ../../build/odrive_control_py/odrive_control_py.egg-info/PKG-INFO\n'}
+[3.436697] (odrive_control_py) StdoutLine: {'line': b'writing dependency_links to ../../build/odrive_control_py/odrive_control_py.egg-info/dependency_links.txt\n'}
+[3.437741] (odrive_control_py) StdoutLine: {'line': b'writing entry points to ../../build/odrive_control_py/odrive_control_py.egg-info/entry_points.txt\n'}
+[3.438559] (odrive_control_py) StdoutLine: {'line': b'writing requirements to ../../build/odrive_control_py/odrive_control_py.egg-info/requires.txt\n'}
+[3.439175] (odrive_control_py) StdoutLine: {'line': b'writing top-level names to ../../build/odrive_control_py/odrive_control_py.egg-info/top_level.txt\n'}
+[3.446947] (odrive_control_py) StdoutLine: {'line': b"reading manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'\n"}
+[3.452134] (odrive_control_py) StdoutLine: {'line': b"writing manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'\n"}
+[3.452947] (odrive_control_py) StdoutLine: {'line': b'running build\n'}
+[3.453441] (odrive_control_py) StdoutLine: {'line': b'running build_py\n'}
+[3.454941] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/data_recording_node.py -> /home/vedant/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[3.457169] (odrive_control_py) StdoutLine: {'line': b'running install\n'}
+[3.458545] (odrive_control_py) StdoutLine: {'line': b'running install_lib\n'}
+[3.462853] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py/data_recording_node.py -> /home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[3.467291] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/data_recording_node.py to data_recording_node.cpython-310.pyc\n'}
+[3.471329] (odrive_control_py) StdoutLine: {'line': b'running install_data\n'}
+[3.472232] (odrive_control_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.479077] (odrive_control_py) StdoutLine: {'line': b"removing '/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[3.480897] (odrive_control_py) StdoutLine: {'line': b'Copying ../../build/odrive_control_py/odrive_control_py.egg-info to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info\n'}
+[3.487265] (odrive_control_py) StdoutLine: {'line': b'running install_scripts\n'}
+[3.523616] (-) TimerEvent: {}
+[3.565495] (odrive_control_py) StdoutLine: {'line': b'Installing data_recording_node script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py\n'}
+[3.566481] (odrive_control_py) StdoutLine: {'line': b'Installing encoder_read_node script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py\n'}
+[3.567318] (odrive_control_py) StdoutLine: {'line': b'Installing odrive_control_node script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py\n'}
+[3.569701] (odrive_control_py) StdoutLine: {'line': b"writing list of installed files to '/home/vedant/OdriveCANControl/build/odrive_control_py/install.log'\n"}
+[3.623885] (-) TimerEvent: {}
+[3.684743] (odrive_control_py) CommandEnded: {'returncode': 0}
+[3.726287] (-) TimerEvent: {}
+[3.738807] (odrive_control_py) JobEnded: {'identifier': 'odrive_control_py', 'rc': 0}
+[3.741903] (-) EventReactorShutdown: {}

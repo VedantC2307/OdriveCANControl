@@ -1,0 +1,86 @@
+[0.000000] (-) TimerEvent: {}
+[0.001217] (data_sync) JobQueued: {'identifier': 'data_sync', 'dependencies': OrderedDict()}
+[0.001636] (odrive_can) JobQueued: {'identifier': 'odrive_can', 'dependencies': OrderedDict()}
+[0.001815] (odrive_ros2_control) JobQueued: {'identifier': 'odrive_ros2_control', 'dependencies': OrderedDict()}
+[0.001909] (odrive_botwheel_explorer) JobQueued: {'identifier': 'odrive_botwheel_explorer', 'dependencies': OrderedDict([('odrive_ros2_control', '/home/vedant/OdriveCANControl/install/odrive_ros2_control')])}
+[0.002038] (odrive_control_cpp) JobQueued: {'identifier': 'odrive_control_cpp', 'dependencies': OrderedDict([('odrive_can', '/home/vedant/OdriveCANControl/install/odrive_can')])}
+[0.002190] (odrive_control_py) JobQueued: {'identifier': 'odrive_control_py', 'dependencies': OrderedDict([('data_sync', '/home/vedant/OdriveCANControl/install/data_sync'), ('odrive_can', '/home/vedant/OdriveCANControl/install/odrive_can')])}
+[0.002299] (odrive_can) JobStarted: {'identifier': 'odrive_can'}
+[0.018046] (data_sync) JobStarted: {'identifier': 'data_sync'}
+[0.025938] (odrive_ros2_control) JobStarted: {'identifier': 'odrive_ros2_control'}
+[0.040206] (odrive_can) JobProgress: {'identifier': 'odrive_can', 'progress': 'cmake'}
+[0.042850] (odrive_can) Command: {'cmd': ['/usr/bin/cmake', '/home/vedant/OdriveCANControl/src/ros_odrive/odrive_node', '-DCMAKE_INSTALL_PREFIX=/home/vedant/OdriveCANControl/install/odrive_can'], 'cwd': '/home/vedant/OdriveCANControl/build/odrive_can', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SSH_CLIENT', '192.168.10.119 54456 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant/OdriveCANControl/src'), ('SSH_TTY', '/dev/pts/0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/vedant/OdriveCANControl/build/odrive_can'), ('SSH_CONNECTION', '192.168.10.119 54456 192.168.10.145 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.054523] (data_sync) JobProgress: {'identifier': 'data_sync', 'progress': 'cmake'}
+[0.057402] (data_sync) Command: {'cmd': ['/usr/bin/cmake', '/home/vedant/OdriveCANControl/src/data_sync', '-DCMAKE_INSTALL_PREFIX=/home/vedant/OdriveCANControl/install/data_sync'], 'cwd': '/home/vedant/OdriveCANControl/build/data_sync', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SSH_CLIENT', '192.168.10.119 54456 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant/OdriveCANControl/src'), ('SSH_TTY', '/dev/pts/0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/vedant/OdriveCANControl/build/data_sync'), ('SSH_CONNECTION', '192.168.10.119 54456 192.168.10.145 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.076827] (odrive_ros2_control) JobProgress: {'identifier': 'odrive_ros2_control', 'progress': 'cmake'}
+[0.080547] (odrive_ros2_control) Command: {'cmd': ['/usr/bin/cmake', '/home/vedant/OdriveCANControl/src/ros_odrive/odrive_ros2_control', '-DCMAKE_INSTALL_PREFIX=/home/vedant/OdriveCANControl/install/odrive_ros2_control'], 'cwd': '/home/vedant/OdriveCANControl/build/odrive_ros2_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SSH_CLIENT', '192.168.10.119 54456 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant/OdriveCANControl/src'), ('SSH_TTY', '/dev/pts/0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/vedant/OdriveCANControl/build/odrive_ros2_control'), ('SSH_CONNECTION', '192.168.10.119 54456 192.168.10.145 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.097951] (-) TimerEvent: {}
+[0.183008] (odrive_can) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[0.183856] (odrive_can) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.184207] (odrive_can) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.184513] (odrive_can) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.184996] (odrive_can) StderrLine: {'line': b'\n'}
+[0.185384] (odrive_can) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.185714] (odrive_can) StderrLine: {'line': b'  any of the following names:\n'}
+[0.186020] (odrive_can) StderrLine: {'line': b'\n'}
+[0.186749] (odrive_can) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.187248] (odrive_can) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.187635] (odrive_can) StderrLine: {'line': b'\n'}
+[0.188010] (odrive_can) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.188427] (odrive_can) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.188966] (odrive_can) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.189888] (odrive_can) StderrLine: {'line': b'  has been installed.\n'}
+[0.196546] (odrive_can) StderrLine: {'line': b'\n'}
+[0.197547] (odrive_can) StderrLine: {'line': b'\x1b[0m\n'}
+[0.197978] (-) TimerEvent: {}
+[0.200214] (odrive_can) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.201176] (odrive_can) StdoutLine: {'line': b'See also "/home/vedant/OdriveCANControl/build/odrive_can/CMakeFiles/CMakeOutput.log".\n'}
+[0.201880] (odrive_can) CommandEnded: {'returncode': 1}
+[0.203199] (data_sync) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[0.204043] (data_sync) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.205309] (data_sync) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.207287] (data_sync) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.207919] (data_sync) StderrLine: {'line': b'\n'}
+[0.209545] (data_sync) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.210243] (data_sync) StderrLine: {'line': b'  any of the following names:\n'}
+[0.212064] (data_sync) StderrLine: {'line': b'\n'}
+[0.215373] (data_sync) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.216021] (data_sync) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.216511] (data_sync) StderrLine: {'line': b'\n'}
+[0.217135] (data_sync) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.217628] (data_sync) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.218736] (data_sync) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.219695] (data_sync) StderrLine: {'line': b'  has been installed.\n'}
+[0.220255] (data_sync) StderrLine: {'line': b'\n'}
+[0.221050] (data_sync) StderrLine: {'line': b'\x1b[0m\n'}
+[0.221768] (data_sync) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.222675] (data_sync) StdoutLine: {'line': b'See also "/home/vedant/OdriveCANControl/build/data_sync/CMakeFiles/CMakeOutput.log".\n'}
+[0.223455] (data_sync) CommandEnded: {'returncode': 1}
+[0.229356] (odrive_ros2_control) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[0.231437] (odrive_ros2_control) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.232287] (odrive_ros2_control) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.234017] (odrive_ros2_control) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.235154] (odrive_ros2_control) StderrLine: {'line': b'\n'}
+[0.236723] (odrive_ros2_control) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.239870] (odrive_ros2_control) StderrLine: {'line': b'  any of the following names:\n'}
+[0.240347] (odrive_ros2_control) StderrLine: {'line': b'\n'}
+[0.240778] (odrive_ros2_control) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.242170] (odrive_ros2_control) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.242751] (odrive_ros2_control) StderrLine: {'line': b'\n'}
+[0.243085] (odrive_ros2_control) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.243500] (odrive_ros2_control) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.243966] (odrive_ros2_control) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.244355] (odrive_ros2_control) StderrLine: {'line': b'  has been installed.\n'}
+[0.244801] (odrive_ros2_control) StderrLine: {'line': b'\n'}
+[0.245347] (odrive_ros2_control) StderrLine: {'line': b'\x1b[0m\n'}
+[0.245782] (odrive_ros2_control) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.246320] (odrive_ros2_control) StdoutLine: {'line': b'See also "/home/vedant/OdriveCANControl/build/odrive_ros2_control/CMakeFiles/CMakeOutput.log".\n'}
+[0.246768] (odrive_ros2_control) CommandEnded: {'returncode': 1}
+[0.293483] (odrive_can) JobEnded: {'identifier': 'odrive_can', 'rc': 1}
+[0.297442] (data_sync) JobEnded: {'identifier': 'data_sync', 'rc': 'SIGINT'}
+[0.298900] (-) TimerEvent: {}
+[0.299235] (odrive_ros2_control) JobEnded: {'identifier': 'odrive_ros2_control', 'rc': 'SIGINT'}
+[0.308448] (odrive_botwheel_explorer) JobSkipped: {'identifier': 'odrive_botwheel_explorer'}
+[0.309393] (odrive_control_cpp) JobSkipped: {'identifier': 'odrive_control_cpp'}
+[0.309637] (odrive_control_py) JobSkipped: {'identifier': 'odrive_control_py'}
+[0.309768] (-) EventReactorShutdown: {}

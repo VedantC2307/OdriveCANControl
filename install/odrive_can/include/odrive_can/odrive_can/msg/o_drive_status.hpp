@@ -7,5 +7,6 @@
 #include "odrive_can/msg/detail/o_drive_status__struct.hpp"
 #include "odrive_can/msg/detail/o_drive_status__builder.hpp"
 #include "odrive_can/msg/detail/o_drive_status__traits.hpp"
+#include "odrive_can/msg/detail/o_drive_status__type_support.hpp"
 
 #endif  // ODRIVE_CAN__MSG__O_DRIVE_STATUS_HPP_

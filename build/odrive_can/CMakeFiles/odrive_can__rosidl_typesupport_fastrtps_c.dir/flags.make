@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_TYPESUPPORT_FASTRTPS_C_BUILDING_DLL_odrive_can -DROS_PACKAGE_NAME=\"odrive_can\"
 
-CXX_INCLUDES = -I/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_typesupport_fastrtps_c -I/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/include -I/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/../odrive_base/include -I/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_c -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c
+CXX_INCLUDES = -I/home/vedant/OdriveCANControl/build/odrive_can/rosidl_typesupport_fastrtps_c -I/home/vedant/OdriveCANControl/src/ros_odrive/odrive_node/include -I/home/vedant/OdriveCANControl/src/ros_odrive/odrive_node/../odrive_base/include -I/home/vedant/OdriveCANControl/build/odrive_can/rosidl_generator_c -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c
 
 CXX_FLAGS = -fPIC -Wall -Wextra -Wpedantic -std=gnu++14
 

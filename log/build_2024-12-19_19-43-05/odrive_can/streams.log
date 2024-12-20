@@ -1,0 +1,21 @@
+[0.049s] Invoking command in '/home/vedant/OdriveCANControl/build/odrive_can': /usr/bin/cmake /home/vedant/OdriveCANControl/src/ros_odrive/odrive_node -DCMAKE_INSTALL_PREFIX=/home/vedant/OdriveCANControl/install/odrive_can
+[0.181s] [31mCMake Error at CMakeLists.txt:9 (find_package):
+[0.181s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.182s]   has asked CMake to find a package configuration file provided by
+[0.182s]   "ament_cmake", but CMake did not find one.
+[0.182s] 
+[0.183s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.183s]   any of the following names:
+[0.183s] 
+[0.184s]     ament_cmakeConfig.cmake
+[0.185s]     ament_cmake-config.cmake
+[0.185s] 
+[0.185s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.186s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.187s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.193s]   has been installed.
+[0.194s] 
+[0.195s] [0m
+[0.198s] -- Configuring incomplete, errors occurred!
+[0.199s] See also "/home/vedant/OdriveCANControl/build/odrive_can/CMakeFiles/CMakeOutput.log".
+[0.200s] Invoked command in '/home/vedant/OdriveCANControl/build/odrive_can' returned '1': /usr/bin/cmake /home/vedant/OdriveCANControl/src/ros_odrive/odrive_node -DCMAKE_INSTALL_PREFIX=/home/vedant/OdriveCANControl/install/odrive_can

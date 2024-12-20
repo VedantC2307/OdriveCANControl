@@ -1,0 +1,2 @@
+Invoking command in '/home/vedant/OdriveCANControl/build/odrive_can': /usr/bin/cmake /home/vedant/OdriveCANControl/src/ros_odrive/odrive_node -DCMAKE_INSTALL_PREFIX=/home/vedant/OdriveCANControl/install/odrive_can
+Invoked command in '/home/vedant/OdriveCANControl/build/odrive_can' returned '1': /usr/bin/cmake /home/vedant/OdriveCANControl/src/ros_odrive/odrive_node -DCMAKE_INSTALL_PREFIX=/home/vedant/OdriveCANControl/install/odrive_can

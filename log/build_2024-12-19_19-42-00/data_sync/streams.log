@@ -1,0 +1,33 @@
+[0.076s] Invoking command in '/home/vedant/OdriveCANControl/build/data_sync': /usr/bin/cmake /home/vedant/OdriveCANControl/src/data_sync -DCMAKE_INSTALL_PREFIX=/home/vedant/OdriveCANControl/install/data_sync
+[4.930s] -- The C compiler identification is GNU 11.4.0
+[8.071s] -- The CXX compiler identification is GNU 11.4.0
+[8.190s] -- Detecting C compiler ABI info
+[8.741s] -- Detecting C compiler ABI info - done
+[8.766s] -- Check for working C compiler: /usr/bin/cc - skipped
+[8.776s] -- Detecting C compile features
+[8.786s] -- Detecting C compile features - done
+[8.819s] -- Detecting CXX compiler ABI info
+[9.272s] -- Detecting CXX compiler ABI info - done
+[9.298s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[9.300s] -- Detecting CXX compile features
+[9.302s] -- Detecting CXX compile features - done
+[9.460s] [31mCMake Error at CMakeLists.txt:9 (find_package):
+[9.461s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[9.462s]   has asked CMake to find a package configuration file provided by
+[9.462s]   "ament_cmake", but CMake did not find one.
+[9.463s] 
+[9.463s]   Could not find a package configuration file provided by "ament_cmake" with
+[9.464s]   any of the following names:
+[9.465s] 
+[9.465s]     ament_cmakeConfig.cmake
+[9.466s]     ament_cmake-config.cmake
+[9.466s] 
+[9.468s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[9.468s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[9.470s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[9.470s]   has been installed.
+[9.471s] 
+[9.472s] [0m
+[9.481s] -- Configuring incomplete, errors occurred!
+[9.483s] See also "/home/vedant/OdriveCANControl/build/data_sync/CMakeFiles/CMakeOutput.log".
+[9.487s] Invoked command in '/home/vedant/OdriveCANControl/build/data_sync' returned '1': /usr/bin/cmake /home/vedant/OdriveCANControl/src/data_sync -DCMAKE_INSTALL_PREFIX=/home/vedant/OdriveCANControl/install/data_sync

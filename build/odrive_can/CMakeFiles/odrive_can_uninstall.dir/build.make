@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node
+CMAKE_SOURCE_DIR = /home/vedant/OdriveCANControl/src/ros_odrive/odrive_node
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can
+CMAKE_BINARY_DIR = /home/vedant/OdriveCANControl/build/odrive_can
 
 # Utility rule file for odrive_can_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/odrive_can_uninstall.dir/compiler_depend.make
 include CMakeFiles/odrive_can_uninstall.dir/progress.make
 
 CMakeFiles/odrive_can_uninstall:
-	/usr/bin/cmake -P /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/vedant/OdriveCANControl/build/odrive_can/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 odrive_can_uninstall: CMakeFiles/odrive_can_uninstall
 odrive_can_uninstall: CMakeFiles/odrive_can_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/odrive_can_uninstall.dir/clean:
 .PHONY : CMakeFiles/odrive_can_uninstall.dir/clean
 
 CMakeFiles/odrive_can_uninstall.dir/depend:
-	cd /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node /home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/CMakeFiles/odrive_can_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vedant/OdriveCANControl/build/odrive_can && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vedant/OdriveCANControl/src/ros_odrive/odrive_node /home/vedant/OdriveCANControl/src/ros_odrive/odrive_node /home/vedant/OdriveCANControl/build/odrive_can /home/vedant/OdriveCANControl/build/odrive_can /home/vedant/OdriveCANControl/build/odrive_can/CMakeFiles/odrive_can_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/odrive_can_uninstall.dir/depend
 

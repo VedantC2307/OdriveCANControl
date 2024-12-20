@@ -1,4 +1,4 @@
-/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can:msg/ControlMessage.idl
-/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can:msg/ControllerStatus.idl
-/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can:msg/ODriveStatus.idl
-/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can:srv/AxisState.idl
+/home/vedant/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can:msg/ControlMessage.idl
+/home/vedant/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can:msg/ControllerStatus.idl
+/home/vedant/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can:msg/ODriveStatus.idl
+/home/vedant/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can:srv/AxisState.idl
