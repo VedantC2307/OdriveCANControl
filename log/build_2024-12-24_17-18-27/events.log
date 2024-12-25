@@ -1,0 +1,330 @@
+[0.000000] (-) TimerEvent: {}
+[0.001285] (-) JobUnselected: {'identifier': 'data_sync'}
+[0.001527] (-) JobUnselected: {'identifier': 'odrive_botwheel_explorer'}
+[0.001815] (-) JobUnselected: {'identifier': 'odrive_ros2_control'}
+[0.001995] (odrive_can) JobQueued: {'identifier': 'odrive_can', 'dependencies': OrderedDict()}
+[0.002090] (odrive_control_py) JobQueued: {'identifier': 'odrive_control_py', 'dependencies': OrderedDict()}
+[0.002179] (odrive_can) JobStarted: {'identifier': 'odrive_can'}
+[0.080026] (odrive_control_py) JobStarted: {'identifier': 'odrive_control_py'}
+[0.098240] (-) TimerEvent: {}
+[0.146614] (odrive_can) JobProgress: {'identifier': 'odrive_can', 'progress': 'cmake'}
+[0.161284] (odrive_can) JobProgress: {'identifier': 'odrive_can', 'progress': 'build'}
+[0.165569] (odrive_can) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vedant/OdriveCANControl/build/odrive_can', '--', '-j4', '-l4'], 'cwd': '/home/vedant/OdriveCANControl/build/odrive_can', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SSH_CLIENT', '192.168.10.119 59390 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '(odrv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vedant/odrv/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VIRTUAL_ENV_PROMPT', '(odrv)'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUAL_ENV', '/home/vedant/odrv'), ('PWD', '/home/vedant/OdriveCANControl/build/odrive_can'), ('SSH_CONNECTION', '192.168.10.119 59390 192.168.10.145 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.198403] (-) TimerEvent: {}
+[0.299379] (-) TimerEvent: {}
+[0.402610] (-) TimerEvent: {}
+[0.504254] (-) TimerEvent: {}
+[0.605654] (-) TimerEvent: {}
+[0.706877] (-) TimerEvent: {}
+[0.807937] (-) TimerEvent: {}
+[0.908993] (-) TimerEvent: {}
+[1.010244] (-) TimerEvent: {}
+[1.110908] (-) TimerEvent: {}
+[1.211963] (-) TimerEvent: {}
+[1.312713] (-) TimerEvent: {}
+[1.413595] (-) TimerEvent: {}
+[1.514425] (-) TimerEvent: {}
+[1.615193] (-) TimerEvent: {}
+[1.715952] (-) TimerEvent: {}
+[1.817268] (-) TimerEvent: {}
+[1.918102] (-) TimerEvent: {}
+[1.936568] (odrive_can) StdoutLine: {'line': b'[  1%] Built target odrive_can__cpp\n'}
+[2.018518] (-) TimerEvent: {}
+[2.119874] (-) TimerEvent: {}
+[2.220940] (-) TimerEvent: {}
+[2.258083] (odrive_can) StdoutLine: {'line': b'[ 11%] Built target odrive_can__rosidl_generator_c\n'}
+[2.321130] (-) TimerEvent: {}
+[2.326361] (odrive_can) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_copy_odrive_can\n'}
+[2.421673] (-) TimerEvent: {}
+[2.522347] (-) TimerEvent: {}
+[2.773325] (-) TimerEvent: {}
+[2.841384] (odrive_can) StdoutLine: {'line': b'[ 21%] Built target odrive_can__rosidl_typesupport_cpp\n'}
+[2.873632] (-) TimerEvent: {}
+[2.876496] (odrive_can) StdoutLine: {'line': b'[ 31%] Built target odrive_can__rosidl_typesupport_fastrtps_cpp\n'}
+[2.903200] (odrive_can) StdoutLine: {'line': b'[ 41%] Built target odrive_can__rosidl_typesupport_fastrtps_c\n'}
+[2.951385] (odrive_can) StdoutLine: {'line': b'[ 51%] Built target odrive_can__rosidl_typesupport_introspection_cpp\n'}
+[2.973854] (-) TimerEvent: {}
+[3.075837] (-) TimerEvent: {}
+[3.176662] (-) TimerEvent: {}
+[3.277596] (-) TimerEvent: {}
+[3.280744] (odrive_can) StdoutLine: {'line': b'[ 61%] Built target odrive_can__rosidl_typesupport_c\n'}
+[3.326373] (odrive_can) StdoutLine: {'line': b'[ 71%] Built target odrive_can__rosidl_typesupport_introspection_c\n'}
+[3.377725] (-) TimerEvent: {}
+[3.478617] (-) TimerEvent: {}
+[3.481206] (odrive_can) StdoutLine: {'line': b'[ 71%] Built target odrive_can\n'}
+[3.578814] (-) TimerEvent: {}
+[3.646446] (odrive_can) StdoutLine: {'line': b'[ 73%] Built target odrive_can__py\n'}
+[3.678954] (-) TimerEvent: {}
+[3.779635] (-) TimerEvent: {}
+[3.880291] (-) TimerEvent: {}
+[3.910127] (odrive_can) StdoutLine: {'line': b'[ 81%] Built target odrive_can_node\n'}
+[3.949917] (odrive_can) StdoutLine: {'line': b'[ 90%] Built target odrive_can__rosidl_generator_py\n'}
+[3.980453] (-) TimerEvent: {}
+[4.081137] (-) TimerEvent: {}
+[4.181911] (-) TimerEvent: {}
+[4.220421] (odrive_can) StdoutLine: {'line': b'[ 93%] Built target odrive_can__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.222872] (odrive_can) StdoutLine: {'line': b'[ 96%] Built target odrive_can__rosidl_typesupport_introspection_c__pyext\n'}
+[4.263209] (odrive_can) StdoutLine: {'line': b'[100%] Built target odrive_can__rosidl_typesupport_c__pyext\n'}
+[4.282068] (-) TimerEvent: {}
+[4.298077] (odrive_can) StdoutLine: {'line': b'running egg_info\n'}
+[4.301886] (odrive_can) StdoutLine: {'line': b'writing odrive_can.egg-info/PKG-INFO\n'}
+[4.303106] (odrive_can) StdoutLine: {'line': b'writing dependency_links to odrive_can.egg-info/dependency_links.txt\n'}
+[4.304661] (odrive_can) StdoutLine: {'line': b'writing top-level names to odrive_can.egg-info/top_level.txt\n'}
+[4.315430] (odrive_can) StdoutLine: {'line': b"reading manifest file 'odrive_can.egg-info/SOURCES.txt'\n"}
+[4.326873] (odrive_can) StdoutLine: {'line': b"writing manifest file 'odrive_can.egg-info/SOURCES.txt'\n"}
+[4.382499] (-) TimerEvent: {}
+[4.484500] (-) TimerEvent: {}
+[4.517866] (odrive_can) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_odrive_can_egg\n'}
+[4.542079] (odrive_control_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/odrive_control_py', 'build', '--build-base', '/home/vedant/OdriveCANControl/build/odrive_control_py/build', 'install', '--record', '/home/vedant/OdriveCANControl/build/odrive_control_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/vedant/OdriveCANControl/src/odrive_control_py', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'vedant', 'SSH_CLIENT': '192.168.10.119 59390 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/vedant', 'OLDPWD': '/home/vedant', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'PS1': '(odrv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'vedant', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/vedant/odrv/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': '(odrv)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/vedant/odrv', 'PWD': '/home/vedant/OdriveCANControl/build/odrive_control_py', 'SSH_CONNECTION': '192.168.10.119 59390 192.168.10.145 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vedant/OdriveCANControl/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[4.572519] (odrive_can) CommandEnded: {'returncode': 0}
+[4.584615] (-) TimerEvent: {}
+[4.599688] (odrive_can) JobProgress: {'identifier': 'odrive_can', 'progress': 'install'}
+[4.634783] (odrive_can) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vedant/OdriveCANControl/build/odrive_can'], 'cwd': '/home/vedant/OdriveCANControl/build/odrive_can', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SSH_CLIENT', '192.168.10.119 59390 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '(odrv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vedant/odrv/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('VIRTUAL_ENV_PROMPT', '(odrv)'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUAL_ENV', '/home/vedant/odrv'), ('PWD', '/home/vedant/OdriveCANControl/build/odrive_can'), ('SSH_CONNECTION', '192.168.10.119 59390 192.168.10.145 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.684915] (odrive_can) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.685541] (-) TimerEvent: {}
+[4.716699] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/ament_index/resource_index/rosidl_interfaces/odrive_can\n'}
+[4.725059] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can\n'}
+[4.729473] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv\n'}
+[4.733458] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/axis_state.h\n'}
+[4.734607] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail\n'}
+[4.738218] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__struct.h\n'}
+[4.739625] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__functions.h\n'}
+[4.740028] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__type_support.h\n'}
+[4.740922] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__functions.c\n'}
+[4.741992] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg\n'}
+[4.743487] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.745201] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/control_message.h\n'}
+[4.745775] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/controller_status.h\n'}
+[4.746153] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail\n'}
+[4.748529] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__functions.c\n'}
+[4.749236] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__functions.h\n'}
+[4.751188] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__struct.h\n'}
+[4.752013] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__functions.c\n'}
+[4.753373] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__type_support.h\n'}
+[4.754399] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__struct.h\n'}
+[4.754782] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__type_support.h\n'}
+[4.755096] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__struct.h\n'}
+[4.756172] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__functions.h\n'}
+[4.757455] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__functions.h\n'}
+[4.757936] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__functions.c\n'}
+[4.758599] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__type_support.h\n'}
+[4.760065] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/o_drive_status.h\n'}
+[4.760813] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/environment/library_path.sh\n'}
+[4.761943] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/environment/library_path.dsv\n'}
+[4.779337] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_generator_c.so\n'}
+[4.780436] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can\n'}
+[4.781306] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv\n'}
+[4.781920] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail\n'}
+[4.783530] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__rosidl_typesupport_fastrtps_c.h\n'}
+[4.784618] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg\n'}
+[4.786111] (-) TimerEvent: {}
+[4.786596] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail\n'}
+[4.787175] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__rosidl_typesupport_fastrtps_c.h\n'}
+[4.788623] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_fastrtps_c.h\n'}
+[4.789563] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__rosidl_typesupport_fastrtps_c.h\n'}
+[4.789927] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.797617] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_fastrtps_c.so\n'}
+[4.798878] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can\n'}
+[4.799843] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv\n'}
+[4.800568] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/axis_state.hpp\n'}
+[4.801526] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail\n'}
+[4.802393] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__builder.hpp\n'}
+[4.803091] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__type_support.hpp\n'}
+[4.804312] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__struct.hpp\n'}
+[4.804884] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__traits.hpp\n'}
+[4.805529] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg\n'}
+[4.806558] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.807696] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/control_message.hpp\n'}
+[4.808397] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/o_drive_status.hpp\n'}
+[4.809346] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/controller_status.hpp\n'}
+[4.810274] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail\n'}
+[4.810826] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__traits.hpp\n'}
+[4.812060] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__traits.hpp\n'}
+[4.813062] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__builder.hpp\n'}
+[4.813731] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__type_support.hpp\n'}
+[4.814121] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__struct.hpp\n'}
+[4.815055] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__builder.hpp\n'}
+[4.815955] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__traits.hpp\n'}
+[4.817026] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__builder.hpp\n'}
+[4.818124] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__type_support.hpp\n'}
+[4.819057] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__type_support.hpp\n'}
+[4.819743] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__struct.hpp\n'}
+[4.820207] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__struct.hpp\n'}
+[4.820597] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can\n'}
+[4.820971] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv\n'}
+[4.821395] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail\n'}
+[4.821802] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.822194] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/dds_fastrtps\n'}
+[4.822538] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg\n'}
+[4.822819] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.823260] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail\n'}
+[4.823883] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.824353] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/dds_fastrtps\n'}
+[4.824741] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.825159] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.828798] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.830442] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can\n'}
+[4.831564] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv\n'}
+[4.832300] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail\n'}
+[4.833419] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__type_support.c\n'}
+[4.834630] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__rosidl_typesupport_introspection_c.h\n'}
+[4.835398] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg\n'}
+[4.836246] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail\n'}
+[4.836895] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_introspection_c.h\n'}
+[4.837273] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__rosidl_typesupport_introspection_c.h\n'}
+[4.837763] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__type_support.c\n'}
+[4.838182] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__type_support.c\n'}
+[4.838593] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__type_support.c\n'}
+[4.838964] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__rosidl_typesupport_introspection_c.h\n'}
+[4.839382] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.849924] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_introspection_c.so\n'}
+[4.860768] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_c.so\n'}
+[4.861810] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can\n'}
+[4.862446] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv\n'}
+[4.863339] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail\n'}
+[4.864031] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__type_support.cpp\n'}
+[4.864522] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.865507] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg\n'}
+[4.866105] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail\n'}
+[4.867403] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__type_support.cpp\n'}
+[4.868110] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.868977] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__type_support.cpp\n'}
+[4.869500] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.869770] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.870072] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__type_support.cpp\n'}
+[4.880381] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_introspection_cpp.so\n'}
+[4.886488] (-) TimerEvent: {}
+[4.894380] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_cpp.so\n'}
+[4.895942] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/environment/pythonpath.sh\n'}
+[4.896850] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/environment/pythonpath.dsv\n'}
+[4.911416] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info\n'}
+[4.915928] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[4.917225] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[4.918569] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[4.920183] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[4.921621] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can\n'}
+[4.925890] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv\n'}
+[4.930566] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv/_axis_state_s.c\n'}
+[4.931742] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv/__init__.py\n'}
+[4.932116] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv/_axis_state.py\n'}
+[4.932556] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg\n'}
+[4.935356] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_o_drive_status_s.c\n'}
+[4.936500] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_o_drive_status.py\n'}
+[4.937181] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/__init__.py\n'}
+[4.938080] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_controller_status.py\n'}
+[4.938921] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_control_message_s.c\n'}
+[4.939529] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_controller_status_s.c\n'}
+[4.940577] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_control_message.py\n'}
+[4.941125] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/_odrive_can_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.941737] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/libodrive_can__rosidl_generator_py.so\n'}
+[4.942377] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.942859] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/_odrive_can_s.ep.rosidl_typesupport_c.c\n'}
+[4.943340] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/_odrive_can_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.943697] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/__init__.py\n'}
+[4.943976] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.944387] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.986522] (-) TimerEvent: {}
+[5.087336] (-) TimerEvent: {}
+[5.139742] (odrive_can) StdoutLine: {'line': b"Listing '/home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can'...\n"}
+[5.140971] (odrive_can) StdoutLine: {'line': b"Listing '/home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg'...\n"}
+[5.141992] (odrive_can) StdoutLine: {'line': b"Listing '/home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv'...\n"}
+[5.182230] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[5.187456] (-) TimerEvent: {}
+[5.192409] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[5.204750] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[5.218387] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_generator_py.so\n'}
+[5.223528] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/msg/ControlMessage.idl\n'}
+[5.224308] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/msg/ControllerStatus.idl\n'}
+[5.225101] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/msg/ODriveStatus.idl\n'}
+[5.229032] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/srv/AxisState.idl\n'}
+[5.229888] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/msg/ControlMessage.msg\n'}
+[5.230993] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/msg/ControllerStatus.msg\n'}
+[5.231651] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/msg/ODriveStatus.msg\n'}
+[5.232152] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/srv/AxisState.srv\n'}
+[5.232939] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/srv/AxisState_Request.msg\n'}
+[5.233282] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/srv/AxisState_Response.msg\n'}
+[5.250081] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/lib/odrive_can/odrive_can_node\n'}
+[5.251950] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/launch\n'}
+[5.255705] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/launch/example_launch.yaml\n'}
+[5.259924] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/ament_index/resource_index/package_run_dependencies/odrive_can\n'}
+[5.264248] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/ament_index/resource_index/parent_prefix_path/odrive_can\n'}
+[5.265316] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/environment/ament_prefix_path.sh\n'}
+[5.266579] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/environment/ament_prefix_path.dsv\n'}
+[5.267622] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/environment/path.sh\n'}
+[5.268163] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/environment/path.dsv\n'}
+[5.269034] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/local_setup.bash\n'}
+[5.269534] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/local_setup.sh\n'}
+[5.270376] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/local_setup.zsh\n'}
+[5.270802] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/local_setup.dsv\n'}
+[5.271332] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/package.dsv\n'}
+[5.278748] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/ament_index/resource_index/packages/odrive_can\n'}
+[5.287667] (-) TimerEvent: {}
+[5.306647] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_cExport.cmake\n'}
+[5.307536] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.317461] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.319038] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.327908] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_cppExport.cmake\n'}
+[5.337787] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.339082] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.348585] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.349284] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.359084] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_cExport.cmake\n'}
+[5.360110] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.370084] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.370952] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.380501] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_cppExport.cmake\n'}
+[5.381222] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.387753] (-) TimerEvent: {}
+[5.391538] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_pyExport.cmake\n'}
+[5.392302] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.392939] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/rosidl_cmake-extras.cmake\n'}
+[5.394052] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.394879] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.395524] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.396462] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.397890] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.399461] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.400785] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_canConfig.cmake\n'}
+[5.401201] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_canConfig-version.cmake\n'}
+[5.402189] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/package.xml\n'}
+[5.410887] (odrive_can) CommandEnded: {'returncode': 0}
+[5.488503] (-) TimerEvent: {}
+[5.589360] (-) TimerEvent: {}
+[5.644595] (odrive_control_py) StdoutLine: {'line': b'running egg_info\n'}
+[5.647097] (odrive_control_py) StdoutLine: {'line': b'writing ../../build/odrive_control_py/odrive_control_py.egg-info/PKG-INFO\n'}
+[5.656879] (odrive_control_py) StdoutLine: {'line': b'writing dependency_links to ../../build/odrive_control_py/odrive_control_py.egg-info/dependency_links.txt\n'}
+[5.659632] (odrive_control_py) StdoutLine: {'line': b'writing entry points to ../../build/odrive_control_py/odrive_control_py.egg-info/entry_points.txt\n'}
+[5.660930] (odrive_control_py) StdoutLine: {'line': b'writing requirements to ../../build/odrive_control_py/odrive_control_py.egg-info/requires.txt\n'}
+[5.661579] (odrive_control_py) StdoutLine: {'line': b'writing top-level names to ../../build/odrive_control_py/odrive_control_py.egg-info/top_level.txt\n'}
+[5.664128] (odrive_can) JobEnded: {'identifier': 'odrive_can', 'rc': 0}
+[5.670015] (odrive_control_py) StdoutLine: {'line': b"reading manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'\n"}
+[5.684660] (odrive_control_py) StdoutLine: {'line': b"writing manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'\n"}
+[5.685593] (odrive_control_py) StdoutLine: {'line': b'running build\n'}
+[5.686176] (odrive_control_py) StdoutLine: {'line': b'running build_py\n'}
+[5.689487] (-) TimerEvent: {}
+[5.700391] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/encoder_read_node.py -> /home/vedant/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[5.701919] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/FCM_test_node.py -> /home/vedant/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[5.704999] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/FCM_test2_node.py -> /home/vedant/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[5.709310] (odrive_control_py) StdoutLine: {'line': b'running install\n'}
+[5.710825] (odrive_control_py) StdoutLine: {'line': b'running install_lib\n'}
+[5.718271] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py/encoder_read_node.py -> /home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[5.719440] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py/FCM_test_node.py -> /home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[5.722507] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/OdriveCANControl/build/odrive_control_py/build/lib/odrive_control_py/FCM_test2_node.py -> /home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[5.730180] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/encoder_read_node.py to encoder_read_node.cpython-310.pyc\n'}
+[5.736829] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/FCM_test_node.py to FCM_test_node.cpython-310.pyc\n'}
+[5.740321] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/FCM_test2_node.py to FCM_test2_node.cpython-310.pyc\n'}
+[5.744058] (odrive_control_py) StdoutLine: {'line': b'running install_data\n'}
+[5.757742] (odrive_control_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.768234] (odrive_control_py) StdoutLine: {'line': b"removing '/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.770627] (odrive_control_py) StdoutLine: {'line': b'Copying ../../build/odrive_control_py/odrive_control_py.egg-info to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info\n'}
+[5.779614] (odrive_control_py) StdoutLine: {'line': b'running install_scripts\n'}
+[5.789667] (-) TimerEvent: {}
+[5.859367] (odrive_control_py) StdoutLine: {'line': b'Installing data_recording_node script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py\n'}
+[5.863434] (odrive_control_py) StdoutLine: {'line': b'Installing encoder_read_node script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py\n'}
+[5.864233] (odrive_control_py) StdoutLine: {'line': b'Installing odrive_control_node script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py\n'}
+[5.866507] (odrive_control_py) StdoutLine: {'line': b"writing list of installed files to '/home/vedant/OdriveCANControl/build/odrive_control_py/install.log'\n"}
+[5.889870] (-) TimerEvent: {}
+[5.984028] (odrive_control_py) CommandEnded: {'returncode': 0}
+[5.989978] (-) TimerEvent: {}
+[6.027452] (odrive_control_py) JobEnded: {'identifier': 'odrive_control_py', 'rc': 0}
+[6.030644] (-) EventReactorShutdown: {}

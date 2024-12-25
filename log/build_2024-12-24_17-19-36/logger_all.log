@@ -1,0 +1,287 @@
+[0.455s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'odrive_can', 'odrive_control_py']
+[0.456s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['odrive_can', 'odrive_control_py'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff95fdc340>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff961048b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff961048b0>>, mixin_verb=('build',))
+[1.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.158s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/vedant/OdriveCANControl'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_sync) by extensions ['ignore', 'ignore_ament_install']
+[1.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_sync) by extension 'ignore'
+[1.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_sync) by extension 'ignore_ament_install'
+[1.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_sync) by extensions ['colcon_pkg']
+[1.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_sync) by extension 'colcon_pkg'
+[1.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_sync) by extensions ['colcon_meta']
+[1.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_sync) by extension 'colcon_meta'
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_sync) by extensions ['ros']
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_sync) by extension 'ros'
+[1.229s] DEBUG:colcon.colcon_core.package_identification:Package 'src/data_sync' with type 'ros.ament_cmake' and name 'data_sync'
+[1.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extensions ['ignore', 'ignore_ament_install']
+[1.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extension 'ignore'
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extension 'ignore_ament_install'
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extensions ['colcon_pkg']
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extension 'colcon_pkg'
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extensions ['colcon_meta']
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extension 'colcon_meta'
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extensions ['ros']
+[1.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extension 'ros'
+[1.234s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odrive_control_py' with type 'ros.ament_python' and name 'odrive_control_py'
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive) by extensions ['ignore', 'ignore_ament_install']
+[1.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive) by extension 'ignore'
+[1.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive) by extension 'ignore_ament_install'
+[1.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive) by extensions ['colcon_pkg']
+[1.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive) by extension 'colcon_pkg'
+[1.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive) by extensions ['colcon_meta']
+[1.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive) by extension 'colcon_meta'
+[1.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive) by extensions ['ros']
+[1.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive) by extension 'ros'
+[1.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive) by extensions ['cmake', 'python']
+[1.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive) by extension 'cmake'
+[1.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive) by extension 'python'
+[1.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive) by extensions ['python_setup_py']
+[1.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive) by extension 'python_setup_py'
+[1.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base) by extensions ['ignore', 'ignore_ament_install']
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base) by extension 'ignore'
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base) by extension 'ignore_ament_install'
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base) by extensions ['colcon_pkg']
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base) by extension 'colcon_pkg'
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base) by extensions ['colcon_meta']
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base) by extension 'colcon_meta'
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base) by extensions ['ros']
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base) by extension 'ros'
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base) by extensions ['cmake', 'python']
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base) by extension 'cmake'
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base) by extension 'python'
+[1.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base) by extensions ['python_setup_py']
+[1.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base) by extension 'python_setup_py'
+[1.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/include) by extensions ['ignore', 'ignore_ament_install']
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/include) by extension 'ignore'
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/include) by extension 'ignore_ament_install'
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/include) by extensions ['colcon_pkg']
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/include) by extension 'colcon_pkg'
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/include) by extensions ['colcon_meta']
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/include) by extension 'colcon_meta'
+[1.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/include) by extensions ['ros']
+[1.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/include) by extension 'ros'
+[1.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/include) by extensions ['cmake', 'python']
+[1.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/include) by extension 'cmake'
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/include) by extension 'python'
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/include) by extensions ['python_setup_py']
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/include) by extension 'python_setup_py'
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/src) by extensions ['ignore', 'ignore_ament_install']
+[1.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/src) by extension 'ignore'
+[1.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/src) by extension 'ignore_ament_install'
+[1.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/src) by extensions ['colcon_pkg']
+[1.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/src) by extension 'colcon_pkg'
+[1.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/src) by extensions ['colcon_meta']
+[1.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/src) by extension 'colcon_meta'
+[1.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/src) by extensions ['ros']
+[1.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/src) by extension 'ros'
+[1.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/src) by extensions ['cmake', 'python']
+[1.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/src) by extension 'cmake'
+[1.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/src) by extension 'python'
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/src) by extensions ['python_setup_py']
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_base/src) by extension 'python_setup_py'
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_botwheel_explorer) by extensions ['ignore', 'ignore_ament_install']
+[1.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_botwheel_explorer) by extension 'ignore'
+[1.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_botwheel_explorer) by extension 'ignore_ament_install'
+[1.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_botwheel_explorer) by extensions ['colcon_pkg']
+[1.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_botwheel_explorer) by extension 'colcon_pkg'
+[1.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_botwheel_explorer) by extensions ['colcon_meta']
+[1.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_botwheel_explorer) by extension 'colcon_meta'
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_botwheel_explorer) by extensions ['ros']
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_botwheel_explorer) by extension 'ros'
+[1.250s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_odrive/odrive_botwheel_explorer' with type 'ros.ament_cmake' and name 'odrive_botwheel_explorer'
+[1.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_node) by extensions ['ignore', 'ignore_ament_install']
+[1.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_node) by extension 'ignore'
+[1.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_node) by extension 'ignore_ament_install'
+[1.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_node) by extensions ['colcon_pkg']
+[1.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_node) by extension 'colcon_pkg'
+[1.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_node) by extensions ['colcon_meta']
+[1.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_node) by extension 'colcon_meta'
+[1.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_node) by extensions ['ros']
+[1.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_node) by extension 'ros'
+[1.255s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_odrive/odrive_node' with type 'ros.ament_cmake' and name 'odrive_can'
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_ros2_control) by extension 'ignore'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_ros2_control) by extension 'ignore_ament_install'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_ros2_control) by extensions ['colcon_pkg']
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_ros2_control) by extension 'colcon_pkg'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_ros2_control) by extensions ['colcon_meta']
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_ros2_control) by extension 'colcon_meta'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_ros2_control) by extensions ['ros']
+[1.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_odrive/odrive_ros2_control) by extension 'ros'
+[1.260s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_odrive/odrive_ros2_control' with type 'ros.ament_cmake' and name 'odrive_ros2_control'
+[1.261s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.261s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.261s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.261s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.261s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.336s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'data_sync' in 'src/data_sync'
+[1.337s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'odrive_ros2_control' in 'src/ros_odrive/odrive_ros2_control'
+[1.337s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'odrive_botwheel_explorer' in 'src/ros_odrive/odrive_botwheel_explorer'
+[1.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.350s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 189 installed packages in /opt/ros/humble
+[1.355s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.557s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'cmake_args' from command line to 'None'
+[1.557s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'cmake_target' from command line to 'None'
+[1.557s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.557s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'cmake_clean_cache' from command line to 'False'
+[1.557s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'cmake_clean_first' from command line to 'False'
+[1.558s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'cmake_force_configure' from command line to 'False'
+[1.558s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'ament_cmake_args' from command line to 'None'
+[1.558s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'catkin_cmake_args' from command line to 'None'
+[1.558s] Level 5:colcon.colcon_core.verb:set package 'odrive_can' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.558s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_can' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vedant/OdriveCANControl/build/odrive_can', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vedant/OdriveCANControl/install/odrive_can', 'merge_install': False, 'path': '/home/vedant/OdriveCANControl/src/ros_odrive/odrive_node', 'symlink_install': False, 'test_result_base': None}
+[1.560s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'cmake_args' from command line to 'None'
+[1.560s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'cmake_target' from command line to 'None'
+[1.561s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.561s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'cmake_clean_cache' from command line to 'False'
+[1.561s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'cmake_clean_first' from command line to 'False'
+[1.561s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'cmake_force_configure' from command line to 'False'
+[1.561s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'ament_cmake_args' from command line to 'None'
+[1.561s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'catkin_cmake_args' from command line to 'None'
+[1.561s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.562s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_control_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vedant/OdriveCANControl/build/odrive_control_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vedant/OdriveCANControl/install/odrive_control_py', 'merge_install': False, 'path': '/home/vedant/OdriveCANControl/src/odrive_control_py', 'symlink_install': False, 'test_result_base': None}
+[1.562s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.566s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.567s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vedant/OdriveCANControl/src/ros_odrive/odrive_node' with build type 'ament_cmake'
+[1.569s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vedant/OdriveCANControl/src/ros_odrive/odrive_node'
+[1.584s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.585s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.586s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.604s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/vedant/OdriveCANControl/src/odrive_control_py' with build type 'ament_python'
+[1.604s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_control_py', 'ament_prefix_path')
+[1.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/hook/ament_prefix_path.ps1'
+[1.612s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/hook/ament_prefix_path.dsv'
+[1.617s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/hook/ament_prefix_path.sh'
+[1.630s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.630s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vedant/OdriveCANControl/build/odrive_can': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=(odrv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(odrv) /usr/bin/cmake --build /home/vedant/OdriveCANControl/build/odrive_can -- -j4 -l4
+[3.468s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/vedant/OdriveCANControl/src/odrive_control_py'
+[3.469s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.469s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.079s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vedant/OdriveCANControl/build/odrive_can' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=(odrv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(odrv) /usr/bin/cmake --build /home/vedant/OdriveCANControl/build/odrive_can -- -j4 -l4
+[4.120s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vedant/OdriveCANControl/build/odrive_can': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=(odrv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(odrv) /usr/bin/cmake --install /home/vedant/OdriveCANControl/build/odrive_can
+[4.503s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_can)
+[4.506s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vedant/OdriveCANControl/build/odrive_can' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=(odrv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(odrv) /usr/bin/cmake --install /home/vedant/OdriveCANControl/build/odrive_can
+[4.517s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_can' for CMake module files
+[4.521s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_can' for CMake config files
+[4.529s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_can', 'cmake_prefix_path')
+[4.530s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/hook/cmake_prefix_path.ps1'
+[4.532s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/hook/cmake_prefix_path.dsv'
+[4.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/hook/cmake_prefix_path.sh'
+[4.538s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_can/lib'
+[4.539s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_can', 'ld_library_path_lib')
+[4.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/hook/ld_library_path_lib.ps1'
+[4.542s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/hook/ld_library_path_lib.dsv'
+[4.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/hook/ld_library_path_lib.sh'
+[4.546s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_can/bin'
+[4.546s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_can/lib/pkgconfig/odrive_can.pc'
+[4.547s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_can/lib/python3.10/site-packages'
+[4.548s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_can/bin'
+[4.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/package.ps1'
+[4.554s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/package.dsv'
+[4.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/package.sh'
+[4.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/package.bash'
+[4.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/package.zsh'
+[4.567s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vedant/OdriveCANControl/install/odrive_can/share/colcon-core/packages/odrive_can)
+[4.571s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_can)
+[4.572s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_can' for CMake module files
+[4.577s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_can' for CMake config files
+[4.584s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_can', 'cmake_prefix_path')
+[4.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/hook/cmake_prefix_path.ps1'
+[4.588s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/hook/cmake_prefix_path.dsv'
+[4.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/hook/cmake_prefix_path.sh'
+[4.595s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_can/lib'
+[4.595s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_can', 'ld_library_path_lib')
+[4.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/hook/ld_library_path_lib.ps1'
+[4.599s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/hook/ld_library_path_lib.dsv'
+[4.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/hook/ld_library_path_lib.sh'
+[4.605s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_can/bin'
+[4.605s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_can/lib/pkgconfig/odrive_can.pc'
+[4.607s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_can/lib/python3.10/site-packages'
+[4.608s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_can/bin'
+[4.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/package.ps1'
+[4.613s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/package.dsv'
+[4.616s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/package.sh'
+[4.620s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/package.bash'
+[4.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/package.zsh'
+[4.626s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vedant/OdriveCANControl/install/odrive_can/share/colcon-core/packages/odrive_can)
+[5.135s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vedant/OdriveCANControl/src/odrive_control_py': PS1=(odrv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/vedant/OdriveCANControl/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(odrv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odrive_control_py build --build-base /home/vedant/OdriveCANControl/build/odrive_control_py/build install --record /home/vedant/OdriveCANControl/build/odrive_control_py/install.log --single-version-externally-managed install_data
+[6.468s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_control_py' for CMake module files
+[6.471s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vedant/OdriveCANControl/src/odrive_control_py' returned '0': PS1=(odrv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/vedant/OdriveCANControl/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(odrv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odrive_control_py build --build-base /home/vedant/OdriveCANControl/build/odrive_control_py/build install --record /home/vedant/OdriveCANControl/build/odrive_control_py/install.log --single-version-externally-managed install_data
+[6.473s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_control_py' for CMake config files
+[6.477s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_control_py/lib'
+[6.478s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_control_py/bin'
+[6.478s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_control_py/lib/pkgconfig/odrive_control_py.pc'
+[6.479s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages'
+[6.479s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_control_py', 'pythonpath')
+[6.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/hook/pythonpath.ps1'
+[6.483s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/hook/pythonpath.dsv'
+[6.485s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/hook/pythonpath.sh'
+[6.488s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_control_py/bin'
+[6.489s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_control_py)
+[6.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/package.ps1'
+[6.493s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/package.dsv'
+[6.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/package.sh'
+[6.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/package.bash'
+[6.500s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/package.zsh'
+[6.502s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vedant/OdriveCANControl/install/odrive_control_py/share/colcon-core/packages/odrive_control_py)
+[6.503s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.505s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.505s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.506s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.528s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.528s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.529s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.570s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.571s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vedant/OdriveCANControl/install/local_setup.ps1'
+[6.576s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/vedant/OdriveCANControl/install/_local_setup_util_ps1.py'
+[6.582s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vedant/OdriveCANControl/install/setup.ps1'
+[6.586s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vedant/OdriveCANControl/install/local_setup.sh'
+[6.589s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/vedant/OdriveCANControl/install/_local_setup_util_sh.py'
+[6.592s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vedant/OdriveCANControl/install/setup.sh'
+[6.598s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vedant/OdriveCANControl/install/local_setup.bash'
+[6.602s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vedant/OdriveCANControl/install/setup.bash'
+[6.607s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vedant/OdriveCANControl/install/local_setup.zsh'
+[6.611s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vedant/OdriveCANControl/install/setup.zsh'
