@@ -24,13 +24,16 @@ class FrictionCompensationNode(Node):
         )
 
         self.position_data = []  # Buffer to store incoming position data
-        self.timer = self.create_timer(0.01, self.process_data)  # 20 Hz processing
+
+        self.publish_rate = 100.0  # Hz
+        self.publish_period = 1.0 / self.publish_rate
+        self.timer = self.create_timer(self.publish_period, self.process_data)  # 20 Hz processing
 
     def velocity_5_point_backward(self, position):
         """
         Calculate velocity using the 5-point backward difference method.
         """
-        coefficients = np.array([-25, 48, -36, 16, -3]) / 12.0
+        coefficients = np.array([-25, 48, -36, 16, -3]) / (12.0 * self.publish_period)
 
         if len(position) < 5:
             return 0.0  # Return 0.0 if insufficient data for velocity calculation
@@ -38,7 +41,7 @@ class FrictionCompensationNode(Node):
         # self.get_logger().info(f'Calculated Position: {position}')
 
         # Compute velocity using the 5-point backward difference
-        velocity = np.dot(position[-5:], coefficients)
+        velocity = np.dot(position, coefficients)
         self.get_logger().info(f'Calculated Velocity: {velocity}')
 
         return velocity
@@ -52,17 +55,23 @@ class FrictionCompensationNode(Node):
         return 0.0
 
     def position_callback(self, msg):
-        """Callback to receive position values."""
-        self.position_data.append(msg.data)
+        """Callback to receive position values and convert to radians."""
+        counts = msg.data
+        counts_to_rads = counts * (3/8192) 
+        self.position_data.append(counts_to_rads)
 
         # Maintain a fixed buffer size of 5
         if len(self.position_data) > 5:
             self.position_data.pop(0)
 
-        # self.get_logger().info(f'Updated Position Buffer: {self.position_data}')
+        self.get_logger().info(f'Updated Position Buffer: {self.position_data}')
+        self.get_logger().info(f'Updated counts to radians: {counts_to_rads}')
+
 
     def process_data(self):
         """Process the buffered position data and publish torque commands."""
+        gain = 0.0525
+
         if len(self.position_data) < 5:
             return  # Wait for sufficient data
 
@@ -70,7 +79,7 @@ class FrictionCompensationNode(Node):
         velocity = self.velocity_5_point_backward(self.position_data)
 
         # Step 2: Compute compensation torque
-        compensation_torque = self.friction_compensation(velocity)
+        compensation_torque = gain * self.friction_compensation(velocity)
 
         # Step 3: Combine with input torque (placeholder for actual input torque logic)
         input_torque = 0.0  # Example constant input torque
@@ -84,7 +93,7 @@ class FrictionCompensationNode(Node):
         # create_msg.input_vel = 0.0
         # create_msg.input_torque = total_torque
 
-        self.get_logger().info(f'Publishing Torque Command: {total_torque}')
+        # self.get_logger().info(f'Publishing Torque Command: {total_torque}')
         # self.publisher.publish(create_msg)
 
 
