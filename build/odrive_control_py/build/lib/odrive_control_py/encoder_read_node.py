@@ -34,8 +34,8 @@ class AMT102VEncoderNode(Node):
         self.callback_b = None
 
         # Default GPIO pins for encoder
-        channel_a_pin = 21
-        channel_b_pin = 20
+        channel_a_pin = 20
+        channel_b_pin = 21
 
         try:
             # Initialize pigpio connection

@@ -41,7 +41,7 @@ class FrictionCompensationNode(Node):
         # self.get_logger().info(f'Calculated Position: {position}')
 
         # Compute velocity using the 5-point backward difference
-        velocity = np.dot(position[:], coefficients)
+        velocity = np.dot(position, coefficients)
         self.get_logger().info(f'Calculated Velocity: {velocity}')
 
         return velocity
