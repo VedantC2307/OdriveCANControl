@@ -1,0 +1,4 @@
+impedance_params:
+  I: 0.1
+  B: 0.1
+  K: 50

@@ -1,8 +1,10 @@
 import rclpy
 from rclpy.node import Node
 import numpy as np
-from std_msgs.msg import Int64
+from std_msgs.msg import Int64, Float32
+from sensor_msgs.msg import JointState
 from odrive_can.msg import ControlMessage
+from collections import deque
 
 class FrictionCompensationNode(Node):
     def __init__(self):
@@ -10,92 +12,53 @@ class FrictionCompensationNode(Node):
 
         # Subscribe to position values (e.g., from a motor encoder)
         self.subscription = self.create_subscription(
-            Int64,  # Message type
-            'encoder_position',  # Topic name
-            self.position_callback,
+            JointState,  # Message type
+            'motor_state',  # Topic name
+            self.state_callback,  # Callback function
             10  # QoS profile
         )
 
-        # Publisher to send torque commands
-        self.publisher = self.create_publisher(
-            ControlMessage,  
-            '/odrive_axis0/control_message',  
-            10  # QoS profile
+        # Publisher to publish friction compensation torque
+        self.fcomp_publisher = self.create_publisher(
+            Float32,  # Float32 메시지 타입
+            'friction_comp_torque',  # 토픽 이름
+            10  # QoS 프로파일
         )
-
-        self.position_data = []  # Buffer to store incoming position data
+        ## Friction model gain
+        self.comp_gain = 0.0525
 
         self.publish_rate = 100.0  # Hz
         self.publish_period = 1.0 / self.publish_rate
-        self.timer = self.create_timer(self.publish_period, self.process_data)  # 20 Hz processing
+        self.timer = self.create_timer(self.publish_period, self.process_data)  # 100 Hz processing
 
-    def velocity_5_point_backward(self, position):
-        """
-        Calculate velocity using the 5-point backward difference method.
-        """
-        coefficients = np.array([-25, 48, -36, 16, -3]) / (12.0 * self.publish_period)
-
-        if len(position) < 5:
-            return 0.0  # Return 0.0 if insufficient data for velocity calculation
-        
-        # self.get_logger().info(f'Calculated Position: {position}')
-
-        # Compute velocity using the 5-point backward difference
-        velocity = np.dot(position, coefficients)
-        self.get_logger().info(f'Calculated Velocity: {velocity}')
-
-        return velocity
 
     def friction_compensation(self, velocity):
         """
         Compute friction compensation torque based on velocity.
         """
         if abs(velocity) > 0.2:
-            return 0.38 * np.sign(velocity)
+            return 0.38 * np.sign(velocity) ## this part we need to check
         return 0.0
 
-    def position_callback(self, msg):
+    def state_callback(self, msg):
         """Callback to receive position values and convert to radians."""
-        counts = msg.data
-        counts_to_rads = counts * (3/8192) 
-        self.position_data.append(counts_to_rads)
 
-        # Maintain a fixed buffer size of 5
-        if len(self.position_data) > 5:
-            self.position_data.pop(0)
-
-        self.get_logger().info(f'Updated Position Buffer: {self.position_data}')
-        self.get_logger().info(f'Updated counts to radians: {counts_to_rads}')
+        self.position = msg.position
+        self.velocity = msg.velocity
 
 
     def process_data(self):
         """Process the buffered position data and publish torque commands."""
-        gain = 0.0525
 
-        if len(self.position_data) < 5:
-            return  # Wait for sufficient data
+        # Step 1: Compute compensation torque
+        compensation_torque = self.comp_gain * self.friction_compensation(self.velocity)
 
-        # Step 1: Compute velocity
-        velocity = self.velocity_5_point_backward(self.position_data)
-
-        # Step 2: Compute compensation torque
-        compensation_torque = gain * self.friction_compensation(velocity)
-
-        # Step 3: Combine with input torque (placeholder for actual input torque logic)
-        input_torque = 0.0  # Example constant input torque
-        total_torque = input_torque + compensation_torque
-
-        # Step 4: Publish the torque command
-        # create_msg = ControlMessage()
-        # create_msg.control_mode = 1  # Torque control
-        # create_msg.input_mode = 1  # Passthrough
-        # create_msg.input_pos = 0.0
-        # create_msg.input_vel = 0.0
-        # create_msg.input_torque = total_torque
-
-        # self.get_logger().info(f'Publishing Torque Command: {total_torque}')
-        # self.publisher.publish(create_msg)
-
+        # Publish the compensation torque
+        # We will not publish this torque directly to the motor because we will combine all torque from impedance and friction compensation and send it to motor
+        torque_msg = Float32()
+        torque_msg.data = compensation_torque  # 토크 값 설정
+        self.fcomp_publisher.publish(torque_msg)  # 메시지 Publish
+        self.get_logger().info(f'Published Torque Command: {compensation_torque}')
 
 def main(args=None):
     rclpy.init(args=args)
