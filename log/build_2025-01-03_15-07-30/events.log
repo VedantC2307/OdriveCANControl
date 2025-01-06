@@ -1,0 +1,13 @@
+[0.000000] (-) TimerEvent: {}
+[0.001690] (-) JobUnselected: {'identifier': 'controller'}
+[0.002528] (-) JobUnselected: {'identifier': 'data_logging'}
+[0.003297] (-) JobUnselected: {'identifier': 'data_sync'}
+[0.003644] (-) JobUnselected: {'identifier': 'encoder'}
+[0.004061] (-) JobUnselected: {'identifier': 'odrive_botwheel_explorer'}
+[0.004295] (-) JobUnselected: {'identifier': 'odrive_can'}
+[0.004397] (-) JobUnselected: {'identifier': 'odrive_ros2_control'}
+[0.004482] (-) JobUnselected: {'identifier': 'testing'}
+[0.004583] (odrive_control_py) JobQueued: {'identifier': 'odrive_control_py', 'dependencies': OrderedDict([('data_sync', '/home/vedant/OdriveCANControl/install/data_sync')])}
+[0.004729] (odrive_control_py) JobStarted: {'identifier': 'odrive_control_py'}
+[0.039570] (odrive_control_py) JobEnded: {'identifier': 'odrive_control_py', 'rc': 1}
+[0.051659] (-) EventReactorShutdown: {}

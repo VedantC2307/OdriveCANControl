@@ -1,8 +1,8 @@
 import rclpy
 from rclpy.node import Node
 import numpy as np
-from std_msgs.msg import Int64
-from odrive_can.msg import ControlMessage
+from std_msgs.msg import Int64, Float32
+from custom_msgs.msg import MotionState
 
 class FrictionCompensationNode(Node):
     def __init__(self):
@@ -18,12 +18,13 @@ class FrictionCompensationNode(Node):
 
         # Publisher to send torque commands
         self.publisher = self.create_publisher(
-            ControlMessage,  
-            '/odrive_axis0/control_message',  
+            MotionState,  
+            'motor_state',  
             10  # QoS profile
         )
 
         self.position_data = []  # Buffer to store incoming position data
+        self.counts_to_rads = 0.0
 
         self.publish_rate = 100.0  # Hz
         self.publish_period = 1.0 / self.publish_rate
@@ -55,17 +56,17 @@ class FrictionCompensationNode(Node):
         return 0.0
 
     def position_callback(self, msg):
-        """Callback to receive position values and convert to radians."""
+        """Callback to receive position values in radians."""
         counts = msg.data
-        counts_to_rads = counts * (3/8192) 
-        self.position_data.append(counts_to_rads)
+        self.counts_to_rads = counts * (3/8192) 
+        self.position_data.append(self.counts_to_rads)
 
         # Maintain a fixed buffer size of 5
         if len(self.position_data) > 5:
             self.position_data.pop(0)
 
         self.get_logger().info(f'Updated Position Buffer: {self.position_data}')
-        self.get_logger().info(f'Updated counts to radians: {counts_to_rads}')
+        self.get_logger().info(f'Updated counts to radians: {self.counts_to_rads}')
 
 
     def process_data(self):
@@ -84,6 +85,11 @@ class FrictionCompensationNode(Node):
         # Step 3: Combine with input torque (placeholder for actual input torque logic)
         input_torque = 0.0  # Example constant input torque
         total_torque = input_torque + compensation_torque
+
+        msg = MotionState()
+        msg.position = float(self.counts_to_rads)  # Single position value
+        msg.velocity = float(velocity)  # Single velocity value
+        self.publisher.publish(msg)
 
         # Step 4: Publish the torque command
         # create_msg = ControlMessage()
