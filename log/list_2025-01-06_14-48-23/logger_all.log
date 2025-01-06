@@ -1,0 +1,152 @@
+[0.489s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/vedant/gaitlab_ws']
+[0.489s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/vedant/gaitlab_ws'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x73b05ea47d00>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x73b05ea46f20>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x73b05ea46f20>>, mixin_verb=('list',))
+[1.288s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.289s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/vedant/gaitlab_ws'
+[1.290s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws) by extensions ['ignore', 'ignore_ament_install']
+[1.290s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws) by extension 'ignore'
+[1.290s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws) by extension 'ignore_ament_install'
+[1.290s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws) by extensions ['colcon_pkg']
+[1.290s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws) by extension 'colcon_pkg'
+[1.290s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws) by extensions ['colcon_meta']
+[1.290s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws) by extension 'colcon_meta'
+[1.291s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws) by extensions ['ros']
+[1.291s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws) by extension 'ros'
+[1.370s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws) by extensions ['cmake', 'python']
+[1.370s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws) by extension 'cmake'
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws) by extension 'python'
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws) by extensions ['python_setup_py']
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws) by extension 'python_setup_py'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/build) by extension 'ignore'
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/build) ignored
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/install) by extension 'ignore'
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/install) ignored
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/log) by extension 'ignore'
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/log) ignored
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[1.377s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src) by extension 'ignore'
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src) by extension 'ignore_ament_install'
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src) by extensions ['colcon_pkg']
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src) by extension 'colcon_pkg'
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src) by extensions ['colcon_meta']
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src) by extension 'colcon_meta'
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src) by extensions ['ros']
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src) by extension 'ros'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src) by extensions ['cmake', 'python']
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src) by extension 'cmake'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src) by extension 'python'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src) by extensions ['python_setup_py']
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src) by extension 'python_setup_py'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/custom_msgs) by extension 'ignore'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/custom_msgs) by extension 'ignore_ament_install'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/custom_msgs) by extensions ['colcon_pkg']
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/custom_msgs) by extension 'colcon_pkg'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/custom_msgs) by extensions ['colcon_meta']
+[1.382s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/custom_msgs) by extension 'colcon_meta'
+[1.382s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/custom_msgs) by extensions ['ros']
+[1.382s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/custom_msgs) by extension 'ros'
+[1.388s] DEBUG:colcon.colcon_core.package_identification:Package '/home/vedant/gaitlab_ws/src/custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[1.388s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/odrive_control_py) by extensions ['ignore', 'ignore_ament_install']
+[1.388s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/odrive_control_py) by extension 'ignore'
+[1.388s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/odrive_control_py) by extension 'ignore_ament_install'
+[1.389s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/odrive_control_py) by extensions ['colcon_pkg']
+[1.389s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/odrive_control_py) by extension 'colcon_pkg'
+[1.389s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/odrive_control_py) by extensions ['colcon_meta']
+[1.389s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/odrive_control_py) by extension 'colcon_meta'
+[1.389s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/odrive_control_py) by extensions ['ros']
+[1.389s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/odrive_control_py) by extension 'ros'
+[1.392s] DEBUG:colcon.colcon_core.package_identification:Package '/home/vedant/gaitlab_ws/src/odrive_control_py' with type 'ros.ament_python' and name 'odrive_control_py'
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive) by extensions ['ignore', 'ignore_ament_install']
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive) by extension 'ignore'
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive) by extension 'ignore_ament_install'
+[1.392s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive) by extensions ['colcon_pkg']
+[1.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive) by extension 'colcon_pkg'
+[1.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive) by extensions ['colcon_meta']
+[1.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive) by extension 'colcon_meta'
+[1.393s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive) by extensions ['ros']
+[1.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive) by extension 'ros'
+[1.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive) by extensions ['cmake', 'python']
+[1.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive) by extension 'cmake'
+[1.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive) by extension 'python'
+[1.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive) by extensions ['python_setup_py']
+[1.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive) by extension 'python_setup_py'
+[1.394s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base) by extensions ['ignore', 'ignore_ament_install']
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base) by extension 'ignore'
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base) by extension 'ignore_ament_install'
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base) by extensions ['colcon_pkg']
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base) by extension 'colcon_pkg'
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base) by extensions ['colcon_meta']
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base) by extension 'colcon_meta'
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base) by extensions ['ros']
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base) by extension 'ros'
+[1.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base) by extensions ['cmake', 'python']
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base) by extension 'cmake'
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base) by extension 'python'
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base) by extensions ['python_setup_py']
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base) by extension 'python_setup_py'
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/include) by extensions ['ignore', 'ignore_ament_install']
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/include) by extension 'ignore'
+[1.396s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/include) by extension 'ignore_ament_install'
+[1.397s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/include) by extensions ['colcon_pkg']
+[1.397s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/include) by extension 'colcon_pkg'
+[1.397s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/include) by extensions ['colcon_meta']
+[1.397s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/include) by extension 'colcon_meta'
+[1.397s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/include) by extensions ['ros']
+[1.397s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/include) by extension 'ros'
+[1.397s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/include) by extensions ['cmake', 'python']
+[1.397s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/include) by extension 'cmake'
+[1.397s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/include) by extension 'python'
+[1.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/include) by extensions ['python_setup_py']
+[1.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/include) by extension 'python_setup_py'
+[1.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src) by extensions ['ignore', 'ignore_ament_install']
+[1.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src) by extension 'ignore'
+[1.398s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src) by extension 'ignore_ament_install'
+[1.399s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src) by extensions ['colcon_pkg']
+[1.399s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src) by extension 'colcon_pkg'
+[1.399s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src) by extensions ['colcon_meta']
+[1.399s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src) by extension 'colcon_meta'
+[1.399s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src) by extensions ['ros']
+[1.399s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src) by extension 'ros'
+[1.399s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src) by extensions ['cmake', 'python']
+[1.399s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src) by extension 'cmake'
+[1.400s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src) by extension 'python'
+[1.400s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src) by extensions ['python_setup_py']
+[1.400s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_base/src) by extension 'python_setup_py'
+[1.400s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_botwheel_explorer) by extensions ['ignore', 'ignore_ament_install']
+[1.402s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_botwheel_explorer) by extension 'ignore'
+[1.402s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_botwheel_explorer) by extension 'ignore_ament_install'
+[1.403s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_botwheel_explorer) by extensions ['colcon_pkg']
+[1.403s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_botwheel_explorer) by extension 'colcon_pkg'
+[1.404s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_botwheel_explorer) by extensions ['colcon_meta']
+[1.404s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_botwheel_explorer) by extension 'colcon_meta'
+[1.404s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_botwheel_explorer) by extensions ['ros']
+[1.404s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_botwheel_explorer) by extension 'ros'
+[1.405s] DEBUG:colcon.colcon_core.package_identification:Package '/home/vedant/gaitlab_ws/src/ros_odrive/odrive_botwheel_explorer' with type 'ros.ament_cmake' and name 'odrive_botwheel_explorer'
+[1.406s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_node) by extensions ['ignore', 'ignore_ament_install']
+[1.406s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_node) by extension 'ignore'
+[1.406s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_node) by extension 'ignore_ament_install'
+[1.406s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_node) by extensions ['colcon_pkg']
+[1.406s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_node) by extension 'colcon_pkg'
+[1.407s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_node) by extensions ['colcon_meta']
+[1.407s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_node) by extension 'colcon_meta'
+[1.407s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_node) by extensions ['ros']
+[1.407s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_node) by extension 'ros'
+[1.410s] DEBUG:colcon.colcon_core.package_identification:Package '/home/vedant/gaitlab_ws/src/ros_odrive/odrive_node' with type 'ros.ament_cmake' and name 'odrive_can'
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_ros2_control) by extension 'ignore'
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_ros2_control) by extension 'ignore_ament_install'
+[1.410s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_ros2_control) by extensions ['colcon_pkg']
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_ros2_control) by extension 'colcon_pkg'
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_ros2_control) by extensions ['colcon_meta']
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_ros2_control) by extension 'colcon_meta'
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_ros2_control) by extensions ['ros']
+[1.411s] Level 1:colcon.colcon_core.package_identification:_identify(/home/vedant/gaitlab_ws/src/ros_odrive/odrive_ros2_control) by extension 'ros'
+[1.413s] DEBUG:colcon.colcon_core.package_identification:Package '/home/vedant/gaitlab_ws/src/ros_odrive/odrive_ros2_control' with type 'ros.ament_cmake' and name 'odrive_ros2_control'
+[1.413s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

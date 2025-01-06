@@ -1,2 +1,0 @@
-Invoking command in '/home/vedant/OdriveCANControl/build/data_sync': /usr/bin/cmake /home/vedant/OdriveCANControl/src/data_sync -DCMAKE_INSTALL_PREFIX=/home/vedant/OdriveCANControl/install/data_sync
-Invoked command in '/home/vedant/OdriveCANControl/build/data_sync' returned '1': /usr/bin/cmake /home/vedant/OdriveCANControl/src/data_sync -DCMAKE_INSTALL_PREFIX=/home/vedant/OdriveCANControl/install/data_sync

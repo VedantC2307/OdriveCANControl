@@ -1,0 +1,371 @@
+[0.000000] (-) TimerEvent: {}
+[0.000612] (-) JobUnselected: {'identifier': 'odrive_botwheel_explorer'}
+[0.000992] (-) JobUnselected: {'identifier': 'odrive_can'}
+[0.001021] (-) JobUnselected: {'identifier': 'odrive_ros2_control'}
+[0.001095] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.001127] (odrive_control_py) JobQueued: {'identifier': 'odrive_control_py', 'dependencies': OrderedDict([('custom_msgs', '/home/vedant/gaitlab_ws/install/custom_msgs')])}
+[0.001157] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.020684] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.021233] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/vedant/gaitlab_ws/src/custom_msgs', '-DCMAKE_INSTALL_PREFIX=/home/vedant/gaitlab_ws/install/custom_msgs'], 'cwd': '/home/vedant/gaitlab_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1076'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vedant'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/vedant/MultiRobotProject/src/my_world/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/vedant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/vedant/.local/bin'), ('SESSION_MANAGER', 'local/vedant-LattePanda-3-Delta:@/tmp/.ICE-unix/1048,unix/vedant-LattePanda-3-Delta:/tmp/.ICE-unix/1048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a0860937_c723_4397_b3f0_fffd929bf98b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O0XKZ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vedant/gaitlab_ws/build/custom_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099668] (-) TimerEvent: {}
+[0.200005] (-) TimerEvent: {}
+[0.255966] (custom_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.300127] (-) TimerEvent: {}
+[0.400538] (-) TimerEvent: {}
+[0.453407] (custom_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.467829] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500652] (-) TimerEvent: {}
+[0.564875] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.575630] (custom_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.577119] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.578266] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.583396] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600772] (-) TimerEvent: {}
+[0.695689] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.700845] (-) TimerEvent: {}
+[0.706399] (custom_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.706732] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.707387] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.716830] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.801017] (-) TimerEvent: {}
+[0.901415] (-) TimerEvent: {}
+[0.923631] (custom_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.001570] (-) TimerEvent: {}
+[1.083731] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.090574] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.101700] (-) TimerEvent: {}
+[1.102749] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.183202] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.201944] (-) TimerEvent: {}
+[1.302299] (-) TimerEvent: {}
+[1.402675] (-) TimerEvent: {}
+[1.503094] (-) TimerEvent: {}
+[1.603510] (-) TimerEvent: {}
+[1.611542] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.703623] (-) TimerEvent: {}
+[1.803940] (-) TimerEvent: {}
+[1.868777] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.904067] (-) TimerEvent: {}
+[2.004419] (-) TimerEvent: {}
+[2.104768] (-) TimerEvent: {}
+[2.195830] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.204897] (-) TimerEvent: {}
+[2.230129] (custom_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.234401] (custom_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.273900] (custom_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.274173] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.274272] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.274356] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.301059] (custom_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.304978] (-) TimerEvent: {}
+[2.350298] (custom_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.390666] (custom_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.393261] (custom_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.397555] (custom_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.405134] (-) TimerEvent: {}
+[2.432692] (custom_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.447453] (custom_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/vedant/gaitlab_ws/build/custom_msgs\n'}
+[2.454946] (custom_msgs) CommandEnded: {'returncode': 0}
+[2.455665] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[2.456700] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vedant/gaitlab_ws/build/custom_msgs', '--', '-j4', '-l4'], 'cwd': '/home/vedant/gaitlab_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1076'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vedant'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/vedant/MultiRobotProject/src/my_world/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/vedant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/vedant/.local/bin'), ('SESSION_MANAGER', 'local/vedant-LattePanda-3-Delta:@/tmp/.ICE-unix/1048,unix/vedant-LattePanda-3-Delta:/tmp/.ICE-unix/1048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a0860937_c723_4397_b3f0_fffd929bf98b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O0XKZ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vedant/gaitlab_ws/build/custom_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.505195] (custom_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.505458] (-) TimerEvent: {}
+[2.517514] (custom_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.530148] (custom_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_custom_msgs\n'}
+[2.605585] (-) TimerEvent: {}
+[2.705919] (-) TimerEvent: {}
+[2.806277] (-) TimerEvent: {}
+[2.906852] (-) TimerEvent: {}
+[2.959088] (custom_msgs) StdoutLine: {'line': b'[  6%] Built target custom_msgs__cpp\n'}
+[2.969625] (custom_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.969885] (custom_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.c.o\x1b[0m\n'}
+[2.971200] (custom_msgs) StdoutLine: {'line': b'creating custom_msgs.egg-info\n'}
+[2.972862] (custom_msgs) StdoutLine: {'line': b'writing custom_msgs.egg-info/PKG-INFO\n'}
+[2.973120] (custom_msgs) StdoutLine: {'line': b'writing dependency_links to custom_msgs.egg-info/dependency_links.txt\n'}
+[2.973349] (custom_msgs) StdoutLine: {'line': b'writing top-level names to custom_msgs.egg-info/top_level.txt\n'}
+[2.974152] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[2.974577] (custom_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.976323] (custom_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.980052] (custom_msgs) StdoutLine: {'line': b"reading manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[2.981861] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[3.007106] (-) TimerEvent: {}
+[3.039165] (custom_msgs) StdoutLine: {'line': b'[ 16%] Built target ament_cmake_python_build_custom_msgs_egg\n'}
+[3.058212] (custom_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.101365] (custom_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[3.109117] (-) TimerEvent: {}
+[3.164179] (custom_msgs) StdoutLine: {'line': b'[ 22%] Built target custom_msgs__rosidl_generator_c\n'}
+[3.180977] (custom_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.209241] (-) TimerEvent: {}
+[3.309752] (-) TimerEvent: {}
+[3.411372] (-) TimerEvent: {}
+[3.450134] (custom_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/motion_state__type_support.cpp.o\x1b[0m\n'}
+[3.480377] (custom_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/motion_state__type_support.cpp.o\x1b[0m\n'}
+[3.494634] (custom_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/motion_state__type_support.cpp.o\x1b[0m\n'}
+[3.511488] (-) TimerEvent: {}
+[3.612270] (-) TimerEvent: {}
+[3.672136] (custom_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/motion_state__type_support_c.cpp.o\x1b[0m\n'}
+[3.712419] (-) TimerEvent: {}
+[3.812894] (-) TimerEvent: {}
+[3.914328] (-) TimerEvent: {}
+[4.014787] (-) TimerEvent: {}
+[4.034681] (custom_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.113577] (custom_msgs) StdoutLine: {'line': b'[ 41%] Built target custom_msgs__rosidl_typesupport_cpp\n'}
+[4.114907] (-) TimerEvent: {}
+[4.130665] (custom_msgs) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.215057] (-) TimerEvent: {}
+[4.256206] (custom_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.282199] (custom_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.315168] (-) TimerEvent: {}
+[4.335020] (custom_msgs) StdoutLine: {'line': b'[ 51%] Built target custom_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.354147] (custom_msgs) StdoutLine: {'line': b'[ 54%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.376525] (custom_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.415295] (-) TimerEvent: {}
+[4.441755] (custom_msgs) StdoutLine: {'line': b'[ 58%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[4.515418] (-) TimerEvent: {}
+[4.531228] (custom_msgs) StdoutLine: {'line': b'[ 58%] Built target custom_msgs__rosidl_typesupport_fastrtps_c\n'}
+[4.614565] (custom_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/motion_state__type_support.c.o\x1b[0m\n'}
+[4.615562] (-) TimerEvent: {}
+[4.661959] (custom_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.701616] (custom_msgs) StdoutLine: {'line': b'[ 64%] Built target custom_msgs__rosidl_typesupport_introspection_c\n'}
+[4.715692] (-) TimerEvent: {}
+[4.735955] (custom_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/motion_state__type_support.cpp.o\x1b[0m\n'}
+[4.774491] (custom_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.815813] (-) TimerEvent: {}
+[4.824065] (custom_msgs) StdoutLine: {'line': b'[ 70%] Built target custom_msgs__rosidl_typesupport_c\n'}
+[4.848246] (custom_msgs) StdoutLine: {'line': b'[ 70%] Built target custom_msgs\n'}
+[4.872683] (custom_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.915924] (-) TimerEvent: {}
+[5.016288] (-) TimerEvent: {}
+[5.116648] (-) TimerEvent: {}
+[5.217012] (-) TimerEvent: {}
+[5.297077] (custom_msgs) StdoutLine: {'line': b'[ 74%] Built target custom_msgs__py\n'}
+[5.317157] (-) TimerEvent: {}
+[5.320930] (custom_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_motion_state_s.c.o\x1b[0m\n'}
+[5.417283] (-) TimerEvent: {}
+[5.517643] (-) TimerEvent: {}
+[5.519882] (custom_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/libcustom_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[5.584037] (custom_msgs) StdoutLine: {'line': b'[ 80%] Built target custom_msgs__rosidl_generator_py\n'}
+[5.611924] (custom_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.612209] (custom_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.612357] (custom_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.617777] (-) TimerEvent: {}
+[5.719129] (-) TimerEvent: {}
+[5.743007] (custom_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.743391] (custom_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.748204] (custom_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.789511] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[5.789798] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_c__pyext\n'}
+[5.795461] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.809462] (custom_msgs) CommandEnded: {'returncode': 0}
+[5.810284] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'install'}
+[5.819240] (-) TimerEvent: {}
+[5.821597] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vedant/gaitlab_ws/build/custom_msgs'], 'cwd': '/home/vedant/gaitlab_ws/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1076'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vedant'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/vedant/MultiRobotProject/src/my_world/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/vedant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/vedant/.local/bin'), ('SESSION_MANAGER', 'local/vedant-LattePanda-3-Delta:@/tmp/.ICE-unix/1048,unix/vedant-LattePanda-3-Delta:/tmp/.ICE-unix/1048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a0860937_c723_4397_b3f0_fffd929bf98b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O0XKZ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vedant/gaitlab_ws/build/custom_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.831727] (custom_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.831996] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs\n'}
+[5.832307] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[5.832462] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[5.832634] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[5.832761] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__functions.c\n'}
+[5.832892] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__struct.h\n'}
+[5.833063] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__functions.h\n'}
+[5.833206] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.h\n'}
+[5.833354] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.833488] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/motion_state.h\n'}
+[5.833705] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/environment/library_path.sh\n'}
+[5.833867] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/environment/library_path.dsv\n'}
+[5.835468] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so\n'}
+[5.835840] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so" to ""\n'}
+[5.835987] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[5.836184] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[5.836294] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[5.836391] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_fastrtps_c.h\n'}
+[5.836534] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.836633] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[5.836884] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.837061] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[5.837217] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[5.837318] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.837413] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[5.837543] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_introspection_c.h\n'}
+[5.837662] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.c\n'}
+[5.837751] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so\n'}
+[5.837956] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.838078] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so\n'}
+[5.838407] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so" to ""\n'}
+[5.838524] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[5.838631] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[5.838719] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/motion_state.hpp\n'}
+[5.838832] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[5.838947] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.hpp\n'}
+[5.839070] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__traits.hpp\n'}
+[5.839197] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__builder.hpp\n'}
+[5.839284] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__struct.hpp\n'}
+[5.839406] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.839938] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[5.840074] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[5.840223] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[5.840311] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps\n'}
+[5.840427] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.840515] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.840633] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.840916] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.841032] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[5.841174] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[5.841266] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[5.841344] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.cpp\n'}
+[5.842588] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.842771] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.843172] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.843292] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so\n'}
+[5.843638] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[5.843756] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh\n'}
+[5.843884] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv\n'}
+[5.844048] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info\n'}
+[5.844258] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.844383] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.844506] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[5.844635] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[5.844803] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs\n'}
+[5.844919] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.845056] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py\n'}
+[5.845177] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.845313] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.845465] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[5.845616] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg\n'}
+[5.845851] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_motion_state.py\n'}
+[5.846078] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py\n'}
+[5.846238] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_motion_state_s.c\n'}
+[5.846407] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.846621] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so\n'}
+[5.846893] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.892825] (custom_msgs) StdoutLine: {'line': b"Listing '/home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...\n"}
+[5.893129] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py'...\n"}
+[5.893257] (custom_msgs) StdoutLine: {'line': b"Listing '/home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...\n"}
+[5.893362] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py'...\n"}
+[5.893472] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_motion_state.py'...\n"}
+[5.899378] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.899745] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.899954] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.900359] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.900597] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.901009] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.901197] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so\n'}
+[5.901544] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so" to ""\n'}
+[5.901701] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/msg/MotionState.idl\n'}
+[5.901832] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/msg/MotionState.msg\n'}
+[5.902067] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs\n'}
+[5.902349] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs\n'}
+[5.902499] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh\n'}
+[5.902638] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv\n'}
+[5.902803] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/environment/path.sh\n'}
+[5.902964] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/environment/path.dsv\n'}
+[5.903152] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/local_setup.bash\n'}
+[5.903314] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/local_setup.sh\n'}
+[5.903462] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/local_setup.zsh\n'}
+[5.903623] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/local_setup.dsv\n'}
+[5.903778] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/package.dsv\n'}
+[5.903991] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs\n'}
+[5.904266] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake\n'}
+[5.904437] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.904594] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.904766] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.904964] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.905259] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.905477] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake\n'}
+[5.905613] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.905791] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake\n'}
+[5.905977] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.906273] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.906407] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.906587] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.906768] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[5.906937] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.907145] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake\n'}
+[5.907321] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.907486] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[5.907654] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.907828] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.907990] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.908175] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.908338] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.908514] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.908675] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake\n'}
+[5.908805] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake\n'}
+[5.908961] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/install/custom_msgs/share/custom_msgs/package.xml\n'}
+[5.911674] (custom_msgs) CommandEnded: {'returncode': 0}
+[5.919308] (-) TimerEvent: {}
+[5.951228] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 0}
+[5.952577] (odrive_control_py) JobStarted: {'identifier': 'odrive_control_py'}
+[6.019463] (-) TimerEvent: {}
+[6.119829] (-) TimerEvent: {}
+[6.220194] (-) TimerEvent: {}
+[6.320563] (-) TimerEvent: {}
+[6.420939] (-) TimerEvent: {}
+[6.521352] (-) TimerEvent: {}
+[6.621678] (-) TimerEvent: {}
+[6.722072] (-) TimerEvent: {}
+[6.822469] (-) TimerEvent: {}
+[6.922837] (-) TimerEvent: {}
+[6.924643] (odrive_control_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/odrive_control_py', 'build', '--build-base', '/home/vedant/gaitlab_ws/build/odrive_control_py/build', 'install', '--record', '/home/vedant/gaitlab_ws/build/odrive_control_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/vedant/gaitlab_ws/src/odrive_control_py', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'vedant', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/vedant/gaitlab_ws/install/custom_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/vedant', 'OLDPWD': '/home/vedant', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1076', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'vedant', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'vedant', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/home/vedant/MultiRobotProject/src/my_world/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/vedant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/vedant/.local/bin', 'SESSION_MANAGER': 'local/vedant-LattePanda-3-Delta:@/tmp/.ICE-unix/1048,unix/vedant-LattePanda-3-Delta:/tmp/.ICE-unix/1048', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a0860937_c723_4397_b3f0_fffd929bf98b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.O0XKZ2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.101', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/vedant/gaitlab_ws/install/custom_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/vedant/gaitlab_ws/build/odrive_control_py', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vedant/gaitlab_ws/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/vedant/gaitlab_ws/install/custom_msgs'}, 'shell': False}
+[7.022942] (-) TimerEvent: {}
+[7.123347] (-) TimerEvent: {}
+[7.223705] (-) TimerEvent: {}
+[7.283404] (odrive_control_py) StdoutLine: {'line': b'running egg_info\n'}
+[7.284366] (odrive_control_py) StdoutLine: {'line': b'creating ../../build/odrive_control_py/odrive_control_py.egg-info\n'}
+[7.284631] (odrive_control_py) StdoutLine: {'line': b'writing ../../build/odrive_control_py/odrive_control_py.egg-info/PKG-INFO\n'}
+[7.284962] (odrive_control_py) StdoutLine: {'line': b'writing dependency_links to ../../build/odrive_control_py/odrive_control_py.egg-info/dependency_links.txt\n'}
+[7.285257] (odrive_control_py) StdoutLine: {'line': b'writing entry points to ../../build/odrive_control_py/odrive_control_py.egg-info/entry_points.txt\n'}
+[7.285450] (odrive_control_py) StdoutLine: {'line': b'writing requirements to ../../build/odrive_control_py/odrive_control_py.egg-info/requires.txt\n'}
+[7.285644] (odrive_control_py) StdoutLine: {'line': b'writing top-level names to ../../build/odrive_control_py/odrive_control_py.egg-info/top_level.txt\n'}
+[7.285882] (odrive_control_py) StdoutLine: {'line': b"writing manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'\n"}
+[7.288411] (odrive_control_py) StdoutLine: {'line': b"reading manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'\n"}
+[7.289474] (odrive_control_py) StdoutLine: {'line': b"writing manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'\n"}
+[7.294768] (odrive_control_py) StdoutLine: {'line': b'running build\n'}
+[7.294921] (odrive_control_py) StdoutLine: {'line': b'running build_py\n'}
+[7.295146] (odrive_control_py) StdoutLine: {'line': b'creating /home/vedant/gaitlab_ws/build/odrive_control_py/build\n'}
+[7.295311] (odrive_control_py) StdoutLine: {'line': b'creating /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib\n'}
+[7.295414] (odrive_control_py) StdoutLine: {'line': b'creating /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.295547] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/trial_controlnode.py -> /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.295674] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/encoder_read_node.py -> /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.295796] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/__init__.py -> /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.295918] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/data_recording_node.py -> /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.296054] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/app_tcp_server.py -> /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.296183] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/control_node.py -> /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.296297] (odrive_control_py) StdoutLine: {'line': b'copying odrive_control_py/FCM_test_node.py -> /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py\n'}
+[7.296632] (odrive_control_py) StdoutLine: {'line': b'running install\n'}
+[7.297214] (odrive_control_py) StdoutLine: {'line': b'running install_lib\n'}
+[7.298328] (odrive_control_py) StdoutLine: {'line': b'creating /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.298495] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py/trial_controlnode.py -> /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.298620] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py/encoder_read_node.py -> /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.298748] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py/__init__.py -> /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.298861] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py/data_recording_node.py -> /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.298963] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py/app_tcp_server.py -> /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.299136] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py/control_node.py -> /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.299267] (odrive_control_py) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py/FCM_test_node.py -> /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py\n'}
+[7.300007] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/trial_controlnode.py to trial_controlnode.cpython-310.pyc\n'}
+[7.300899] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/encoder_read_node.py to encoder_read_node.cpython-310.pyc\n'}
+[7.302728] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/__init__.py to __init__.cpython-310.pyc\n'}
+[7.302951] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/data_recording_node.py to data_recording_node.cpython-310.pyc\n'}
+[7.303181] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/app_tcp_server.py to app_tcp_server.cpython-310.pyc\n'}
+[7.304299] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/control_node.py to control_node.cpython-310.pyc\n'}
+[7.304935] (odrive_control_py) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/FCM_test_node.py to FCM_test_node.cpython-310.pyc\n'}
+[7.305746] (odrive_control_py) StdoutLine: {'line': b'running install_data\n'}
+[7.305887] (odrive_control_py) StdoutLine: {'line': b'creating /home/vedant/gaitlab_ws/install/odrive_control_py/share/ament_index\n'}
+[7.306005] (odrive_control_py) StdoutLine: {'line': b'creating /home/vedant/gaitlab_ws/install/odrive_control_py/share/ament_index/resource_index\n'}
+[7.306156] (odrive_control_py) StdoutLine: {'line': b'creating /home/vedant/gaitlab_ws/install/odrive_control_py/share/ament_index/resource_index/packages\n'}
+[7.306246] (odrive_control_py) StdoutLine: {'line': b'copying resource/odrive_control_py -> /home/vedant/gaitlab_ws/install/odrive_control_py/share/ament_index/resource_index/packages\n'}
+[7.306366] (odrive_control_py) StdoutLine: {'line': b'copying package.xml -> /home/vedant/gaitlab_ws/install/odrive_control_py/share/odrive_control_py\n'}
+[7.306493] (odrive_control_py) StdoutLine: {'line': b'creating /home/vedant/gaitlab_ws/install/odrive_control_py/share/odrive_control_py/config\n'}
+[7.306613] (odrive_control_py) StdoutLine: {'line': b'copying config/params.yaml -> /home/vedant/gaitlab_ws/install/odrive_control_py/share/odrive_control_py/config\n'}
+[7.306728] (odrive_control_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.309149] (odrive_control_py) StdoutLine: {'line': b'Copying ../../build/odrive_control_py/odrive_control_py.egg-info to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info\n'}
+[7.310330] (odrive_control_py) StdoutLine: {'line': b'running install_scripts\n'}
+[7.323814] (-) TimerEvent: {}
+[7.338226] (odrive_control_py) StdoutLine: {'line': b'Installing FCR_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py\n'}
+[7.338558] (odrive_control_py) StdoutLine: {'line': b'Installing data_recording_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py\n'}
+[7.338694] (odrive_control_py) StdoutLine: {'line': b'Installing encoder_read_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py\n'}
+[7.338847] (odrive_control_py) StdoutLine: {'line': b'Installing odrive_control_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py\n'}
+[7.339281] (odrive_control_py) StdoutLine: {'line': b"writing list of installed files to '/home/vedant/gaitlab_ws/build/odrive_control_py/install.log'\n"}
+[7.377194] (odrive_control_py) CommandEnded: {'returncode': 0}
+[7.385151] (odrive_control_py) JobEnded: {'identifier': 'odrive_control_py', 'rc': 0}
+[7.385875] (-) EventReactorShutdown: {}

@@ -1,87 +1,163 @@
-# Code not tested yet 
+#ros2 run odrive_control_py encoder_read_node --ros-args --params-file ./src/odrive_control_py/config/params.yaml
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int64
 import pigpio
+import traceback
+import threading
 
 
 class AMT102VEncoderNode(Node):
-    def __init__(self):
+    """
+    A ROS2 node to read and publish encoder values from an AMT102-V encoder using the pigpio library.
+
+    Publishes:
+        'encoder_position' (std_msgs/msg/Int64): The current encoder position (relative).
+    """
+
+    def __init__(self) -> None:
         super().__init__('amt102v_encoder')
-        self.declare_parameters(
-            namespace='',
-            parameters=[
-                ('channel_a_pin', 20),
-                ('channel_b_pin', 21),
-            ]
-        )
+        self.get_logger().info("Initializing AMT102V Encoder Node...")
 
-        self.channel_a_pin = self.get_parameter('channel_a_pin').value
-        self.channel_b_pin = self.get_parameter('channel_b_pin').value
+        # Declare parameters for GPIO pins
+        self.declare_parameter('channel_a_pin', 21)
+        self.declare_parameter('channel_b_pin', 20)
 
-        self.position = 0
-        self.direction = 0
+        # Get parameters for GPIO pins
+        channel_a_pin = self.get_parameter('channel_a_pin').get_parameter_value().integer_value
+        channel_b_pin = self.get_parameter('channel_b_pin').get_parameter_value().integer_value
 
+        self.get_logger().info(f'channel_a_pin:{channel_a_pin}')
+        self.get_logger().info(f'channel_a_pin:{channel_b_pin}')
+
+        self.position = 0  # Initialize encoder position
+        self.position_lock = threading.Lock()  # Lock to ensure thread-safe access to position
+
+        # Initialize Publisher
         self.encoder_publisher = self.create_publisher(Int64, 'encoder_position', 10)
-        self.timer = self.create_timer(0.005, self.publish_encoder_position)  # Faster timer interval for real-time updates
 
-        # Initialize pigpio
-        self.pi = pigpio.pi()
-        if not self.pi.connected:
-            self.get_logger().error("Failed to connect to pigpio daemon.")
-            raise RuntimeError("Failed to connect to pigpio daemon.")
+        # Default publish rate
+        publish_rate = 100.0  # Hz
+        publish_period = 1.0 / publish_rate
+        self.timer = self.create_timer(publish_period, self.publish_encoder_position)
 
-        # Set up pins as inputs with pull-up resistors
-        self.pi.set_mode(self.channel_a_pin, pigpio.INPUT)
-        self.pi.set_mode(self.channel_b_pin, pigpio.INPUT)
-        self.pi.set_pull_up_down(self.channel_a_pin, pigpio.PUD_UP)
-        self.pi.set_pull_up_down(self.channel_b_pin, pigpio.PUD_UP)
+        self.pi = None  # pigpio instance
+        self.callback_a = None
+        self.callback_b = None
 
-        # Add callbacks for edge detection
-        self.pi.callback(self.channel_a_pin, pigpio.EITHER_EDGE, self.encoder_callback)
-        self.pi.callback(self.channel_b_pin, pigpio.EITHER_EDGE, self.encoder_callback)
+        try:
+            # Initialize pigpio connection
+            self.pi = pigpio.pi()
+            if not self.pi.connected:
+                self.get_logger().error("Failed to connect to pigpio daemon. Ensure pigpiod is running.")
+                raise RuntimeError("Failed to connect to pigpio daemon.")
+            self.get_logger().info("Connected to pigpio daemon.")
 
-    def encoder_callback(self, gpio, level, tick):
-        a = self.pi.read(self.channel_a_pin)
-        b = self.pi.read(self.channel_b_pin)
+            # Configure the GPIO pins for encoder input with pull-ups
+            self.pi.set_mode(channel_a_pin, pigpio.INPUT)
+            self.pi.set_mode(channel_b_pin, pigpio.INPUT)
+            self.pi.set_pull_up_down(channel_a_pin, pigpio.PUD_UP)
+            self.pi.set_pull_up_down(channel_b_pin, pigpio.PUD_UP)
+            self.get_logger().info(f"Configured GPIO pins {channel_a_pin} (A) and {channel_b_pin} (B) as inputs with pull-up resistors.")
 
-        if gpio == self.channel_a_pin:
-            if b != a:
-                self.position += 1
-                self.direction = 1
+            # Add callbacks for encoder channels
+            self.callback_a = self.pi.callback(channel_a_pin, pigpio.EITHER_EDGE, self.encoder_callback)
+            self.callback_b = self.pi.callback(channel_b_pin, pigpio.EITHER_EDGE, self.encoder_callback)
+            self.get_logger().info("Encoder callbacks initialized.")
+
+        except Exception as e:
+            self.get_logger().error("Error during initialization.")
+            self.get_logger().error(str(e))
+            self.get_logger().error(traceback.format_exc())
+            self.cleanup()
+            raise
+
+        self.get_logger().info("AMT102V Encoder Node started.")
+
+    def encoder_callback(self, gpio: int, level: int, tick: int) -> None:
+        """
+        Callback function triggered on either rising or falling edge of encoder channels.
+
+        Quadrature decoding logic:
+        - Read the current states of both channels A and B.
+        - If the transition on one channel leads or lags the other, we determine the direction.
+        """
+        try:
+            current_a_state = self.pi.read(self.get_parameter('channel_a_pin').value)  # GPIO pin for channel A
+            current_b_state = self.pi.read(self.get_parameter('channel_b_pin').value)  # GPIO pin for channel B
+
+            increment = 0
+            if gpio == self.get_parameter('channel_b_pin').value:  # If channel A changed
+                increment = 1 #if current_b_state != current_a_state else -1
             else:
-                self.position -= 1
-                self.direction = -1
-        elif gpio == self.channel_b_pin:
-            if a != b:
-                self.position -= 1
-                self.direction = -1
-            else:
-                self.position += 1
-                self.direction = 1
+                increment = -1
+            # elif gpio == self.get_parameter('channel_b_pin').value:  # If channel B changed
+            #     increment = 1 if current_a_state == current_b_state else -1
 
-    def publish_encoder_position(self):
+            with self.position_lock:
+                self.position += increment
+
+        except Exception as e:
+            self.get_logger().error("Error in encoder callback.")
+            self.get_logger().error(str(e))
+            self.get_logger().error(traceback.format_exc())
+
+    def publish_encoder_position(self) -> None:
+        """
+        Publishes the current encoder position at the configured rate.
+        """
+        with self.position_lock:
+            pos = self.position
+
         msg = Int64()
-        msg.data = self.position
+        msg.data = pos
         self.encoder_publisher.publish(msg)
-        self.get_logger().info(f'Encoder Position: {self.position}, Direction: {self.direction}')
+        self.get_logger().debug(f'Published Encoder Position: {pos}')
 
-    def cleanup(self):
-        self.pi.stop()
+    def cleanup(self) -> None:
+        """
+        Releases pigpio resources and cancels callbacks.
+        """
+        self.get_logger().info("Cleaning up encoder node resources...")
+        try:
+            if self.callback_a:
+                self.callback_a.cancel()
+            if self.callback_b:
+                self.callback_b.cancel()
+            if self.pi and self.pi.connected:
+                self.pi.stop()
+                self.get_logger().info("Disconnected from pigpio daemon.")
+        except Exception as e:
+            self.get_logger().error("Error during cleanup.")
+            self.get_logger().error(str(e))
+            self.get_logger().error(traceback.format_exc())
+        self.get_logger().info("Cleanup complete.")
+
+    def destroy_node(self) -> None:
+        """
+        Override destroy_node to ensure cleanup is always called.
+        """
+        self.cleanup()
+        super().destroy_node()
 
 
-def main(args=None):
+def main(args=None) -> None:
     rclpy.init(args=args)
-
-    encoder_node = AMT102VEncoderNode()
-
+    encoder_node = None
     try:
+        encoder_node = AMT102VEncoderNode()
         rclpy.spin(encoder_node)
     except KeyboardInterrupt:
-        encoder_node.get_logger().info("Encoder reading stopped by user")
+        if encoder_node:
+            encoder_node.get_logger().info("Encoder reading stopped by user.")
+    except Exception as e:
+        if encoder_node:
+            encoder_node.get_logger().error("Unhandled exception in main.")
+            encoder_node.get_logger().error(str(e))
+            encoder_node.get_logger().error(traceback.format_exc())
     finally:
-        encoder_node.cleanup()
-        encoder_node.destroy_node()
+        if encoder_node is not None:
+            encoder_node.destroy_node()
         rclpy.shutdown()
 
 

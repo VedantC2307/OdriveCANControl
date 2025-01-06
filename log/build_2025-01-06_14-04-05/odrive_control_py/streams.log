@@ -1,0 +1,57 @@
+[0.974s] Invoking command in '/home/vedant/gaitlab_ws/src/odrive_control_py': AMENT_PREFIX_PATH=/home/vedant/gaitlab_ws/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/install/custom_msgs LD_LIBRARY_PATH=/home/vedant/gaitlab_ws/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vedant/gaitlab_ws/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odrive_control_py build --build-base /home/vedant/gaitlab_ws/build/odrive_control_py/build install --record /home/vedant/gaitlab_ws/build/odrive_control_py/install.log --single-version-externally-managed install_data
+[1.331s] running egg_info
+[1.332s] creating ../../build/odrive_control_py/odrive_control_py.egg-info
+[1.332s] writing ../../build/odrive_control_py/odrive_control_py.egg-info/PKG-INFO
+[1.332s] writing dependency_links to ../../build/odrive_control_py/odrive_control_py.egg-info/dependency_links.txt
+[1.333s] writing entry points to ../../build/odrive_control_py/odrive_control_py.egg-info/entry_points.txt
+[1.333s] writing requirements to ../../build/odrive_control_py/odrive_control_py.egg-info/requires.txt
+[1.333s] writing top-level names to ../../build/odrive_control_py/odrive_control_py.egg-info/top_level.txt
+[1.333s] writing manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'
+[1.336s] reading manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'
+[1.337s] writing manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'
+[1.342s] running build
+[1.342s] running build_py
+[1.343s] creating /home/vedant/gaitlab_ws/build/odrive_control_py/build
+[1.343s] creating /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib
+[1.343s] creating /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py
+[1.343s] copying odrive_control_py/trial_controlnode.py -> /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py
+[1.343s] copying odrive_control_py/encoder_read_node.py -> /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py
+[1.343s] copying odrive_control_py/__init__.py -> /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py
+[1.343s] copying odrive_control_py/data_recording_node.py -> /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py
+[1.344s] copying odrive_control_py/app_tcp_server.py -> /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py
+[1.344s] copying odrive_control_py/control_node.py -> /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py
+[1.344s] copying odrive_control_py/FCM_test_node.py -> /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py
+[1.344s] running install
+[1.345s] running install_lib
+[1.346s] creating /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py
+[1.346s] copying /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py/trial_controlnode.py -> /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py
+[1.346s] copying /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py/encoder_read_node.py -> /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py
+[1.346s] copying /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py/__init__.py -> /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py
+[1.346s] copying /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py/data_recording_node.py -> /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py
+[1.346s] copying /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py/app_tcp_server.py -> /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py
+[1.347s] copying /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py/control_node.py -> /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py
+[1.347s] copying /home/vedant/gaitlab_ws/build/odrive_control_py/build/lib/odrive_control_py/FCM_test_node.py -> /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py
+[1.347s] byte-compiling /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/trial_controlnode.py to trial_controlnode.cpython-310.pyc
+[1.348s] byte-compiling /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/encoder_read_node.py to encoder_read_node.cpython-310.pyc
+[1.350s] byte-compiling /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/__init__.py to __init__.cpython-310.pyc
+[1.350s] byte-compiling /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/data_recording_node.py to data_recording_node.cpython-310.pyc
+[1.351s] byte-compiling /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/app_tcp_server.py to app_tcp_server.cpython-310.pyc
+[1.352s] byte-compiling /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/control_node.py to control_node.cpython-310.pyc
+[1.352s] byte-compiling /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/FCM_test_node.py to FCM_test_node.cpython-310.pyc
+[1.353s] running install_data
+[1.353s] creating /home/vedant/gaitlab_ws/install/odrive_control_py/share/ament_index
+[1.354s] creating /home/vedant/gaitlab_ws/install/odrive_control_py/share/ament_index/resource_index
+[1.354s] creating /home/vedant/gaitlab_ws/install/odrive_control_py/share/ament_index/resource_index/packages
+[1.354s] copying resource/odrive_control_py -> /home/vedant/gaitlab_ws/install/odrive_control_py/share/ament_index/resource_index/packages
+[1.354s] copying package.xml -> /home/vedant/gaitlab_ws/install/odrive_control_py/share/odrive_control_py
+[1.354s] creating /home/vedant/gaitlab_ws/install/odrive_control_py/share/odrive_control_py/config
+[1.354s] copying config/params.yaml -> /home/vedant/gaitlab_ws/install/odrive_control_py/share/odrive_control_py/config
+[1.354s] running install_egg_info
+[1.357s] Copying ../../build/odrive_control_py/odrive_control_py.egg-info to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info
+[1.358s] running install_scripts
+[1.386s] Installing FCR_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py
+[1.386s] Installing data_recording_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py
+[1.386s] Installing encoder_read_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py
+[1.386s] Installing odrive_control_node script to /home/vedant/gaitlab_ws/install/odrive_control_py/lib/odrive_control_py
+[1.387s] writing list of installed files to '/home/vedant/gaitlab_ws/build/odrive_control_py/install.log'
+[1.425s] Invoked command in '/home/vedant/gaitlab_ws/src/odrive_control_py' returned '0': AMENT_PREFIX_PATH=/home/vedant/gaitlab_ws/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/install/custom_msgs LD_LIBRARY_PATH=/home/vedant/gaitlab_ws/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vedant/gaitlab_ws/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/gaitlab_ws/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odrive_control_py build --build-base /home/vedant/gaitlab_ws/build/odrive_control_py/build install --record /home/vedant/gaitlab_ws/build/odrive_control_py/install.log --single-version-externally-managed install_data
