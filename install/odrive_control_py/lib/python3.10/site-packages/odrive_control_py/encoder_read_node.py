@@ -1,6 +1,7 @@
+#ros2 run odrive_control_py encoder_read_node --ros-args --params-file ./src/odrive_control_py/config/params.yaml
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int64
+from std_msgs.msg import Int32
 import pigpio
 import traceback
 import threading
@@ -18,24 +19,31 @@ class AMT102VEncoderNode(Node):
         super().__init__('amt102v_encoder')
         self.get_logger().info("Initializing AMT102V Encoder Node...")
 
+        # Declare parameters for GPIO pins
+        self.declare_parameter('channel_a_pin', 21)
+        self.declare_parameter('channel_b_pin', 20)
+
+        # Get parameters for GPIO pins
+        channel_a_pin = self.get_parameter('channel_a_pin').get_parameter_value().integer_value
+        channel_b_pin = self.get_parameter('channel_b_pin').get_parameter_value().integer_value
+
+        self.get_logger().info(f'channel_a_pin:{channel_a_pin}')
+        self.get_logger().info(f'channel_a_pin:{channel_b_pin}')
+
         self.position = 0  # Initialize encoder position
         self.position_lock = threading.Lock()  # Lock to ensure thread-safe access to position
 
         # Initialize Publisher
-        self.encoder_publisher = self.create_publisher(Int64, 'encoder_position', 10)
+        self.encoder_publisher = self.create_publisher(Int32, 'encoder_position', 10)
 
         # Default publish rate
-        publish_rate = 100.0  # Hz
+        publish_rate = 200.0  # Hz
         publish_period = 1.0 / publish_rate
         self.timer = self.create_timer(publish_period, self.publish_encoder_position)
 
         self.pi = None  # pigpio instance
         self.callback_a = None
         self.callback_b = None
-
-        # Default GPIO pins for encoder
-        channel_a_pin = 20
-        channel_b_pin = 21
 
         try:
             # Initialize pigpio connection
@@ -75,17 +83,18 @@ class AMT102VEncoderNode(Node):
         - If the transition on one channel leads or lags the other, we determine the direction.
         """
         try:
-            current_a_state = self.pi.read(21)  # GPIO pin for channel A
-            current_b_state = self.pi.read(20)  # GPIO pin for channel B
+            current_a_state = self.pi.read(self.get_parameter('channel_a_pin').value)  # GPIO pin for channel A
+            current_b_state = self.pi.read(self.get_parameter('channel_b_pin').value)  # GPIO pin for channel B
 
             increment = 0
-            if gpio == 21:  # If channel A changed
+            if gpio == self.get_parameter('channel_b_pin').value:  # If channel A changed
                 increment = 1 if current_b_state != current_a_state else -1
-            elif gpio == 20:  # If channel B changed
+            elif gpio == self.get_parameter('channel_b_pin').value:  # If channel B changed
                 increment = 1 if current_a_state == current_b_state else -1
 
-            with self.position_lock:
-                self.position += increment
+            self.position += increment
+            # with self.position_lock:
+            #     self.position += increment
 
         except Exception as e:
             self.get_logger().error("Error in encoder callback.")
@@ -96,10 +105,10 @@ class AMT102VEncoderNode(Node):
         """
         Publishes the current encoder position at the configured rate.
         """
-        with self.position_lock:
-            pos = self.position
-
-        msg = Int64()
+        # with self.position_lock:
+        #     pos = self.position
+        pos = self.position
+        msg = Int32()
         msg.data = pos
         self.encoder_publisher.publish(msg)
         self.get_logger().debug(f'Published Encoder Position: {pos}')
