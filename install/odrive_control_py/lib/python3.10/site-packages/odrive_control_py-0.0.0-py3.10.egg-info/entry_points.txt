@@ -3,4 +3,5 @@ FCR_node = odrive_control_py.FCM_test_node:main
 data_recording_node = odrive_control_py.data_recording_node:main
 encoder_read_node = odrive_control_py.encoder_read_node:main
 odrive_control_node = odrive_control_py.control_node:main
+trial_odrive_control_node = odrive_control_py.trial_controlnode:main
 

@@ -2,9 +2,11 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32
-import pigpio
+# import pigpio
 import traceback
 import threading
+import RPi.GPIO as GPIO 
+import time 
 
 
 class AMT102VEncoderNode(Node):
@@ -37,7 +39,7 @@ class AMT102VEncoderNode(Node):
         self.encoder_publisher = self.create_publisher(Int32, 'encoder_position', 10)
 
         # Default publish rate
-        publish_rate = 200.0  # Hz
+        publish_rate = 100.0  # Hz
         publish_period = 1.0 / publish_rate
         self.timer = self.create_timer(publish_period, self.publish_encoder_position)
 

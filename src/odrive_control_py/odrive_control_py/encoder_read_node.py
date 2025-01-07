@@ -2,9 +2,11 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32
-import pigpio
+# import pigpio
 import traceback
 import threading
+import RPi.GPIO as GPIO 
+import time 
 
 
 class AMT102VEncoderNode(Node):
