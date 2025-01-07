@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 import numpy as np
-from std_msgs.msg import Int64, Float32
+from std_msgs.msg import Int32, Float32
 from custom_msgs.msg import MotionState
 
 class FrictionCompensationNode(Node):
@@ -10,7 +10,7 @@ class FrictionCompensationNode(Node):
 
         # Subscribe to position values (e.g., from a motor encoder)
         self.subscription = self.create_subscription(
-            Int64,  # Message type
+            Int32,  # Message type
             'encoder_position',  # Topic name
             self.position_callback,
             10  # QoS profile
@@ -60,7 +60,6 @@ class FrictionCompensationNode(Node):
         counts = msg.data
         self.counts_to_rads = counts * (3/8192) 
         self.position_data.append(self.counts_to_rads)
-
         # Maintain a fixed buffer size of 5
         if len(self.position_data) > 5:
             self.position_data.pop(0)
@@ -72,10 +71,9 @@ class FrictionCompensationNode(Node):
     def process_data(self):
         """Process the buffered position data and publish torque commands."""
         gain = 0.0525
-
         if len(self.position_data) < 5:
             return  # Wait for sufficient data
-
+        
         # Step 1: Compute velocity
         velocity = self.velocity_5_point_backward(self.position_data)
 
