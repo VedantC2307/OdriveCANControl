@@ -1,20 +1,15 @@
-#ros2 run odrive_control_py encoder_read_node --ros-args --params-file ./src/odrive_control_py/config/params.yaml
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32
-# import pigpio
+from custom_msgs.msg import MotionState
+import RPi.GPIO as GPIO
 import traceback
-import threading
-import RPi.GPIO as GPIO 
-import time 
-
+from collections import deque
+import numpy as np
 
 class AMT102VEncoderNode(Node):
     """
-    A ROS2 node to read and publish encoder values from an AMT102-V encoder using the pigpio library.
-
-    Publishes:
-        'encoder_position' (std_msgs/msg/Int64): The current encoder position (relative).
+    A ROS2 node to read and publish encoder values from an AMT102-V encoder using RPi.GPIO.
     """
 
     def __init__(self) -> None:
@@ -25,50 +20,45 @@ class AMT102VEncoderNode(Node):
         self.declare_parameter('channel_a_pin', 21)
         self.declare_parameter('channel_b_pin', 20)
 
-        # Get parameters for GPIO pins
-        channel_a_pin = self.get_parameter('channel_a_pin').get_parameter_value().integer_value
-        channel_b_pin = self.get_parameter('channel_b_pin').get_parameter_value().integer_value
+        # Get parameters
+        self.channel_a_pin = self.get_parameter('channel_a_pin').get_parameter_value().integer_value
+        self.channel_b_pin = self.get_parameter('channel_b_pin').get_parameter_value().integer_value
 
-        self.get_logger().info(f'channel_a_pin:{channel_a_pin}')
-        self.get_logger().info(f'channel_a_pin:{channel_b_pin}')
+        self.get_logger().info(f'channel_a_pin: {self.channel_a_pin}')
+        self.get_logger().info(f'channel_b_pin: {self.channel_b_pin}')
 
-        self.position = 0  # Initialize encoder position
-        self.position_lock = threading.Lock()  # Lock to ensure thread-safe access to position
+        # Initialize encoder position
+        self.position = 0
+        self.last_A = 0  # Store the last state of channel A
 
+        # Create Publisher
+        self.history_len = 5
+        self.input_buffer = deque(maxlen=self.history_len)
         # Initialize Publisher
-        self.encoder_publisher = self.create_publisher(Int32, 'encoder_position', 10)
+        self.motor_state_publisher = self.create_publisher(MotionState, 'motor_state', 10)
 
-        # Default publish rate
+        # Setup timer for publishing
         publish_rate = 100.0  # Hz
-        publish_period = 1.0 / publish_rate
-        self.timer = self.create_timer(publish_period, self.publish_encoder_position)
-
-        self.pi = None  # pigpio instance
-        self.callback_a = None
-        self.callback_b = None
+        self.publish_period = 1.0 / publish_rate
+        self.timer = self.create_timer(self.publish_period, self.publish_motor_state)
 
         try:
-            # Initialize pigpio connection
-            self.pi = pigpio.pi()
-            if not self.pi.connected:
-                self.get_logger().error("Failed to connect to pigpio daemon. Ensure pigpiod is running.")
-                raise RuntimeError("Failed to connect to pigpio daemon.")
-            self.get_logger().info("Connected to pigpio daemon.")
+            # Initialize RPi.GPIO
+            GPIO.setmode(GPIO.BCM)
+            GPIO.setup(self.channel_a_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+            GPIO.setup(self.channel_b_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
-            # Configure the GPIO pins for encoder input with pull-ups
-            self.pi.set_mode(channel_a_pin, pigpio.INPUT)
-            self.pi.set_mode(channel_b_pin, pigpio.INPUT)
-            self.pi.set_pull_up_down(channel_a_pin, pigpio.PUD_UP)
-            self.pi.set_pull_up_down(channel_b_pin, pigpio.PUD_UP)
-            self.get_logger().info(f"Configured GPIO pins {channel_a_pin} (A) and {channel_b_pin} (B) as inputs with pull-up resistors.")
+            # Read initial channel A state
+            self.last_A = GPIO.input(self.channel_a_pin)
 
-            # Add callbacks for encoder channels
-            self.callback_a = self.pi.callback(channel_a_pin, pigpio.EITHER_EDGE, self.encoder_callback)
-            self.callback_b = self.pi.callback(channel_b_pin, pigpio.EITHER_EDGE, self.encoder_callback)
+            # Add event detects for both channels (typical for quadrature)
+            GPIO.add_event_detect(self.channel_a_pin, GPIO.BOTH, callback=self.encoder_callback)
+            GPIO.add_event_detect(self.channel_b_pin, GPIO.BOTH)
+
             self.get_logger().info("Encoder callbacks initialized.")
 
         except Exception as e:
-            self.get_logger().error("Error during initialization.")
+            self.get_logger().error("Error during GPIO initialization.")
             self.get_logger().error(str(e))
             self.get_logger().error(traceback.format_exc())
             self.cleanup()
@@ -76,68 +66,81 @@ class AMT102VEncoderNode(Node):
 
         self.get_logger().info("AMT102V Encoder Node started.")
 
-    def encoder_callback(self, gpio: int, level: int, tick: int) -> None:
+    def encoder_callback(self, channel):
         """
-        Callback function triggered on either rising or falling edge of encoder channels.
-
-        Quadrature decoding logic:
-        - Read the current states of both channels A and B.
-        - If the transition on one channel leads or lags the other, we determine the direction.
+        RPi.GPIO callback for both channel A and channel B events.
+        Only 'channel' (pin number) is passed to this function by RPi.GPIO.
         """
         try:
-            current_a_state = self.pi.read(self.get_parameter('channel_a_pin').value)  # GPIO pin for channel A
-            current_b_state = self.pi.read(self.get_parameter('channel_b_pin').value)  # GPIO pin for channel B
+            current_A = GPIO.input(self.channel_a_pin)
+            current_B = GPIO.input(self.channel_b_pin)
 
-            increment = 0
-            if gpio == self.get_parameter('channel_b_pin').value:  # If channel A changed
-                increment = 1 if current_b_state != current_a_state else -1
-            elif gpio == self.get_parameter('channel_b_pin').value:  # If channel B changed
-                increment = 1 if current_a_state == current_b_state else -1
+            # Simple decode logic: check for rising edge on channel A, then check channel B
+            if (self.last_A == 0) and (current_A == 1):
+                # Rising edge on A
+                if current_B == 0:
+                    self.position += 1  # A leads B => CW
+                else:
+                    self.position -= 1  # B leads A => CCW
 
-            self.position += increment
-            # with self.position_lock:
-            #     self.position += increment
+            # Update last_A
+            self.last_A = current_A
 
         except Exception as e:
             self.get_logger().error("Error in encoder callback.")
             self.get_logger().error(str(e))
             self.get_logger().error(traceback.format_exc())
 
-    def publish_encoder_position(self) -> None:
+
+    def velocity_5_point_backward(self, position):
+        """
+        Calculate velocity using the 5-point backward difference method.
+        """
+        coefficients = np.array([-25, 48, -36, 16, -3]) / (12.0 * self.publish_period)
+
+        if len(position) < 5:
+            return 0.0  # Return 0.0 if insufficient data for velocity calculation
+        
+        # self.get_logger().info(f'Calculated Position: {position}')
+
+        # Compute velocity using the 5-point backward difference
+        velocity = np.dot(position, coefficients)
+        # self.get_logger().info(f'Calculated Velocity: {velocity}')
+
+        return velocity
+
+    def publish_motor_state(self) -> None:
         """
         Publishes the current encoder position at the configured rate.
         """
-        # with self.position_lock:
-        #     pos = self.position
-        pos = self.position
-        msg = Int32()
-        msg.data = pos
-        self.encoder_publisher.publish(msg)
-        self.get_logger().debug(f'Published Encoder Position: {pos}')
+        pos = self.position * (3/8192) # unit radian
+        
+        # Compute Velocity
+        self.input_buffer.append(pos)
+        if len(self.input_buffer) < self.history_len:
+            return
+        velocity = self.velocity_5_point_backward(self.input_buffer) # unit radians/sec
+        msg = MotionState()
+        msg.position = pos
+        msg.velocity = velocity
+        self.motor_state_publisher.publish(msg)
+        self.get_logger().debug(f'Published Motor Position: {pos}')
+        self.get_logger().debug(f'Published Motor Velocity: {velocity}')
 
     def cleanup(self) -> None:
         """
-        Releases pigpio resources and cancels callbacks.
+        RPi.GPIO cleanup
         """
         self.get_logger().info("Cleaning up encoder node resources...")
         try:
-            if self.callback_a:
-                self.callback_a.cancel()
-            if self.callback_b:
-                self.callback_b.cancel()
-            if self.pi and self.pi.connected:
-                self.pi.stop()
-                self.get_logger().info("Disconnected from pigpio daemon.")
+            GPIO.cleanup()
         except Exception as e:
-            self.get_logger().error("Error during cleanup.")
+            self.get_logger().error("Error during GPIO cleanup.")
             self.get_logger().error(str(e))
             self.get_logger().error(traceback.format_exc())
         self.get_logger().info("Cleanup complete.")
 
     def destroy_node(self) -> None:
-        """
-        Override destroy_node to ensure cleanup is always called.
-        """
         self.cleanup()
         super().destroy_node()
 
