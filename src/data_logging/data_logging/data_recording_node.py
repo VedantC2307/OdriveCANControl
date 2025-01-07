@@ -1,147 +1,194 @@
+#!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int64
-from odrive_can.msg import ControllerStatus, ControlMessage, CollectedData  # Assuming CollectedData message type
-import pandas as pd
-from datetime import datetime
-from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
-from rclpy.callback_groups import MutuallyExclusiveCallbackGroup
+from custom_msgs import MotionState, FrictionComp, ImpedanceTorque
+from std_msgs.msg import Float32MultiArray, Bool
+from std_srvs.srv import SetBool
+import h5py
 import numpy as np
+import time
+import os
+from datetime import datetime
 
-class InfoCollectorNode(Node):
+class DataCollectorNode(Node):
     def __init__(self):
-        super().__init__('info_collector')
+        super().__init__('data_collector_node')
         
-        # QoS Profile for better reliability
-        qos_profile = QoSProfile(
-            reliability=ReliabilityPolicy.RELIABLE,
-            history=HistoryPolicy.KEEP_LAST,
-            depth=10
-        )
-        
-        # Parameters
-        self.declare_parameter('dt', 0.1)
-        self.dt = self.get_parameter('dt').value
-        
-        # Callback groups for thread safety
-        self.callback_group = MutuallyExclusiveCallbackGroup()
-        
-        # Initialize subscribers with QoS profiles
-        self.sub_encoder_position = self.create_subscription(
-            Int64,
-            'encoder_position',
-            self.callback_encoder_position,
-            qos_profile,
-            callback_group=self.callback_group
-        )
-        
-        self.sub_controller_status = self.create_subscription(
-            ControllerStatus,
-            'odrive_axis0/controller_status',
-            self.callback_controller_status,
-            qos_profile,
-            callback_group=self.callback_group
-        )
-        
-        self.sub_control_message = self.create_subscription(
-            ControlMessage,
-            'odrive_axis0/control_message',
-            self.callback_control_message,
-            qos_profile,
-            callback_group=self.callback_group
-        )
-        
-        # Initialize publisher for collected data
-        self.pub_collected_data = self.create_publisher(
-            CollectedData,
-            'collected_data',
-            qos_profile
-        )
-        
-        # Data storage
-        self.data = pd.DataFrame(columns=[
-            'timestamp', 'encoder_position', 'pos_estimate', 'vel_estimate',
-            'torque_target', 'torque_estimate', 'iq_setpoint', 'iq_measured',
-            'active_errors', 'axis_state', 'procedure_result', 'trajectory_done_flag',
-            'control_mode', 'input_mode', 'input_pos', 'input_vel', 'input_torque'
-        ])
-        
-        # Initialize placeholders for latest data
-        self.latest_data = {col: np.nan for col in self.data.columns if col != 'timestamp'}
-        
-        # Create timer for periodic data publishing
-        self.create_timer(self.dt, self.publish_data, callback_group=self.callback_group)
-        
-        self.get_logger().info('Info Collector Node initialized')
+        # 파라미터 설정
+        self.declare_parameter('save_dir', '/home/user/data')  # 기본값 설정
+        self.save_dir = self.get_parameter('save_dir').value
 
-    def callback_encoder_position(self, msg):
-        self.latest_data['encoder_position'] = msg.data
-        self.update_data()
-
-    def callback_controller_status(self, msg):
-        self.latest_data.update({
-            'pos_estimate': msg.pos_estimate,
-            'vel_estimate': msg.vel_estimate,
-            'torque_target': msg.torque_target,
-            'torque_estimate': msg.torque_estimate,
-            'iq_setpoint': msg.iq_setpoint,
-            'iq_measured': msg.iq_measured,
-            'active_errors': msg.active_errors,
-            'axis_state': msg.axis_state,
-            'procedure_result': msg.procedure_result,
-            'trajectory_done_flag': msg.trajectory_done_flag
-        })
-        self.update_data()
-
-    def callback_control_message(self, msg):
-        self.latest_data.update({
-            'control_mode': msg.control_mode,
-            'input_mode': msg.input_mode,
-            'input_pos': msg.input_pos,
-            'input_vel': msg.input_vel,
-            'input_torque': msg.input_torque
-        })
-        self.update_data()
-
-    def update_data(self):
-        timestamp = self.get_clock().now().to_msg()
-        new_row = {'timestamp': timestamp, **self.latest_data}
-        self.data = pd.concat([self.data, pd.DataFrame([new_row])], ignore_index=True)
-
-    def publish_data(self):
-        if not self.data.empty:
-            msg = CollectedData()
-            latest_row = self.data.iloc[-1]
+        # 사용자로부터 subject number 입력 받기
+        while True:
+            try:
+                subject_num = input("Enter subject number: ")
+                subject_num = int(subject_num)
+                if subject_num > 0:
+                    break
+                else:
+                    print("Please enter a positive number.")
+            except ValueError:
+                print("Please enter a valid number.")
+        
+        self.subject_name = f'subject_{subject_num}'
+        
+        # trial 관련 변수
+        self.current_trial = 1
+        self.is_recording = False
+        self.h5_file = None
+        self.data_group = None
+        self.start_time = None
+        
+        # subject 폴더 생성
+        self.subject_dir = os.path.join(self.save_dir, self.subject_name)
+        if not os.path.exists(self.subject_dir):
+            os.makedirs(self.subject_dir)
+        
+        # logged_items 초기화
+        self.logged_items = {
+            'elapsed_time': None,
+            'position': None,
+            'velocity': None,
+            'tau_fcomp': None,
+            'tau_imp': None,
+        }
+        
+        # 서비스 생성
+        self.srv = self.create_service(SetBool, 'toggle_recording', self.toggle_recording_callback)
+        
+        # 구독자 생성
+        self.subscription1 = self.create_subscription(
+            MotionState,
+            'motor_state',
+            self.callback_motor_state,
+            10)
             
-            # Populate the message with the latest data
-            # Note: Adjust these fields based on your CollectedData message definition
-            msg.timestamp = latest_row['timestamp']
-            msg.encoder_position = latest_row['encoder_position']
-            msg.pos_estimate = latest_row['pos_estimate']
-            # ... populate other fields ...
+        self.subscription2 = self.create_subscription(
+            FrictionComp,
+            'friction_comp_torque',
+            self.callback_friction_torque,
+            10)
             
-            self.pub_collected_data.publish(msg)
+        self.subscription3 = self.create_subscription(
+            ImpedanceTorque,
+            'impedance_torque',
+            self.callback_imp_torque,
+            10)
+        
+        # 타이머 설정 (100Hz)
+        self.global_rate = 100
+        self.timer = self.create_timer(1/self.global_rate, self.timer_callback)
+        
+        self.get_logger().info('Data collector node has been started')
 
-    def save_data_to_csv(self, filename='data_log.csv'):
-        try:
-            self.data.to_csv(filename, index=False)
-            self.get_logger().info(f'Data successfully saved to {filename}')
-        except Exception as e:
-            self.get_logger().error(f'Failed to save data: {str(e)}')
+    def create_new_file(self):
+        """새로운 trial 파일 생성"""
+        filename = os.path.join(self.subject_dir, f'trial_{self.current_trial}.h5')
+        self.h5_file = h5py.File(filename, 'w')
+        self.data_group = self.h5_file.create_group("TrialData")
+        self.start_time = time.time()
+        self.get_logger().info(f'Created new file: {filename}')
+
+    def close_current_file(self):
+        """현재 trial 파일 닫기"""
+        if self.h5_file is not None:
+            self.h5_file.close()
+            self.h5_file = None
+            self.data_group = None
+            self.get_logger().info(f'Closed trial_{self.current_trial}.h5')
+            self.current_trial += 1
+
+    def toggle_recording_callback(self, request, response):
+        """recording 토글 서비스 콜백"""
+        if request.data:  # Start recording
+            if not self.is_recording:
+                self.create_new_file()
+                self.is_recording = True
+                response.message = f"Started recording trial_{self.current_trial}"
+                response.success = True
+            else:
+                response.message = "Already recording"
+                response.success = False
+        else:  # Stop recording
+            if self.is_recording:
+                self.close_current_file()
+                self.is_recording = False
+                response.message = "Stopped recording"
+                response.success = True
+            else:
+                response.message = "Not recording"
+                response.success = False
+        return response
+
+    def callback_motor_state(self, msg):
+        if not self.is_recording:
+            return
+        self.logged_items['position'] = msg.position
+        self.logged_items['velocity'] = msg.velocity
+
+    def callback_friction_torque(self, msg):
+        if not self.is_recording:
+            return
+        self.logged_items['tau_fcomp'] = msg.tau_fcomp
+
+    def callback_imp_torque(self, msg):
+        if not self.is_recording:
+            return
+        self.logged_items['tau_imp'] = msg.tau_imp
+
+    def timer_callback(self):
+        if not self.is_recording:
+            return
+            
+        # elapsed_time 업데이트
+        current_time = time.time() - self.start_time
+        self.logged_items['elapsed_time'] = np.array([current_time])
+        
+        # 데이터 저장
+        self.sync_log()
+
+    def sync_log(self):
+        if not self.is_recording or self.data_group is None:
+            return
+            
+        for dataset_name, data_to_append in self.logged_items.items():
+            if data_to_append is None:
+                continue
+                
+            try:
+                if dataset_name in self.data_group:
+                    dataset = self.data_group[dataset_name]
+                    if isinstance(data_to_append, np.ndarray):
+                        dataset.resize((dataset.shape[0] + 1,) + data_to_append.shape)
+                        dataset[-1] = data_to_append
+                else:
+                    if isinstance(data_to_append, np.ndarray):
+                        self.data_group.create_dataset(
+                            dataset_name,
+                            data=[data_to_append],
+                            maxshape=((None,) + data_to_append.shape),
+                            chunks=True
+                        )
+            except Exception as e:
+                self.get_logger().error(f'Failed to save dataset {dataset_name}: {e}')
+
+    def __del__(self):
+        if self.h5_file is not None:
+            self.h5_file.close()
+            self.get_logger().info('H5 file has been closed')
 
 def main(args=None):
     rclpy.init(args=args)
-    node = InfoCollectorNode()
+    data_collector = DataCollectorNode()
     
     try:
-        rclpy.spin(node)
+        rclpy.spin(data_collector)
     except KeyboardInterrupt:
-        node.save_data_to_csv()
-        node.get_logger().info('Saving data and shutting down...')
-    except Exception as e:
-        node.get_logger().error(f'Unexpected error: {str(e)}')
+        pass
     finally:
-        node.destroy_node()
+        if data_collector.h5_file is not None:
+            data_collector.close_current_file()
+        data_collector.destroy_node()
         rclpy.shutdown()
 
 if __name__ == '__main__':
