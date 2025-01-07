@@ -10,6 +10,7 @@ setup.py
 ../../build/odrive_control_py/odrive_control_py.egg-info/zip-safe
 config/params.yaml
 odrive_control_py/FCM_test_node.py
+odrive_control_py/Impedance_test_node copy.py
 odrive_control_py/__init__.py
 odrive_control_py/app_tcp_server.py
 odrive_control_py/control_node.py

@@ -2,8 +2,9 @@ import rclpy
 from rclpy.node import Node
 import numpy as np
 from std_msgs.msg import Int32, Float32
-from custom_msgs.msg import MotionState, FriCompTorque
-from ros_odrive.msg import ControlMessage
+from custom_msgs.msg import MotionState
+from odrive_can.msg import ControlMessage
+
 class FrictionCompensationNode(Node):
     def __init__(self):
         super().__init__('friction_compensation_node')
@@ -17,8 +18,6 @@ class FrictionCompensationNode(Node):
             10  # QoS profile
         )
 
-
-
         self.position_data = []  # Buffer to store incoming position data
         self.counts_to_rads = 0.0
 
@@ -28,23 +27,6 @@ class FrictionCompensationNode(Node):
         self.motor_command_publisher = self.create_publisher(ControlMessage, 'motor_command', 10)
 
         self.timer = self.create_timer(self.publish_period, self.process_data)  # 20 Hz processing
-
-    def velocity_5_point_backward(self, position):
-        """
-        Calculate velocity using the 5-point backward difference method.
-        """
-        coefficients = np.array([-25, 48, -36, 16, -3]) / (12.0 * self.publish_period)
-
-        if len(position) < 5:
-            return 0.0  # Return 0.0 if insufficient data for velocity calculation
-        
-        # self.get_logger().info(f'Calculated Position: {position}')
-
-        # Compute velocity using the 5-point backward difference
-        velocity = np.dot(position, coefficients)
-        self.get_logger().info(f'Calculated Velocity: {velocity}')
-
-        return velocity
 
     def friction_compensation(self, velocity):
         """
@@ -73,10 +55,11 @@ class FrictionCompensationNode(Node):
         msg = ControlMessage()
         msg.control_mode = 1
         msg.input_mode = 1
-        msg.input_pos = 0
-        msg.input_vel = 0
+        msg.input_pos = 0.0
+        msg.input_vel = 0.0
         msg.input_torque = compensation_torque
         self.motor_command_publisher.publish(msg)
+
         # msg = FriCompTorque()
         # msg.tau_fcomp = compensation_torque
         # self.publisher.publish(msg)

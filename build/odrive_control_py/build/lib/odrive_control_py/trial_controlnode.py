@@ -1,9 +1,11 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32
-
+from custom_msgs.msg import MotionState
 import RPi.GPIO as GPIO
 import traceback
+from collections import deque
+import numpy as np
 
 class AMT102VEncoderNode(Node):
     """
@@ -30,12 +32,15 @@ class AMT102VEncoderNode(Node):
         self.last_A = 0  # Store the last state of channel A
 
         # Create Publisher
-        self.encoder_publisher = self.create_publisher(Int32, 'encoder_position', 10)
+        self.history_len = 5
+        self.input_buffer = deque(maxlen=self.history_len)
+        # Initialize Publisher
+        self.motor_state_publisher = self.create_publisher(MotionState, 'motor_state', 10)
 
         # Setup timer for publishing
         publish_rate = 100.0  # Hz
-        publish_period = 1.0 / publish_rate
-        self.timer = self.create_timer(publish_period, self.publish_encoder_position)
+        self.publish_period = 1.0 / publish_rate
+        self.timer = self.create_timer(self.publish_period, self.publish_motor_state)
 
         try:
             # Initialize RPi.GPIO
@@ -86,11 +91,41 @@ class AMT102VEncoderNode(Node):
             self.get_logger().error(str(e))
             self.get_logger().error(traceback.format_exc())
 
-    def publish_encoder_position(self) -> None:
-        msg = Int32()
-        msg.data = self.position
-        self.encoder_publisher.publish(msg)
-        self.get_logger().debug(f'Published Encoder Position: {msg.data}')
+
+    def velocity_5_point_backward(self, position):
+        """
+        Calculate velocity using the 5-point backward difference method.
+        """
+        coefficients = np.array([-25, 48, -36, 16, -3]) / (12.0 * self.publish_period)
+
+        if len(position) < 5:
+            return 0.0  # Return 0.0 if insufficient data for velocity calculation
+        
+        # self.get_logger().info(f'Calculated Position: {position}')
+
+        # Compute velocity using the 5-point backward difference
+        velocity = np.dot(position, coefficients)
+        self.get_logger().info(f'Calculated Velocity: {velocity}')
+
+        return velocity
+
+    def publish_motor_state(self) -> None:
+        """
+        Publishes the current encoder position at the configured rate.
+        """
+        pos = self.position * (3/8192) # unit radian
+        
+        # Compute Velocity
+        self.input_buffer.append(pos)
+        if len(self.input_buffer) < self.history_len:
+            return
+        velocity = self.velocity_5_point_backward(self.input_buffer) # unit radians/sec
+        msg = MotionState()
+        msg.position = pos
+        msg.velocity = velocity
+        self.motor_state_publisher.publish(msg)
+        self.get_logger().debug(f'Published Motor Position: {pos}')
+        self.get_logger().debug(f'Published Motor Velocity: {velocity}')
 
     def cleanup(self) -> None:
         """
