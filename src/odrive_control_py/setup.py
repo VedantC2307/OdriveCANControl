@@ -28,7 +28,7 @@ setup(
             'data_recording_node = odrive_control_py.data_recording_node:main',
             'FCR_node = odrive_control_py.FCM_test_node:main',
             'trial_odrive_control_node = odrive_control_py.trial_controlnode:main',
-            # 'record_data_node = odrive_control_py.record_odrive_data_test:main',
+            'app = odrive_control_py.app_server_node:main',
             # 'matlab_tcp_node = odrive_control_py.matlab_tcp_node_test:main',
         ],
     },
