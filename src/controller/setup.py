@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'odrive_control_node = controller.control_node:main',
+            'FC_node = controller.control_node:main',
         ],
     },
 )
