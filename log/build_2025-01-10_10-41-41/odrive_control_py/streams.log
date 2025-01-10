@@ -1,0 +1,26 @@
+[6.451s] Invoking command in '/home/vedant/OdriveCANControl/src/odrive_control_py': AMENT_PREFIX_PATH=/home/vedant/OdriveCANControl/install/odrive_can:/home/vedant/OdriveCANControl/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/OdriveCANControl/install/odrive_can:/home/vedant/OdriveCANControl/install/custom_msgs LD_LIBRARY_PATH=/home/vedant/OdriveCANControl/install/odrive_can/lib:/home/vedant/OdriveCANControl/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vedant/OdriveCANControl/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odrive_control_py build --build-base /home/vedant/OdriveCANControl/build/odrive_control_py/build install --record /home/vedant/OdriveCANControl/build/odrive_control_py/install.log --single-version-externally-managed install_data
+[7.735s] running egg_info
+[7.738s] writing ../../build/odrive_control_py/odrive_control_py.egg-info/PKG-INFO
+[7.739s] writing dependency_links to ../../build/odrive_control_py/odrive_control_py.egg-info/dependency_links.txt
+[7.741s] writing entry points to ../../build/odrive_control_py/odrive_control_py.egg-info/entry_points.txt
+[7.742s] writing requirements to ../../build/odrive_control_py/odrive_control_py.egg-info/requires.txt
+[7.742s] writing top-level names to ../../build/odrive_control_py/odrive_control_py.egg-info/top_level.txt
+[7.750s] reading manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'
+[7.755s] writing manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'
+[7.756s] running build
+[7.756s] running build_py
+[7.760s] running install
+[7.761s] running install_lib
+[7.771s] running install_data
+[7.772s] running install_egg_info
+[7.779s] removing '/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info' (and everything under it)
+[7.781s] Copying ../../build/odrive_control_py/odrive_control_py.egg-info to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info
+[7.792s] running install_scripts
+[7.880s] Installing FCR_node script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py
+[7.881s] Installing app script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py
+[7.882s] Installing data_recording_node script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py
+[7.884s] Installing encoder_read_node script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py
+[7.887s] Installing odrive_control_node script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py
+[7.891s] Installing trial_odrive_control_node script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py
+[7.898s] writing list of installed files to '/home/vedant/OdriveCANControl/build/odrive_control_py/install.log'
+[8.034s] Invoked command in '/home/vedant/OdriveCANControl/src/odrive_control_py' returned '0': AMENT_PREFIX_PATH=/home/vedant/OdriveCANControl/install/odrive_can:/home/vedant/OdriveCANControl/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/OdriveCANControl/install/odrive_can:/home/vedant/OdriveCANControl/install/custom_msgs LD_LIBRARY_PATH=/home/vedant/OdriveCANControl/install/odrive_can/lib:/home/vedant/OdriveCANControl/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vedant/OdriveCANControl/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odrive_control_py build --build-base /home/vedant/OdriveCANControl/build/odrive_control_py/build install --record /home/vedant/OdriveCANControl/build/odrive_control_py/install.log --single-version-externally-managed install_data

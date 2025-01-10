@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/app_server/app_server.egg-info
+writing ../../build/app_server/app_server.egg-info/PKG-INFO
+writing dependency_links to ../../build/app_server/app_server.egg-info/dependency_links.txt
+writing entry points to ../../build/app_server/app_server.egg-info/entry_points.txt
+writing requirements to ../../build/app_server/app_server.egg-info/requires.txt
+writing top-level names to ../../build/app_server/app_server.egg-info/top_level.txt
+writing manifest file '../../build/app_server/app_server.egg-info/SOURCES.txt'
+reading manifest file '../../build/app_server/app_server.egg-info/SOURCES.txt'
+writing manifest file '../../build/app_server/app_server.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/vedant/OdriveCANControl/build/app_server/build
+creating /home/vedant/OdriveCANControl/build/app_server/build/lib
+creating /home/vedant/OdriveCANControl/build/app_server/build/lib/app_server
+copying app_server/server_node.py -> /home/vedant/OdriveCANControl/build/app_server/build/lib/app_server
+copying app_server/__init__.py -> /home/vedant/OdriveCANControl/build/app_server/build/lib/app_server
+running install
+running install_lib
+creating /home/vedant/OdriveCANControl/install/app_server/lib/python3.10/site-packages/app_server
+copying /home/vedant/OdriveCANControl/build/app_server/build/lib/app_server/server_node.py -> /home/vedant/OdriveCANControl/install/app_server/lib/python3.10/site-packages/app_server
+copying /home/vedant/OdriveCANControl/build/app_server/build/lib/app_server/__init__.py -> /home/vedant/OdriveCANControl/install/app_server/lib/python3.10/site-packages/app_server
+byte-compiling /home/vedant/OdriveCANControl/install/app_server/lib/python3.10/site-packages/app_server/server_node.py to server_node.cpython-310.pyc
+byte-compiling /home/vedant/OdriveCANControl/install/app_server/lib/python3.10/site-packages/app_server/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/app_server -> /home/vedant/OdriveCANControl/install/app_server/share/ament_index/resource_index/packages
+copying package.xml -> /home/vedant/OdriveCANControl/install/app_server/share/app_server
+running install_egg_info
+Copying ../../build/app_server/app_server.egg-info to /home/vedant/OdriveCANControl/install/app_server/lib/python3.10/site-packages/app_server-0.0.0-py3.10.egg-info
+running install_scripts
+Installing odrive_server_app script to /home/vedant/OdriveCANControl/install/app_server/lib/app_server
+writing list of installed files to '/home/vedant/OdriveCANControl/build/app_server/install.log'

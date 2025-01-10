@@ -9,6 +9,7 @@ setup.py
 ../../build/encoder/encoder.egg-info/top_level.txt
 ../../build/encoder/encoder.egg-info/zip-safe
 encoder/__init__.py
+encoder/encoder.py
 encoder/encoder_read_node.py
 resource/encoder
 test/test_copyright.py

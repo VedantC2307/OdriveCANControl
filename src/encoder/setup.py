@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'encoder_read_node = encoder.encoder_read_node:main',
+            'encoder_node = encoder.encoder_read_node:main',
         ],
     },
 )
