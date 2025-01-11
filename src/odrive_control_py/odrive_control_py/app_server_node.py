@@ -87,6 +87,8 @@ class MotorControlServer(Node):
     
     def set_motor_state(self, state):
         # Wait for service to be available
+        print("state",state)
+        
         while not self.axis_state_client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('Service not available, waiting...')
         
@@ -97,7 +99,8 @@ class MotorControlServer(Node):
         # Call service
         try:
             future = self.axis_state_client.call_async(request)
-            rclpy.spin_until_future_complete(self, future, timeout_sec=5.0)
+            print("uture.result()",future.result())
+            # rclpy.spin_until_future_complete(self, future, timeout_sec=5.0)
             if future.result() is not None:
                 self.get_logger().info(f'Successfully set motor state to {state}')
             else:
