@@ -3,6 +3,8 @@ import rclpy
 from rclpy.node import Node
 import socket
 from odrive_can.srv import AxisState
+# from ros_odrive.odrive_node.srv import AxisState
+
 
 class MotorControlServer(Node):
     def __init__(self):
@@ -87,7 +89,7 @@ class MotorControlServer(Node):
     
     def set_motor_state(self, state):
         # Wait for service to be available
-        while not self.axis_state_client.wait_for_service(timeout_sec=1.0):
+        while not self.axis_state_client.wait_for_service(timeout_sec=5.0):
             self.get_logger().info('Service not available, waiting...')
         
         # Create request
