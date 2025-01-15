@@ -1,11 +1,12 @@
-from setuptools import find_packages, setup
+from setuptools import setup
 
 package_name = 'controller'
 
 setup(
     name=package_name,
     version='0.0.0',
-    packages=find_packages(exclude=['test']),
+    packages=[package_name],
+    package_dir={'': 'src'},
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
@@ -15,12 +16,12 @@ setup(
     zip_safe=True,
     maintainer='vedant',
     maintainer_email='vedantchoudhary07@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='ODrive controller package',
+    license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'FC_node = controller.control_node:main',
+            'odrive_control = controller.odrive_control:main',
         ],
     },
 )
