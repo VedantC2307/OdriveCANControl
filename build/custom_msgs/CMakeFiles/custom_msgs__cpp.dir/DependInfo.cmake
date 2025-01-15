@@ -16,6 +16,11 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__struct.hpp" "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp"
   "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__traits.hpp" "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp"
   "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__type_support.hpp" "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp"
+  "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__builder.hpp" "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp"
+  "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__struct.hpp" "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp"
+  "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__traits.hpp" "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp"
+  "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__type_support.hpp" "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp"
+  "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp/custom_msgs/srv/o_drive_command.hpp" "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp"
   )
 
 

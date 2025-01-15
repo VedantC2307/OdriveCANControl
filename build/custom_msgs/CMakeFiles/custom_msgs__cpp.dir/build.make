@@ -71,6 +71,11 @@ CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/motion_
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__struct.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__traits.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__type_support.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/o_drive_command.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__type_support.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -89,6 +94,39 @@ rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/ros
 rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: rosidl_adapter/custom_msgs/msg/MotionState.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: rosidl_adapter/custom_msgs/srv/ODriveCommand.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Byte.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Char.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/ColorRGBA.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Empty.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Float32.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Float32MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Float64.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Float64MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Header.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Int16.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Int16MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Int32.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Int32MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Int64.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Int64MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Int8.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Int8MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/MultiArrayDimension.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/MultiArrayLayout.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/String.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/UInt16.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/UInt16MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/UInt32.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/UInt32MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/UInt64.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vedant/OdriveCANControl/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_cpp__arguments.json
 
@@ -104,12 +142,32 @@ rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__traits.hpp: rosidl_gen
 rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__type_support.hpp
 
+rosidl_generator_cpp/custom_msgs/srv/o_drive_command.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/o_drive_command.hpp
+
+rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__traits.hpp
+
+rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__type_support.hpp
+
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__builder.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__struct.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__traits.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__type_support.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__type_support.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/o_drive_command.hpp
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp.dir/build.make
 .PHONY : custom_msgs__cpp
 

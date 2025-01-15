@@ -17,6 +17,9 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/__init__.py" "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_motion_state.py" "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_motion_state_s.c" "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/srv/__init__.py" "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/srv/_o_drive_command.py" "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/srv/_o_drive_command_s.c" "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

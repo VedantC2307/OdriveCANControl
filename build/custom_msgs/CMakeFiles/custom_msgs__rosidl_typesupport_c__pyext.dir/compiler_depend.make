@@ -244,8 +244,15 @@ CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/cust
   rosidl_generator_c/custom_msgs/msg/detail/motion_state__type_support.h \
   rosidl_generator_c/custom_msgs/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/custom_msgs/msg/detail/motion_state__struct.h \
-  rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.h
+  rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.h \
+  rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__type_support.h \
+  rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+  rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.h
 
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
 rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.h:
 
@@ -268,6 +275,8 @@ rosidl_generator_c/custom_msgs/msg/detail/motion_state__type_support.h:
 /usr/include/python3.10/tracemalloc.h:
 
 /usr/include/python3.10/cpython/sysmodule.h:
+
+rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__type_support.h:
 
 /usr/include/python3.10/sysmodule.h:
 
@@ -453,6 +462,8 @@ rosidl_generator_c/custom_msgs/msg/rosidl_generator_c__visibility_control.h:
 
 /usr/include/errno.h:
 
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
+
 /usr/include/aarch64-linux-gnu/bits/waitflags.h:
 
 /usr/include/aarch64-linux-gnu/bits/wchar.h:
@@ -476,6 +487,8 @@ rosidl_generator_c/custom_msgs/msg/rosidl_generator_c__visibility_control.h:
 /usr/include/math.h:
 
 /usr/include/python3.10/patchlevel.h:
+
+rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.h:
 
 /usr/include/python3.10/ceval.h:
 
@@ -682,6 +695,8 @@ rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c:
 /usr/include/asm-generic/bitsperlong.h:
 
 /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h:
+
+rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__struct.h:
 
 /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h:
 

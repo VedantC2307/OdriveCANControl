@@ -3,23 +3,28 @@
 <package format="3">
   <name>controller</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>ODrive motor control package using ROS2 and CAN</description>
   <maintainer email="vedantchoudhary07@gmail.com">vedant</maintainer>
-  <license>TODO: License declaration</license>
+  <license>Apache License 2.0</license>
 
+  <!-- ROS2 기본 의존성 -->
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>custom_msgs</depend>
+  <!-- ODrive 관련 의존성 -->
+  <depend>odrive_can</depend>
+
+  <!-- 메시지 생성 관련 의존성 -->
+  <build_depend>rosidl_default_generators</build_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <build_export_depend>rosidl_default_runtime</build_export_depend>
+
+  <!-- 테스트 관련 의존성 -->
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
   <test_depend>python3-pytest</test_depend>
-
-  <exec_depend>rclpy</exec_depend>
-  <exec_depend>odrive_can</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
-  <depend>sensor_msgs</depend>
-
-  <build_depend>rosidl_default_generators</build_depend>
-  <exec_depend>rosidl_default_runtime</exec_depend>
-  <build_export_depend>rosidl_default_runtime</build_export_depend>
 
   <export>
     <build_type>ament_python</build_type>
