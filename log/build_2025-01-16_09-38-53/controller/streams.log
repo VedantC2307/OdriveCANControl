@@ -1,0 +1,23 @@
+[0.868s] Invoking command in '/home/vedant/gaitlab_ws/OdriveCANControl/src/controller': AMENT_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs LD_LIBRARY_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vedant/gaitlab_ws/OdriveCANControl/build/controller/prefix_override:/home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build install --record /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/install.log --single-version-externally-managed install_data
+[0.959s] /home/vedant/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[0.960s]   warnings.warn(msg)
+[1.025s] running egg_info
+[1.036s] writing ../../build/controller/controller.egg-info/PKG-INFO
+[1.037s] writing dependency_links to ../../build/controller/controller.egg-info/dependency_links.txt
+[1.037s] writing entry points to ../../build/controller/controller.egg-info/entry_points.txt
+[1.037s] writing requirements to ../../build/controller/controller.egg-info/requires.txt
+[1.037s] writing top-level names to ../../build/controller/controller.egg-info/top_level.txt
+[1.048s] reading manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[1.049s] writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[1.049s] running build
+[1.049s] running install
+[1.052s] running install_data
+[1.053s] copying resource/controller -> /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/share/ament_index/resource_index/packages
+[1.053s] copying package.xml -> /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/share/controller
+[1.053s] running install_egg_info
+[1.076s] removing '/home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info' (and everything under it)
+[1.076s] Copying ../../build/controller/controller.egg-info to /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info
+[1.078s] running install_scripts
+[1.166s] Installing odrive_control script to /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/controller
+[1.166s] writing list of installed files to '/home/vedant/gaitlab_ws/OdriveCANControl/build/controller/install.log'
+[1.182s] Invoked command in '/home/vedant/gaitlab_ws/OdriveCANControl/src/controller' returned '0': AMENT_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs LD_LIBRARY_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vedant/gaitlab_ws/OdriveCANControl/build/controller/prefix_override:/home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build install --record /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/install.log --single-version-externally-managed install_data

@@ -5,6 +5,7 @@ from custom_msgs.srv import ODriveCommand  # 이 부분이 올바르게 수정�
 import odrive
 from odrive.enums import *
 import time
+import socket
 
 class ODriveController(Node):
     def __init__(self):
@@ -16,6 +17,21 @@ class ODriveController(Node):
         # 서비스 서버 생성
         self.srv = self.create_service(ODriveCommand, 'odrive/command', self.command_callback)
         self.get_logger().info('ODrive controller service started')
+
+        # TCP Server setup
+        self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        self.host = '0.0.0.0'  # Listen on all available interfaces
+        self.port = 1234
+        self.server_socket.bind((self.host, self.port))
+        self.server_socket.listen(1)
+        self.server_socket.setblocking(False)  # Make socket non-blocking
+        
+        self.get_logger().info(f'Server listening on {self.host}:{self.port}')
+
+        # Client socket
+        self.client_socket = None
+        self.client_address = None
         
     def connect_drive(self):
         """ODrive 연결"""
@@ -109,6 +125,59 @@ class ODriveController(Node):
             
         except Exception as e:
             return False, f"Initialization error: {str(e)}"
+        
+
+    def check_socket(self):
+        # Check for new connections if no client is connected
+        if self.client_socket is None:
+            try:
+                self.client_socket, self.client_address = self.server_socket.accept()
+                self.client_socket.setblocking(False)
+                self.get_logger().info(f'Connected to client at {self.client_address}')
+            except BlockingIOError:
+                # No connection available
+                return
+            except Exception as e:
+                self.get_logger().error(f'Error accepting connection: {str(e)}')
+                return
+        
+        # Check for messages from connected client
+        try:
+            data = self.client_socket.recv(1024)
+            if data:
+                message = data.decode('utf-8')
+                self.get_logger().info(f'Received message: {message}')
+                
+                if message == "initialize":
+                    success, response = self.initialize_sequence()
+                elif message == "clear_error":
+                    success, response = self.clear_errors()
+                elif message == "set_idle":
+                    success, response = self.set_idle_mode()
+                elif message == "set_closed_loop":
+                    success, response = self.set_closed_loop_mode()
+                else:
+                    success = False
+                    response = f"Unknown command: {message}"
+                # Send response back to client
+                if self.client_socket:
+                    self.client_socket.send(f'{success}: {response}\n'.encode('utf-8'))
+            else:
+                # Client disconnected
+                self.get_logger().info('Client disconnected')
+                self.client_socket.close()
+                self.client_socket = None
+                self.client_address = None
+                
+        except BlockingIOError:
+            # No data available
+            pass
+        except Exception as e:
+            self.get_logger().error(f'Error handling client: {str(e)}')
+            if self.client_socket:
+                self.client_socket.close()
+                self.client_socket = None
+                self.client_address = None
 
     def command_callback(self, request, response):
         """서비스 콜백 함수"""
@@ -137,7 +206,10 @@ def main(args=None):
     
     try:
         node = ODriveController()
-        rclpy.spin(node)
+        # rclpy.spin(node)
+        while rclpy.ok():
+            rclpy.spin_once(node, timeout_sec=0.1)
+            node.check_socket()
     except Exception as e:
         print(f"Error: {str(e)}")
     finally:

@@ -1,4 +1,3 @@
 import sys
-if sys.prefix == '/usr':
-    sys.real_prefix = sys.prefix
-    sys.prefix = sys.exec_prefix = '/home/vedant/OdriveCANControl/install/app_server'
+sys.real_prefix = sys.prefix
+sys.prefix = sys.exec_prefix = '/home/vedant/gaitlab_ws/OdriveCANControl/install/app_server'

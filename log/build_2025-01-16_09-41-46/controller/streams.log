@@ -1,0 +1,32 @@
+[0.975s] Invoking command in '/home/vedant/gaitlab_ws/OdriveCANControl/src/controller': AMENT_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs LD_LIBRARY_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vedant/gaitlab_ws/OdriveCANControl/build/controller/prefix_override:/home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build install --record /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/install.log --single-version-externally-managed install_data
+[1.068s] /home/vedant/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.068s]   warnings.warn(msg)
+[1.132s] running egg_info
+[1.143s] writing ../../build/controller/controller.egg-info/PKG-INFO
+[1.143s] writing dependency_links to ../../build/controller/controller.egg-info/dependency_links.txt
+[1.143s] writing entry points to ../../build/controller/controller.egg-info/entry_points.txt
+[1.143s] writing requirements to ../../build/controller/controller.egg-info/requires.txt
+[1.143s] writing top-level names to ../../build/controller/controller.egg-info/top_level.txt
+[1.166s] reading manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[1.166s] writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[1.167s] running build
+[1.167s] running build_py
+[1.167s] copying src/controller/odrive_control.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build/lib/controller
+[1.167s] copying src/controller/App.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build/lib/controller
+[1.167s] copying src/controller/control_node.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build/lib/controller
+[1.168s] copying src/controller/Friction_compensation_node.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build/lib/controller
+[1.168s] copying src/controller/__init__.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build/lib/controller
+[1.168s] running install
+[1.171s] running install_lib
+[1.182s] copying /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build/lib/controller/odrive_control.py -> /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller
+[1.183s] byte-compiling /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/odrive_control.py to odrive_control.cpython-310.pyc
+[1.184s] running install_data
+[1.184s] copying resource/controller -> /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/share/ament_index/resource_index/packages
+[1.184s] copying package.xml -> /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/share/controller
+[1.185s] running install_egg_info
+[1.196s] removing '/home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info' (and everything under it)
+[1.198s] Copying ../../build/controller/controller.egg-info to /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info
+[1.198s] running install_scripts
+[1.291s] Installing odrive_control script to /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/controller
+[1.291s] writing list of installed files to '/home/vedant/gaitlab_ws/OdriveCANControl/build/controller/install.log'
+[1.307s] Invoked command in '/home/vedant/gaitlab_ws/OdriveCANControl/src/controller' returned '0': AMENT_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs LD_LIBRARY_PATH=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vedant/gaitlab_ws/OdriveCANControl/build/controller/prefix_override:/home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build install --record /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/install.log --single-version-externally-managed install_data

@@ -1,12 +1,12 @@
 {
   "package_name": "odrive_can",
-  "output_dir": "/home/vedant/OdriveCANControl/build/odrive_can/rosidl_generator_py/odrive_can",
+  "output_dir": "/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_generator_py/odrive_can",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/vedant/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can:msg/ControlMessage.idl",
-    "/home/vedant/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can:msg/ControllerStatus.idl",
-    "/home/vedant/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can:msg/ODriveStatus.idl",
-    "/home/vedant/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can:srv/AxisState.idl"
+    "/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can:msg/ControlMessage.idl",
+    "/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can:msg/ControllerStatus.idl",
+    "/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can:msg/ODriveStatus.idl",
+    "/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can:srv/AxisState.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
@@ -22,9 +22,9 @@
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/vedant/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can/msg/ControlMessage.idl",
-    "/home/vedant/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can/msg/ControllerStatus.idl",
-    "/home/vedant/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can/msg/ODriveStatus.idl",
-    "/home/vedant/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can/srv/AxisState.idl"
+    "/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can/msg/ControlMessage.idl",
+    "/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can/msg/ControllerStatus.idl",
+    "/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can/msg/ODriveStatus.idl",
+    "/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can/rosidl_adapter/odrive_can/srv/AxisState.idl"
   ]
 }

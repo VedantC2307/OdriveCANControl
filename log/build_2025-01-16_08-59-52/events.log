@@ -1,0 +1,15 @@
+[0.000000] (-) TimerEvent: {}
+[0.000911] (-) JobUnselected: {'identifier': 'app_server'}
+[0.000947] (-) JobUnselected: {'identifier': 'custom_msgs'}
+[0.000967] (-) JobUnselected: {'identifier': 'data_logging'}
+[0.000981] (-) JobUnselected: {'identifier': 'encoder'}
+[0.000995] (-) JobUnselected: {'identifier': 'odrive_botwheel_explorer'}
+[0.001010] (-) JobUnselected: {'identifier': 'odrive_can'}
+[0.001020] (-) JobUnselected: {'identifier': 'odrive_control_py'}
+[0.001030] (-) JobUnselected: {'identifier': 'odrive_ros2_control'}
+[0.001039] (-) JobUnselected: {'identifier': 'robot_launch'}
+[0.001048] (-) JobUnselected: {'identifier': 'testing'}
+[0.001059] (controller) JobQueued: {'identifier': 'controller', 'dependencies': OrderedDict([('custom_msgs', '/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs'), ('odrive_can', '/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can')])}
+[0.001077] (controller) JobStarted: {'identifier': 'controller'}
+[0.014911] (controller) JobEnded: {'identifier': 'controller', 'rc': 1}
+[0.026139] (-) EventReactorShutdown: {}

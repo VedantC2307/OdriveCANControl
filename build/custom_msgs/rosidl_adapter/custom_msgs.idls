@@ -1,2 +1,2 @@
-/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs:msg/MotionState.idl
-/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs:srv/ODriveCommand.idl
+/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs:msg/MotionState.idl
+/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs:srv/ODriveCommand.idl

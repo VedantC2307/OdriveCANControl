@@ -1,5 +1,0 @@
-  File "/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py/encoder_read_node.py", line 29
-    self.get_logger().info(f'channel_a_pin:{channel_a_pin}'
-                          ^
-SyntaxError: '(' was never closed
-

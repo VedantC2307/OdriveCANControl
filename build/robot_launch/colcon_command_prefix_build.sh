@@ -1,6 +1,0 @@
-# generated from colcon_core/shell/template/command_prefix.sh.em
-. "/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.sh"
-. "/home/vedant/OdriveCANControl/install/odrive_can/share/odrive_can/package.sh"
-. "/home/vedant/OdriveCANControl/install/app_server/share/app_server/package.sh"
-. "/home/vedant/OdriveCANControl/install/controller/share/controller/package.sh"
-. "/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/package.sh"

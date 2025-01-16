@@ -1,0 +1,1116 @@
+[0.000000] (-) TimerEvent: {}
+[0.000896] (-) JobUnselected: {'identifier': 'app_server'}
+[0.000947] (-) JobUnselected: {'identifier': 'data_logging'}
+[0.000968] (-) JobUnselected: {'identifier': 'encoder'}
+[0.001272] (-) JobUnselected: {'identifier': 'odrive_botwheel_explorer'}
+[0.001352] (-) JobUnselected: {'identifier': 'odrive_control_py'}
+[0.001395] (-) JobUnselected: {'identifier': 'odrive_ros2_control'}
+[0.001434] (-) JobUnselected: {'identifier': 'robot_launch'}
+[0.001473] (-) JobUnselected: {'identifier': 'testing'}
+[0.001514] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.001556] (odrive_can) JobQueued: {'identifier': 'odrive_can', 'dependencies': OrderedDict()}
+[0.001595] (controller) JobQueued: {'identifier': 'controller', 'dependencies': OrderedDict([('custom_msgs', '/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs'), ('odrive_can', '/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can')])}
+[0.001719] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.011769] (odrive_can) JobStarted: {'identifier': 'odrive_can'}
+[0.020393] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.020449] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/vedant/gaitlab_ws/OdriveCANControl/src/custom_msgs', '-DCMAKE_INSTALL_PREFIX=/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs'], 'cwd': '/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/vedant'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/vedant/gaitlab_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('NAME', 'Vedant'), ('WSL_INTEROP', '/run/WSL/441_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/vedant/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vedant/.local/bin:/home/vedant/miniconda3/condabin:/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/vedan/miniconda3:/mnt/c/Users/vedan/miniconda3/Library/mingw-w64/bin:/mnt/c/Users/vedan/miniconda3/Library/usr/bin:/mnt/c/Users/vedan/miniconda3/Library/bin:/mnt/c/Users/vedan/miniconda3/Scripts:/mnt/c/Users/vedan/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/vedan/.dotnet/tools:/mnt/c/Users/vedan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/vedan/AppData/Roaming/npm:/mnt/c/Program Files/mosquitto:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/vedant/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs'), ('TURTLEBOT3_MODEL', 'waffle'), ('CONDA_EXE', '/home/vedant/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.025418] (odrive_can) JobProgress: {'identifier': 'odrive_can', 'progress': 'cmake'}
+[0.025699] (odrive_can) Command: {'cmd': ['/usr/bin/cmake', '/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node', '-DCMAKE_INSTALL_PREFIX=/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can'], 'cwd': '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/vedant'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/vedant/gaitlab_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('NAME', 'Vedant'), ('WSL_INTEROP', '/run/WSL/441_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/vedant/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vedant/.local/bin:/home/vedant/miniconda3/condabin:/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/vedan/miniconda3:/mnt/c/Users/vedan/miniconda3/Library/mingw-w64/bin:/mnt/c/Users/vedan/miniconda3/Library/usr/bin:/mnt/c/Users/vedan/miniconda3/Library/bin:/mnt/c/Users/vedan/miniconda3/Scripts:/mnt/c/Users/vedan/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/vedan/.dotnet/tools:/mnt/c/Users/vedan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/vedan/AppData/Roaming/npm:/mnt/c/Program Files/mosquitto:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/vedant/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can'), ('TURTLEBOT3_MODEL', 'waffle'), ('CONDA_EXE', '/home/vedant/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100061] (-) TimerEvent: {}
+[0.200387] (-) TimerEvent: {}
+[0.300713] (-) TimerEvent: {}
+[0.347055] (odrive_can) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.347355] (custom_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.400841] (-) TimerEvent: {}
+[0.501206] (-) TimerEvent: {}
+[0.601595] (-) TimerEvent: {}
+[0.701950] (-) TimerEvent: {}
+[0.802252] (-) TimerEvent: {}
+[0.902765] (-) TimerEvent: {}
+[0.922042] (odrive_can) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.922348] (custom_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.002862] (-) TimerEvent: {}
+[1.103207] (-) TimerEvent: {}
+[1.203553] (-) TimerEvent: {}
+[1.303900] (-) TimerEvent: {}
+[1.367201] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.367574] (odrive_can) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.404015] (-) TimerEvent: {}
+[1.504366] (-) TimerEvent: {}
+[1.515778] (odrive_can) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.516124] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.522013] (custom_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.522229] (odrive_can) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.525155] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.525253] (odrive_can) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.526247] (odrive_can) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.526369] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.530503] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.530813] (odrive_can) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.604471] (-) TimerEvent: {}
+[1.674733] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.675635] (odrive_can) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.680663] (custom_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.681092] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.681750] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.682624] (odrive_can) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.682930] (odrive_can) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.683433] (odrive_can) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.697216] (odrive_can) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.697342] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.704548] (-) TimerEvent: {}
+[1.804830] (-) TimerEvent: {}
+[1.905177] (-) TimerEvent: {}
+[2.005607] (-) TimerEvent: {}
+[2.050852] (custom_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.051528] (odrive_can) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.105725] (-) TimerEvent: {}
+[2.161740] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.162796] (odrive_can) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.168666] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.181164] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.205803] (-) TimerEvent: {}
+[2.306069] (-) TimerEvent: {}
+[2.353615] (odrive_can) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.358639] (odrive_can) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.367430] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.369150] (odrive_can) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.391056] (odrive_can) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.404003] (odrive_can) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.406143] (-) TimerEvent: {}
+[2.415941] (custom_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[2.475525] (odrive_can) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.481783] (odrive_can) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.506226] (-) TimerEvent: {}
+[2.606491] (-) TimerEvent: {}
+[2.706804] (-) TimerEvent: {}
+[2.737073] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.806904] (-) TimerEvent: {}
+[2.907133] (-) TimerEvent: {}
+[2.989147] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.007238] (-) TimerEvent: {}
+[3.107528] (-) TimerEvent: {}
+[3.207817] (-) TimerEvent: {}
+[3.292115] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.307925] (-) TimerEvent: {}
+[3.408290] (-) TimerEvent: {}
+[3.508633] (-) TimerEvent: {}
+[3.524283] (custom_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.527306] (custom_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.608693] (-) TimerEvent: {}
+[3.708934] (-) TimerEvent: {}
+[3.809258] (-) TimerEvent: {}
+[3.909643] (-) TimerEvent: {}
+[4.009930] (-) TimerEvent: {}
+[4.110223] (-) TimerEvent: {}
+[4.184189] (custom_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[4.184446] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.184517] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.184559] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.204855] (custom_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.210292] (-) TimerEvent: {}
+[4.310652] (-) TimerEvent: {}
+[4.333967] (custom_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.378505] (custom_msgs) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.379996] (custom_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.381302] (custom_msgs) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.383359] (custom_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.386451] (custom_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.410747] (-) TimerEvent: {}
+[4.435198] (custom_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[4.437246] (custom_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs\n'}
+[4.442708] (custom_msgs) CommandEnded: {'returncode': 0}
+[4.443460] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[4.444173] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs', '--', '-j20', '-l20'], 'cwd': '/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/vedant'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/vedant/gaitlab_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('NAME', 'Vedant'), ('WSL_INTEROP', '/run/WSL/441_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/vedant/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vedant/.local/bin:/home/vedant/miniconda3/condabin:/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/vedan/miniconda3:/mnt/c/Users/vedan/miniconda3/Library/mingw-w64/bin:/mnt/c/Users/vedan/miniconda3/Library/usr/bin:/mnt/c/Users/vedan/miniconda3/Library/bin:/mnt/c/Users/vedan/miniconda3/Scripts:/mnt/c/Users/vedan/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/vedan/.dotnet/tools:/mnt/c/Users/vedan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/vedan/AppData/Roaming/npm:/mnt/c/Program Files/mosquitto:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/vedant/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs'), ('TURTLEBOT3_MODEL', 'waffle'), ('CONDA_EXE', '/home/vedant/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.480898] (custom_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.484120] (custom_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.493968] (custom_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_custom_msgs\n'}
+[4.510872] (-) TimerEvent: {}
+[4.611181] (-) TimerEvent: {}
+[4.711515] (-) TimerEvent: {}
+[4.811854] (-) TimerEvent: {}
+[4.860466] (custom_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[4.863700] (odrive_can) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.885666] (custom_msgs) StdoutLine: {'line': b'creating custom_msgs.egg-info\n'}
+[4.885997] (custom_msgs) StdoutLine: {'line': b'writing custom_msgs.egg-info/PKG-INFO\n'}
+[4.886604] (custom_msgs) StdoutLine: {'line': b'writing dependency_links to custom_msgs.egg-info/dependency_links.txt\n'}
+[4.887191] (custom_msgs) StdoutLine: {'line': b'writing top-level names to custom_msgs.egg-info/top_level.txt\n'}
+[4.887367] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[4.911961] (-) TimerEvent: {}
+[4.968158] (custom_msgs) StdoutLine: {'line': b'[  5%] Built target custom_msgs__cpp\n'}
+[4.977955] (custom_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.978153] (custom_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.987122] (custom_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.988253] (custom_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c.o\x1b[0m\n'}
+[4.988807] (custom_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.c.o\x1b[0m\n'}
+[4.995274] (custom_msgs) StdoutLine: {'line': b"reading manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[4.996388] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[5.012103] (-) TimerEvent: {}
+[5.032018] (custom_msgs) StdoutLine: {'line': b'[ 17%] Built target ament_cmake_python_build_custom_msgs_egg\n'}
+[5.090754] (custom_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[5.112209] (-) TimerEvent: {}
+[5.212536] (-) TimerEvent: {}
+[5.297303] (custom_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/srv/o_drive_command__type_support.cpp.o\x1b[0m\n'}
+[5.297606] (custom_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/motion_state__type_support.cpp.o\x1b[0m\n'}
+[5.310488] (custom_msgs) StdoutLine: {'line': b'[ 25%] Built target custom_msgs__rosidl_generator_c\n'}
+[5.312661] (-) TimerEvent: {}
+[5.320784] (custom_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.321208] (custom_msgs) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.322968] (custom_msgs) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.335751] (custom_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/motion_state__type_support.cpp.o\x1b[0m\n'}
+[5.337725] (custom_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/srv/detail/o_drive_command__type_support.cpp.o\x1b[0m\n'}
+[5.383839] (custom_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/srv/detail/dds_fastrtps/o_drive_command__type_support.cpp.o\x1b[0m\n'}
+[5.384852] (custom_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/motion_state__type_support.cpp.o\x1b[0m\n'}
+[5.412786] (-) TimerEvent: {}
+[5.513206] (-) TimerEvent: {}
+[5.613737] (-) TimerEvent: {}
+[5.714221] (-) TimerEvent: {}
+[5.730354] (custom_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[5.793049] (custom_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/motion_state__type_support.cpp.o\x1b[0m\n'}
+[5.793646] (custom_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/o_drive_command__type_support.cpp.o\x1b[0m\n'}
+[5.799275] (custom_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/motion_state__type_support.c.o\x1b[0m\n'}
+[5.799772] (custom_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/srv/detail/o_drive_command__type_support.c.o\x1b[0m\n'}
+[5.814370] (-) TimerEvent: {}
+[5.828094] (custom_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/motion_state__type_support_c.cpp.o\x1b[0m\n'}
+[5.828447] (custom_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/o_drive_command__type_support_c.cpp.o\x1b[0m\n'}
+[5.829037] (custom_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.843974] (custom_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.880090] (custom_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[5.914198] (custom_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[5.914364] (-) TimerEvent: {}
+[6.014672] (-) TimerEvent: {}
+[6.110152] (custom_msgs) StdoutLine: {'line': b'[ 71%] Built target custom_msgs__rosidl_typesupport_c\n'}
+[6.111690] (custom_msgs) StdoutLine: {'line': b'[ 71%] Built target custom_msgs__rosidl_typesupport_cpp\n'}
+[6.114886] (-) TimerEvent: {}
+[6.126791] (custom_msgs) StdoutLine: {'line': b'[ 71%] Built target custom_msgs__rosidl_typesupport_introspection_c\n'}
+[6.168847] (custom_msgs) StdoutLine: {'line': b'[ 71%] Built target custom_msgs__rosidl_typesupport_introspection_cpp\n'}
+[6.173046] (custom_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.182288] (custom_msgs) StdoutLine: {'line': b'[ 74%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[6.214998] (-) TimerEvent: {}
+[6.315408] (-) TimerEvent: {}
+[6.415910] (-) TimerEvent: {}
+[6.495123] (custom_msgs) StdoutLine: {'line': b'[ 74%] Built target custom_msgs__rosidl_typesupport_fastrtps_c\n'}
+[6.512947] (custom_msgs) StdoutLine: {'line': b'[ 74%] Built target custom_msgs\n'}
+[6.516010] (-) TimerEvent: {}
+[6.530386] (custom_msgs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.616229] (-) TimerEvent: {}
+[6.716655] (-) TimerEvent: {}
+[6.817125] (-) TimerEvent: {}
+[6.917619] (-) TimerEvent: {}
+[6.997583] (custom_msgs) StdoutLine: {'line': b'[ 76%] Built target custom_msgs__py\n'}
+[7.014592] (custom_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_motion_state_s.c.o\x1b[0m\n'}
+[7.015017] (custom_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/srv/_o_drive_command_s.c.o\x1b[0m\n'}
+[7.017701] (-) TimerEvent: {}
+[7.118027] (-) TimerEvent: {}
+[7.175838] (custom_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/libcustom_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[7.218192] (-) TimerEvent: {}
+[7.318612] (-) TimerEvent: {}
+[7.418961] (-) TimerEvent: {}
+[7.428333] (custom_msgs) StdoutLine: {'line': b'[ 84%] Built target custom_msgs__rosidl_generator_py\n'}
+[7.444355] (custom_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.444919] (custom_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.445607] (custom_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[7.519094] (-) TimerEvent: {}
+[7.541698] (custom_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.544392] (custom_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.554913] (custom_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.619172] (-) TimerEvent: {}
+[7.690548] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.690903] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[7.719259] (-) TimerEvent: {}
+[7.734089] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_c__pyext\n'}
+[7.744927] (custom_msgs) CommandEnded: {'returncode': 0}
+[7.810651] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'install'}
+[7.817511] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs'], 'cwd': '/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/vedant'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/vedant/gaitlab_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('NAME', 'Vedant'), ('WSL_INTEROP', '/run/WSL/441_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/vedant/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vedant/.local/bin:/home/vedant/miniconda3/condabin:/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/vedan/miniconda3:/mnt/c/Users/vedan/miniconda3/Library/mingw-w64/bin:/mnt/c/Users/vedan/miniconda3/Library/usr/bin:/mnt/c/Users/vedan/miniconda3/Library/bin:/mnt/c/Users/vedan/miniconda3/Scripts:/mnt/c/Users/vedan/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/vedan/.dotnet/tools:/mnt/c/Users/vedan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/vedan/AppData/Roaming/npm:/mnt/c/Program Files/mosquitto:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/vedant/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs'), ('TURTLEBOT3_MODEL', 'waffle'), ('CONDA_EXE', '/home/vedant/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[7.819355] (-) TimerEvent: {}
+[7.823648] (custom_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.824287] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs\n'}
+[7.824476] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[7.824816] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[7.825017] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/o_drive_command.h\n'}
+[7.825281] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[7.825532] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__functions.c\n'}
+[7.825772] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__type_support.h\n'}
+[7.825973] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__functions.h\n'}
+[7.826380] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__struct.h\n'}
+[7.826638] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[7.826750] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[7.826822] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/motion_state.h\n'}
+[7.826885] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[7.826944] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__struct.h\n'}
+[7.827165] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__functions.c\n'}
+[7.827262] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__functions.h\n'}
+[7.827322] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.h\n'}
+[7.827381] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/library_path.sh\n'}
+[7.827439] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/library_path.dsv\n'}
+[7.827711] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so\n'}
+[7.828055] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so" to ""\n'}
+[7.828338] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[7.828497] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[7.828783] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[7.828919] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__rosidl_typesupport_fastrtps_c.h\n'}
+[7.829091] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[7.829309] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.829411] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[7.829602] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_fastrtps_c.h\n'}
+[7.829713] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[7.829866] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[7.829929] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[7.830306] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[7.830442] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[7.830667] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__rosidl_typesupport_introspection_c.h\n'}
+[7.830956] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__type_support.c\n'}
+[7.831154] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[7.831321] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.831554] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[7.831670] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_introspection_c.h\n'}
+[7.831759] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.c\n'}
+[7.831833] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so\n'}
+[7.831989] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[7.832050] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so\n'}
+[7.832174] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so" to ""\n'}
+[7.832442] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[7.832529] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[7.832668] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[7.832828] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__struct.hpp\n'}
+[7.833048] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__builder.hpp\n'}
+[7.833334] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__traits.hpp\n'}
+[7.833505] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__type_support.hpp\n'}
+[7.833677] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/o_drive_command.hpp\n'}
+[7.833864] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[7.833996] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/motion_state.hpp\n'}
+[7.834154] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[7.834342] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[7.834473] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.hpp\n'}
+[7.834741] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__builder.hpp\n'}
+[7.834925] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__struct.hpp\n'}
+[7.835090] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__traits.hpp\n'}
+[7.835237] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[7.835422] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[7.835666] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[7.835736] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/dds_fastrtps\n'}
+[7.835828] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.836104] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[7.836353] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.836451] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[7.836515] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps\n'}
+[7.836582] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.836701] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.836986] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[7.837135] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[7.837442] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[7.837522] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[7.837570] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__type_support.cpp\n'}
+[7.837629] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.837684] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[7.838296] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[7.838511] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.838667] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.cpp\n'}
+[7.838821] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[7.839127] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[7.839266] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so\n'}
+[7.839523] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[7.839942] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh\n'}
+[7.840111] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv\n'}
+[7.840275] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info\n'}
+[7.840436] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[7.840585] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[7.840864] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[7.840947] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[7.841010] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs\n'}
+[7.841076] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so\n'}
+[7.841133] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[7.841185] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.841243] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.841298] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[7.841349] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[7.841406] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.841462] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv\n'}
+[7.841513] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_o_drive_command_s.c\n'}
+[7.841566] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_o_drive_command.py\n'}
+[7.841623] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/__init__.py\n'}
+[7.841675] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg\n'}
+[7.841724] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_motion_state.py\n'}
+[7.841782] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_motion_state_s.c\n'}
+[7.841831] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py\n'}
+[7.841912] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py\n'}
+[7.881163] (custom_msgs) StdoutLine: {'line': b"Listing '/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...\n"}
+[7.881314] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py'...\n"}
+[7.881363] (custom_msgs) StdoutLine: {'line': b"Listing '/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...\n"}
+[7.881402] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py'...\n"}
+[7.881466] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_motion_state.py'...\n"}
+[7.881519] (custom_msgs) StdoutLine: {'line': b"Listing '/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv'...\n"}
+[7.881555] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/__init__.py'...\n"}
+[7.881592] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_o_drive_command.py'...\n"}
+[7.885697] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.885933] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[7.886114] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.886391] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[7.886619] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.886851] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[7.887093] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so\n'}
+[7.887246] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so" to ""\n'}
+[7.887453] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/msg/MotionState.idl\n'}
+[7.887753] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/srv/ODriveCommand.idl\n'}
+[7.887934] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/msg/MotionState.msg\n'}
+[7.888162] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/srv/ODriveCommand.srv\n'}
+[7.888416] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/srv/ODriveCommand_Request.msg\n'}
+[7.888681] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/srv/ODriveCommand_Response.msg\n'}
+[7.888924] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs\n'}
+[7.889194] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs\n'}
+[7.889436] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh\n'}
+[7.889634] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv\n'}
+[7.889724] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/path.sh\n'}
+[7.889854] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/path.dsv\n'}
+[7.890119] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/local_setup.bash\n'}
+[7.890236] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/local_setup.sh\n'}
+[7.890392] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/local_setup.zsh\n'}
+[7.890567] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/local_setup.dsv\n'}
+[7.890850] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.dsv\n'}
+[7.891027] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs\n'}
+[7.891134] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake\n'}
+[7.891295] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[7.891540] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[7.891790] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[7.891942] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[7.892100] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[7.892261] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake\n'}
+[7.892553] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[7.892730] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake\n'}
+[7.892896] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[7.893065] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[7.893224] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[7.893456] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[7.893626] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[7.894264] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[7.894438] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake\n'}
+[7.894595] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[7.894751] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[7.895012] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.895334] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.895447] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.895516] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.895577] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[7.895632] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[7.895762] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake\n'}
+[7.895943] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake\n'}
+[7.896423] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.xml\n'}
+[7.897313] (custom_msgs) CommandEnded: {'returncode': 0}
+[7.919479] (-) TimerEvent: {}
+[7.994561] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 0}
+[8.019568] (-) TimerEvent: {}
+[8.119896] (-) TimerEvent: {}
+[8.220302] (-) TimerEvent: {}
+[8.320677] (-) TimerEvent: {}
+[8.421067] (-) TimerEvent: {}
+[8.521459] (-) TimerEvent: {}
+[8.621816] (-) TimerEvent: {}
+[8.722183] (-) TimerEvent: {}
+[8.822529] (-) TimerEvent: {}
+[8.922837] (-) TimerEvent: {}
+[8.944908] (odrive_can) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[9.022952] (-) TimerEvent: {}
+[9.123270] (-) TimerEvent: {}
+[9.223581] (-) TimerEvent: {}
+[9.323944] (-) TimerEvent: {}
+[9.424294] (-) TimerEvent: {}
+[9.524717] (-) TimerEvent: {}
+[9.625290] (-) TimerEvent: {}
+[9.725767] (-) TimerEvent: {}
+[9.826343] (-) TimerEvent: {}
+[9.926744] (-) TimerEvent: {}
+[10.027133] (-) TimerEvent: {}
+[10.127482] (-) TimerEvent: {}
+[10.227882] (-) TimerEvent: {}
+[10.328238] (-) TimerEvent: {}
+[10.428613] (-) TimerEvent: {}
+[10.528977] (-) TimerEvent: {}
+[10.629312] (-) TimerEvent: {}
+[10.729710] (-) TimerEvent: {}
+[10.830095] (-) TimerEvent: {}
+[10.930435] (-) TimerEvent: {}
+[11.030762] (-) TimerEvent: {}
+[11.131127] (-) TimerEvent: {}
+[11.231480] (-) TimerEvent: {}
+[11.331796] (-) TimerEvent: {}
+[11.432178] (-) TimerEvent: {}
+[11.532504] (-) TimerEvent: {}
+[11.632864] (-) TimerEvent: {}
+[11.733299] (-) TimerEvent: {}
+[11.833689] (-) TimerEvent: {}
+[11.934046] (-) TimerEvent: {}
+[12.034391] (-) TimerEvent: {}
+[12.134731] (-) TimerEvent: {}
+[12.235061] (-) TimerEvent: {}
+[12.335418] (-) TimerEvent: {}
+[12.435811] (-) TimerEvent: {}
+[12.536148] (-) TimerEvent: {}
+[12.636553] (-) TimerEvent: {}
+[12.736917] (-) TimerEvent: {}
+[12.837287] (-) TimerEvent: {}
+[12.937665] (-) TimerEvent: {}
+[13.038044] (-) TimerEvent: {}
+[13.138456] (-) TimerEvent: {}
+[13.238815] (-) TimerEvent: {}
+[13.339177] (-) TimerEvent: {}
+[13.441576] (-) TimerEvent: {}
+[13.543962] (-) TimerEvent: {}
+[13.646397] (-) TimerEvent: {}
+[13.748769] (-) TimerEvent: {}
+[13.851152] (-) TimerEvent: {}
+[13.953557] (-) TimerEvent: {}
+[14.055966] (-) TimerEvent: {}
+[14.158380] (-) TimerEvent: {}
+[14.260540] (-) TimerEvent: {}
+[14.362882] (-) TimerEvent: {}
+[14.464938] (-) TimerEvent: {}
+[14.566981] (-) TimerEvent: {}
+[14.669054] (-) TimerEvent: {}
+[14.771149] (-) TimerEvent: {}
+[14.873192] (-) TimerEvent: {}
+[14.975239] (-) TimerEvent: {}
+[15.077333] (-) TimerEvent: {}
+[15.177810] (-) TimerEvent: {}
+[15.278644] (-) TimerEvent: {}
+[15.319993] (odrive_can) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[15.340678] (odrive_can) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[15.379427] (-) TimerEvent: {}
+[15.481329] (-) TimerEvent: {}
+[15.583182] (-) TimerEvent: {}
+[15.684941] (-) TimerEvent: {}
+[15.786760] (-) TimerEvent: {}
+[15.888557] (-) TimerEvent: {}
+[15.938624] (odrive_can) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[15.939380] (odrive_can) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[15.988799] (-) TimerEvent: {}
+[16.089280] (-) TimerEvent: {}
+[16.179914] (odrive_can) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[16.181028] (odrive_can) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[16.189616] (-) TimerEvent: {}
+[16.269672] (odrive_can) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[16.280580] (odrive_can) StdoutLine: {'line': b'-- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[16.289868] (-) TimerEvent: {}
+[16.391523] (-) TimerEvent: {}
+[16.492995] (-) TimerEvent: {}
+[16.587285] (odrive_can) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[16.593212] (-) TimerEvent: {}
+[16.694716] (-) TimerEvent: {}
+[16.796399] (-) TimerEvent: {}
+[16.897990] (-) TimerEvent: {}
+[16.999670] (-) TimerEvent: {}
+[17.010225] (odrive_can) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[17.100861] (-) TimerEvent: {}
+[17.156691] (odrive_can) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[17.201642] (-) TimerEvent: {}
+[17.303159] (-) TimerEvent: {}
+[17.404496] (-) TimerEvent: {}
+[17.505858] (-) TimerEvent: {}
+[17.580302] (odrive_can) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[17.582022] (odrive_can) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[17.606202] (-) TimerEvent: {}
+[17.707516] (-) TimerEvent: {}
+[17.808862] (-) TimerEvent: {}
+[17.910177] (-) TimerEvent: {}
+[18.011526] (-) TimerEvent: {}
+[18.112787] (-) TimerEvent: {}
+[18.214071] (-) TimerEvent: {}
+[18.315440] (-) TimerEvent: {}
+[18.416615] (-) TimerEvent: {}
+[18.517664] (-) TimerEvent: {}
+[18.618846] (-) TimerEvent: {}
+[18.720013] (-) TimerEvent: {}
+[18.800839] (odrive_can) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[18.801105] (odrive_can) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[18.801185] (odrive_can) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[18.801251] (odrive_can) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[18.820286] (-) TimerEvent: {}
+[18.824670] (odrive_can) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[18.920516] (-) TimerEvent: {}
+[19.021683] (-) TimerEvent: {}
+[19.055753] (odrive_can) StdoutLine: {'line': b'-- Configuring done\n'}
+[19.100227] (odrive_can) StdoutLine: {'line': b'-- Generating done\n'}
+[19.103058] (odrive_can) StdoutLine: {'line': b'-- Build files have been written to: /home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can\n'}
+[19.114675] (odrive_can) CommandEnded: {'returncode': 0}
+[19.115759] (odrive_can) JobProgress: {'identifier': 'odrive_can', 'progress': 'build'}
+[19.116753] (odrive_can) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can', '--', '-j20', '-l20'], 'cwd': '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/vedant'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/vedant/gaitlab_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('NAME', 'Vedant'), ('WSL_INTEROP', '/run/WSL/441_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/vedant/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vedant/.local/bin:/home/vedant/miniconda3/condabin:/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/vedan/miniconda3:/mnt/c/Users/vedan/miniconda3/Library/mingw-w64/bin:/mnt/c/Users/vedan/miniconda3/Library/usr/bin:/mnt/c/Users/vedan/miniconda3/Library/bin:/mnt/c/Users/vedan/miniconda3/Scripts:/mnt/c/Users/vedan/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/vedan/.dotnet/tools:/mnt/c/Users/vedan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/vedan/AppData/Roaming/npm:/mnt/c/Program Files/mosquitto:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/vedant/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can'), ('TURTLEBOT3_MODEL', 'waffle'), ('CONDA_EXE', '/home/vedant/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[19.122447] (-) TimerEvent: {}
+[19.153398] (odrive_can) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[19.162301] (odrive_can) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[19.170110] (odrive_can) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_odrive_can\n'}
+[19.223593] (-) TimerEvent: {}
+[19.324724] (-) TimerEvent: {}
+[19.425792] (-) TimerEvent: {}
+[19.455961] (odrive_can) StdoutLine: {'line': b'running egg_info\n'}
+[19.476559] (odrive_can) StdoutLine: {'line': b'creating odrive_can.egg-info\n'}
+[19.476847] (odrive_can) StdoutLine: {'line': b'writing odrive_can.egg-info/PKG-INFO\n'}
+[19.477052] (odrive_can) StdoutLine: {'line': b'writing dependency_links to odrive_can.egg-info/dependency_links.txt\n'}
+[19.477246] (odrive_can) StdoutLine: {'line': b'writing top-level names to odrive_can.egg-info/top_level.txt\n'}
+[19.477436] (odrive_can) StdoutLine: {'line': b"writing manifest file 'odrive_can.egg-info/SOURCES.txt'\n"}
+[19.526248] (-) TimerEvent: {}
+[19.536636] (odrive_can) StdoutLine: {'line': b"reading manifest file 'odrive_can.egg-info/SOURCES.txt'\n"}
+[19.537825] (odrive_can) StdoutLine: {'line': b"writing manifest file 'odrive_can.egg-info/SOURCES.txt'\n"}
+[19.563237] (odrive_can) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_odrive_can_egg\n'}
+[19.626801] (-) TimerEvent: {}
+[19.704342] (odrive_can) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/odrive_can__rosidl_generator_c.dir/rosidl_generator_c/odrive_can/msg/detail/control_message__functions.c.o\x1b[0m\n'}
+[19.704569] (odrive_can) StdoutLine: {'line': b'[  5%] Built target odrive_can__cpp\n'}
+[19.705071] (odrive_can) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/odrive_can__rosidl_generator_c.dir/rosidl_generator_c/odrive_can/msg/detail/controller_status__functions.c.o\x1b[0m\n'}
+[19.705543] (odrive_can) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/odrive_can__rosidl_generator_c.dir/rosidl_generator_c/odrive_can/msg/detail/o_drive_status__functions.c.o\x1b[0m\n'}
+[19.705886] (odrive_can) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/odrive_can__rosidl_generator_c.dir/rosidl_generator_c/odrive_can/srv/detail/axis_state__functions.c.o\x1b[0m\n'}
+[19.714510] (odrive_can) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[19.717712] (odrive_can) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[19.717867] (odrive_can) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[19.726972] (-) TimerEvent: {}
+[19.776571] (odrive_can) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking C shared library libodrive_can__rosidl_generator_c.so\x1b[0m\n'}
+[19.827143] (-) TimerEvent: {}
+[19.927679] (-) TimerEvent: {}
+[20.028276] (-) TimerEvent: {}
+[20.131228] (-) TimerEvent: {}
+[20.180838] (odrive_can) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/odrive_can/msg/o_drive_status__type_support.cpp.o\x1b[0m\n'}
+[20.181224] (odrive_can) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/odrive_can/srv/axis_state__type_support.cpp.o\x1b[0m\n'}
+[20.181368] (odrive_can) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/odrive_can/msg/controller_status__type_support.cpp.o\x1b[0m\n'}
+[20.183263] (odrive_can) StdoutLine: {'line': b'[ 21%] Built target odrive_can__rosidl_generator_c\n'}
+[20.196108] (odrive_can) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/odrive_can/msg/control_message__type_support.cpp.o\x1b[0m\n'}
+[20.200043] (odrive_can) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[20.203318] (odrive_can) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[20.203547] (odrive_can) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[20.231774] (-) TimerEvent: {}
+[20.255122] (odrive_can) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/odrive_can/msg/detail/control_message__type_support.cpp.o\x1b[0m\n'}
+[20.259291] (odrive_can) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/odrive_can/srv/detail/axis_state__type_support.cpp.o\x1b[0m\n'}
+[20.268929] (odrive_can) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/odrive_can/msg/detail/controller_status__type_support.cpp.o\x1b[0m\n'}
+[20.282709] (odrive_can) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/odrive_can/msg/detail/o_drive_status__type_support.cpp.o\x1b[0m\n'}
+[20.331986] (-) TimerEvent: {}
+[20.387944] (odrive_can) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/odrive_can/msg/detail/dds_fastrtps/control_message__type_support.cpp.o\x1b[0m\n'}
+[20.388177] (odrive_can) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/odrive_can/srv/detail/dds_fastrtps/axis_state__type_support.cpp.o\x1b[0m\n'}
+[20.388275] (odrive_can) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/odrive_can/msg/detail/dds_fastrtps/o_drive_status__type_support.cpp.o\x1b[0m\n'}
+[20.394141] (odrive_can) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/odrive_can/msg/detail/dds_fastrtps/controller_status__type_support.cpp.o\x1b[0m\n'}
+[20.437001] (-) TimerEvent: {}
+[20.537457] (-) TimerEvent: {}
+[20.638270] (-) TimerEvent: {}
+[20.740520] (-) TimerEvent: {}
+[20.834943] (odrive_can) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX shared library libodrive_can__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[20.840709] (-) TimerEvent: {}
+[20.918749] (odrive_can) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_c.dir/rosidl_typesupport_c/odrive_can/msg/controller_status__type_support.cpp.o\x1b[0m\n'}
+[20.919853] (odrive_can) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_c.dir/rosidl_typesupport_c/odrive_can/srv/axis_state__type_support.cpp.o\x1b[0m\n'}
+[20.920096] (odrive_can) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_c.dir/rosidl_typesupport_c/odrive_can/msg/control_message__type_support.cpp.o\x1b[0m\n'}
+[20.920238] (odrive_can) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_c.dir/rosidl_typesupport_c/odrive_can/msg/o_drive_status__type_support.cpp.o\x1b[0m\n'}
+[20.941498] (-) TimerEvent: {}
+[20.964136] (odrive_can) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libodrive_can__rosidl_typesupport_c.so\x1b[0m\n'}
+[21.041048] (odrive_can) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/odrive_can__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/odrive_can/msg/detail/control_message__type_support.c.o\x1b[0m\n'}
+[21.041715] (-) TimerEvent: {}
+[21.041983] (odrive_can) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/odrive_can__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/odrive_can/srv/detail/axis_state__type_support.c.o\x1b[0m\n'}
+[21.042188] (odrive_can) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/odrive_can__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/odrive_can/msg/detail/controller_status__type_support.c.o\x1b[0m\n'}
+[21.042895] (odrive_can) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/odrive_can__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/odrive_can/msg/detail/o_drive_status__type_support.c.o\x1b[0m\n'}
+[21.088215] (odrive_can) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking C shared library libodrive_can__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[21.109322] (odrive_can) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libodrive_can__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[21.112608] (odrive_can) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/odrive_can/srv/detail/axis_state__type_support_c.cpp.o\x1b[0m\n'}
+[21.113530] (odrive_can) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/odrive_can/msg/detail/o_drive_status__type_support_c.cpp.o\x1b[0m\n'}
+[21.113998] (odrive_can) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/odrive_can/msg/detail/controller_status__type_support_c.cpp.o\x1b[0m\n'}
+[21.117661] (odrive_can) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/odrive_can/msg/detail/control_message__type_support_c.cpp.o\x1b[0m\n'}
+[21.141906] (-) TimerEvent: {}
+[21.221281] (odrive_can) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libodrive_can__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[21.242129] (-) TimerEvent: {}
+[21.329999] (odrive_can) StdoutLine: {'line': b'[ 70%] Built target odrive_can__rosidl_typesupport_cpp\n'}
+[21.342289] (-) TimerEvent: {}
+[21.351311] (odrive_can) StdoutLine: {'line': b'[ 70%] Built target odrive_can__rosidl_typesupport_introspection_c\n'}
+[21.355355] (odrive_can) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o\x1b[0m\n'}
+[21.355746] (odrive_can) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can_node.dir/src/main.cpp.o\x1b[0m\n'}
+[21.358050] (odrive_can) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can_node.dir/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o\x1b[0m\n'}
+[21.358264] (odrive_can) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/odrive_can_node.dir/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_base/src/socket_can.cpp.o\x1b[0m\n'}
+[21.377171] (odrive_can) StdoutLine: {'line': b'[ 76%] Built target odrive_can__rosidl_typesupport_introspection_cpp\n'}
+[21.379027] (odrive_can) StdoutLine: {'line': b'[ 76%] Built target odrive_can__rosidl_typesupport_c\n'}
+[21.442478] (-) TimerEvent: {}
+[21.542982] (-) TimerEvent: {}
+[21.571772] (odrive_can) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libodrive_can__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[21.643159] (-) TimerEvent: {}
+[21.744116] (-) TimerEvent: {}
+[21.753768] (odrive_can) StdoutLine: {'line': b'[ 78%] Built target odrive_can__rosidl_typesupport_fastrtps_cpp\n'}
+[21.844268] (-) TimerEvent: {}
+[21.945008] (-) TimerEvent: {}
+[22.045737] (-) TimerEvent: {}
+[22.146239] (-) TimerEvent: {}
+[22.147223] (odrive_can) StdoutLine: {'line': b'[ 78%] Built target odrive_can__rosidl_typesupport_fastrtps_c\n'}
+[22.170193] (odrive_can) StdoutLine: {'line': b'[ 78%] Built target odrive_can\n'}
+[22.194196] (odrive_can) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[22.246436] (-) TimerEvent: {}
+[22.346967] (-) TimerEvent: {}
+[22.447559] (-) TimerEvent: {}
+[22.548283] (-) TimerEvent: {}
+[22.648862] (-) TimerEvent: {}
+[22.749673] (-) TimerEvent: {}
+[22.850495] (-) TimerEvent: {}
+[22.951090] (-) TimerEvent: {}
+[23.051659] (-) TimerEvent: {}
+[23.149551] (odrive_can) StdoutLine: {'line': b'[ 80%] Built target odrive_can__py\n'}
+[23.151793] (-) TimerEvent: {}
+[23.172109] (odrive_can) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/odrive_can__rosidl_generator_py.dir/rosidl_generator_py/odrive_can/msg/_o_drive_status_s.c.o\x1b[0m\n'}
+[23.172450] (odrive_can) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/odrive_can__rosidl_generator_py.dir/rosidl_generator_py/odrive_can/msg/_controller_status_s.c.o\x1b[0m\n'}
+[23.172819] (odrive_can) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/odrive_can__rosidl_generator_py.dir/rosidl_generator_py/odrive_can/msg/_control_message_s.c.o\x1b[0m\n'}
+[23.172932] (odrive_can) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/odrive_can__rosidl_generator_py.dir/rosidl_generator_py/odrive_can/srv/_axis_state_s.c.o\x1b[0m\n'}
+[23.251992] (-) TimerEvent: {}
+[23.318889] (odrive_can) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/odrive_can/libodrive_can__rosidl_generator_py.so\x1b[0m\n'}
+[23.352207] (-) TimerEvent: {}
+[23.452788] (-) TimerEvent: {}
+[23.553247] (-) TimerEvent: {}
+[23.592505] (odrive_can) StdoutLine: {'line': b'[ 88%] Built target odrive_can__rosidl_generator_py\n'}
+[23.614888] (odrive_can) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/odrive_can__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/odrive_can/_odrive_can_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[23.617287] (odrive_can) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/odrive_can__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/odrive_can/_odrive_can_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[23.620028] (odrive_can) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/odrive_can/_odrive_can_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[23.654167] (-) TimerEvent: {}
+[23.754693] (-) TimerEvent: {}
+[23.785629] (odrive_can) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/odrive_can/odrive_can_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[23.787754] (odrive_can) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/odrive_can/odrive_can_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[23.790586] (odrive_can) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/odrive_can/odrive_can_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[23.854851] (-) TimerEvent: {}
+[23.955337] (-) TimerEvent: {}
+[24.010604] (odrive_can) StdoutLine: {'line': b'[ 98%] Built target odrive_can__rosidl_typesupport_c__pyext\n'}
+[24.030131] (odrive_can) StdoutLine: {'line': b'[ 98%] Built target odrive_can__rosidl_typesupport_introspection_c__pyext\n'}
+[24.030513] (odrive_can) StdoutLine: {'line': b'[ 98%] Built target odrive_can__rosidl_typesupport_fastrtps_c__pyext\n'}
+[24.055487] (-) TimerEvent: {}
+[24.155906] (-) TimerEvent: {}
+[24.256448] (-) TimerEvent: {}
+[24.356910] (-) TimerEvent: {}
+[24.457392] (-) TimerEvent: {}
+[24.559248] (-) TimerEvent: {}
+[24.659832] (-) TimerEvent: {}
+[24.760510] (-) TimerEvent: {}
+[24.861127] (-) TimerEvent: {}
+[24.961725] (-) TimerEvent: {}
+[25.062340] (-) TimerEvent: {}
+[25.163159] (-) TimerEvent: {}
+[25.263751] (-) TimerEvent: {}
+[25.364274] (-) TimerEvent: {}
+[25.464683] (-) TimerEvent: {}
+[25.565099] (-) TimerEvent: {}
+[25.665491] (-) TimerEvent: {}
+[25.765911] (-) TimerEvent: {}
+[25.777556] (odrive_can) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/src/odrive_can_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ODriveCanNode::service_clear_errors_callback(std::shared_ptr<std_srvs::srv::Empty_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Empty_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[25.777918] (odrive_can) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/src/odrive_can_node.cpp:202:89:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Krequest\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[25.778016] (odrive_can) StderrLine: {'line': b'  202 | void ODriveCanNode::service_clear_errors_callback(\x1b[01;35m\x1b[Kconst std::shared_ptr<Empty::Request> request\x1b[m\x1b[K, std::shared_ptr<Empty::Response> response) {\n'}
+[25.778085] (odrive_can) StderrLine: {'line': b'      |                                                   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[25.778143] (odrive_can) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/src/odrive_can_node.cpp:202:131:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[25.778187] (odrive_can) StderrLine: {'line': b'  202 | void ODriveCanNode::service_clear_errors_callback(const std::shared_ptr<Empty::Request> request, \x1b[01;35m\x1b[Kstd::shared_ptr<Empty::Response> response\x1b[m\x1b[K) {\n'}
+[25.778225] (odrive_can) StderrLine: {'line': b'      |                                                                                                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[25.866030] (-) TimerEvent: {}
+[25.966452] (-) TimerEvent: {}
+[26.066829] (-) TimerEvent: {}
+[26.167226] (-) TimerEvent: {}
+[26.267610] (-) TimerEvent: {}
+[26.368020] (-) TimerEvent: {}
+[26.468424] (-) TimerEvent: {}
+[26.568771] (-) TimerEvent: {}
+[26.669186] (-) TimerEvent: {}
+[26.769659] (-) TimerEvent: {}
+[26.870166] (-) TimerEvent: {}
+[26.970654] (-) TimerEvent: {}
+[27.071115] (-) TimerEvent: {}
+[27.171555] (-) TimerEvent: {}
+[27.272010] (-) TimerEvent: {}
+[27.373122] (-) TimerEvent: {}
+[27.473748] (-) TimerEvent: {}
+[27.574123] (-) TimerEvent: {}
+[27.674458] (-) TimerEvent: {}
+[27.774858] (-) TimerEvent: {}
+[27.875223] (-) TimerEvent: {}
+[27.975542] (-) TimerEvent: {}
+[28.075935] (-) TimerEvent: {}
+[28.176428] (-) TimerEvent: {}
+[28.276857] (-) TimerEvent: {}
+[28.377320] (-) TimerEvent: {}
+[28.477749] (-) TimerEvent: {}
+[28.578156] (-) TimerEvent: {}
+[28.678588] (-) TimerEvent: {}
+[28.779003] (-) TimerEvent: {}
+[28.879445] (-) TimerEvent: {}
+[28.979874] (-) TimerEvent: {}
+[29.080278] (-) TimerEvent: {}
+[29.180726] (-) TimerEvent: {}
+[29.281078] (-) TimerEvent: {}
+[29.381776] (-) TimerEvent: {}
+[29.482233] (-) TimerEvent: {}
+[29.582637] (-) TimerEvent: {}
+[29.683024] (-) TimerEvent: {}
+[29.783323] (-) TimerEvent: {}
+[29.830319] (odrive_can) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/src/odrive_can_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ODriveCanNode::deinit()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[29.831123] (odrive_can) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/src/odrive_can_node.cpp:57:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kframe\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized\x07-Wmaybe-uninitialized\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[29.831198] (odrive_can) StderrLine: {'line': b'   57 |         \x1b[01;35m\x1b[Kwrite_le<uint32_t>(ODriveAxisState::AXIS_STATE_IDLE, frame.data)\x1b[m\x1b[K;\n'}
+[29.831242] (odrive_can) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[29.831279] (odrive_can) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/src/odrive_can_node.cpp:4\x1b[m\x1b[K:\n'}
+[29.831318] (odrive_can) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/include/byte_swap.hpp:36:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kby argument 2 of type \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned char*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kvoid write_le(const T&, const unsigned char*) [with T = unsigned int]\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[29.831358] (odrive_can) StderrLine: {'line': b'   36 | void \x1b[01;36m\x1b[Kwrite_le\x1b[m\x1b[K(const T& val, const unsigned char* buf) {\n'}
+[29.831394] (odrive_can) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[29.831430] (odrive_can) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/src/odrive_can_node.cpp:55:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kframe\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[29.831473] (odrive_can) StderrLine: {'line': b'   55 |         struct can_frame \x1b[01;36m\x1b[Kframe\x1b[m\x1b[K;\n'}
+[29.831508] (odrive_can) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[29.831542] (odrive_can) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/src/odrive_can_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ODriveCanNode::request_clear_errors_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[29.831583] (odrive_can) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/src/odrive_can_node.cpp:234:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kframe\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized\x07-Wmaybe-uninitialized\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[29.831629] (odrive_can) StderrLine: {'line': b'  234 |     \x1b[01;35m\x1b[Kwrite_le<uint8_t>(0, frame.data)\x1b[m\x1b[K;\n'}
+[29.831663] (odrive_can) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[29.831698] (odrive_can) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/src/odrive_can_node.cpp:4\x1b[m\x1b[K:\n'}
+[29.831731] (odrive_can) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/include/byte_swap.hpp:36:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kby argument 2 of type \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned char*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kvoid write_le(const T&, const unsigned char*) [with T = unsigned char]\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[29.831776] (odrive_can) StderrLine: {'line': b'   36 | void \x1b[01;36m\x1b[Kwrite_le\x1b[m\x1b[K(const T& val, const unsigned char* buf) {\n'}
+[29.831810] (odrive_can) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[29.831843] (odrive_can) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vedant/gaitlab_ws/OdriveCANControl/src/ros_odrive/odrive_node/src/odrive_can_node.cpp:232:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kframe\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[29.831877] (odrive_can) StderrLine: {'line': b'  232 |     struct can_frame \x1b[01;36m\x1b[Kframe\x1b[m\x1b[K;\n'}
+[29.831910] (odrive_can) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[29.884016] (-) TimerEvent: {}
+[29.984463] (-) TimerEvent: {}
+[30.084888] (-) TimerEvent: {}
+[30.185457] (-) TimerEvent: {}
+[30.286007] (-) TimerEvent: {}
+[30.386407] (-) TimerEvent: {}
+[30.486693] (-) TimerEvent: {}
+[30.587035] (-) TimerEvent: {}
+[30.687376] (-) TimerEvent: {}
+[30.787745] (-) TimerEvent: {}
+[30.888075] (-) TimerEvent: {}
+[30.988473] (-) TimerEvent: {}
+[31.088836] (-) TimerEvent: {}
+[31.189255] (-) TimerEvent: {}
+[31.289720] (-) TimerEvent: {}
+[31.390067] (-) TimerEvent: {}
+[31.490471] (-) TimerEvent: {}
+[31.590855] (-) TimerEvent: {}
+[31.691201] (-) TimerEvent: {}
+[31.791613] (-) TimerEvent: {}
+[31.892015] (-) TimerEvent: {}
+[31.992328] (-) TimerEvent: {}
+[32.092792] (-) TimerEvent: {}
+[32.193216] (-) TimerEvent: {}
+[32.293619] (-) TimerEvent: {}
+[32.394044] (-) TimerEvent: {}
+[32.494456] (-) TimerEvent: {}
+[32.594865] (-) TimerEvent: {}
+[32.695266] (-) TimerEvent: {}
+[32.796065] (-) TimerEvent: {}
+[32.897094] (-) TimerEvent: {}
+[32.997557] (-) TimerEvent: {}
+[33.098665] (-) TimerEvent: {}
+[33.199058] (-) TimerEvent: {}
+[33.299451] (-) TimerEvent: {}
+[33.400119] (-) TimerEvent: {}
+[33.500522] (-) TimerEvent: {}
+[33.600943] (-) TimerEvent: {}
+[33.701356] (-) TimerEvent: {}
+[33.801838] (-) TimerEvent: {}
+[33.902177] (-) TimerEvent: {}
+[34.002622] (-) TimerEvent: {}
+[34.102932] (-) TimerEvent: {}
+[34.203264] (-) TimerEvent: {}
+[34.303618] (-) TimerEvent: {}
+[34.403970] (-) TimerEvent: {}
+[34.504296] (-) TimerEvent: {}
+[34.604678] (-) TimerEvent: {}
+[34.705061] (-) TimerEvent: {}
+[34.805464] (-) TimerEvent: {}
+[34.900042] (odrive_can) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable odrive_can_node\x1b[0m\n'}
+[34.905571] (-) TimerEvent: {}
+[35.005870] (-) TimerEvent: {}
+[35.106242] (-) TimerEvent: {}
+[35.206583] (-) TimerEvent: {}
+[35.306913] (-) TimerEvent: {}
+[35.407291] (-) TimerEvent: {}
+[35.507641] (-) TimerEvent: {}
+[35.572041] (odrive_can) StdoutLine: {'line': b'[100%] Built target odrive_can_node\n'}
+[35.581560] (odrive_can) CommandEnded: {'returncode': 0}
+[35.607807] (-) TimerEvent: {}
+[35.674236] (odrive_can) JobProgress: {'identifier': 'odrive_can', 'progress': 'install'}
+[35.675273] (odrive_can) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can'], 'cwd': '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/vedant'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/vedant/gaitlab_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('NAME', 'Vedant'), ('WSL_INTEROP', '/run/WSL/441_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/vedant/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vedant/.local/bin:/home/vedant/miniconda3/condabin:/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/vedan/miniconda3:/mnt/c/Users/vedan/miniconda3/Library/mingw-w64/bin:/mnt/c/Users/vedan/miniconda3/Library/usr/bin:/mnt/c/Users/vedan/miniconda3/Library/bin:/mnt/c/Users/vedan/miniconda3/Scripts:/mnt/c/Users/vedan/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/vedan/.dotnet/tools:/mnt/c/Users/vedan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/vedan/AppData/Roaming/npm:/mnt/c/Program Files/mosquitto:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/vedant/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_can'), ('TURTLEBOT3_MODEL', 'waffle'), ('CONDA_EXE', '/home/vedant/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[35.680883] (odrive_can) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[35.681351] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/ament_index/resource_index/rosidl_interfaces/odrive_can\n'}
+[35.681509] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can\n'}
+[35.681847] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv\n'}
+[35.682013] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/axis_state.h\n'}
+[35.682134] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail\n'}
+[35.682257] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__functions.c\n'}
+[35.682486] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__struct.h\n'}
+[35.682632] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__functions.h\n'}
+[35.682965] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__type_support.h\n'}
+[35.683038] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg\n'}
+[35.683083] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/o_drive_status.h\n'}
+[35.683201] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_generator_c__visibility_control.h\n'}
+[35.683299] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/controller_status.h\n'}
+[35.683499] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/control_message.h\n'}
+[35.683599] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail\n'}
+[35.683843] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__functions.h\n'}
+[35.683983] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__functions.c\n'}
+[35.684132] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__functions.c\n'}
+[35.684289] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__functions.h\n'}
+[35.684538] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__type_support.h\n'}
+[35.684747] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__struct.h\n'}
+[35.684835] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__type_support.h\n'}
+[35.684896] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__functions.c\n'}
+[35.684954] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__struct.h\n'}
+[35.685009] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__functions.h\n'}
+[35.685071] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__struct.h\n'}
+[35.685157] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__type_support.h\n'}
+[35.685383] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/environment/library_path.sh\n'}
+[35.685473] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/environment/library_path.dsv\n'}
+[35.685638] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_generator_c.so\n'}
+[35.686902] (odrive_can) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_generator_c.so" to ""\n'}
+[35.687001] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can\n'}
+[35.687069] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv\n'}
+[35.687129] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail\n'}
+[35.687498] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__rosidl_typesupport_fastrtps_c.h\n'}
+[35.687587] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg\n'}
+[35.687661] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[35.688020] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail\n'}
+[35.688376] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__rosidl_typesupport_fastrtps_c.h\n'}
+[35.688467] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__rosidl_typesupport_fastrtps_c.h\n'}
+[35.688528] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_fastrtps_c.h\n'}
+[35.688583] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_fastrtps_c.so\n'}
+[35.689414] (odrive_can) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[35.691165] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can\n'}
+[35.691910] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv\n'}
+[35.693491] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/axis_state.hpp\n'}
+[35.693598] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail\n'}
+[35.693665] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__builder.hpp\n'}
+[35.693726] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__struct.hpp\n'}
+[35.693784] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__traits.hpp\n'}
+[35.693842] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__type_support.hpp\n'}
+[35.693899] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg\n'}
+[35.693953] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/o_drive_status.hpp\n'}
+[35.694009] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/controller_status.hpp\n'}
+[35.694069] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[35.694123] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/control_message.hpp\n'}
+[35.694182] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail\n'}
+[35.696888] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__struct.hpp\n'}
+[35.697013] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__type_support.hpp\n'}
+[35.697081] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__builder.hpp\n'}
+[35.697147] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__traits.hpp\n'}
+[35.697243] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__traits.hpp\n'}
+[35.697315] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__traits.hpp\n'}
+[35.697752] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__struct.hpp\n'}
+[35.698399] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__type_support.hpp\n'}
+[35.698513] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__builder.hpp\n'}
+[35.698577] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__struct.hpp\n'}
+[35.698642] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__type_support.hpp\n'}
+[35.698743] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__builder.hpp\n'}
+[35.698886] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can\n'}
+[35.699017] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv\n'}
+[35.699162] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail\n'}
+[35.699304] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/dds_fastrtps\n'}
+[35.699446] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[35.699626] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg\n'}
+[35.699793] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[35.699870] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail\n'}
+[35.699926] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[35.699983] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/dds_fastrtps\n'}
+[35.700039] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[35.700093] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[35.700147] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_fastrtps_cpp.so\n'}
+[35.700197] (odrive_can) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[35.700247] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can\n'}
+[35.700297] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv\n'}
+[35.700346] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail\n'}
+[35.700402] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__rosidl_typesupport_introspection_c.h\n'}
+[35.700451] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__type_support.c\n'}
+[35.700500] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg\n'}
+[35.700555] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[35.700611] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail\n'}
+[35.700664] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__type_support.c\n'}
+[35.700726] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__rosidl_typesupport_introspection_c.h\n'}
+[35.700774] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_introspection_c.h\n'}
+[35.700827] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__type_support.c\n'}
+[35.700882] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__type_support.c\n'}
+[35.700943] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__rosidl_typesupport_introspection_c.h\n'}
+[35.700999] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_introspection_c.so\n'}
+[35.701053] (odrive_can) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_introspection_c.so" to ""\n'}
+[35.701104] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_c.so\n'}
+[35.701156] (odrive_can) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_c.so" to ""\n'}
+[35.701209] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can\n'}
+[35.701261] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv\n'}
+[35.701314] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail\n'}
+[35.701368] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__type_support.cpp\n'}
+[35.701423] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/srv/detail/axis_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[35.701480] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg\n'}
+[35.701534] (odrive_can) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail\n'}
+[35.701584] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__rosidl_typesupport_introspection_cpp.hpp\n'}
+[35.701636] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__type_support.cpp\n'}
+[35.701699] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[35.701753] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/control_message__type_support.cpp\n'}
+[35.701805] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/o_drive_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[35.701860] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/include/odrive_can/odrive_can/msg/detail/controller_status__type_support.cpp\n'}
+[35.701914] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_introspection_cpp.so\n'}
+[35.701983] (odrive_can) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[35.702041] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_cpp.so\n'}
+[35.702096] (odrive_can) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_typesupport_cpp.so" to ""\n'}
+[35.703094] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/environment/pythonpath.sh\n'}
+[35.703196] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/environment/pythonpath.dsv\n'}
+[35.704604] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info\n'}
+[35.704742] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[35.704811] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[35.704899] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[35.704959] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[35.705466] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can\n'}
+[35.705576] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/_odrive_can_s.ep.rosidl_typesupport_c.c\n'}
+[35.706114] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/_odrive_can_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[35.706459] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/_odrive_can_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[35.706946] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[35.707040] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/libodrive_can__rosidl_generator_py.so\n'}
+[35.707502] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv\n'}
+[35.707900] (-) TimerEvent: {}
+[35.710096] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv/_axis_state.py\n'}
+[35.710241] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv/_axis_state_s.c\n'}
+[35.710312] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv/__init__.py\n'}
+[35.710349] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[35.710386] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg\n'}
+[35.710423] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_controller_status_s.c\n'}
+[35.710461] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_o_drive_status_s.c\n'}
+[35.710493] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_control_message.py\n'}
+[35.710526] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_control_message_s.c\n'}
+[35.710559] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_o_drive_status.py\n'}
+[35.710593] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_controller_status.py\n'}
+[35.710625] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/__init__.py\n'}
+[35.710657] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[35.710689] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/__init__.py\n'}
+[35.786839] (odrive_can) StdoutLine: {'line': b"Listing '/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can'...\n"}
+[35.787045] (odrive_can) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/__init__.py'...\n"}
+[35.787140] (odrive_can) StdoutLine: {'line': b"Listing '/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg'...\n"}
+[35.787209] (odrive_can) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/__init__.py'...\n"}
+[35.787277] (odrive_can) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_control_message.py'...\n"}
+[35.787342] (odrive_can) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_controller_status.py'...\n"}
+[35.787403] (odrive_can) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/msg/_o_drive_status.py'...\n"}
+[35.787467] (odrive_can) StdoutLine: {'line': b"Listing '/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv'...\n"}
+[35.787530] (odrive_can) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv/__init__.py'...\n"}
+[35.787591] (odrive_can) StdoutLine: {'line': b"Compiling '/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/srv/_axis_state.py'...\n"}
+[35.793439] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[35.793711] (odrive_can) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[35.793982] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[35.794199] (odrive_can) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[35.794417] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[35.794813] (odrive_can) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages/odrive_can/odrive_can_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[35.794920] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_generator_py.so\n'}
+[35.795086] (odrive_can) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/libodrive_can__rosidl_generator_py.so" to ""\n'}
+[35.795343] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/msg/ControlMessage.idl\n'}
+[35.795514] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/msg/ControllerStatus.idl\n'}
+[35.795826] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/msg/ODriveStatus.idl\n'}
+[35.796121] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/srv/AxisState.idl\n'}
+[35.796283] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/msg/ControlMessage.msg\n'}
+[35.796506] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/msg/ControllerStatus.msg\n'}
+[35.796627] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/msg/ODriveStatus.msg\n'}
+[35.796776] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/srv/AxisState.srv\n'}
+[35.796972] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/srv/AxisState_Request.msg\n'}
+[35.797224] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/srv/AxisState_Response.msg\n'}
+[35.797407] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/odrive_can/odrive_can_node\n'}
+[35.800533] (odrive_can) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib/odrive_can/odrive_can_node" to ""\n'}
+[35.800642] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/launch\n'}
+[35.801653] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/launch/example_launch.yaml\n'}
+[35.802335] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/ament_index/resource_index/package_run_dependencies/odrive_can\n'}
+[35.802619] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/ament_index/resource_index/parent_prefix_path/odrive_can\n'}
+[35.802835] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/environment/ament_prefix_path.sh\n'}
+[35.803092] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/environment/ament_prefix_path.dsv\n'}
+[35.803244] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/environment/path.sh\n'}
+[35.803446] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/environment/path.dsv\n'}
+[35.803594] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/local_setup.bash\n'}
+[35.803757] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/local_setup.sh\n'}
+[35.804004] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/local_setup.zsh\n'}
+[35.804153] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/local_setup.dsv\n'}
+[35.804308] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/package.dsv\n'}
+[35.804526] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/ament_index/resource_index/packages/odrive_can\n'}
+[35.804612] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_cExport.cmake\n'}
+[35.808066] (-) TimerEvent: {}
+[35.810817] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_cExport-noconfig.cmake\n'}
+[35.811278] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[35.811893] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[35.812730] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_cppExport.cmake\n'}
+[35.813593] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[35.814177] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[35.814305] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_introspection_cExport.cmake\n'}
+[35.814420] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[35.814606] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_cExport.cmake\n'}
+[35.814705] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[35.814929] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[35.815165] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[35.815239] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_cppExport.cmake\n'}
+[35.815294] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_can__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[35.815488] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_pyExport.cmake\n'}
+[35.815657] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/export_odrive_can__rosidl_generator_pyExport-noconfig.cmake\n'}
+[35.815894] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/rosidl_cmake-extras.cmake\n'}
+[35.815976] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[35.816079] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[35.816219] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[35.816357] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[35.816565] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[35.816817] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[35.816933] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_canConfig.cmake\n'}
+[35.817065] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/cmake/odrive_canConfig-version.cmake\n'}
+[35.817322] (odrive_can) StdoutLine: {'line': b'-- Installing: /home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/share/odrive_can/package.xml\n'}
+[35.819068] (odrive_can) CommandEnded: {'returncode': 0}
+[35.908136] (-) TimerEvent: {}
+[35.924839] (odrive_can) JobEnded: {'identifier': 'odrive_can', 'rc': 0}
+[35.926191] (controller) JobStarted: {'identifier': 'controller'}
+[36.008243] (-) TimerEvent: {}
+[36.108624] (-) TimerEvent: {}
+[36.209041] (-) TimerEvent: {}
+[36.309368] (-) TimerEvent: {}
+[36.409791] (-) TimerEvent: {}
+[36.510190] (-) TimerEvent: {}
+[36.610491] (-) TimerEvent: {}
+[36.710873] (-) TimerEvent: {}
+[36.811209] (-) TimerEvent: {}
+[36.911564] (-) TimerEvent: {}
+[37.011913] (-) TimerEvent: {}
+[37.112240] (-) TimerEvent: {}
+[37.212629] (-) TimerEvent: {}
+[37.312903] (-) TimerEvent: {}
+[37.413228] (-) TimerEvent: {}
+[37.513575] (-) TimerEvent: {}
+[37.613941] (-) TimerEvent: {}
+[37.714456] (-) TimerEvent: {}
+[37.814796] (-) TimerEvent: {}
+[37.915140] (-) TimerEvent: {}
+[38.015503] (-) TimerEvent: {}
+[38.115821] (-) TimerEvent: {}
+[38.216184] (-) TimerEvent: {}
+[38.316624] (-) TimerEvent: {}
+[38.416956] (-) TimerEvent: {}
+[38.499080] (controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/controller', 'build', '--build-base', '/home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build', 'install', '--record', '/home/vedant/gaitlab_ws/OdriveCANControl/build/controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/vedant/gaitlab_ws/OdriveCANControl/src/controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'vedant', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/lib:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/lib:/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/vedant', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/vedant/gaitlab_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_CE_M': '', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'vedant', 'NAME': 'Vedant', 'WSL_INTEROP': '/run/WSL/441_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/local/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/home/vedant/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/vedant/.local/bin:/home/vedant/miniconda3/condabin:/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/IVI/Bin/:/mnt/c/Program Files/IVI Foundation/IVI/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/vedan/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/vedan/miniconda3:/mnt/c/Users/vedan/miniconda3/Library/mingw-w64/bin:/mnt/c/Users/vedan/miniconda3/Library/usr/bin:/mnt/c/Users/vedan/miniconda3/Library/bin:/mnt/c/Users/vedan/miniconda3/Scripts:/mnt/c/Users/vedan/AppData/Local/Microsoft/WindowsApps:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/vedan/.dotnet/tools:/mnt/c/Users/vedan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/vedan/AppData/Roaming/npm:/mnt/c/Program Files/mosquitto:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs:/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/vedant/miniconda3/bin/python', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/vedant/gaitlab_ws/OdriveCANControl/build/controller', 'TURTLEBOT3_MODEL': 'waffle', 'CONDA_EXE': '/home/vedant/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vedant/gaitlab_ws/OdriveCANControl/build/controller/prefix_override:/home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can/local/lib/python3.10/dist-packages:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': '', 'CMAKE_PREFIX_PATH': '/home/vedant/gaitlab_ws/OdriveCANControl/install/odrive_can:/home/vedant/gaitlab_ws/OdriveCANControl/install/custom_msgs'}, 'shell': False}
+[38.517087] (-) TimerEvent: {}
+[38.617467] (-) TimerEvent: {}
+[38.674955] (controller) StderrLine: {'line': b"/home/vedant/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[38.675103] (controller) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[38.717551] (-) TimerEvent: {}
+[38.768664] (controller) StdoutLine: {'line': b'running egg_info\n'}
+[38.784717] (controller) StdoutLine: {'line': b'creating ../../build/controller/controller.egg-info\n'}
+[38.784977] (controller) StdoutLine: {'line': b'writing ../../build/controller/controller.egg-info/PKG-INFO\n'}
+[38.785449] (controller) StdoutLine: {'line': b'writing dependency_links to ../../build/controller/controller.egg-info/dependency_links.txt\n'}
+[38.785667] (controller) StdoutLine: {'line': b'writing entry points to ../../build/controller/controller.egg-info/entry_points.txt\n'}
+[38.785878] (controller) StdoutLine: {'line': b'writing requirements to ../../build/controller/controller.egg-info/requires.txt\n'}
+[38.786108] (controller) StdoutLine: {'line': b'writing top-level names to ../../build/controller/controller.egg-info/top_level.txt\n'}
+[38.786276] (controller) StdoutLine: {'line': b"writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'\n"}
+[38.818568] (-) TimerEvent: {}
+[38.829789] (controller) StdoutLine: {'line': b"reading manifest file '../../build/controller/controller.egg-info/SOURCES.txt'\n"}
+[38.833746] (controller) StdoutLine: {'line': b"writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'\n"}
+[38.834283] (controller) StdoutLine: {'line': b'running build\n'}
+[38.834975] (controller) StdoutLine: {'line': b'running build_py\n'}
+[38.835291] (controller) StdoutLine: {'line': b'creating /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build/lib/controller\n'}
+[38.835750] (controller) StdoutLine: {'line': b'copying src/controller/odrive_control.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build/lib/controller\n'}
+[38.836933] (controller) StdoutLine: {'line': b'copying src/controller/control_node.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build/lib/controller\n'}
+[38.837324] (controller) StdoutLine: {'line': b'copying src/controller/Friction_compensation_node.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build/lib/controller\n'}
+[38.839519] (controller) StdoutLine: {'line': b'copying src/controller/__init__.py -> /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build/lib/controller\n'}
+[38.839678] (controller) StdoutLine: {'line': b'running install\n'}
+[38.843615] (controller) StdoutLine: {'line': b'running install_lib\n'}
+[38.860661] (controller) StdoutLine: {'line': b'creating /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller\n'}
+[38.860937] (controller) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build/lib/controller/odrive_control.py -> /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller\n'}
+[38.861161] (controller) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build/lib/controller/control_node.py -> /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller\n'}
+[38.861239] (controller) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build/lib/controller/Friction_compensation_node.py -> /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller\n'}
+[38.861404] (controller) StdoutLine: {'line': b'copying /home/vedant/gaitlab_ws/OdriveCANControl/build/controller/build/lib/controller/__init__.py -> /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller\n'}
+[38.861901] (controller) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/odrive_control.py to odrive_control.cpython-310.pyc\n'}
+[38.863111] (controller) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/control_node.py to control_node.cpython-310.pyc\n'}
+[38.864155] (controller) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/Friction_compensation_node.py to Friction_compensation_node.cpython-310.pyc\n'}
+[38.866169] (controller) StdoutLine: {'line': b'byte-compiling /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/__init__.py to __init__.cpython-310.pyc\n'}
+[38.866763] (controller) StdoutLine: {'line': b'running install_data\n'}
+[38.867038] (controller) StdoutLine: {'line': b'creating /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/share/ament_index/resource_index/packages\n'}
+[38.867570] (controller) StdoutLine: {'line': b'copying resource/controller -> /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/share/ament_index/resource_index/packages\n'}
+[38.867843] (controller) StdoutLine: {'line': b'copying package.xml -> /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/share/controller\n'}
+[38.868171] (controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[38.894252] (controller) StdoutLine: {'line': b'Copying ../../build/controller/controller.egg-info to /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info\n'}
+[38.895278] (controller) StdoutLine: {'line': b'running install_scripts\n'}
+[38.918678] (-) TimerEvent: {}
+[39.019026] (-) TimerEvent: {}
+[39.097786] (controller) StdoutLine: {'line': b'Installing odrive_control script to /home/vedant/gaitlab_ws/OdriveCANControl/install/controller/lib/controller\n'}
+[39.098142] (controller) StdoutLine: {'line': b"writing list of installed files to '/home/vedant/gaitlab_ws/OdriveCANControl/build/controller/install.log'\n"}
+[39.119132] (-) TimerEvent: {}
+[39.124962] (controller) CommandEnded: {'returncode': 0}
+[39.132326] (controller) JobEnded: {'identifier': 'controller', 'rc': 0}
+[39.133826] (-) EventReactorShutdown: {}
