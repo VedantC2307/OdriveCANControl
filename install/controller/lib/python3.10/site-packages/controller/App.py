@@ -25,13 +25,13 @@ class ModernApp(ctk.CTk):
         self.ip_label.grid(row=0, column=0, padx=10, pady=5)
         self.ip_entry = ctk.CTkEntry(tcp_frame, corner_radius=10)
         self.ip_entry.grid(row=0, column=1, padx=10, pady=5)
-        self.ip_entry.insert(0, "localhost")
+        self.ip_entry.insert(0, "172.26.33.8")
 
         self.port_label = ctk.CTkLabel(tcp_frame, text="Port:")
         self.port_label.grid(row=0, column=2, padx=10, pady=5)
         self.port_entry = ctk.CTkEntry(tcp_frame, corner_radius=10)
         self.port_entry.grid(row=0, column=3, padx=10, pady=5)
-        self.port_entry.insert(0, "12345")
+        self.port_entry.insert(0, "1234")
 
         self.connect_btn = ctk.CTkButton(tcp_frame, text="Connect", corner_radius=10, hover_color="#357ABD", command=self.connect)
         self.connect_btn.grid(row=0, column=4, padx=10, pady=5)
@@ -59,27 +59,27 @@ class ModernApp(ctk.CTk):
         self.send_btn.grid(row=2, column=2, padx=10, pady=5)
 
         # Data Recording Frame
-        data_frame = ctk.CTkFrame(self.gradient_frame, corner_radius=15)
-        data_frame.grid(row=2, column=0, padx=20, pady=10, sticky="ew")
+        # data_frame = ctk.CTkFrame(self.gradient_frame, corner_radius=15)
+        # data_frame.grid(row=2, column=0, padx=20, pady=10, sticky="ew")
 
-        self.topic_label = ctk.CTkLabel(data_frame, text="Topic Name:")
-        self.topic_label.grid(row=0, column=0, padx=10, pady=5)
+        # self.topic_label = ctk.CTkLabel(data_frame, text="Topic Name:")
+        # self.topic_label.grid(row=0, column=0, padx=10, pady=5)
 
-        self.topic_entry = ctk.CTkEntry(data_frame, corner_radius=10)
-        self.topic_entry.grid(row=0, column=1, padx=10, pady=5)
+        # self.topic_entry = ctk.CTkEntry(data_frame, corner_radius=10)
+        # self.topic_entry.grid(row=0, column=1, padx=10, pady=5)
 
-        self.topic_entry1 = ctk.CTkEntry(data_frame, corner_radius=10)
-        self.topic_entry1.grid(row=1, column=1, padx=10, pady=5)
+        # self.topic_entry1 = ctk.CTkEntry(data_frame, corner_radius=10)
+        # self.topic_entry1.grid(row=1, column=1, padx=10, pady=5)
 
-        self.file_label = ctk.CTkLabel(data_frame, text="File Name:")
-        self.file_label.grid(row=0, column=2, padx=10, pady=5)
-        self.file_entry = ctk.CTkEntry(data_frame, corner_radius=10)
-        self.file_entry.grid(row=0, column=3, padx=10, pady=5)
+        # self.file_label = ctk.CTkLabel(data_frame, text="File Name:")
+        # self.file_label.grid(row=0, column=2, padx=10, pady=5)
+        # self.file_entry = ctk.CTkEntry(data_frame, corner_radius=10)
+        # self.file_entry.grid(row=0, column=3, padx=10, pady=5)
 
-        # Toggle button for start/stop recording
-        self.is_recording = False
-        self.start_recording_btn = ctk.CTkButton(data_frame, text="Start", corner_radius=10, hover_color="#357ABD", command=self.toggle_recording)
-        self.start_recording_btn.grid(row=0, column=4, padx=10, pady=5)
+        # # Toggle button for start/stop recording
+        # self.is_recording = False
+        # self.start_recording_btn = ctk.CTkButton(data_frame, text="Start", corner_radius=10, hover_color="#357ABD", command=self.toggle_recording)
+        # self.start_recording_btn.grid(row=0, column=4, padx=10, pady=5)
 
         # Main container frame for Motor State and Buttons
         main_container_frame = ctk.CTkFrame(self.gradient_frame, corner_radius=15)
@@ -108,23 +108,41 @@ class ModernApp(ctk.CTk):
 
         self.odrive_node_active = False
         self.controller_active = False
-        self.odrive_node_btn = ctk.CTkButton(motor_frame1, text="Start Odrive Node", corner_radius=10, command=self.toggle_odrive_node)
-        self.odrive_node_btn.grid(row=0, column=0, padx=10, pady=5, sticky="ew")
+        self.odrive_node_btn = ctk.CTkButton(motor_frame1, text="Initialize Odrive Setup", corner_radius=10, command=self.toggle_odrive_setup)
+        self.odrive_node_btn.grid(row=0, column=0, padx=5, pady=5, sticky="ew")
 
-        self.controller_btn = ctk.CTkButton(motor_frame1, text="Start Controller", corner_radius=10, command=self.toggle_controller)
-        self.controller_btn.grid(row=1, column=0, padx=10, pady=5, sticky="ew")
+        self.controller_btn = ctk.CTkButton(motor_frame1, text="Clear errors", corner_radius=10, command=self.toggle_clear_errors)
+        self.controller_btn.grid(row=1, column=0, padx=5, pady=5, sticky="ew")
+
+        self.odrive_node_btn = ctk.CTkButton(motor_frame1, text="Motor Calibration", corner_radius=10, command=self.toggle_motor_calibration)
+        self.odrive_node_btn.grid(row=0, column=1, padx=10, pady=5, sticky="ew")
+
+        self.controller_btn = ctk.CTkButton(motor_frame1, text="Encoder Offset Calibration", corner_radius=10, command=self.toggle_encoder_offset_calibration)
+        self.controller_btn.grid(row=1, column=1, padx=10, pady=5, sticky="ew")
 
 
-    def toggle_odrive_node(self):
-        self.odrive_node_active = not self.odrive_node_active
-        command = "Start Odrive Node" if self.odrive_node_active else "Stop Odrive Node"
-        self.odrive_node_btn.configure(text=command)
+    def toggle_odrive_setup(self):
+        """Toggle ODrive setup and send 'initialize' command."""
+        """Send the 'initialize' command without changing the button text."""
+        command = "initialize"
         self.send_tcp_message(command)
 
-    def toggle_controller(self):
-        self.controller_active = not self.controller_active
-        command = "Start Controller" if self.controller_active else "Stop Controller"
-        self.controller_btn.configure(text=command)
+
+    def toggle_clear_errors(self):
+        """Send the 'initialize' command without changing the button text."""
+        command = "clear_error"
+        self.send_tcp_message(command)
+
+    def toggle_motor_calibration(self):
+        """Toggle ODrive setup and send 'initialize' command."""
+        """Send the 'initialize' command without changing the button text."""
+        command = "motor_calibration"
+        self.send_tcp_message(command)
+
+
+    def toggle_encoder_offset_calibration(self):
+        """Send the 'initialize' command without changing the button text."""
+        command = "encoder_offset_calibration"
         self.send_tcp_message(command)
 
     def send_tcp_message(self, message):
@@ -137,23 +155,12 @@ class ModernApp(ctk.CTk):
         except Exception as e:
             print(f"Error sending command: {e}")
 
-
     def toggle_motor_state(self):
         # Update the state label based on the toggle switch state
         current_state = self.motor_state_switch.get()
         self.current_state_label.configure(text=current_state)
         print(current_state)
-        
-        # Send motor state over TCP
-        try:
-            if hasattr(self, 'client_socket') and self.client_socket:
-                self.client_socket.sendall(current_state.encode('utf-8'))
-                print(f"Sent motor state command: {current_state}")
-            else:
-                print("No active connection. Please connect to the server first.")
-        except Exception as e:
-            print(f"Error sending motor state command: {e}")
-
+        self.send_tcp_message(current_state)
 
     def connect(self):
         ip_address = self.ip_entry.get()
