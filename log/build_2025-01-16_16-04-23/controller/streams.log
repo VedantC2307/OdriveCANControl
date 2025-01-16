@@ -1,0 +1,21 @@
+[2.703s] Invoking command in '/home/vedant/OdriveCANControl/src/controller': CMAKE_PREFIX_PATH=/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/app_server:/home/vedant/OdriveCANControl/install/odrive_can LD_LIBRARY_PATH=/home/vedant/OdriveCANControl/install/custom_msgs/lib:/home/vedant/OdriveCANControl/install/odrive_can/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/vedant/OdriveCANControl/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/vedant/OdriveCANControl/build/controller/build install --record /home/vedant/OdriveCANControl/build/controller/install.log --single-version-externally-managed install_data
+[3.766s] running egg_info
+[3.769s] writing ../../build/controller/controller.egg-info/PKG-INFO
+[3.770s] writing dependency_links to ../../build/controller/controller.egg-info/dependency_links.txt
+[3.771s] writing entry points to ../../build/controller/controller.egg-info/entry_points.txt
+[3.771s] writing requirements to ../../build/controller/controller.egg-info/requires.txt
+[3.772s] writing top-level names to ../../build/controller/controller.egg-info/top_level.txt
+[3.781s] reading manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[3.785s] writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[3.785s] running build
+[3.786s] running build_py
+[3.788s] running install
+[3.789s] running install_lib
+[3.797s] running install_data
+[3.797s] running install_egg_info
+[3.804s] removing '/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info' (and everything under it)
+[3.806s] Copying ../../build/controller/controller.egg-info to /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info
+[3.811s] running install_scripts
+[3.891s] Installing odrive_control script to /home/vedant/OdriveCANControl/install/controller/lib/controller
+[3.893s] writing list of installed files to '/home/vedant/OdriveCANControl/build/controller/install.log'
+[4.011s] Invoked command in '/home/vedant/OdriveCANControl/src/controller' returned '0': CMAKE_PREFIX_PATH=/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/app_server:/home/vedant/OdriveCANControl/install/odrive_can LD_LIBRARY_PATH=/home/vedant/OdriveCANControl/install/custom_msgs/lib:/home/vedant/OdriveCANControl/install/odrive_can/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/vedant/OdriveCANControl/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/vedant/OdriveCANControl/build/controller/build install --record /home/vedant/OdriveCANControl/build/controller/install.log --single-version-externally-managed install_data

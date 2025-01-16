@@ -1,10 +1,10 @@
 {
   "package_name": "custom_msgs",
-  "output_dir": "/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs/rosidl_generator_c/custom_msgs",
+  "output_dir": "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_c/custom_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs:msg/MotionState.idl",
-    "/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs:srv/ODriveCommand.idl"
+    "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs:msg/MotionState.idl",
+    "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs:srv/ODriveCommand.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -54,8 +54,8 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs/msg/MotionState.idl",
-    "/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs/srv/ODriveCommand.idl",
+    "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs/msg/MotionState.idl",
+    "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs/srv/ODriveCommand.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
     "/opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl",

@@ -145,11 +145,13 @@ class ODriveController(Node):
         try:
             data = self.client_socket.recv(1024)
             if data:
-                message = data.decode('utf-8')
+                message = data.decode('utf-8').strip()
                 self.get_logger().info(f'Received message: {message}')
                 
                 if message == "initialize":
                     success, response = self.initialize_sequence()
+                elif message == "encoder_offset_calibration":
+                    success, response = self.calibrate_encoder()
                 elif message == "clear_error":
                     success, response = self.clear_errors()
                 elif message == "set_idle":

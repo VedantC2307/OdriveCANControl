@@ -1,0 +1,15 @@
+[0.000000] (-) TimerEvent: {}
+[0.001701] (-) JobUnselected: {'identifier': 'app_server'}
+[0.002334] (-) JobUnselected: {'identifier': 'custom_msgs'}
+[0.002796] (-) JobUnselected: {'identifier': 'data_logging'}
+[0.002974] (-) JobUnselected: {'identifier': 'encoder'}
+[0.003255] (-) JobUnselected: {'identifier': 'odrive_botwheel_explorer'}
+[0.003408] (-) JobUnselected: {'identifier': 'odrive_can'}
+[0.003488] (-) JobUnselected: {'identifier': 'odrive_control_py'}
+[0.003563] (-) JobUnselected: {'identifier': 'odrive_ros2_control'}
+[0.003635] (-) JobUnselected: {'identifier': 'robot_launch'}
+[0.003706] (-) JobUnselected: {'identifier': 'testing'}
+[0.003786] (controller) JobQueued: {'identifier': 'controller', 'dependencies': OrderedDict([('custom_msgs', '/home/vedant/OdriveCANControl/install/custom_msgs')])}
+[0.003885] (controller) JobStarted: {'identifier': 'controller'}
+[0.042434] (controller) JobEnded: {'identifier': 'controller', 'rc': 1}
+[0.054894] (-) EventReactorShutdown: {}
