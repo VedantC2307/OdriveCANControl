@@ -18,7 +18,10 @@ setup(
     maintainer_email='vedantchoudhary07@gmail.com',
     description='ODrive controller package',
     license='Apache License 2.0',
-    tests_require=['pytest'],
+    # tests_require=['pytest'],
+    extras_require={
+        'test': ['pytest'],
+    },
     entry_points={
         'console_scripts': [
             'odrive_control = controller.odrive_control:main',
