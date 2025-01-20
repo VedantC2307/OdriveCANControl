@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 import numpy as np
 from std_msgs.msg import Int32, Float32
-from custom_msgs.msg import MotionState
+from custom_msgs.msg import MotionState, FrictionComp
 from odrive_can.msg import ControlMessage
 
 class FrictionCompensationNode(Node):
@@ -24,7 +24,7 @@ class FrictionCompensationNode(Node):
         self.publish_rate = 100.0  # Hz
         self.publish_period = 1.0 / self.publish_rate
 
-        self.motor_command_publisher = self.create_publisher(ControlMessage, 'motor_command', 10)
+        self.friction_publisher = self.create_publisher(FrictionComp, 'friction_torque', 10)
 
         self.timer = self.create_timer(self.publish_period, self.process_data)  # 20 Hz processing
 
@@ -52,13 +52,9 @@ class FrictionCompensationNode(Node):
         compensation_torque = gain * self.friction_compensation(self.velocity) # Unit is currnt
 
         # Step 3: Publish the fricition comp torque
-        msg = ControlMessage()
-        msg.control_mode = 1
-        msg.input_mode = 1
-        msg.input_pos = 0.0
-        msg.input_vel = 0.0
-        msg.input_torque = compensation_torque
-        self.motor_command_publisher.publish(msg)
+        msg = FrictionComp()
+        msg.tau_fcomp = compensation_torque
+        self.friction_publisher.publish(msg)
 
         # msg = FriCompTorque()
         # msg.tau_fcomp = compensation_torque
