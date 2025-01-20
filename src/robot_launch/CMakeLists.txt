@@ -8,7 +8,8 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclpy REQUIRED)
-find_package(controller REQUIRED)
+find_package(custom_msgs REQUIRED)
+
 install(
   DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}
