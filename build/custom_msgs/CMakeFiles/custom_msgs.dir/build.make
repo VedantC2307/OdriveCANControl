@@ -67,6 +67,8 @@ include CMakeFiles/custom_msgs.dir/compiler_depend.make
 include CMakeFiles/custom_msgs.dir/progress.make
 
 CMakeFiles/custom_msgs: /home/vedant/OdriveCANControl/src/custom_msgs/msg/MotionState.msg
+CMakeFiles/custom_msgs: /home/vedant/OdriveCANControl/src/custom_msgs/msg/FrictionComp.msg
+CMakeFiles/custom_msgs: /home/vedant/OdriveCANControl/src/custom_msgs/msg/ImpedanceTorque.msg
 CMakeFiles/custom_msgs: /home/vedant/OdriveCANControl/src/custom_msgs/srv/ODriveCommand.srv
 CMakeFiles/custom_msgs: rosidl_cmake/srv/ODriveCommand_Request.msg
 CMakeFiles/custom_msgs: rosidl_cmake/srv/ODriveCommand_Response.msg

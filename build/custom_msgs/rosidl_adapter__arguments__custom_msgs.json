@@ -2,6 +2,8 @@
   "package_name": "custom_msgs",
   "non_idl_tuples": [
     "/home/vedant/OdriveCANControl/src/custom_msgs:msg/MotionState.msg",
+    "/home/vedant/OdriveCANControl/src/custom_msgs:msg/FrictionComp.msg",
+    "/home/vedant/OdriveCANControl/src/custom_msgs:msg/ImpedanceTorque.msg",
     "/home/vedant/OdriveCANControl/src/custom_msgs:srv/ODriveCommand.srv"
   ]
 }

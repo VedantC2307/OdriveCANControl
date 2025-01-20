@@ -1,3 +1,7 @@
+msg/FrictionComp.idl
+msg/FrictionComp.msg
+msg/ImpedanceTorque.idl
+msg/ImpedanceTorque.msg
 msg/MotionState.idl
 msg/MotionState.msg
 srv/ODriveCommand.idl

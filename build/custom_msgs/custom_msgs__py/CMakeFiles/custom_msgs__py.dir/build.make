@@ -70,10 +70,14 @@ custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/_cus
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_motion_state.py
+custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_friction_comp.py
+custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_impedance_torque.py
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/srv/_o_drive_command.py
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/__init__.py
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/srv/__init__.py
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_motion_state_s.c
+custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_friction_comp_s.c
+custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_impedance_torque_s.c
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/srv/_o_drive_command_s.c
 
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
@@ -90,6 +94,8 @@ rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/MotionState.idl
+rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/FrictionComp.idl
+rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/ImpedanceTorque.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/srv/ODriveCommand.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Byte.idl
@@ -135,6 +141,12 @@ rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c: rosidl
 rosidl_generator_py/custom_msgs/msg/_motion_state.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_motion_state.py
 
+rosidl_generator_py/custom_msgs/msg/_friction_comp.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_friction_comp.py
+
+rosidl_generator_py/custom_msgs/msg/_impedance_torque.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_impedance_torque.py
+
 rosidl_generator_py/custom_msgs/srv/_o_drive_command.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/srv/_o_drive_command.py
 
@@ -147,6 +159,12 @@ rosidl_generator_py/custom_msgs/srv/__init__.py: rosidl_generator_py/custom_msgs
 rosidl_generator_py/custom_msgs/msg/_motion_state_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_motion_state_s.c
 
+rosidl_generator_py/custom_msgs/msg/_friction_comp_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_friction_comp_s.c
+
+rosidl_generator_py/custom_msgs/msg/_impedance_torque_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_impedance_torque_s.c
+
 rosidl_generator_py/custom_msgs/srv/_o_drive_command_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/srv/_o_drive_command_s.c
 
@@ -155,6 +173,10 @@ custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesu
 custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
 custom_msgs__py: rosidl_generator_py/custom_msgs/msg/__init__.py
+custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_friction_comp.py
+custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_friction_comp_s.c
+custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_impedance_torque.py
+custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_impedance_torque_s.c
 custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_motion_state.py
 custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_motion_state_s.c
 custom_msgs__py: rosidl_generator_py/custom_msgs/srv/__init__.py

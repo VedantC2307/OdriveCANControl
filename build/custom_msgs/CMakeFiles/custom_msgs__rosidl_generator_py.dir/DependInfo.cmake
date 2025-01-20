@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_friction_comp_s.c" "CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_friction_comp_s.c.o" "gcc" "CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_friction_comp_s.c.o.d"
+  "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_impedance_torque_s.c" "CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_impedance_torque_s.c.o" "gcc" "CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_impedance_torque_s.c.o.d"
   "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_motion_state_s.c" "CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_motion_state_s.c.o" "gcc" "CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_motion_state_s.c.o.d"
   "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/srv/_o_drive_command_s.c" "CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/srv/_o_drive_command_s.c.o" "gcc" "CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/srv/_o_drive_command_s.c.o.d"
   )

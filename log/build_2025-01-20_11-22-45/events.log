@@ -1,0 +1,1673 @@
+[0.000000] (-) TimerEvent: {}
+[0.009768] (-) JobUnselected: {'identifier': 'controller'}
+[0.010018] (-) JobUnselected: {'identifier': 'data_logging'}
+[0.019274] (-) JobUnselected: {'identifier': 'encoder'}
+[0.019569] (-) JobUnselected: {'identifier': 'odrive_control_py'}
+[0.019744] (-) JobUnselected: {'identifier': 'robot_launch'}
+[0.019878] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.020013] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.082272] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.088577] (-) TimerEvent: {}
+[0.090535] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/vedant/OdriveCANControl/src/custom_msgs', '-DCMAKE_INSTALL_PREFIX=/home/vedant/OdriveCANControl/install/custom_msgs'], 'cwd': '/home/vedant/OdriveCANControl/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SSH_CLIENT', '192.168.0.6 33990 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/vedant/OdriveCANControl/src/install/custom_msgs/lib:/home/vedant/OdriveCANControl/install/custom_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant/OdriveCANControl'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b0b15bc1-e291-4034-babf-68860fb26e32.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/vedant/OdriveCANControl/install:/home/vedant/OdriveCANControl/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-bddb7e77dc.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/src/install/controller:/home/vedant/OdriveCANControl/src/install/custom_msgs:/home/vedant/OdriveCANControl/src/install/encoder:/home/vedant/OdriveCANControl/install/controller:/home/vedant/OdriveCANControl/install/custom_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/vedant/OdriveCANControl/build/custom_msgs'), ('SSH_CONNECTION', '192.168.0.6 33990 192.168.0.5 22'), ('PYTHONPATH', '/home/vedant/OdriveCANControl/build/controller/src:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/src/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/src/install/custom_msgs/local/lib/python3.10/dist-packages:/home/vedant/OdriveCANControl/src/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/src/install/custom_msgs:/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/src/install/controller:/home/vedant/OdriveCANControl/src/install/encoder:/home/vedant/OdriveCANControl/install/controller:/opt/ros/humble')]), 'shell': False}
+[0.188783] (-) TimerEvent: {}
+[0.289638] (-) TimerEvent: {}
+[0.390489] (-) TimerEvent: {}
+[0.491173] (-) TimerEvent: {}
+[0.592166] (-) TimerEvent: {}
+[0.693052] (-) TimerEvent: {}
+[0.737273] (custom_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.793266] (-) TimerEvent: {}
+[0.894026] (-) TimerEvent: {}
+[0.995826] (-) TimerEvent: {}
+[1.097496] (-) TimerEvent: {}
+[1.199308] (-) TimerEvent: {}
+[1.301064] (-) TimerEvent: {}
+[1.404566] (-) TimerEvent: {}
+[1.448231] (custom_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.504787] (-) TimerEvent: {}
+[1.516208] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.605034] (-) TimerEvent: {}
+[1.705970] (-) TimerEvent: {}
+[1.864721] (-) TimerEvent: {}
+[1.965618] (-) TimerEvent: {}
+[2.067369] (-) TimerEvent: {}
+[2.169009] (-) TimerEvent: {}
+[2.270564] (-) TimerEvent: {}
+[2.365414] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.370763] (-) TimerEvent: {}
+[2.438688] (custom_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.458388] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.459095] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.470955] (-) TimerEvent: {}
+[2.555748] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.571181] (-) TimerEvent: {}
+[2.674279] (-) TimerEvent: {}
+[2.777191] (-) TimerEvent: {}
+[2.878092] (-) TimerEvent: {}
+[2.979053] (-) TimerEvent: {}
+[3.079782] (-) TimerEvent: {}
+[3.180606] (-) TimerEvent: {}
+[3.281472] (-) TimerEvent: {}
+[3.382384] (-) TimerEvent: {}
+[3.483331] (-) TimerEvent: {}
+[3.584236] (-) TimerEvent: {}
+[3.585206] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.641553] (custom_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.649339] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.651999] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.684450] (-) TimerEvent: {}
+[3.711772] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.784687] (-) TimerEvent: {}
+[3.885679] (-) TimerEvent: {}
+[3.991128] (-) TimerEvent: {}
+[4.094176] (-) TimerEvent: {}
+[4.197379] (-) TimerEvent: {}
+[4.299022] (-) TimerEvent: {}
+[4.400620] (-) TimerEvent: {}
+[4.504569] (-) TimerEvent: {}
+[4.606400] (-) TimerEvent: {}
+[4.708232] (-) TimerEvent: {}
+[4.810316] (-) TimerEvent: {}
+[4.913607] (-) TimerEvent: {}
+[5.014638] (-) TimerEvent: {}
+[5.116957] (-) TimerEvent: {}
+[5.218840] (-) TimerEvent: {}
+[5.320685] (-) TimerEvent: {}
+[5.422402] (-) TimerEvent: {}
+[5.524190] (-) TimerEvent: {}
+[5.627915] (-) TimerEvent: {}
+[5.729744] (-) TimerEvent: {}
+[5.832460] (-) TimerEvent: {}
+[5.934116] (-) TimerEvent: {}
+[6.035931] (-) TimerEvent: {}
+[6.137637] (-) TimerEvent: {}
+[6.239838] (-) TimerEvent: {}
+[6.341529] (-) TimerEvent: {}
+[6.441424] (custom_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[6.442191] (-) TimerEvent: {}
+[6.543903] (-) TimerEvent: {}
+[6.645516] (-) TimerEvent: {}
+[6.747200] (-) TimerEvent: {}
+[6.850430] (-) TimerEvent: {}
+[6.952048] (-) TimerEvent: {}
+[7.053753] (-) TimerEvent: {}
+[7.155517] (-) TimerEvent: {}
+[7.257314] (-) TimerEvent: {}
+[7.360200] (-) TimerEvent: {}
+[7.463675] (-) TimerEvent: {}
+[7.564698] (-) TimerEvent: {}
+[7.666384] (-) TimerEvent: {}
+[7.769758] (-) TimerEvent: {}
+[7.790403] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[7.838990] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.869956] (-) TimerEvent: {}
+[7.959954] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.970195] (-) TimerEvent: {}
+[8.071654] (-) TimerEvent: {}
+[8.175129] (-) TimerEvent: {}
+[8.276830] (-) TimerEvent: {}
+[8.378448] (-) TimerEvent: {}
+[8.482690] (-) TimerEvent: {}
+[8.551110] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.584740] (-) TimerEvent: {}
+[8.685844] (-) TimerEvent: {}
+[8.787535] (-) TimerEvent: {}
+[8.888914] (-) TimerEvent: {}
+[8.990300] (-) TimerEvent: {}
+[9.050696] (custom_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[9.090505] (-) TimerEvent: {}
+[9.191302] (-) TimerEvent: {}
+[9.294085] (-) TimerEvent: {}
+[9.395970] (-) TimerEvent: {}
+[9.500071] (-) TimerEvent: {}
+[9.600895] (-) TimerEvent: {}
+[9.701649] (-) TimerEvent: {}
+[9.803253] (-) TimerEvent: {}
+[9.904103] (-) TimerEvent: {}
+[10.004988] (-) TimerEvent: {}
+[10.107372] (-) TimerEvent: {}
+[10.212149] (-) TimerEvent: {}
+[10.313533] (-) TimerEvent: {}
+[10.415329] (-) TimerEvent: {}
+[10.516743] (-) TimerEvent: {}
+[10.619408] (-) TimerEvent: {}
+[10.720488] (-) TimerEvent: {}
+[10.821213] (-) TimerEvent: {}
+[10.922112] (-) TimerEvent: {}
+[11.023405] (-) TimerEvent: {}
+[11.124329] (-) TimerEvent: {}
+[11.225158] (-) TimerEvent: {}
+[11.325964] (-) TimerEvent: {}
+[11.426907] (-) TimerEvent: {}
+[11.528826] (-) TimerEvent: {}
+[11.633641] (-) TimerEvent: {}
+[11.734500] (-) TimerEvent: {}
+[11.835382] (-) TimerEvent: {}
+[11.936339] (-) TimerEvent: {}
+[12.037197] (-) TimerEvent: {}
+[12.138009] (-) TimerEvent: {}
+[12.238930] (-) TimerEvent: {}
+[12.340231] (-) TimerEvent: {}
+[12.441151] (-) TimerEvent: {}
+[12.542034] (-) TimerEvent: {}
+[12.643488] (-) TimerEvent: {}
+[12.744335] (-) TimerEvent: {}
+[12.761059] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[12.844528] (-) TimerEvent: {}
+[12.945408] (-) TimerEvent: {}
+[13.046358] (-) TimerEvent: {}
+[13.147263] (-) TimerEvent: {}
+[13.248586] (-) TimerEvent: {}
+[13.349412] (-) TimerEvent: {}
+[13.450160] (-) TimerEvent: {}
+[13.550865] (-) TimerEvent: {}
+[13.653828] (-) TimerEvent: {}
+[13.755044] (-) TimerEvent: {}
+[13.855947] (-) TimerEvent: {}
+[13.958935] (-) TimerEvent: {}
+[14.060658] (-) TimerEvent: {}
+[14.162226] (-) TimerEvent: {}
+[14.264362] (-) TimerEvent: {}
+[14.365263] (-) TimerEvent: {}
+[14.466116] (-) TimerEvent: {}
+[14.567005] (-) TimerEvent: {}
+[14.667905] (-) TimerEvent: {}
+[14.769001] (-) TimerEvent: {}
+[14.870030] (-) TimerEvent: {}
+[14.971242] (-) TimerEvent: {}
+[15.072995] (-) TimerEvent: {}
+[15.174593] (-) TimerEvent: {}
+[15.276352] (-) TimerEvent: {}
+[15.378001] (-) TimerEvent: {}
+[15.479630] (-) TimerEvent: {}
+[15.582729] (-) TimerEvent: {}
+[15.684612] (-) TimerEvent: {}
+[15.718879] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[15.784803] (-) TimerEvent: {}
+[15.886345] (-) TimerEvent: {}
+[15.990033] (-) TimerEvent: {}
+[16.091854] (-) TimerEvent: {}
+[16.193806] (-) TimerEvent: {}
+[16.297185] (-) TimerEvent: {}
+[16.398086] (-) TimerEvent: {}
+[16.498919] (-) TimerEvent: {}
+[16.600617] (-) TimerEvent: {}
+[16.702296] (-) TimerEvent: {}
+[16.804082] (-) TimerEvent: {}
+[16.905732] (-) TimerEvent: {}
+[17.008950] (-) TimerEvent: {}
+[17.142015] (-) TimerEvent: {}
+[17.243937] (-) TimerEvent: {}
+[17.345422] (-) TimerEvent: {}
+[17.449246] (-) TimerEvent: {}
+[17.550536] (-) TimerEvent: {}
+[17.652197] (-) TimerEvent: {}
+[17.755424] (-) TimerEvent: {}
+[17.859390] (-) TimerEvent: {}
+[17.961174] (-) TimerEvent: {}
+[18.062875] (-) TimerEvent: {}
+[18.165506] (-) TimerEvent: {}
+[18.269644] (-) TimerEvent: {}
+[18.373498] (-) TimerEvent: {}
+[18.475283] (-) TimerEvent: {}
+[18.578133] (-) TimerEvent: {}
+[18.679781] (-) TimerEvent: {}
+[18.781664] (-) TimerEvent: {}
+[18.883954] (-) TimerEvent: {}
+[18.985604] (-) TimerEvent: {}
+[19.087029] (-) TimerEvent: {}
+[19.188525] (-) TimerEvent: {}
+[19.290033] (-) TimerEvent: {}
+[19.393049] (-) TimerEvent: {}
+[19.494828] (-) TimerEvent: {}
+[19.596671] (-) TimerEvent: {}
+[19.666800] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[19.696862] (-) TimerEvent: {}
+[19.798522] (-) TimerEvent: {}
+[19.900302] (-) TimerEvent: {}
+[19.995026] (custom_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[20.000463] (-) TimerEvent: {}
+[20.023422] (custom_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[20.100676] (-) TimerEvent: {}
+[20.201498] (-) TimerEvent: {}
+[20.290117] (custom_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[20.291416] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[20.292273] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[20.292905] (custom_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[20.301723] (-) TimerEvent: {}
+[20.403909] (-) TimerEvent: {}
+[20.488492] (custom_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[20.505993] (-) TimerEvent: {}
+[20.606962] (-) TimerEvent: {}
+[20.707845] (-) TimerEvent: {}
+[20.808903] (-) TimerEvent: {}
+[20.909923] (-) TimerEvent: {}
+[21.011117] (-) TimerEvent: {}
+[21.062382] (custom_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[21.111301] (-) TimerEvent: {}
+[21.212829] (-) TimerEvent: {}
+[21.314431] (-) TimerEvent: {}
+[21.416002] (-) TimerEvent: {}
+[21.519407] (-) TimerEvent: {}
+[21.620891] (-) TimerEvent: {}
+[21.722267] (-) TimerEvent: {}
+[21.824528] (-) TimerEvent: {}
+[21.875161] (custom_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[21.895123] (custom_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[21.927245] (-) TimerEvent: {}
+[21.935347] (custom_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[22.027495] (-) TimerEvent: {}
+[22.167282] (-) TimerEvent: {}
+[22.269247] (-) TimerEvent: {}
+[22.374627] (-) TimerEvent: {}
+[22.478793] (-) TimerEvent: {}
+[22.581508] (-) TimerEvent: {}
+[22.682609] (-) TimerEvent: {}
+[22.785219] (-) TimerEvent: {}
+[22.886984] (-) TimerEvent: {}
+[22.988681] (-) TimerEvent: {}
+[23.041254] (custom_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[23.088958] (-) TimerEvent: {}
+[23.191153] (-) TimerEvent: {}
+[23.293613] (-) TimerEvent: {}
+[23.394923] (-) TimerEvent: {}
+[23.511948] (-) TimerEvent: {}
+[23.555960] (custom_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/vedant/OdriveCANControl/build/custom_msgs\n'}
+[23.606603] (custom_msgs) CommandEnded: {'returncode': 0}
+[23.608674] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[23.608902] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vedant/OdriveCANControl/build/custom_msgs', '--', '-j4', '-l4'], 'cwd': '/home/vedant/OdriveCANControl/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SSH_CLIENT', '192.168.0.6 33990 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/vedant/OdriveCANControl/src/install/custom_msgs/lib:/home/vedant/OdriveCANControl/install/custom_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant/OdriveCANControl'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b0b15bc1-e291-4034-babf-68860fb26e32.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/vedant/OdriveCANControl/install:/home/vedant/OdriveCANControl/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-bddb7e77dc.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/src/install/controller:/home/vedant/OdriveCANControl/src/install/custom_msgs:/home/vedant/OdriveCANControl/src/install/encoder:/home/vedant/OdriveCANControl/install/controller:/home/vedant/OdriveCANControl/install/custom_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/vedant/OdriveCANControl/build/custom_msgs'), ('SSH_CONNECTION', '192.168.0.6 33990 192.168.0.5 22'), ('PYTHONPATH', '/home/vedant/OdriveCANControl/build/controller/src:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/src/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/src/install/custom_msgs/local/lib/python3.10/dist-packages:/home/vedant/OdriveCANControl/src/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/src/install/custom_msgs:/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/src/install/controller:/home/vedant/OdriveCANControl/src/install/encoder:/home/vedant/OdriveCANControl/install/controller:/opt/ros/humble')]), 'shell': False}
+[23.614057] (-) TimerEvent: {}
+[23.715013] (-) TimerEvent: {}
+[23.815944] (-) TimerEvent: {}
+[23.917607] (-) TimerEvent: {}
+[24.018847] (-) TimerEvent: {}
+[24.120891] (-) TimerEvent: {}
+[24.222589] (-) TimerEvent: {}
+[24.323980] (-) TimerEvent: {}
+[24.340441] (custom_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[24.424158] (-) TimerEvent: {}
+[24.525734] (-) TimerEvent: {}
+[24.628525] (-) TimerEvent: {}
+[24.741580] (-) TimerEvent: {}
+[24.847624] (-) TimerEvent: {}
+[24.957324] (-) TimerEvent: {}
+[25.059200] (-) TimerEvent: {}
+[25.161166] (-) TimerEvent: {}
+[25.263030] (-) TimerEvent: {}
+[25.365063] (-) TimerEvent: {}
+[25.471903] (-) TimerEvent: {}
+[25.573662] (-) TimerEvent: {}
+[25.675351] (-) TimerEvent: {}
+[25.777309] (-) TimerEvent: {}
+[25.879606] (-) TimerEvent: {}
+[25.981440] (-) TimerEvent: {}
+[26.083635] (-) TimerEvent: {}
+[26.184631] (-) TimerEvent: {}
+[26.286418] (-) TimerEvent: {}
+[26.388176] (-) TimerEvent: {}
+[26.489835] (-) TimerEvent: {}
+[26.591729] (-) TimerEvent: {}
+[26.693544] (-) TimerEvent: {}
+[26.797452] (-) TimerEvent: {}
+[26.899375] (-) TimerEvent: {}
+[27.001189] (-) TimerEvent: {}
+[27.102906] (-) TimerEvent: {}
+[27.331924] (-) TimerEvent: {}
+[27.433628] (-) TimerEvent: {}
+[27.534495] (-) TimerEvent: {}
+[27.640481] (-) TimerEvent: {}
+[27.744157] (-) TimerEvent: {}
+[27.846581] (-) TimerEvent: {}
+[27.948462] (-) TimerEvent: {}
+[28.050109] (-) TimerEvent: {}
+[28.151729] (-) TimerEvent: {}
+[28.253516] (-) TimerEvent: {}
+[28.355499] (-) TimerEvent: {}
+[28.457322] (-) TimerEvent: {}
+[28.559243] (-) TimerEvent: {}
+[28.660937] (-) TimerEvent: {}
+[28.763064] (-) TimerEvent: {}
+[28.864905] (-) TimerEvent: {}
+[28.966770] (-) TimerEvent: {}
+[29.075650] (-) TimerEvent: {}
+[29.180027] (-) TimerEvent: {}
+[29.281036] (-) TimerEvent: {}
+[29.382002] (-) TimerEvent: {}
+[29.483121] (-) TimerEvent: {}
+[29.584169] (-) TimerEvent: {}
+[29.687970] (-) TimerEvent: {}
+[29.788942] (-) TimerEvent: {}
+[29.889908] (-) TimerEvent: {}
+[29.990823] (-) TimerEvent: {}
+[30.092697] (-) TimerEvent: {}
+[30.194474] (-) TimerEvent: {}
+[30.298235] (-) TimerEvent: {}
+[30.400066] (-) TimerEvent: {}
+[30.502041] (-) TimerEvent: {}
+[30.603923] (-) TimerEvent: {}
+[30.705765] (-) TimerEvent: {}
+[30.808149] (-) TimerEvent: {}
+[30.910367] (-) TimerEvent: {}
+[31.012897] (-) TimerEvent: {}
+[31.116736] (-) TimerEvent: {}
+[31.218415] (-) TimerEvent: {}
+[31.320692] (-) TimerEvent: {}
+[31.422418] (-) TimerEvent: {}
+[31.524147] (-) TimerEvent: {}
+[31.625817] (-) TimerEvent: {}
+[31.727536] (-) TimerEvent: {}
+[31.829407] (-) TimerEvent: {}
+[31.931382] (-) TimerEvent: {}
+[32.033665] (-) TimerEvent: {}
+[32.135735] (-) TimerEvent: {}
+[32.253379] (-) TimerEvent: {}
+[32.355110] (-) TimerEvent: {}
+[32.456904] (-) TimerEvent: {}
+[32.559099] (-) TimerEvent: {}
+[32.661813] (-) TimerEvent: {}
+[32.764597] (-) TimerEvent: {}
+[32.866505] (-) TimerEvent: {}
+[32.969049] (-) TimerEvent: {}
+[33.071030] (-) TimerEvent: {}
+[33.172799] (-) TimerEvent: {}
+[33.249929] (custom_msgs) StdoutLine: {'line': b'[  2%] Built target custom_msgs__cpp\n'}
+[33.273089] (-) TimerEvent: {}
+[33.374813] (-) TimerEvent: {}
+[33.479727] (-) TimerEvent: {}
+[33.575778] (custom_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_custom_msgs\n'}
+[33.579915] (-) TimerEvent: {}
+[33.683235] (-) TimerEvent: {}
+[33.703317] (custom_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[33.783560] (-) TimerEvent: {}
+[33.885266] (-) TimerEvent: {}
+[33.986940] (-) TimerEvent: {}
+[34.088699] (-) TimerEvent: {}
+[34.190561] (-) TimerEvent: {}
+[34.292291] (-) TimerEvent: {}
+[34.394297] (-) TimerEvent: {}
+[34.495826] (-) TimerEvent: {}
+[34.599373] (-) TimerEvent: {}
+[34.701150] (-) TimerEvent: {}
+[34.803027] (-) TimerEvent: {}
+[34.905245] (-) TimerEvent: {}
+[35.006836] (-) TimerEvent: {}
+[35.108462] (-) TimerEvent: {}
+[35.210145] (-) TimerEvent: {}
+[35.314596] (-) TimerEvent: {}
+[35.416301] (-) TimerEvent: {}
+[35.517892] (-) TimerEvent: {}
+[35.619648] (-) TimerEvent: {}
+[35.721662] (-) TimerEvent: {}
+[35.823423] (-) TimerEvent: {}
+[35.925079] (-) TimerEvent: {}
+[36.026515] (-) TimerEvent: {}
+[36.128307] (-) TimerEvent: {}
+[36.230118] (-) TimerEvent: {}
+[36.347666] (-) TimerEvent: {}
+[36.448757] (-) TimerEvent: {}
+[36.550521] (-) TimerEvent: {}
+[36.652268] (-) TimerEvent: {}
+[36.759283] (-) TimerEvent: {}
+[36.863699] (-) TimerEvent: {}
+[36.975682] (-) TimerEvent: {}
+[37.076739] (-) TimerEvent: {}
+[37.178332] (-) TimerEvent: {}
+[37.280613] (-) TimerEvent: {}
+[37.388025] (-) TimerEvent: {}
+[37.499786] (-) TimerEvent: {}
+[37.603661] (-) TimerEvent: {}
+[37.707667] (-) TimerEvent: {}
+[37.811645] (-) TimerEvent: {}
+[37.912652] (-) TimerEvent: {}
+[38.013647] (-) TimerEvent: {}
+[38.116525] (-) TimerEvent: {}
+[38.222836] (-) TimerEvent: {}
+[38.324024] (-) TimerEvent: {}
+[38.425746] (-) TimerEvent: {}
+[38.527555] (-) TimerEvent: {}
+[38.629346] (-) TimerEvent: {}
+[38.731673] (-) TimerEvent: {}
+[38.833433] (-) TimerEvent: {}
+[38.934501] (-) TimerEvent: {}
+[39.046772] (-) TimerEvent: {}
+[39.151643] (-) TimerEvent: {}
+[39.253720] (-) TimerEvent: {}
+[39.356004] (-) TimerEvent: {}
+[39.458054] (-) TimerEvent: {}
+[39.559836] (-) TimerEvent: {}
+[39.663708] (-) TimerEvent: {}
+[39.765764] (-) TimerEvent: {}
+[39.867739] (-) TimerEvent: {}
+[39.969469] (-) TimerEvent: {}
+[40.073959] (-) TimerEvent: {}
+[40.081766] (custom_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/motion_state__type_support.cpp.o\x1b[0m\n'}
+[40.174179] (-) TimerEvent: {}
+[40.286778] (-) TimerEvent: {}
+[40.387563] (-) TimerEvent: {}
+[40.488784] (-) TimerEvent: {}
+[40.589803] (-) TimerEvent: {}
+[40.692498] (-) TimerEvent: {}
+[40.794133] (-) TimerEvent: {}
+[40.902350] (-) TimerEvent: {}
+[41.004553] (-) TimerEvent: {}
+[41.107117] (-) TimerEvent: {}
+[41.209213] (-) TimerEvent: {}
+[41.311092] (-) TimerEvent: {}
+[41.413182] (-) TimerEvent: {}
+[41.514996] (-) TimerEvent: {}
+[41.619343] (-) TimerEvent: {}
+[41.721430] (-) TimerEvent: {}
+[41.823482] (-) TimerEvent: {}
+[41.924844] (-) TimerEvent: {}
+[42.026284] (-) TimerEvent: {}
+[42.128791] (-) TimerEvent: {}
+[42.230642] (-) TimerEvent: {}
+[42.355757] (-) TimerEvent: {}
+[42.457449] (-) TimerEvent: {}
+[42.568994] (-) TimerEvent: {}
+[42.669975] (-) TimerEvent: {}
+[42.772906] (-) TimerEvent: {}
+[42.876307] (-) TimerEvent: {}
+[42.980500] (-) TimerEvent: {}
+[43.081784] (-) TimerEvent: {}
+[43.185449] (-) TimerEvent: {}
+[43.287323] (-) TimerEvent: {}
+[43.390477] (-) TimerEvent: {}
+[43.492680] (-) TimerEvent: {}
+[43.595438] (-) TimerEvent: {}
+[43.697288] (-) TimerEvent: {}
+[43.799193] (-) TimerEvent: {}
+[43.901401] (-) TimerEvent: {}
+[44.003583] (-) TimerEvent: {}
+[44.105452] (-) TimerEvent: {}
+[44.208087] (-) TimerEvent: {}
+[44.310970] (-) TimerEvent: {}
+[44.414812] (-) TimerEvent: {}
+[44.517550] (-) TimerEvent: {}
+[44.620848] (-) TimerEvent: {}
+[44.725429] (-) TimerEvent: {}
+[44.828594] (-) TimerEvent: {}
+[44.936575] (-) TimerEvent: {}
+[45.038964] (-) TimerEvent: {}
+[45.145324] (-) TimerEvent: {}
+[45.250024] (-) TimerEvent: {}
+[45.351874] (-) TimerEvent: {}
+[45.453573] (-) TimerEvent: {}
+[45.557132] (-) TimerEvent: {}
+[45.658842] (-) TimerEvent: {}
+[45.760301] (-) TimerEvent: {}
+[45.862810] (-) TimerEvent: {}
+[45.964543] (-) TimerEvent: {}
+[46.068315] (-) TimerEvent: {}
+[46.170432] (-) TimerEvent: {}
+[46.273876] (-) TimerEvent: {}
+[46.378227] (-) TimerEvent: {}
+[46.480303] (-) TimerEvent: {}
+[46.581769] (-) TimerEvent: {}
+[46.686345] (-) TimerEvent: {}
+[46.788098] (-) TimerEvent: {}
+[46.890578] (-) TimerEvent: {}
+[46.992493] (-) TimerEvent: {}
+[47.094503] (-) TimerEvent: {}
+[47.196211] (-) TimerEvent: {}
+[47.297725] (-) TimerEvent: {}
+[47.336733] (custom_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/srv/detail/dds_fastrtps/o_drive_command__type_support.cpp.o\x1b[0m\n'}
+[47.397976] (-) TimerEvent: {}
+[47.509437] (-) TimerEvent: {}
+[47.610177] (-) TimerEvent: {}
+[47.712556] (-) TimerEvent: {}
+[47.817537] (-) TimerEvent: {}
+[47.919181] (-) TimerEvent: {}
+[48.020587] (-) TimerEvent: {}
+[48.122016] (-) TimerEvent: {}
+[48.226161] (-) TimerEvent: {}
+[48.329708] (-) TimerEvent: {}
+[48.431229] (-) TimerEvent: {}
+[48.533032] (-) TimerEvent: {}
+[48.634740] (-) TimerEvent: {}
+[48.736423] (-) TimerEvent: {}
+[48.839511] (-) TimerEvent: {}
+[48.940327] (-) TimerEvent: {}
+[49.042071] (-) TimerEvent: {}
+[49.143865] (-) TimerEvent: {}
+[49.246755] (-) TimerEvent: {}
+[49.348523] (-) TimerEvent: {}
+[49.450238] (-) TimerEvent: {}
+[49.551920] (-) TimerEvent: {}
+[49.656040] (-) TimerEvent: {}
+[49.757708] (-) TimerEvent: {}
+[49.859348] (-) TimerEvent: {}
+[49.962338] (-) TimerEvent: {}
+[50.069419] (-) TimerEvent: {}
+[50.171355] (-) TimerEvent: {}
+[50.274368] (-) TimerEvent: {}
+[50.378188] (-) TimerEvent: {}
+[50.479900] (-) TimerEvent: {}
+[50.581124] (-) TimerEvent: {}
+[50.686617] (-) TimerEvent: {}
+[50.788358] (-) TimerEvent: {}
+[50.890771] (-) TimerEvent: {}
+[50.994505] (-) TimerEvent: {}
+[51.098523] (-) TimerEvent: {}
+[51.200270] (-) TimerEvent: {}
+[51.302346] (-) TimerEvent: {}
+[51.407773] (-) TimerEvent: {}
+[51.508866] (-) TimerEvent: {}
+[51.609814] (-) TimerEvent: {}
+[51.710559] (-) TimerEvent: {}
+[51.811307] (-) TimerEvent: {}
+[51.912338] (-) TimerEvent: {}
+[52.014081] (-) TimerEvent: {}
+[52.115961] (-) TimerEvent: {}
+[52.218275] (-) TimerEvent: {}
+[52.319914] (-) TimerEvent: {}
+[52.437477] (-) TimerEvent: {}
+[52.538501] (-) TimerEvent: {}
+[52.639497] (-) TimerEvent: {}
+[52.740490] (-) TimerEvent: {}
+[52.841452] (-) TimerEvent: {}
+[52.938279] (custom_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[52.942593] (-) TimerEvent: {}
+[53.048083] (-) TimerEvent: {}
+[53.149062] (-) TimerEvent: {}
+[53.250064] (-) TimerEvent: {}
+[53.351215] (-) TimerEvent: {}
+[53.454322] (-) TimerEvent: {}
+[53.557834] (-) TimerEvent: {}
+[53.659754] (-) TimerEvent: {}
+[53.729885] (custom_msgs) StdoutLine: {'line': b'[ 12%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[53.759934] (-) TimerEvent: {}
+[53.837449] (custom_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[53.860121] (-) TimerEvent: {}
+[53.962058] (-) TimerEvent: {}
+[54.063729] (-) TimerEvent: {}
+[54.165714] (-) TimerEvent: {}
+[54.267150] (-) TimerEvent: {}
+[54.368813] (-) TimerEvent: {}
+[54.470382] (-) TimerEvent: {}
+[54.572016] (-) TimerEvent: {}
+[54.673697] (-) TimerEvent: {}
+[54.776341] (-) TimerEvent: {}
+[54.878101] (-) TimerEvent: {}
+[54.979570] (-) TimerEvent: {}
+[55.082641] (-) TimerEvent: {}
+[55.185529] (-) TimerEvent: {}
+[55.287990] (-) TimerEvent: {}
+[55.389519] (-) TimerEvent: {}
+[55.494287] (-) TimerEvent: {}
+[55.597850] (-) TimerEvent: {}
+[55.699527] (-) TimerEvent: {}
+[55.800585] (-) TimerEvent: {}
+[55.901461] (-) TimerEvent: {}
+[56.002432] (-) TimerEvent: {}
+[56.106468] (-) TimerEvent: {}
+[56.208058] (-) TimerEvent: {}
+[56.309493] (-) TimerEvent: {}
+[56.410857] (-) TimerEvent: {}
+[56.512475] (-) TimerEvent: {}
+[56.614254] (-) TimerEvent: {}
+[56.716254] (-) TimerEvent: {}
+[56.818403] (-) TimerEvent: {}
+[56.920095] (-) TimerEvent: {}
+[57.021533] (-) TimerEvent: {}
+[57.123411] (-) TimerEvent: {}
+[57.180853] (custom_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/motion_state__type_support.cpp.o\x1b[0m\n'}
+[57.224331] (-) TimerEvent: {}
+[57.327172] (-) TimerEvent: {}
+[57.467614] (-) TimerEvent: {}
+[57.568964] (-) TimerEvent: {}
+[57.671652] (-) TimerEvent: {}
+[57.772508] (-) TimerEvent: {}
+[57.873712] (-) TimerEvent: {}
+[57.974501] (-) TimerEvent: {}
+[58.075301] (-) TimerEvent: {}
+[58.176452] (-) TimerEvent: {}
+[58.278163] (-) TimerEvent: {}
+[58.379876] (-) TimerEvent: {}
+[58.481421] (-) TimerEvent: {}
+[58.587843] (-) TimerEvent: {}
+[58.691322] (-) TimerEvent: {}
+[58.794194] (-) TimerEvent: {}
+[58.897899] (-) TimerEvent: {}
+[58.999558] (-) TimerEvent: {}
+[59.101322] (-) TimerEvent: {}
+[59.203698] (-) TimerEvent: {}
+[59.304684] (-) TimerEvent: {}
+[59.413339] (-) TimerEvent: {}
+[59.514587] (-) TimerEvent: {}
+[59.616475] (-) TimerEvent: {}
+[59.718170] (-) TimerEvent: {}
+[59.819827] (-) TimerEvent: {}
+[59.920521] (-) TimerEvent: {}
+[60.022542] (-) TimerEvent: {}
+[60.124424] (-) TimerEvent: {}
+[60.225726] (-) TimerEvent: {}
+[60.327383] (-) TimerEvent: {}
+[60.429327] (-) TimerEvent: {}
+[60.534510] (-) TimerEvent: {}
+[60.637555] (-) TimerEvent: {}
+[60.740408] (-) TimerEvent: {}
+[60.842533] (-) TimerEvent: {}
+[60.947029] (-) TimerEvent: {}
+[61.048764] (-) TimerEvent: {}
+[61.150415] (-) TimerEvent: {}
+[61.252054] (-) TimerEvent: {}
+[61.353758] (-) TimerEvent: {}
+[61.455525] (-) TimerEvent: {}
+[61.557208] (-) TimerEvent: {}
+[61.658962] (-) TimerEvent: {}
+[61.762390] (-) TimerEvent: {}
+[61.865064] (-) TimerEvent: {}
+[61.967056] (-) TimerEvent: {}
+[62.068843] (-) TimerEvent: {}
+[62.170409] (-) TimerEvent: {}
+[62.278748] (-) TimerEvent: {}
+[62.380421] (-) TimerEvent: {}
+[62.482361] (-) TimerEvent: {}
+[62.586761] (-) TimerEvent: {}
+[62.689618] (-) TimerEvent: {}
+[62.791253] (-) TimerEvent: {}
+[62.894843] (-) TimerEvent: {}
+[62.996499] (-) TimerEvent: {}
+[63.098181] (-) TimerEvent: {}
+[63.199800] (-) TimerEvent: {}
+[63.302046] (-) TimerEvent: {}
+[63.306113] (custom_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/srv/detail/o_drive_command__type_support.cpp.o\x1b[0m\n'}
+[63.402254] (-) TimerEvent: {}
+[63.503576] (-) TimerEvent: {}
+[63.606850] (-) TimerEvent: {}
+[63.707752] (-) TimerEvent: {}
+[63.808631] (-) TimerEvent: {}
+[63.909321] (-) TimerEvent: {}
+[64.010178] (-) TimerEvent: {}
+[64.111850] (-) TimerEvent: {}
+[64.214380] (-) TimerEvent: {}
+[64.316141] (-) TimerEvent: {}
+[64.418171] (-) TimerEvent: {}
+[64.519744] (-) TimerEvent: {}
+[64.622412] (-) TimerEvent: {}
+[64.724152] (-) TimerEvent: {}
+[64.825870] (-) TimerEvent: {}
+[64.929729] (-) TimerEvent: {}
+[65.033480] (-) TimerEvent: {}
+[65.135067] (-) TimerEvent: {}
+[65.236800] (-) TimerEvent: {}
+[65.338457] (-) TimerEvent: {}
+[65.440264] (-) TimerEvent: {}
+[65.548451] (-) TimerEvent: {}
+[65.650333] (-) TimerEvent: {}
+[65.753654] (-) TimerEvent: {}
+[65.855546] (-) TimerEvent: {}
+[65.957320] (-) TimerEvent: {}
+[66.058995] (-) TimerEvent: {}
+[66.160922] (-) TimerEvent: {}
+[66.265468] (-) TimerEvent: {}
+[66.367292] (-) TimerEvent: {}
+[66.469368] (-) TimerEvent: {}
+[66.570237] (-) TimerEvent: {}
+[66.671059] (-) TimerEvent: {}
+[66.773425] (-) TimerEvent: {}
+[66.874318] (-) TimerEvent: {}
+[66.975222] (-) TimerEvent: {}
+[67.076122] (-) TimerEvent: {}
+[67.176917] (-) TimerEvent: {}
+[67.277748] (-) TimerEvent: {}
+[67.378506] (-) TimerEvent: {}
+[67.479242] (-) TimerEvent: {}
+[67.580160] (-) TimerEvent: {}
+[67.680984] (-) TimerEvent: {}
+[67.782272] (-) TimerEvent: {}
+[67.883168] (-) TimerEvent: {}
+[67.986425] (-) TimerEvent: {}
+[68.087317] (-) TimerEvent: {}
+[68.188237] (-) TimerEvent: {}
+[68.289107] (-) TimerEvent: {}
+[68.389838] (-) TimerEvent: {}
+[68.492234] (-) TimerEvent: {}
+[68.555091] (custom_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[68.594310] (-) TimerEvent: {}
+[68.698924] (-) TimerEvent: {}
+[68.800784] (-) TimerEvent: {}
+[68.902517] (-) TimerEvent: {}
+[69.004213] (-) TimerEvent: {}
+[69.106220] (-) TimerEvent: {}
+[69.207861] (-) TimerEvent: {}
+[69.290159] (custom_msgs) StdoutLine: {'line': b'[ 23%] Built target custom_msgs__rosidl_typesupport_introspection_cpp\n'}
+[69.308066] (-) TimerEvent: {}
+[69.409841] (-) TimerEvent: {}
+[69.511566] (-) TimerEvent: {}
+[69.614214] (-) TimerEvent: {}
+[69.715834] (-) TimerEvent: {}
+[69.817600] (-) TimerEvent: {}
+[69.920151] (-) TimerEvent: {}
+[70.022367] (-) TimerEvent: {}
+[70.126506] (-) TimerEvent: {}
+[70.229471] (-) TimerEvent: {}
+[70.330943] (-) TimerEvent: {}
+[70.436521] (-) TimerEvent: {}
+[70.538199] (-) TimerEvent: {}
+[70.639819] (-) TimerEvent: {}
+[70.742434] (-) TimerEvent: {}
+[70.844010] (-) TimerEvent: {}
+[70.945692] (-) TimerEvent: {}
+[71.047653] (-) TimerEvent: {}
+[71.149377] (-) TimerEvent: {}
+[71.250855] (-) TimerEvent: {}
+[71.354236] (-) TimerEvent: {}
+[71.455906] (-) TimerEvent: {}
+[71.559010] (-) TimerEvent: {}
+[71.659852] (-) TimerEvent: {}
+[71.762045] (-) TimerEvent: {}
+[71.863612] (-) TimerEvent: {}
+[71.967021] (-) TimerEvent: {}
+[72.069656] (-) TimerEvent: {}
+[72.170510] (-) TimerEvent: {}
+[72.279635] (-) TimerEvent: {}
+[72.388150] (-) TimerEvent: {}
+[72.515618] (-) TimerEvent: {}
+[72.624486] (-) TimerEvent: {}
+[72.728605] (-) TimerEvent: {}
+[72.831109] (-) TimerEvent: {}
+[72.932881] (-) TimerEvent: {}
+[73.036649] (-) TimerEvent: {}
+[73.138289] (-) TimerEvent: {}
+[73.240053] (-) TimerEvent: {}
+[73.341659] (-) TimerEvent: {}
+[73.410343] (custom_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[73.416660] (custom_msgs) StdoutLine: {'line': b'creating custom_msgs.egg-info\n'}
+[73.419783] (custom_msgs) StdoutLine: {'line': b'writing custom_msgs.egg-info/PKG-INFO\n'}
+[73.420977] (custom_msgs) StdoutLine: {'line': b'writing dependency_links to custom_msgs.egg-info/dependency_links.txt\n'}
+[73.424633] (custom_msgs) StdoutLine: {'line': b'writing top-level names to custom_msgs.egg-info/top_level.txt\n'}
+[73.427739] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[73.442896] (-) TimerEvent: {}
+[73.446925] (custom_msgs) StdoutLine: {'line': b"reading manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[73.454591] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[73.543151] (-) TimerEvent: {}
+[73.645007] (-) TimerEvent: {}
+[73.746707] (-) TimerEvent: {}
+[73.848476] (-) TimerEvent: {}
+[73.880143] (custom_msgs) StdoutLine: {'line': b'[ 23%] Built target ament_cmake_python_build_custom_msgs_egg\n'}
+[73.949871] (-) TimerEvent: {}
+[73.981059] (custom_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[74.050135] (-) TimerEvent: {}
+[74.150977] (-) TimerEvent: {}
+[74.252911] (-) TimerEvent: {}
+[74.354523] (-) TimerEvent: {}
+[74.456307] (-) TimerEvent: {}
+[74.559950] (-) TimerEvent: {}
+[74.661417] (-) TimerEvent: {}
+[74.764376] (-) TimerEvent: {}
+[74.866123] (-) TimerEvent: {}
+[74.968226] (-) TimerEvent: {}
+[75.069368] (-) TimerEvent: {}
+[75.170153] (-) TimerEvent: {}
+[75.270931] (-) TimerEvent: {}
+[75.373514] (-) TimerEvent: {}
+[75.475232] (-) TimerEvent: {}
+[75.576986] (-) TimerEvent: {}
+[75.679141] (-) TimerEvent: {}
+[75.780528] (-) TimerEvent: {}
+[75.882095] (-) TimerEvent: {}
+[75.985614] (-) TimerEvent: {}
+[76.087309] (-) TimerEvent: {}
+[76.188874] (-) TimerEvent: {}
+[76.290224] (-) TimerEvent: {}
+[76.393446] (-) TimerEvent: {}
+[76.503684] (-) TimerEvent: {}
+[76.605307] (-) TimerEvent: {}
+[76.708566] (-) TimerEvent: {}
+[76.813791] (-) TimerEvent: {}
+[76.915480] (-) TimerEvent: {}
+[77.017202] (-) TimerEvent: {}
+[77.119200] (-) TimerEvent: {}
+[77.224233] (-) TimerEvent: {}
+[77.299604] (custom_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/motion_state__type_support.cpp.o\x1b[0m\n'}
+[77.324428] (-) TimerEvent: {}
+[77.427671] (-) TimerEvent: {}
+[77.528553] (-) TimerEvent: {}
+[77.651988] (-) TimerEvent: {}
+[77.752854] (-) TimerEvent: {}
+[77.855253] (-) TimerEvent: {}
+[77.960047] (-) TimerEvent: {}
+[78.061059] (-) TimerEvent: {}
+[78.162030] (-) TimerEvent: {}
+[78.262914] (-) TimerEvent: {}
+[78.365632] (-) TimerEvent: {}
+[78.467070] (-) TimerEvent: {}
+[78.569898] (-) TimerEvent: {}
+[78.670764] (-) TimerEvent: {}
+[78.771627] (-) TimerEvent: {}
+[78.872471] (-) TimerEvent: {}
+[78.973381] (-) TimerEvent: {}
+[79.074265] (-) TimerEvent: {}
+[79.175191] (-) TimerEvent: {}
+[79.276130] (-) TimerEvent: {}
+[79.376954] (-) TimerEvent: {}
+[79.479557] (-) TimerEvent: {}
+[79.580399] (-) TimerEvent: {}
+[79.681202] (-) TimerEvent: {}
+[79.781998] (-) TimerEvent: {}
+[79.885005] (-) TimerEvent: {}
+[79.985843] (-) TimerEvent: {}
+[80.086699] (-) TimerEvent: {}
+[80.187615] (-) TimerEvent: {}
+[80.288488] (-) TimerEvent: {}
+[80.389317] (-) TimerEvent: {}
+[80.490113] (-) TimerEvent: {}
+[80.590867] (-) TimerEvent: {}
+[80.692229] (-) TimerEvent: {}
+[80.793121] (-) TimerEvent: {}
+[80.893963] (-) TimerEvent: {}
+[80.955664] (custom_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/srv/o_drive_command__type_support.cpp.o\x1b[0m\n'}
+[80.994167] (-) TimerEvent: {}
+[81.095822] (-) TimerEvent: {}
+[81.197436] (-) TimerEvent: {}
+[81.298715] (-) TimerEvent: {}
+[81.401320] (-) TimerEvent: {}
+[81.502978] (-) TimerEvent: {}
+[81.607375] (-) TimerEvent: {}
+[81.712093] (-) TimerEvent: {}
+[81.815528] (-) TimerEvent: {}
+[81.918625] (-) TimerEvent: {}
+[82.021669] (-) TimerEvent: {}
+[82.130894] (-) TimerEvent: {}
+[82.233629] (-) TimerEvent: {}
+[82.335269] (-) TimerEvent: {}
+[82.448066] (-) TimerEvent: {}
+[82.548973] (-) TimerEvent: {}
+[82.664490] (-) TimerEvent: {}
+[82.766425] (-) TimerEvent: {}
+[82.867319] (-) TimerEvent: {}
+[82.968188] (-) TimerEvent: {}
+[83.069093] (-) TimerEvent: {}
+[83.170600] (-) TimerEvent: {}
+[83.271429] (-) TimerEvent: {}
+[83.372307] (-) TimerEvent: {}
+[83.475427] (-) TimerEvent: {}
+[83.577525] (-) TimerEvent: {}
+[83.678557] (-) TimerEvent: {}
+[83.780807] (-) TimerEvent: {}
+[83.881741] (-) TimerEvent: {}
+[83.985017] (-) TimerEvent: {}
+[84.085977] (-) TimerEvent: {}
+[84.187746] (-) TimerEvent: {}
+[84.288888] (-) TimerEvent: {}
+[84.389941] (-) TimerEvent: {}
+[84.490778] (-) TimerEvent: {}
+[84.591681] (-) TimerEvent: {}
+[84.693659] (-) TimerEvent: {}
+[84.739538] (custom_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[84.793863] (-) TimerEvent: {}
+[84.894917] (-) TimerEvent: {}
+[84.995915] (-) TimerEvent: {}
+[85.097586] (-) TimerEvent: {}
+[85.174558] (custom_msgs) StdoutLine: {'line': b'[ 33%] Built target custom_msgs__rosidl_typesupport_cpp\n'}
+[85.197802] (-) TimerEvent: {}
+[85.266665] (custom_msgs) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[85.298052] (-) TimerEvent: {}
+[85.399901] (-) TimerEvent: {}
+[85.501719] (-) TimerEvent: {}
+[85.605653] (-) TimerEvent: {}
+[85.708381] (-) TimerEvent: {}
+[85.810092] (-) TimerEvent: {}
+[85.911744] (-) TimerEvent: {}
+[86.014206] (-) TimerEvent: {}
+[86.118609] (-) TimerEvent: {}
+[86.220377] (-) TimerEvent: {}
+[86.324767] (-) TimerEvent: {}
+[86.429972] (-) TimerEvent: {}
+[86.535256] (-) TimerEvent: {}
+[86.636839] (-) TimerEvent: {}
+[86.737654] (-) TimerEvent: {}
+[86.841064] (-) TimerEvent: {}
+[86.947778] (-) TimerEvent: {}
+[87.048736] (-) TimerEvent: {}
+[87.149592] (-) TimerEvent: {}
+[87.251626] (-) TimerEvent: {}
+[87.353068] (-) TimerEvent: {}
+[87.454898] (-) TimerEvent: {}
+[87.555769] (-) TimerEvent: {}
+[87.679848] (-) TimerEvent: {}
+[87.781940] (-) TimerEvent: {}
+[87.885308] (-) TimerEvent: {}
+[87.987101] (-) TimerEvent: {}
+[88.088802] (-) TimerEvent: {}
+[88.190299] (-) TimerEvent: {}
+[88.295607] (-) TimerEvent: {}
+[88.397311] (-) TimerEvent: {}
+[88.500508] (-) TimerEvent: {}
+[88.601787] (-) TimerEvent: {}
+[88.703642] (-) TimerEvent: {}
+[88.805373] (-) TimerEvent: {}
+[88.906318] (-) TimerEvent: {}
+[89.007289] (-) TimerEvent: {}
+[89.108471] (-) TimerEvent: {}
+[89.209664] (-) TimerEvent: {}
+[89.311358] (-) TimerEvent: {}
+[89.413071] (-) TimerEvent: {}
+[89.514754] (-) TimerEvent: {}
+[89.617776] (-) TimerEvent: {}
+[89.719425] (-) TimerEvent: {}
+[89.820758] (-) TimerEvent: {}
+[89.922322] (-) TimerEvent: {}
+[90.024519] (-) TimerEvent: {}
+[90.128101] (-) TimerEvent: {}
+[90.229715] (-) TimerEvent: {}
+[90.265018] (custom_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.c.o\x1b[0m\n'}
+[90.329926] (-) TimerEvent: {}
+[90.430675] (-) TimerEvent: {}
+[90.532255] (-) TimerEvent: {}
+[90.637926] (-) TimerEvent: {}
+[90.739691] (-) TimerEvent: {}
+[90.841736] (-) TimerEvent: {}
+[90.857094] (custom_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c.o\x1b[0m\n'}
+[90.941948] (-) TimerEvent: {}
+[91.044311] (-) TimerEvent: {}
+[91.148081] (-) TimerEvent: {}
+[91.251777] (-) TimerEvent: {}
+[91.353486] (-) TimerEvent: {}
+[91.455223] (-) TimerEvent: {}
+[91.557058] (-) TimerEvent: {}
+[91.665021] (-) TimerEvent: {}
+[91.770780] (-) TimerEvent: {}
+[91.796010] (custom_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[91.870973] (-) TimerEvent: {}
+[91.972589] (-) TimerEvent: {}
+[92.074538] (-) TimerEvent: {}
+[92.178701] (-) TimerEvent: {}
+[92.221184] (custom_msgs) StdoutLine: {'line': b'[ 43%] Built target custom_msgs__rosidl_generator_c\n'}
+[92.278852] (-) TimerEvent: {}
+[92.341701] (custom_msgs) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[92.379053] (-) TimerEvent: {}
+[92.480997] (-) TimerEvent: {}
+[92.582673] (-) TimerEvent: {}
+[92.707084] (-) TimerEvent: {}
+[92.809480] (-) TimerEvent: {}
+[92.910301] (-) TimerEvent: {}
+[93.011242] (-) TimerEvent: {}
+[93.114419] (-) TimerEvent: {}
+[93.216186] (-) TimerEvent: {}
+[93.318687] (-) TimerEvent: {}
+[93.420292] (-) TimerEvent: {}
+[93.521703] (-) TimerEvent: {}
+[93.624566] (-) TimerEvent: {}
+[93.726285] (-) TimerEvent: {}
+[93.827201] (-) TimerEvent: {}
+[93.929326] (-) TimerEvent: {}
+[94.031159] (-) TimerEvent: {}
+[94.134939] (-) TimerEvent: {}
+[94.239842] (-) TimerEvent: {}
+[94.344564] (-) TimerEvent: {}
+[94.448618] (-) TimerEvent: {}
+[94.550219] (-) TimerEvent: {}
+[94.655310] (-) TimerEvent: {}
+[94.762561] (-) TimerEvent: {}
+[94.863554] (-) TimerEvent: {}
+[94.967255] (-) TimerEvent: {}
+[95.069197] (-) TimerEvent: {}
+[95.170184] (-) TimerEvent: {}
+[95.271091] (-) TimerEvent: {}
+[95.372075] (-) TimerEvent: {}
+[95.476325] (-) TimerEvent: {}
+[95.578678] (-) TimerEvent: {}
+[95.683288] (-) TimerEvent: {}
+[95.784923] (-) TimerEvent: {}
+[95.886529] (-) TimerEvent: {}
+[95.988271] (-) TimerEvent: {}
+[96.089979] (-) TimerEvent: {}
+[96.191551] (-) TimerEvent: {}
+[96.228212] (custom_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/motion_state__type_support_c.cpp.o\x1b[0m\n'}
+[96.291693] (-) TimerEvent: {}
+[96.393672] (-) TimerEvent: {}
+[96.495436] (-) TimerEvent: {}
+[96.596406] (-) TimerEvent: {}
+[96.697273] (-) TimerEvent: {}
+[96.798257] (-) TimerEvent: {}
+[96.900008] (-) TimerEvent: {}
+[97.002003] (-) TimerEvent: {}
+[97.102903] (-) TimerEvent: {}
+[97.207580] (-) TimerEvent: {}
+[97.309293] (-) TimerEvent: {}
+[97.410976] (-) TimerEvent: {}
+[97.512544] (-) TimerEvent: {}
+[97.614068] (-) TimerEvent: {}
+[97.736500] (-) TimerEvent: {}
+[97.837388] (-) TimerEvent: {}
+[97.938325] (-) TimerEvent: {}
+[98.040724] (-) TimerEvent: {}
+[98.142413] (-) TimerEvent: {}
+[98.246243] (-) TimerEvent: {}
+[98.347962] (-) TimerEvent: {}
+[98.449901] (-) TimerEvent: {}
+[98.551612] (-) TimerEvent: {}
+[98.655334] (-) TimerEvent: {}
+[98.756241] (-) TimerEvent: {}
+[98.857895] (-) TimerEvent: {}
+[98.959670] (-) TimerEvent: {}
+[99.060540] (-) TimerEvent: {}
+[99.161566] (-) TimerEvent: {}
+[99.263722] (-) TimerEvent: {}
+[99.367041] (-) TimerEvent: {}
+[99.468799] (-) TimerEvent: {}
+[99.570562] (-) TimerEvent: {}
+[99.672809] (-) TimerEvent: {}
+[99.775400] (-) TimerEvent: {}
+[99.877213] (-) TimerEvent: {}
+[99.979256] (-) TimerEvent: {}
+[100.080896] (-) TimerEvent: {}
+[100.182500] (-) TimerEvent: {}
+[100.287829] (-) TimerEvent: {}
+[100.389826] (-) TimerEvent: {}
+[100.491174] (-) TimerEvent: {}
+[100.592771] (-) TimerEvent: {}
+[100.694497] (-) TimerEvent: {}
+[100.795563] (-) TimerEvent: {}
+[100.897302] (-) TimerEvent: {}
+[100.994926] (custom_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/srv/detail/o_drive_command__type_support_c.cpp.o\x1b[0m\n'}
+[100.997503] (-) TimerEvent: {}
+[101.098368] (-) TimerEvent: {}
+[101.199226] (-) TimerEvent: {}
+[101.300042] (-) TimerEvent: {}
+[101.402477] (-) TimerEvent: {}
+[101.507476] (-) TimerEvent: {}
+[101.608957] (-) TimerEvent: {}
+[101.710252] (-) TimerEvent: {}
+[101.811710] (-) TimerEvent: {}
+[101.912590] (-) TimerEvent: {}
+[102.013456] (-) TimerEvent: {}
+[102.114315] (-) TimerEvent: {}
+[102.215259] (-) TimerEvent: {}
+[102.316982] (-) TimerEvent: {}
+[102.418861] (-) TimerEvent: {}
+[102.523221] (-) TimerEvent: {}
+[102.625281] (-) TimerEvent: {}
+[102.742386] (-) TimerEvent: {}
+[102.844331] (-) TimerEvent: {}
+[102.946169] (-) TimerEvent: {}
+[103.047887] (-) TimerEvent: {}
+[103.149801] (-) TimerEvent: {}
+[103.251738] (-) TimerEvent: {}
+[103.353532] (-) TimerEvent: {}
+[103.455289] (-) TimerEvent: {}
+[103.557629] (-) TimerEvent: {}
+[103.667295] (-) TimerEvent: {}
+[103.779568] (-) TimerEvent: {}
+[103.880393] (-) TimerEvent: {}
+[103.981169] (-) TimerEvent: {}
+[104.083356] (-) TimerEvent: {}
+[104.185084] (-) TimerEvent: {}
+[104.286777] (-) TimerEvent: {}
+[104.388725] (-) TimerEvent: {}
+[104.490222] (-) TimerEvent: {}
+[104.591038] (-) TimerEvent: {}
+[104.692690] (-) TimerEvent: {}
+[104.794964] (-) TimerEvent: {}
+[104.896626] (-) TimerEvent: {}
+[104.997480] (-) TimerEvent: {}
+[105.098455] (-) TimerEvent: {}
+[105.200736] (-) TimerEvent: {}
+[105.304493] (-) TimerEvent: {}
+[105.406419] (-) TimerEvent: {}
+[105.508248] (-) TimerEvent: {}
+[105.609941] (-) TimerEvent: {}
+[105.711385] (-) TimerEvent: {}
+[105.816078] (-) TimerEvent: {}
+[105.917822] (-) TimerEvent: {}
+[106.019535] (-) TimerEvent: {}
+[106.121110] (-) TimerEvent: {}
+[106.222795] (-) TimerEvent: {}
+[106.324467] (-) TimerEvent: {}
+[106.370560] (custom_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[106.424674] (-) TimerEvent: {}
+[106.528548] (-) TimerEvent: {}
+[106.630188] (-) TimerEvent: {}
+[106.730998] (-) TimerEvent: {}
+[106.833750] (-) TimerEvent: {}
+[106.934608] (-) TimerEvent: {}
+[107.035470] (-) TimerEvent: {}
+[107.136273] (-) TimerEvent: {}
+[107.190784] (custom_msgs) StdoutLine: {'line': b'[ 53%] Built target custom_msgs__rosidl_typesupport_fastrtps_c\n'}
+[107.236499] (-) TimerEvent: {}
+[107.320850] (custom_msgs) StdoutLine: {'line': b'[ 56%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[107.336725] (-) TimerEvent: {}
+[107.441425] (-) TimerEvent: {}
+[107.551643] (-) TimerEvent: {}
+[107.654316] (-) TimerEvent: {}
+[107.778818] (-) TimerEvent: {}
+[107.880165] (-) TimerEvent: {}
+[107.981905] (-) TimerEvent: {}
+[108.083597] (-) TimerEvent: {}
+[108.185195] (-) TimerEvent: {}
+[108.288600] (-) TimerEvent: {}
+[108.392428] (-) TimerEvent: {}
+[108.498761] (-) TimerEvent: {}
+[108.601188] (-) TimerEvent: {}
+[108.708363] (-) TimerEvent: {}
+[108.812179] (-) TimerEvent: {}
+[108.915001] (-) TimerEvent: {}
+[109.015922] (-) TimerEvent: {}
+[109.119144] (-) TimerEvent: {}
+[109.220656] (-) TimerEvent: {}
+[109.322633] (-) TimerEvent: {}
+[109.424351] (-) TimerEvent: {}
+[109.531028] (-) TimerEvent: {}
+[109.634272] (-) TimerEvent: {}
+[109.736047] (-) TimerEvent: {}
+[109.837705] (-) TimerEvent: {}
+[109.939140] (-) TimerEvent: {}
+[110.040646] (-) TimerEvent: {}
+[110.144708] (-) TimerEvent: {}
+[110.248324] (-) TimerEvent: {}
+[110.350809] (-) TimerEvent: {}
+[110.449348] (custom_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/motion_state__type_support.cpp.o\x1b[0m\n'}
+[110.450979] (-) TimerEvent: {}
+[110.552610] (-) TimerEvent: {}
+[110.655661] (-) TimerEvent: {}
+[110.758017] (-) TimerEvent: {}
+[110.826405] (custom_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/o_drive_command__type_support.cpp.o\x1b[0m\n'}
+[110.858265] (-) TimerEvent: {}
+[110.959967] (-) TimerEvent: {}
+[111.062676] (-) TimerEvent: {}
+[111.168328] (-) TimerEvent: {}
+[111.241086] (custom_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[111.268542] (-) TimerEvent: {}
+[111.370236] (-) TimerEvent: {}
+[111.471772] (-) TimerEvent: {}
+[111.573541] (-) TimerEvent: {}
+[111.663593] (custom_msgs) StdoutLine: {'line': b'[ 64%] Built target custom_msgs__rosidl_typesupport_c\n'}
+[111.673784] (-) TimerEvent: {}
+[111.776902] (-) TimerEvent: {}
+[111.794306] (custom_msgs) StdoutLine: {'line': b'[ 66%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[111.877136] (-) TimerEvent: {}
+[111.981502] (-) TimerEvent: {}
+[112.083715] (-) TimerEvent: {}
+[112.186401] (-) TimerEvent: {}
+[112.288825] (-) TimerEvent: {}
+[112.390725] (-) TimerEvent: {}
+[112.492344] (-) TimerEvent: {}
+[112.593883] (-) TimerEvent: {}
+[112.694750] (-) TimerEvent: {}
+[112.795896] (-) TimerEvent: {}
+[112.896923] (-) TimerEvent: {}
+[112.997839] (-) TimerEvent: {}
+[113.099530] (-) TimerEvent: {}
+[113.201027] (-) TimerEvent: {}
+[113.306613] (-) TimerEvent: {}
+[113.414507] (-) TimerEvent: {}
+[113.518780] (-) TimerEvent: {}
+[113.621688] (-) TimerEvent: {}
+[113.728421] (-) TimerEvent: {}
+[113.829434] (-) TimerEvent: {}
+[113.931044] (-) TimerEvent: {}
+[114.034353] (-) TimerEvent: {}
+[114.136108] (-) TimerEvent: {}
+[114.237643] (-) TimerEvent: {}
+[114.344144] (-) TimerEvent: {}
+[114.445849] (-) TimerEvent: {}
+[114.548694] (-) TimerEvent: {}
+[114.650413] (-) TimerEvent: {}
+[114.754276] (-) TimerEvent: {}
+[114.857117] (-) TimerEvent: {}
+[114.959657] (-) TimerEvent: {}
+[115.060447] (-) TimerEvent: {}
+[115.161206] (-) TimerEvent: {}
+[115.264342] (-) TimerEvent: {}
+[115.270625] (custom_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/motion_state__type_support.c.o\x1b[0m\n'}
+[115.364554] (-) TimerEvent: {}
+[115.467234] (-) TimerEvent: {}
+[115.569216] (-) TimerEvent: {}
+[115.670774] (-) TimerEvent: {}
+[115.751479] (custom_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/srv/detail/o_drive_command__type_support.c.o\x1b[0m\n'}
+[115.770971] (-) TimerEvent: {}
+[115.875639] (-) TimerEvent: {}
+[115.980419] (-) TimerEvent: {}
+[116.081847] (-) TimerEvent: {}
+[116.184290] (-) TimerEvent: {}
+[116.234525] (custom_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[116.285157] (-) TimerEvent: {}
+[116.388298] (-) TimerEvent: {}
+[116.489692] (-) TimerEvent: {}
+[116.591315] (-) TimerEvent: {}
+[116.610068] (custom_msgs) StdoutLine: {'line': b'[ 74%] Built target custom_msgs__rosidl_typesupport_introspection_c\n'}
+[116.691604] (-) TimerEvent: {}
+[116.792598] (-) TimerEvent: {}
+[116.816607] (custom_msgs) StdoutLine: {'line': b'[ 74%] Built target custom_msgs\n'}
+[116.894584] (-) TimerEvent: {}
+[116.997731] (-) TimerEvent: {}
+[117.040646] (custom_msgs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[117.097922] (-) TimerEvent: {}
+[117.199654] (-) TimerEvent: {}
+[117.300465] (-) TimerEvent: {}
+[117.401224] (-) TimerEvent: {}
+[117.502131] (-) TimerEvent: {}
+[117.603075] (-) TimerEvent: {}
+[117.709231] (-) TimerEvent: {}
+[117.811763] (-) TimerEvent: {}
+[117.945736] (-) TimerEvent: {}
+[118.049879] (-) TimerEvent: {}
+[118.152589] (-) TimerEvent: {}
+[118.254221] (-) TimerEvent: {}
+[118.356806] (-) TimerEvent: {}
+[118.458394] (-) TimerEvent: {}
+[118.563369] (-) TimerEvent: {}
+[118.665178] (-) TimerEvent: {}
+[118.766902] (-) TimerEvent: {}
+[118.867856] (-) TimerEvent: {}
+[118.968609] (-) TimerEvent: {}
+[119.069396] (-) TimerEvent: {}
+[119.172078] (-) TimerEvent: {}
+[119.274079] (-) TimerEvent: {}
+[119.377865] (-) TimerEvent: {}
+[119.480164] (-) TimerEvent: {}
+[119.581469] (-) TimerEvent: {}
+[119.683069] (-) TimerEvent: {}
+[119.786372] (-) TimerEvent: {}
+[119.888868] (-) TimerEvent: {}
+[119.990358] (-) TimerEvent: {}
+[120.091871] (-) TimerEvent: {}
+[120.193048] (-) TimerEvent: {}
+[120.294782] (-) TimerEvent: {}
+[120.396446] (-) TimerEvent: {}
+[120.498098] (-) TimerEvent: {}
+[120.599162] (-) TimerEvent: {}
+[120.701034] (-) TimerEvent: {}
+[120.802757] (-) TimerEvent: {}
+[120.904404] (-) TimerEvent: {}
+[121.008814] (-) TimerEvent: {}
+[121.109703] (-) TimerEvent: {}
+[121.211330] (-) TimerEvent: {}
+[121.317553] (-) TimerEvent: {}
+[121.419793] (-) TimerEvent: {}
+[121.535987] (-) TimerEvent: {}
+[121.639693] (-) TimerEvent: {}
+[121.743079] (-) TimerEvent: {}
+[121.844019] (-) TimerEvent: {}
+[121.951050] (-) TimerEvent: {}
+[122.052709] (-) TimerEvent: {}
+[122.155375] (-) TimerEvent: {}
+[122.257107] (-) TimerEvent: {}
+[122.359984] (-) TimerEvent: {}
+[122.463666] (-) TimerEvent: {}
+[122.564627] (-) TimerEvent: {}
+[122.673105] (-) TimerEvent: {}
+[122.774668] (-) TimerEvent: {}
+[122.880768] (-) TimerEvent: {}
+[123.012303] (-) TimerEvent: {}
+[123.114062] (-) TimerEvent: {}
+[123.216253] (-) TimerEvent: {}
+[123.318262] (-) TimerEvent: {}
+[123.420232] (-) TimerEvent: {}
+[123.521831] (-) TimerEvent: {}
+[123.623692] (-) TimerEvent: {}
+[123.731682] (-) TimerEvent: {}
+[123.835736] (-) TimerEvent: {}
+[123.936611] (-) TimerEvent: {}
+[124.047651] (-) TimerEvent: {}
+[124.112900] (custom_msgs) StdoutLine: {'line': b'[ 76%] Built target custom_msgs__py\n'}
+[124.147845] (-) TimerEvent: {}
+[124.251660] (-) TimerEvent: {}
+[124.352505] (-) TimerEvent: {}
+[124.453471] (-) TimerEvent: {}
+[124.554433] (-) TimerEvent: {}
+[124.628212] (custom_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_motion_state_s.c.o\x1b[0m\n'}
+[124.664581] (-) TimerEvent: {}
+[124.765889] (-) TimerEvent: {}
+[124.868798] (-) TimerEvent: {}
+[124.970669] (-) TimerEvent: {}
+[125.071726] (-) TimerEvent: {}
+[125.173502] (-) TimerEvent: {}
+[125.275326] (-) TimerEvent: {}
+[125.376512] (-) TimerEvent: {}
+[125.477355] (-) TimerEvent: {}
+[125.578285] (-) TimerEvent: {}
+[125.680113] (-) TimerEvent: {}
+[125.781852] (-) TimerEvent: {}
+[125.883738] (-) TimerEvent: {}
+[125.935263] (custom_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/srv/_o_drive_command_s.c.o\x1b[0m\n'}
+[125.984032] (-) TimerEvent: {}
+[126.091619] (-) TimerEvent: {}
+[126.195627] (-) TimerEvent: {}
+[126.302069] (-) TimerEvent: {}
+[126.403648] (-) TimerEvent: {}
+[126.504500] (-) TimerEvent: {}
+[126.606418] (-) TimerEvent: {}
+[126.708233] (-) TimerEvent: {}
+[126.809769] (-) TimerEvent: {}
+[126.911529] (-) TimerEvent: {}
+[127.020704] (-) TimerEvent: {}
+[127.121487] (-) TimerEvent: {}
+[127.222439] (-) TimerEvent: {}
+[127.324582] (-) TimerEvent: {}
+[127.427617] (-) TimerEvent: {}
+[127.528494] (-) TimerEvent: {}
+[127.631640] (-) TimerEvent: {}
+[127.739721] (-) TimerEvent: {}
+[127.843643] (-) TimerEvent: {}
+[127.948770] (-) TimerEvent: {}
+[128.079031] (-) TimerEvent: {}
+[128.180287] (-) TimerEvent: {}
+[128.281236] (-) TimerEvent: {}
+[128.382321] (-) TimerEvent: {}
+[128.483374] (-) TimerEvent: {}
+[128.585230] (-) TimerEvent: {}
+[128.691657] (-) TimerEvent: {}
+[128.795332] (-) TimerEvent: {}
+[128.896462] (-) TimerEvent: {}
+[128.998307] (-) TimerEvent: {}
+[129.100528] (-) TimerEvent: {}
+[129.194483] (custom_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/libcustom_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[129.200752] (-) TimerEvent: {}
+[129.301806] (-) TimerEvent: {}
+[129.403673] (-) TimerEvent: {}
+[129.505520] (-) TimerEvent: {}
+[129.607221] (-) TimerEvent: {}
+[129.708956] (-) TimerEvent: {}
+[129.810731] (-) TimerEvent: {}
+[129.912459] (-) TimerEvent: {}
+[130.013965] (-) TimerEvent: {}
+[130.118615] (-) TimerEvent: {}
+[130.220417] (-) TimerEvent: {}
+[130.322455] (-) TimerEvent: {}
+[130.424203] (-) TimerEvent: {}
+[130.526007] (-) TimerEvent: {}
+[130.532774] (custom_msgs) StdoutLine: {'line': b'[ 84%] Built target custom_msgs__rosidl_generator_py\n'}
+[130.627921] (-) TimerEvent: {}
+[130.732139] (-) TimerEvent: {}
+[130.833198] (-) TimerEvent: {}
+[130.936073] (-) TimerEvent: {}
+[131.037131] (-) TimerEvent: {}
+[131.125132] (custom_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[131.137353] (-) TimerEvent: {}
+[131.246083] (-) TimerEvent: {}
+[131.347332] (-) TimerEvent: {}
+[131.449263] (-) TimerEvent: {}
+[131.550963] (-) TimerEvent: {}
+[131.652502] (-) TimerEvent: {}
+[131.755655] (-) TimerEvent: {}
+[131.857331] (-) TimerEvent: {}
+[131.959076] (-) TimerEvent: {}
+[132.061268] (-) TimerEvent: {}
+[132.162950] (-) TimerEvent: {}
+[132.264603] (-) TimerEvent: {}
+[132.366441] (-) TimerEvent: {}
+[132.471637] (-) TimerEvent: {}
+[132.573646] (-) TimerEvent: {}
+[132.675361] (-) TimerEvent: {}
+[132.777448] (-) TimerEvent: {}
+[132.880397] (-) TimerEvent: {}
+[132.982415] (-) TimerEvent: {}
+[133.084557] (-) TimerEvent: {}
+[133.186753] (-) TimerEvent: {}
+[133.289842] (-) TimerEvent: {}
+[133.302678] (custom_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[133.390132] (-) TimerEvent: {}
+[133.491409] (-) TimerEvent: {}
+[133.592483] (-) TimerEvent: {}
+[133.694158] (-) TimerEvent: {}
+[133.795845] (-) TimerEvent: {}
+[133.897608] (-) TimerEvent: {}
+[133.998643] (-) TimerEvent: {}
+[134.100451] (-) TimerEvent: {}
+[134.202915] (-) TimerEvent: {}
+[134.304423] (-) TimerEvent: {}
+[134.401627] (custom_msgs) StdoutLine: {'line': b'[ 89%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[134.404648] (-) TimerEvent: {}
+[134.506611] (-) TimerEvent: {}
+[134.608384] (-) TimerEvent: {}
+[134.697828] (custom_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[134.708650] (-) TimerEvent: {}
+[134.814893] (-) TimerEvent: {}
+[134.916832] (-) TimerEvent: {}
+[135.019950] (-) TimerEvent: {}
+[135.129534] (-) TimerEvent: {}
+[135.231724] (-) TimerEvent: {}
+[135.339551] (-) TimerEvent: {}
+[135.447682] (-) TimerEvent: {}
+[135.548799] (-) TimerEvent: {}
+[135.650050] (-) TimerEvent: {}
+[135.762588] (-) TimerEvent: {}
+[135.864538] (-) TimerEvent: {}
+[135.966398] (-) TimerEvent: {}
+[136.068321] (-) TimerEvent: {}
+[136.170150] (-) TimerEvent: {}
+[136.272105] (-) TimerEvent: {}
+[136.373930] (-) TimerEvent: {}
+[136.475749] (-) TimerEvent: {}
+[136.577544] (-) TimerEvent: {}
+[136.678485] (-) TimerEvent: {}
+[136.780620] (-) TimerEvent: {}
+[136.882496] (-) TimerEvent: {}
+[136.985247] (-) TimerEvent: {}
+[137.067079] (custom_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[137.085485] (-) TimerEvent: {}
+[137.195678] (-) TimerEvent: {}
+[137.297035] (-) TimerEvent: {}
+[137.403029] (-) TimerEvent: {}
+[137.504938] (-) TimerEvent: {}
+[137.607659] (-) TimerEvent: {}
+[137.708725] (-) TimerEvent: {}
+[137.811409] (-) TimerEvent: {}
+[137.913385] (-) TimerEvent: {}
+[138.014920] (-) TimerEvent: {}
+[138.137401] (-) TimerEvent: {}
+[138.141206] (custom_msgs) StdoutLine: {'line': b'[ 94%] Built target custom_msgs__rosidl_typesupport_c__pyext\n'}
+[138.239431] (-) TimerEvent: {}
+[138.341248] (-) TimerEvent: {}
+[138.402425] (custom_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[138.441444] (-) TimerEvent: {}
+[138.546232] (-) TimerEvent: {}
+[138.653448] (-) TimerEvent: {}
+[138.756901] (-) TimerEvent: {}
+[138.859663] (-) TimerEvent: {}
+[138.962939] (-) TimerEvent: {}
+[139.066248] (-) TimerEvent: {}
+[139.168959] (-) TimerEvent: {}
+[139.270454] (-) TimerEvent: {}
+[139.372108] (-) TimerEvent: {}
+[139.473798] (-) TimerEvent: {}
+[139.580815] (-) TimerEvent: {}
+[139.683289] (-) TimerEvent: {}
+[139.791187] (-) TimerEvent: {}
+[139.875708] (custom_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[139.892380] (-) TimerEvent: {}
+[139.994105] (-) TimerEvent: {}
+[140.095959] (-) TimerEvent: {}
+[140.197729] (-) TimerEvent: {}
+[140.299740] (-) TimerEvent: {}
+[140.386738] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[140.399931] (-) TimerEvent: {}
+[140.501287] (-) TimerEvent: {}
+[140.515727] (custom_msgs) CommandEnded: {'returncode': 0}
+[140.529015] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'install'}
+[140.601477] (-) TimerEvent: {}
+[140.643201] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vedant/OdriveCANControl/build/custom_msgs'], 'cwd': '/home/vedant/OdriveCANControl/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SSH_CLIENT', '192.168.0.6 33990 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/vedant/OdriveCANControl/src/install/custom_msgs/lib:/home/vedant/OdriveCANControl/install/custom_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant/OdriveCANControl'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b0b15bc1-e291-4034-babf-68860fb26e32.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/vedant/OdriveCANControl/install:/home/vedant/OdriveCANControl/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-bddb7e77dc.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/src/install/controller:/home/vedant/OdriveCANControl/src/install/custom_msgs:/home/vedant/OdriveCANControl/src/install/encoder:/home/vedant/OdriveCANControl/install/controller:/home/vedant/OdriveCANControl/install/custom_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/vedant/OdriveCANControl/build/custom_msgs'), ('SSH_CONNECTION', '192.168.0.6 33990 192.168.0.5 22'), ('PYTHONPATH', '/home/vedant/OdriveCANControl/build/controller/src:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/src/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/src/install/custom_msgs/local/lib/python3.10/dist-packages:/home/vedant/OdriveCANControl/src/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/src/install/custom_msgs:/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/src/install/controller:/home/vedant/OdriveCANControl/src/install/encoder:/home/vedant/OdriveCANControl/install/controller:/opt/ros/humble')]), 'shell': False}
+[140.702024] (-) TimerEvent: {}
+[140.719908] (custom_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[140.721417] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs\n'}
+[140.729131] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[140.730845] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[140.732984] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[140.736429] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__functions.h\n'}
+[140.737223] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__type_support.h\n'}
+[140.744277] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__struct.h\n'}
+[140.747092] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__functions.c\n'}
+[140.753860] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/o_drive_command.h\n'}
+[140.757766] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[140.760842] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/motion_state.h\n'}
+[140.764703] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[140.767836] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[140.770788] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__struct.h\n'}
+[140.773992] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__functions.c\n'}
+[140.778455] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.h\n'}
+[140.781468] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__functions.h\n'}
+[140.788149] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/library_path.sh\n'}
+[140.790858] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/library_path.dsv\n'}
+[140.798378] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so\n'}
+[140.803688] (-) TimerEvent: {}
+[140.811402] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so" to ""\n'}
+[140.813066] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[140.813751] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[140.821603] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[140.822357] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__rosidl_typesupport_fastrtps_c.h\n'}
+[140.822955] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[140.823492] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[140.828888] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_fastrtps_c.h\n'}
+[140.830178] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[140.832969] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[140.840463] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[140.842183] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[140.844080] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[140.847992] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[140.849932] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__type_support.c\n'}
+[140.853311] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__rosidl_typesupport_introspection_c.h\n'}
+[140.858697] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[140.860581] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[140.862639] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_introspection_c.h\n'}
+[140.867296] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.c\n'}
+[140.870346] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[140.873646] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so\n'}
+[140.887525] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[140.889487] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so\n'}
+[140.897532] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so" to ""\n'}
+[140.901781] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[140.903606] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[140.904269] (-) TimerEvent: {}
+[140.910099] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/o_drive_command.hpp\n'}
+[140.912856] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[140.914731] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__struct.hpp\n'}
+[140.923308] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__traits.hpp\n'}
+[140.930343] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__builder.hpp\n'}
+[140.933351] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__type_support.hpp\n'}
+[140.939034] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[140.940196] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[140.941957] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[140.946752] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.hpp\n'}
+[140.949953] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__traits.hpp\n'}
+[140.952297] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__builder.hpp\n'}
+[140.957538] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__struct.hpp\n'}
+[140.960865] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/motion_state.hpp\n'}
+[140.966766] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[140.967559] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[140.968408] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[140.970657] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[140.974898] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/dds_fastrtps\n'}
+[140.977993] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[140.978891] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[140.979631] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[140.980330] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[140.987795] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps\n'}
+[140.988382] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[140.998413] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[140.999475] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[141.000536] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[141.001152] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[141.001896] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[141.004898] (-) TimerEvent: {}
+[141.008799] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__type_support.cpp\n'}
+[141.011184] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[141.019291] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[141.021255] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[141.028918] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.cpp\n'}
+[141.032853] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[141.039123] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[141.040261] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so\n'}
+[141.047642] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[141.048452] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh\n'}
+[141.051794] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv\n'}
+[141.054856] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info\n'}
+[141.059787] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[141.060682] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[141.067385] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[141.068742] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[141.074685] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs\n'}
+[141.079921] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv\n'}
+[141.082166] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_o_drive_command.py\n'}
+[141.082886] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/__init__.py\n'}
+[141.083405] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_o_drive_command_s.c\n'}
+[141.089435] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so\n'}
+[141.090095] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg\n'}
+[141.102005] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_motion_state.py\n'}
+[141.102676] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py\n'}
+[141.113131] (-) TimerEvent: {}
+[141.120079] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_motion_state_s.c\n'}
+[141.121889] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[141.122544] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py\n'}
+[141.123128] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[141.123839] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[141.124440] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[141.124916] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[141.128040] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[141.214396] (-) TimerEvent: {}
+[141.317443] (-) TimerEvent: {}
+[141.419106] (-) TimerEvent: {}
+[141.520795] (-) TimerEvent: {}
+[141.605664] (custom_msgs) StdoutLine: {'line': b"Listing '/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...\n"}
+[141.607261] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py'...\n"}
+[141.608630] (custom_msgs) StdoutLine: {'line': b"Listing '/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...\n"}
+[141.609952] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py'...\n"}
+[141.610763] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_motion_state.py'...\n"}
+[141.611406] (custom_msgs) StdoutLine: {'line': b"Listing '/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv'...\n"}
+[141.618699] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/__init__.py'...\n"}
+[141.619904] (custom_msgs) StdoutLine: {'line': b"Compiling '/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_o_drive_command.py'...\n"}
+[141.620864] (-) TimerEvent: {}
+[141.699566] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[141.706906] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[141.709000] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[141.715988] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[141.720782] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[141.721451] (-) TimerEvent: {}
+[141.730063] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[141.731676] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so\n'}
+[141.737647] (custom_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so" to ""\n'}
+[141.738679] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/msg/MotionState.idl\n'}
+[141.745218] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/srv/ODriveCommand.idl\n'}
+[141.746748] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/msg/MotionState.msg\n'}
+[141.748384] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/srv/ODriveCommand.srv\n'}
+[141.756796] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/srv/ODriveCommand_Request.msg\n'}
+[141.758464] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/srv/ODriveCommand_Response.msg\n'}
+[141.762296] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs\n'}
+[141.770372] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs\n'}
+[141.777306] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh\n'}
+[141.779093] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv\n'}
+[141.780796] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/path.sh\n'}
+[141.782354] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/path.dsv\n'}
+[141.788160] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/local_setup.bash\n'}
+[141.794102] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/local_setup.sh\n'}
+[141.798306] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/local_setup.zsh\n'}
+[141.800933] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/local_setup.dsv\n'}
+[141.806458] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.dsv\n'}
+[141.811085] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs\n'}
+[141.817688] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake\n'}
+[141.820488] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[141.821625] (-) TimerEvent: {}
+[141.825279] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[141.831739] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[141.837945] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[141.840698] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[141.847692] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake\n'}
+[141.850333] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[141.854168] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake\n'}
+[141.858284] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[141.864504] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[141.868079] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[141.871574] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[141.876678] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[141.879809] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[141.885454] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake\n'}
+[141.888620] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[141.891702] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[141.896440] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[141.899555] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[141.902179] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[141.907635] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[141.914161] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[141.917493] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[141.920003] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake\n'}
+[141.924387] (-) TimerEvent: {}
+[141.926246] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake\n'}
+[141.928075] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.xml\n'}
+[141.945824] (custom_msgs) CommandEnded: {'returncode': 0}
+[142.024633] (-) TimerEvent: {}
+[142.125940] (-) TimerEvent: {}
+[142.170927] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 0}
+[142.180786] (-) EventReactorShutdown: {}

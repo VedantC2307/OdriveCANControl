@@ -83,6 +83,8 @@ rosidl_generator_c/custom_msgs/msg/motion_state.h: /opt/ros/humble/share/rosidl_
 rosidl_generator_c/custom_msgs/msg/motion_state.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
 rosidl_generator_c/custom_msgs/msg/motion_state.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/custom_msgs/msg/motion_state.h: rosidl_adapter/custom_msgs/msg/MotionState.idl
+rosidl_generator_c/custom_msgs/msg/motion_state.h: rosidl_adapter/custom_msgs/msg/FrictionComp.idl
+rosidl_generator_c/custom_msgs/msg/motion_state.h: rosidl_adapter/custom_msgs/msg/ImpedanceTorque.idl
 rosidl_generator_c/custom_msgs/msg/motion_state.h: rosidl_adapter/custom_msgs/srv/ODriveCommand.idl
 rosidl_generator_c/custom_msgs/msg/motion_state.h: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_c/custom_msgs/msg/motion_state.h: /opt/ros/humble/share/std_msgs/msg/Byte.idl
@@ -128,6 +130,30 @@ rosidl_generator_c/custom_msgs/msg/detail/motion_state__struct.h: rosidl_generat
 rosidl_generator_c/custom_msgs/msg/detail/motion_state__type_support.h: rosidl_generator_c/custom_msgs/msg/motion_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/motion_state__type_support.h
 
+rosidl_generator_c/custom_msgs/msg/friction_comp.h: rosidl_generator_c/custom_msgs/msg/motion_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/friction_comp.h
+
+rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.h: rosidl_generator_c/custom_msgs/msg/motion_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.h
+
+rosidl_generator_c/custom_msgs/msg/detail/friction_comp__struct.h: rosidl_generator_c/custom_msgs/msg/motion_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/friction_comp__struct.h
+
+rosidl_generator_c/custom_msgs/msg/detail/friction_comp__type_support.h: rosidl_generator_c/custom_msgs/msg/motion_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/friction_comp__type_support.h
+
+rosidl_generator_c/custom_msgs/msg/impedance_torque.h: rosidl_generator_c/custom_msgs/msg/motion_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/impedance_torque.h
+
+rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.h: rosidl_generator_c/custom_msgs/msg/motion_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.h
+
+rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__struct.h: rosidl_generator_c/custom_msgs/msg/motion_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__struct.h
+
+rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__type_support.h: rosidl_generator_c/custom_msgs/msg/motion_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__type_support.h
+
 rosidl_generator_c/custom_msgs/srv/o_drive_command.h: rosidl_generator_c/custom_msgs/msg/motion_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/srv/o_drive_command.h
 
@@ -142,6 +168,12 @@ rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__type_support.h: rosid
 
 rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.c: rosidl_generator_c/custom_msgs/msg/motion_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.c
+
+rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c: rosidl_generator_c/custom_msgs/msg/motion_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c
+
+rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c: rosidl_generator_c/custom_msgs/msg/motion_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c
 
 rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c: rosidl_generator_c/custom_msgs/msg/motion_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c
@@ -160,10 +192,38 @@ CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/ms
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.c -o CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.c.s
 
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c.o: CMakeFiles/custom_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c.o: rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c.o: CMakeFiles/custom_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vedant/OdriveCANControl/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c.o -MF CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c.o.d -o CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c.o -c /home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c
+
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c > CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c.i
+
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c -o CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c.s
+
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c.o: CMakeFiles/custom_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c.o: rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c.o: CMakeFiles/custom_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vedant/OdriveCANControl/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c.o -MF CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c.o.d -o CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c.o -c /home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c
+
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c > CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c.i
+
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c -o CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c.s
+
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c.o: CMakeFiles/custom_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c.o: rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c.o: CMakeFiles/custom_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vedant/OdriveCANControl/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vedant/OdriveCANControl/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c.o -MF CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c.o.d -o CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c.o -c /home/vedant/OdriveCANControl/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c
 
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c.i: cmake_force
@@ -177,12 +237,16 @@ CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/sr
 # Object files for target custom_msgs__rosidl_generator_c
 custom_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.c.o" \
+"CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c.o" \
+"CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c.o" \
 "CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c.o"
 
 # External object files for target custom_msgs__rosidl_generator_c
 custom_msgs__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.c.o
+libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c.o
+libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c.o
 libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c.o
 libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make
 libcustom_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
@@ -190,7 +254,7 @@ libcustom_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces
 libcustom_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libcustom_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vedant/OdriveCANControl/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libcustom_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vedant/OdriveCANControl/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libcustom_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -201,10 +265,20 @@ CMakeFiles/custom_msgs__rosidl_generator_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/custom_msgs__rosidl_generator_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/custom_msgs__rosidl_generator_c.dir/clean
 
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.c
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.h
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/friction_comp__struct.h
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/friction_comp__type_support.h
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.c
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.h
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__struct.h
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__type_support.h
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.c
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.h
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/motion_state__struct.h
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/motion_state__type_support.h
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/friction_comp.h
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/impedance_torque.h
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/motion_state.h
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.c
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.h

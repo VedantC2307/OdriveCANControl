@@ -71,6 +71,16 @@ CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/motion_
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__struct.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__traits.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__type_support.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/friction_comp.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/friction_comp__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/friction_comp__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/friction_comp__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/friction_comp__type_support.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/impedance_torque.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/impedance_torque__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/impedance_torque__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/impedance_torque__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/impedance_torque__type_support.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/o_drive_command.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__builder.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__struct.hpp
@@ -94,6 +104,8 @@ rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/ros
 rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: rosidl_adapter/custom_msgs/msg/MotionState.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: rosidl_adapter/custom_msgs/msg/FrictionComp.idl
+rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: rosidl_adapter/custom_msgs/msg/ImpedanceTorque.idl
 rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: rosidl_adapter/custom_msgs/srv/ODriveCommand.idl
 rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp: /opt/ros/humble/share/std_msgs/msg/Byte.idl
@@ -142,6 +154,36 @@ rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__traits.hpp: rosidl_gen
 rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__type_support.hpp
 
+rosidl_generator_cpp/custom_msgs/msg/friction_comp.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/friction_comp.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/friction_comp__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/friction_comp__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/friction_comp__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/friction_comp__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/friction_comp__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/friction_comp__traits.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/friction_comp__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/friction_comp__type_support.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/impedance_torque.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/impedance_torque.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/impedance_torque__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/impedance_torque__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/impedance_torque__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/impedance_torque__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/impedance_torque__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/impedance_torque__traits.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/impedance_torque__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/impedance_torque__type_support.hpp
+
 rosidl_generator_cpp/custom_msgs/srv/o_drive_command.hpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/o_drive_command.hpp
 
@@ -158,10 +200,20 @@ rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__type_support.hpp: r
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__type_support.hpp
 
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/friction_comp__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/friction_comp__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/friction_comp__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/friction_comp__type_support.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/impedance_torque__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/impedance_torque__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/impedance_torque__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/impedance_torque__type_support.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__builder.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__struct.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__traits.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/motion_state__type_support.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/friction_comp.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/impedance_torque.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/motion_state.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__builder.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/o_drive_command__struct.hpp

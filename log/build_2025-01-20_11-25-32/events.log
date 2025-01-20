@@ -1,0 +1,197 @@
+[0.000000] (-) TimerEvent: {}
+[0.000654] (-) JobUnselected: {'identifier': 'custom_msgs'}
+[0.000930] (-) JobUnselected: {'identifier': 'data_logging'}
+[0.001088] (-) JobUnselected: {'identifier': 'encoder'}
+[0.001206] (-) JobUnselected: {'identifier': 'odrive_control_py'}
+[0.001312] (-) JobUnselected: {'identifier': 'robot_launch'}
+[0.001429] (controller) JobQueued: {'identifier': 'controller', 'dependencies': OrderedDict([('custom_msgs', '/home/vedant/OdriveCANControl/install/custom_msgs')])}
+[0.001569] (controller) JobStarted: {'identifier': 'controller'}
+[0.090231] (-) TimerEvent: {}
+[0.198033] (-) TimerEvent: {}
+[0.299377] (-) TimerEvent: {}
+[0.401070] (-) TimerEvent: {}
+[0.502442] (-) TimerEvent: {}
+[0.606388] (-) TimerEvent: {}
+[0.707248] (-) TimerEvent: {}
+[0.808449] (-) TimerEvent: {}
+[0.909368] (-) TimerEvent: {}
+[1.010224] (-) TimerEvent: {}
+[1.111040] (-) TimerEvent: {}
+[1.211939] (-) TimerEvent: {}
+[1.312824] (-) TimerEvent: {}
+[1.415051] (-) TimerEvent: {}
+[1.516003] (-) TimerEvent: {}
+[1.616951] (-) TimerEvent: {}
+[1.717921] (-) TimerEvent: {}
+[1.819794] (-) TimerEvent: {}
+[1.921267] (-) TimerEvent: {}
+[2.022645] (-) TimerEvent: {}
+[2.124494] (-) TimerEvent: {}
+[2.227302] (-) TimerEvent: {}
+[2.328893] (-) TimerEvent: {}
+[2.433122] (-) TimerEvent: {}
+[2.535545] (-) TimerEvent: {}
+[2.637306] (-) TimerEvent: {}
+[2.738984] (-) TimerEvent: {}
+[2.840449] (-) TimerEvent: {}
+[2.943493] (-) TimerEvent: {}
+[3.044863] (-) TimerEvent: {}
+[3.146213] (-) TimerEvent: {}
+[3.248259] (-) TimerEvent: {}
+[3.349647] (-) TimerEvent: {}
+[3.450892] (-) TimerEvent: {}
+[3.553847] (-) TimerEvent: {}
+[3.656802] (-) TimerEvent: {}
+[3.758109] (-) TimerEvent: {}
+[3.859633] (-) TimerEvent: {}
+[3.961591] (-) TimerEvent: {}
+[4.066119] (-) TimerEvent: {}
+[4.168822] (-) TimerEvent: {}
+[4.270156] (-) TimerEvent: {}
+[4.373022] (-) TimerEvent: {}
+[4.475829] (-) TimerEvent: {}
+[4.577190] (-) TimerEvent: {}
+[4.678448] (-) TimerEvent: {}
+[4.781445] (-) TimerEvent: {}
+[4.882827] (-) TimerEvent: {}
+[4.984287] (-) TimerEvent: {}
+[5.087539] (-) TimerEvent: {}
+[5.188907] (-) TimerEvent: {}
+[5.293115] (-) TimerEvent: {}
+[5.394759] (-) TimerEvent: {}
+[5.495795] (-) TimerEvent: {}
+[5.598366] (-) TimerEvent: {}
+[5.699973] (-) TimerEvent: {}
+[5.801755] (-) TimerEvent: {}
+[5.903673] (-) TimerEvent: {}
+[6.005395] (-) TimerEvent: {}
+[6.111306] (-) TimerEvent: {}
+[6.212253] (-) TimerEvent: {}
+[6.314093] (-) TimerEvent: {}
+[6.415907] (-) TimerEvent: {}
+[6.519057] (-) TimerEvent: {}
+[6.621896] (-) TimerEvent: {}
+[6.723616] (-) TimerEvent: {}
+[6.826579] (-) TimerEvent: {}
+[6.928108] (-) TimerEvent: {}
+[7.029474] (-) TimerEvent: {}
+[7.131157] (-) TimerEvent: {}
+[7.233590] (-) TimerEvent: {}
+[7.337154] (-) TimerEvent: {}
+[7.439282] (-) TimerEvent: {}
+[7.541301] (-) TimerEvent: {}
+[7.643568] (-) TimerEvent: {}
+[7.746434] (-) TimerEvent: {}
+[7.848441] (-) TimerEvent: {}
+[7.952678] (-) TimerEvent: {}
+[8.054886] (-) TimerEvent: {}
+[8.156327] (-) TimerEvent: {}
+[8.258508] (-) TimerEvent: {}
+[8.360843] (-) TimerEvent: {}
+[8.466068] (-) TimerEvent: {}
+[8.568422] (-) TimerEvent: {}
+[8.671162] (-) TimerEvent: {}
+[8.773831] (-) TimerEvent: {}
+[8.876240] (-) TimerEvent: {}
+[8.931471] (controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/controller', 'build', '--build-base', '/home/vedant/OdriveCANControl/build/controller/build', 'install', '--record', '/home/vedant/OdriveCANControl/build/controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/vedant/OdriveCANControl/src/controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'vedant', 'SSH_CLIENT': '192.168.0.6 33990 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/vedant/OdriveCANControl/install/custom_msgs/lib:/home/vedant/OdriveCANControl/src/install/custom_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/vedant', 'OLDPWD': '/home/vedant/OdriveCANControl', 'TERM_PROGRAM_VERSION': '1.96.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-b0b15bc1-e291-4034-babf-68860fb26e32.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/vedant/OdriveCANControl/install:/home/vedant/OdriveCANControl/src/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'vedant', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-bddb7e77dc.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/src/install/controller:/home/vedant/OdriveCANControl/src/install/custom_msgs:/home/vedant/OdriveCANControl/src/install/encoder:/home/vedant/OdriveCANControl/install/controller:/home/vedant/OdriveCANControl/install/custom_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/vedant/OdriveCANControl/build/controller', 'SSH_CONNECTION': '192.168.0.6 33990 192.168.0.5 22', 'PYTHONPATH': '/home/vedant/OdriveCANControl/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/build/controller/src:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/src/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/src/install/custom_msgs/local/lib/python3.10/dist-packages:/home/vedant/OdriveCANControl/src/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/src/install/custom_msgs'}, 'shell': False}
+[8.976433] (-) TimerEvent: {}
+[9.078885] (-) TimerEvent: {}
+[9.180399] (-) TimerEvent: {}
+[9.281942] (-) TimerEvent: {}
+[9.385640] (-) TimerEvent: {}
+[9.487834] (-) TimerEvent: {}
+[9.589984] (-) TimerEvent: {}
+[9.693892] (-) TimerEvent: {}
+[9.797745] (-) TimerEvent: {}
+[9.899898] (-) TimerEvent: {}
+[10.001624] (-) TimerEvent: {}
+[10.103807] (-) TimerEvent: {}
+[10.205953] (-) TimerEvent: {}
+[10.308195] (-) TimerEvent: {}
+[10.410204] (-) TimerEvent: {}
+[10.514477] (-) TimerEvent: {}
+[10.616664] (-) TimerEvent: {}
+[10.719698] (-) TimerEvent: {}
+[10.824462] (-) TimerEvent: {}
+[10.928411] (-) TimerEvent: {}
+[11.034991] (-) TimerEvent: {}
+[11.140433] (-) TimerEvent: {}
+[11.242247] (-) TimerEvent: {}
+[11.344508] (-) TimerEvent: {}
+[11.448570] (-) TimerEvent: {}
+[11.550072] (-) TimerEvent: {}
+[11.651804] (-) TimerEvent: {}
+[11.754063] (-) TimerEvent: {}
+[11.859269] (-) TimerEvent: {}
+[11.960162] (-) TimerEvent: {}
+[12.062289] (-) TimerEvent: {}
+[12.164070] (-) TimerEvent: {}
+[12.265697] (-) TimerEvent: {}
+[12.367858] (-) TimerEvent: {}
+[12.470020] (-) TimerEvent: {}
+[12.574317] (-) TimerEvent: {}
+[12.669470] (controller) StdoutLine: {'line': b'running egg_info\n'}
+[12.674481] (controller) StdoutLine: {'line': b'creating ../../build/controller/controller.egg-info\n'}
+[12.675316] (-) TimerEvent: {}
+[12.679753] (controller) StdoutLine: {'line': b'writing ../../build/controller/controller.egg-info/PKG-INFO\n'}
+[12.686599] (controller) StdoutLine: {'line': b'writing dependency_links to ../../build/controller/controller.egg-info/dependency_links.txt\n'}
+[12.691172] (controller) StdoutLine: {'line': b'writing entry points to ../../build/controller/controller.egg-info/entry_points.txt\n'}
+[12.698196] (controller) StdoutLine: {'line': b'writing requirements to ../../build/controller/controller.egg-info/requires.txt\n'}
+[12.703823] (controller) StdoutLine: {'line': b'writing top-level names to ../../build/controller/controller.egg-info/top_level.txt\n'}
+[12.708488] (controller) StdoutLine: {'line': b"writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'\n"}
+[12.736692] (controller) StdoutLine: {'line': b"reading manifest file '../../build/controller/controller.egg-info/SOURCES.txt'\n"}
+[12.745003] (controller) StdoutLine: {'line': b"writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'\n"}
+[12.748006] (controller) StdoutLine: {'line': b'running build\n'}
+[12.755064] (controller) StdoutLine: {'line': b'running build_py\n'}
+[12.757999] (controller) StdoutLine: {'line': b'creating /home/vedant/OdriveCANControl/build/controller/build\n'}
+[12.764010] (controller) StdoutLine: {'line': b'creating /home/vedant/OdriveCANControl/build/controller/build/lib\n'}
+[12.769269] (controller) StdoutLine: {'line': b'creating /home/vedant/OdriveCANControl/build/controller/build/lib/controller\n'}
+[12.776001] (-) TimerEvent: {}
+[12.780774] (controller) StdoutLine: {'line': b'copying src/controller/friction_compensation_node.py -> /home/vedant/OdriveCANControl/build/controller/build/lib/controller\n'}
+[12.788052] (controller) StdoutLine: {'line': b'copying src/controller/impedance_control.py -> /home/vedant/OdriveCANControl/build/controller/build/lib/controller\n'}
+[12.793202] (controller) StdoutLine: {'line': b'copying src/controller/control_node.py -> /home/vedant/OdriveCANControl/build/controller/build/lib/controller\n'}
+[12.794033] (controller) StdoutLine: {'line': b'copying src/controller/App.py -> /home/vedant/OdriveCANControl/build/controller/build/lib/controller\n'}
+[12.794615] (controller) StdoutLine: {'line': b'copying src/controller/__init__.py -> /home/vedant/OdriveCANControl/build/controller/build/lib/controller\n'}
+[12.795305] (controller) StdoutLine: {'line': b'copying src/controller/odrive_control.py -> /home/vedant/OdriveCANControl/build/controller/build/lib/controller\n'}
+[12.795875] (controller) StdoutLine: {'line': b'running install\n'}
+[12.808625] (controller) StdoutLine: {'line': b'running install_lib\n'}
+[12.809502] (controller) StdoutLine: {'line': b'creating /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller\n'}
+[12.810074] (controller) StdoutLine: {'line': b'copying /home/vedant/OdriveCANControl/build/controller/build/lib/controller/friction_compensation_node.py -> /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller\n'}
+[12.819875] (controller) StdoutLine: {'line': b'copying /home/vedant/OdriveCANControl/build/controller/build/lib/controller/impedance_control.py -> /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller\n'}
+[12.829512] (controller) StdoutLine: {'line': b'copying /home/vedant/OdriveCANControl/build/controller/build/lib/controller/control_node.py -> /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller\n'}
+[12.830188] (controller) StdoutLine: {'line': b'copying /home/vedant/OdriveCANControl/build/controller/build/lib/controller/App.py -> /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller\n'}
+[12.839835] (controller) StdoutLine: {'line': b'copying /home/vedant/OdriveCANControl/build/controller/build/lib/controller/__init__.py -> /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller\n'}
+[12.849483] (controller) StdoutLine: {'line': b'copying /home/vedant/OdriveCANControl/build/controller/build/lib/controller/odrive_control.py -> /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller\n'}
+[12.859164] (controller) StdoutLine: {'line': b'byte-compiling /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/friction_compensation_node.py to friction_compensation_node.cpython-310.pyc\n'}
+[12.860104] (controller) StdoutLine: {'line': b'byte-compiling /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/impedance_control.py to impedance_control.cpython-310.pyc\n'}
+[12.870242] (controller) StdoutLine: {'line': b'byte-compiling /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/control_node.py to control_node.cpython-310.pyc\n'}
+[12.879664] (-) TimerEvent: {}
+[12.880311] (controller) StdoutLine: {'line': b'byte-compiling /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/App.py to App.cpython-310.pyc\n'}
+[12.880990] (controller) StdoutLine: {'line': b'byte-compiling /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/__init__.py to __init__.cpython-310.pyc\n'}
+[12.881527] (controller) StdoutLine: {'line': b'byte-compiling /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/odrive_control.py to odrive_control.cpython-310.pyc\n'}
+[12.899307] (controller) StdoutLine: {'line': b'running install_data\n'}
+[12.899933] (controller) StdoutLine: {'line': b'creating /home/vedant/OdriveCANControl/install/controller/share/ament_index\n'}
+[12.900548] (controller) StdoutLine: {'line': b'creating /home/vedant/OdriveCANControl/install/controller/share/ament_index/resource_index\n'}
+[12.901072] (controller) StdoutLine: {'line': b'creating /home/vedant/OdriveCANControl/install/controller/share/ament_index/resource_index/packages\n'}
+[12.901702] (controller) StdoutLine: {'line': b'copying resource/controller -> /home/vedant/OdriveCANControl/install/controller/share/ament_index/resource_index/packages\n'}
+[12.910381] (controller) StdoutLine: {'line': b'copying package.xml -> /home/vedant/OdriveCANControl/install/controller/share/controller\n'}
+[12.910969] (controller) StdoutLine: {'line': b'creating /home/vedant/OdriveCANControl/install/controller/share/controller/config\n'}
+[12.911569] (controller) StdoutLine: {'line': b'copying config/impedance_params.yaml -> /home/vedant/OdriveCANControl/install/controller/share/controller/config\n'}
+[12.921216] (controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.921753] (controller) StdoutLine: {'line': b'Copying ../../build/controller/controller.egg-info to /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info\n'}
+[12.922247] (controller) StdoutLine: {'line': b'running install_scripts\n'}
+[12.980698] (-) TimerEvent: {}
+[13.081801] (-) TimerEvent: {}
+[13.195286] (-) TimerEvent: {}
+[13.241594] (controller) StdoutLine: {'line': b'Installing Impedance_Control script to /home/vedant/OdriveCANControl/install/controller/lib/controller\n'}
+[13.245816] (controller) StdoutLine: {'line': b'Installing friction_compensation_node script to /home/vedant/OdriveCANControl/install/controller/lib/controller\n'}
+[13.246566] (controller) StdoutLine: {'line': b'Installing odrive_controller script to /home/vedant/OdriveCANControl/install/controller/lib/controller\n'}
+[13.251419] (controller) StdoutLine: {'line': b"writing list of installed files to '/home/vedant/OdriveCANControl/build/controller/install.log'\n"}
+[13.295606] (-) TimerEvent: {}
+[13.397452] (-) TimerEvent: {}
+[13.425953] (controller) CommandEnded: {'returncode': 0}
+[13.497658] (-) TimerEvent: {}
+[13.599564] (-) TimerEvent: {}
+[13.711392] (-) TimerEvent: {}
+[13.739363] (controller) JobEnded: {'identifier': 'controller', 'rc': 0}
+[13.755492] (-) EventReactorShutdown: {}

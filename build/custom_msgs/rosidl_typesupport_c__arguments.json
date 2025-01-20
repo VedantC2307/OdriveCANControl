@@ -4,6 +4,8 @@
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_c/resource",
   "idl_tuples": [
     "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs:msg/MotionState.idl",
+    "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs:msg/FrictionComp.idl",
+    "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs:msg/ImpedanceTorque.idl",
     "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs:srv/ODriveCommand.idl"
   ],
   "ros_interface_dependencies": [
@@ -48,6 +50,8 @@
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
     "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs/msg/MotionState.idl",
+    "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs/msg/FrictionComp.idl",
+    "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs/msg/ImpedanceTorque.idl",
     "/home/vedant/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs/srv/ODriveCommand.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
