@@ -2,6 +2,7 @@
 import rclpy
 from rclpy.node import Node
 from custom_msgs.srv import ODriveCommand  # 이 부분이 올바르게 수정되었는지 확인
+from custom_msgs.msg import FrictionComp, ImpedanceTorque
 import odrive
 from odrive.enums import *
 import time
@@ -13,10 +14,38 @@ class ODriveController(Node):
         
         # ODrive 객체
         self.drive = None
-        
+        self.current_control_mode = None
+
+        # initialize torque values
+        self.fcomp_tau = 0.0
+        self.imp_tau = 0.0
+
+        # 토크 명령 타이머 생성 (100Hz)
+        self.publish_rate = 100.0  # Hz
+        self.publish_period = 1.0 / self.publish_rate
+        self.create_timer(self.publish_period, self.torque_command_callback)
+
         # 서비스 서버 생성
         self.srv = self.create_service(ODriveCommand, 'odrive/command', self.command_callback)
         self.get_logger().info('ODrive controller service started')
+
+
+        # friction torque subscriber
+        self.command_sub = self.create_subscription(
+            FrictionComp,
+            'friction_torque',
+            self.friction_torque_callback,
+            10
+        )
+
+        # imp torque subscriber
+        self.command_sub2 = self.create_subscription(
+            ImpedanceTorque,
+            'imp_torque',
+            self.imp_torque_callback,
+            10
+        )
+
 
         # TCP Server setup
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -32,7 +61,26 @@ class ODriveController(Node):
         # Client socket
         self.client_socket = None
         self.client_address = None
+
+    def friction_torque_callback(self, msg):
         
+        self.fcomp_tau = msg.tau_fcomp
+        self.get_logger().info(f'Friction Comp Tau: {self.fcomp_tau}')
+
+    def imp_torque_callback(self, msg):
+
+        self.imp_tau = msg.tau_imp
+        self.get_logger().info(f'Impedance Tau: {self.imp_tau}')
+
+
+    def input_command_callback(self):
+        """합산된 토크 명령을 모터에 전송"""
+        if self.drive is None:
+            return
+            
+        if not self.current_control_mode:
+            return
+
     def connect_drive(self):
         """ODrive 연결"""
         if self.drive is None:
@@ -99,6 +147,35 @@ class ODriveController(Node):
         except Exception as e:
             return False, f"Error setting closed loop mode: {str(e)}"
 
+
+
+    def torque_command_callback(self):
+        """합산된 토크 명령을 모터에 전송"""
+        if self.drive is None or self.current_control_mode != "torque":
+            return
+            
+        try:
+            # 토크 합산 및 명령 전송 (토크 제어 모드일 때만)
+            fcomp = self.fcomp_tau if self.fcomp_tau is not None else 0.0
+            imp = self.imp_tau if self.imp_tau is not None else 0.0
+
+            total_torque = fcomp + imp
+            self.drive.axis0.controller.input_torque = total_torque
+            self.get_logger().debug(f'Applied total torque: {total_torque} (fcomp: {self.fcomp_tau}, imp: {self.imp_tau})')
+        except Exception as e:
+            self.get_logger().error(f'Error applying torque command: {str(e)}')
+
+    def set_torque_control(self):
+        """토크 제어 모드 설정"""
+        try:
+            self.drive.axis0.controller.config.control_mode = CONTROL_MODE_TORQUE_CONTROL
+            self.current_control_mode = "torque"
+            time.sleep(0.5)
+            return True, "Torque control mode set successfully"
+        except Exception as e:
+            return False, f"Error setting torque control mode: {str(e)}"
+
+
     def initialize_sequence(self):
         """전체 초기화 시퀀스"""
         try:
@@ -158,6 +235,8 @@ class ODriveController(Node):
                     success, response = self.set_idle_mode()
                 elif message == "set_closed_loop":
                     success, response = self.set_closed_loop_mode()
+                elif message == "set_torque_mode":
+                    success, response = self.set_torque_control()
                 else:
                     success = False
                     response = f"Unknown command: {message}"
@@ -197,6 +276,8 @@ class ODriveController(Node):
             response.success, response.message = self.set_idle_mode()
         elif request.command == "set_closed_loop":
             response.success, response.message = self.set_closed_loop_mode()
+        elif request.command == "set_torque_mode":
+            response.success, response.message = self.set_torque_control()
         else:
             response.success = False
             response.message = f"Unknown command: {request.command}"

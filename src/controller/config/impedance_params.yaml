@@ -1,0 +1,6 @@
+/**:
+  ros__parameters:
+    impedance_params:
+      I: 1.0
+      B: 0.5
+      K: 2.0
