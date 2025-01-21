@@ -16,6 +16,7 @@ src/controller/control_node.py
 src/controller/friction_compensation_node.py
 src/controller/impedance_control.py
 src/controller/odrive_control.py
+src/controller/testing.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

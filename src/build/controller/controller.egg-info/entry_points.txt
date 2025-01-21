@@ -1,3 +1,0 @@
-[console_scripts]
-odrive_control = controller.odrive_control:main
-

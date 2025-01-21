@@ -245,6 +245,12 @@ CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_gen
   rosidl_generator_c/custom_msgs/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/custom_msgs/msg/detail/motion_state__struct.h \
   rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.h \
+  rosidl_generator_c/custom_msgs/msg/detail/friction_comp__type_support.h \
+  rosidl_generator_c/custom_msgs/msg/detail/friction_comp__struct.h \
+  rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.h \
+  rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__type_support.h \
+  rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__struct.h \
+  rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.h \
   rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__type_support.h \
   rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
@@ -253,6 +259,14 @@ CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_gen
 
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__struct.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/friction_comp__functions.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/friction_comp__struct.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/friction_comp__type_support.h:
 
 rosidl_generator_c/custom_msgs/msg/detail/motion_state__functions.h:
 
@@ -438,6 +452,8 @@ rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspecti
 
 /usr/include/aarch64-linux-gnu/bits/posix2_lim.h:
 
+rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__functions.h:
+
 /usr/include/aarch64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/aarch64-linux-gnu/bits/struct_stat.h:
@@ -615,6 +631,8 @@ rosidl_generator_c/custom_msgs/srv/detail/o_drive_command__functions.h:
 /usr/include/python3.10/pyframe.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/impedance_torque__type_support.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h:
 

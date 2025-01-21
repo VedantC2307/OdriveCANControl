@@ -1,0 +1,411 @@
+[0.464s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.465s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff7f1752a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff7f3021a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff7f3021a0>>, mixin_verb=('build',))
+[1.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.261s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.261s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/vedant/OdriveCANControl'
+[1.262s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.262s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.262s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.262s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.313s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.314s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.314s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.315s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.315s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.315s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.316s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.317s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.317s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.317s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.319s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.319s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.319s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.319s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.319s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.320s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['ignore', 'ignore_ament_install']
+[1.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ignore'
+[1.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ignore_ament_install'
+[1.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['colcon_pkg']
+[1.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'colcon_pkg'
+[1.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['colcon_meta']
+[1.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'colcon_meta'
+[1.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['ros']
+[1.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ros'
+[1.332s] DEBUG:colcon.colcon_core.package_identification:Package 'src/controller' with type 'ros.ament_python' and name 'controller'
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore'
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore_ament_install'
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_pkg']
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_pkg'
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_meta']
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_meta'
+[1.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ros']
+[1.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ros'
+[1.337s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[1.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_logging) by extensions ['ignore', 'ignore_ament_install']
+[1.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_logging) by extension 'ignore'
+[1.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_logging) by extension 'ignore_ament_install'
+[1.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_logging) by extensions ['colcon_pkg']
+[1.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_logging) by extension 'colcon_pkg'
+[1.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_logging) by extensions ['colcon_meta']
+[1.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_logging) by extension 'colcon_meta'
+[1.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_logging) by extensions ['ros']
+[1.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_logging) by extension 'ros'
+[1.342s] DEBUG:colcon.colcon_core.package_identification:Package 'src/data_logging' with type 'ros.ament_python' and name 'data_logging'
+[1.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/encoder) by extensions ['ignore', 'ignore_ament_install']
+[1.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/encoder) by extension 'ignore'
+[1.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/encoder) by extension 'ignore_ament_install'
+[1.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/encoder) by extensions ['colcon_pkg']
+[1.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/encoder) by extension 'colcon_pkg'
+[1.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/encoder) by extensions ['colcon_meta']
+[1.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/encoder) by extension 'colcon_meta'
+[1.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/encoder) by extensions ['ros']
+[1.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/encoder) by extension 'ros'
+[1.348s] DEBUG:colcon.colcon_core.package_identification:Package 'src/encoder' with type 'ros.ament_python' and name 'encoder'
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extensions ['ignore', 'ignore_ament_install']
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extension 'ignore'
+[1.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extension 'ignore_ament_install'
+[1.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extensions ['colcon_pkg']
+[1.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extension 'colcon_pkg'
+[1.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extensions ['colcon_meta']
+[1.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extension 'colcon_meta'
+[1.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extensions ['ros']
+[1.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_control_py) by extension 'ros'
+[1.354s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odrive_control_py' with type 'ros.ament_python' and name 'odrive_control_py'
+[1.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extensions ['ignore', 'ignore_ament_install']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extension 'ignore'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extension 'ignore_ament_install'
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extensions ['colcon_pkg']
+[1.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extension 'colcon_pkg'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extensions ['colcon_meta']
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extension 'colcon_meta'
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extensions ['ros']
+[1.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_launch) by extension 'ros'
+[1.359s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_launch' with type 'ros.ament_cmake' and name 'robot_launch'
+[1.359s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.359s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.443s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.443s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.453s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/vedant/OdriveCANControl/install
+[1.460s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 189 installed packages in /opt/ros/humble
+[1.468s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_args' from command line to 'None'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target' from command line to 'None'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.623s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.623s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.623s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.623s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.623s] DEBUG:colcon.colcon_core.verb:Building package 'custom_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vedant/OdriveCANControl/build/custom_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vedant/OdriveCANControl/install/custom_msgs', 'merge_install': False, 'path': '/home/vedant/OdriveCANControl/src/custom_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'data_logging' build argument 'cmake_args' from command line to 'None'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'data_logging' build argument 'cmake_target' from command line to 'None'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'data_logging' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'data_logging' build argument 'cmake_clean_cache' from command line to 'False'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'data_logging' build argument 'cmake_clean_first' from command line to 'False'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'data_logging' build argument 'cmake_force_configure' from command line to 'False'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'data_logging' build argument 'ament_cmake_args' from command line to 'None'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'data_logging' build argument 'catkin_cmake_args' from command line to 'None'
+[1.626s] Level 5:colcon.colcon_core.verb:set package 'data_logging' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.626s] DEBUG:colcon.colcon_core.verb:Building package 'data_logging' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vedant/OdriveCANControl/build/data_logging', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vedant/OdriveCANControl/install/data_logging', 'merge_install': False, 'path': '/home/vedant/OdriveCANControl/src/data_logging', 'symlink_install': False, 'test_result_base': None}
+[1.627s] Level 5:colcon.colcon_core.verb:set package 'encoder' build argument 'cmake_args' from command line to 'None'
+[1.627s] Level 5:colcon.colcon_core.verb:set package 'encoder' build argument 'cmake_target' from command line to 'None'
+[1.627s] Level 5:colcon.colcon_core.verb:set package 'encoder' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.628s] Level 5:colcon.colcon_core.verb:set package 'encoder' build argument 'cmake_clean_cache' from command line to 'False'
+[1.628s] Level 5:colcon.colcon_core.verb:set package 'encoder' build argument 'cmake_clean_first' from command line to 'False'
+[1.628s] Level 5:colcon.colcon_core.verb:set package 'encoder' build argument 'cmake_force_configure' from command line to 'False'
+[1.628s] Level 5:colcon.colcon_core.verb:set package 'encoder' build argument 'ament_cmake_args' from command line to 'None'
+[1.628s] Level 5:colcon.colcon_core.verb:set package 'encoder' build argument 'catkin_cmake_args' from command line to 'None'
+[1.628s] Level 5:colcon.colcon_core.verb:set package 'encoder' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.628s] DEBUG:colcon.colcon_core.verb:Building package 'encoder' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vedant/OdriveCANControl/build/encoder', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vedant/OdriveCANControl/install/encoder', 'merge_install': False, 'path': '/home/vedant/OdriveCANControl/src/encoder', 'symlink_install': False, 'test_result_base': None}
+[1.630s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_args' from command line to 'None'
+[1.630s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target' from command line to 'None'
+[1.630s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.630s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_cache' from command line to 'False'
+[1.630s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_first' from command line to 'False'
+[1.630s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_force_configure' from command line to 'False'
+[1.630s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'ament_cmake_args' from command line to 'None'
+[1.631s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_cmake_args' from command line to 'None'
+[1.631s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.631s] DEBUG:colcon.colcon_core.verb:Building package 'controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vedant/OdriveCANControl/build/controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vedant/OdriveCANControl/install/controller', 'merge_install': False, 'path': '/home/vedant/OdriveCANControl/src/controller', 'symlink_install': False, 'test_result_base': None}
+[1.632s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'cmake_args' from command line to 'None'
+[1.633s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'cmake_target' from command line to 'None'
+[1.633s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.633s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'cmake_clean_cache' from command line to 'False'
+[1.633s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'cmake_clean_first' from command line to 'False'
+[1.633s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'cmake_force_configure' from command line to 'False'
+[1.633s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'ament_cmake_args' from command line to 'None'
+[1.633s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'catkin_cmake_args' from command line to 'None'
+[1.633s] Level 5:colcon.colcon_core.verb:set package 'odrive_control_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.633s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_control_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vedant/OdriveCANControl/build/odrive_control_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vedant/OdriveCANControl/install/odrive_control_py', 'merge_install': False, 'path': '/home/vedant/OdriveCANControl/src/odrive_control_py', 'symlink_install': False, 'test_result_base': None}
+[1.635s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'cmake_args' from command line to 'None'
+[1.635s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'cmake_target' from command line to 'None'
+[1.635s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.635s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[1.635s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'cmake_clean_first' from command line to 'False'
+[1.635s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'cmake_force_configure' from command line to 'False'
+[1.636s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'ament_cmake_args' from command line to 'None'
+[1.636s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[1.636s] Level 5:colcon.colcon_core.verb:set package 'robot_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.636s] DEBUG:colcon.colcon_core.verb:Building package 'robot_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vedant/OdriveCANControl/build/robot_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vedant/OdriveCANControl/install/robot_launch', 'merge_install': False, 'path': '/home/vedant/OdriveCANControl/src/robot_launch', 'symlink_install': False, 'test_result_base': None}
+[1.636s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.640s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.641s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vedant/OdriveCANControl/src/custom_msgs' with build type 'ament_cmake'
+[1.642s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vedant/OdriveCANControl/src/custom_msgs'
+[1.653s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.654s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.654s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.672s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/vedant/OdriveCANControl/src/encoder' with build type 'ament_python'
+[1.674s] Level 1:colcon.colcon_core.shell:create_environment_hook('encoder', 'ament_prefix_path')
+[1.675s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/encoder/share/encoder/hook/ament_prefix_path.ps1'
+[1.678s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/encoder/share/encoder/hook/ament_prefix_path.dsv'
+[1.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/encoder/share/encoder/hook/ament_prefix_path.sh'
+[1.685s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.685s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.702s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/vedant/OdriveCANControl/src/data_logging' with build type 'ament_python'
+[1.702s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_logging', 'ament_prefix_path')
+[1.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/data_logging/share/data_logging/hook/ament_prefix_path.ps1'
+[1.707s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/data_logging/share/data_logging/hook/ament_prefix_path.dsv'
+[1.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/data_logging/share/data_logging/hook/ament_prefix_path.sh'
+[1.713s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.713s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.750s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vedant/OdriveCANControl/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/opt/ros/humble /usr/bin/cmake --build /home/vedant/OdriveCANControl/build/custom_msgs -- -j4 -l4
+[3.474s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/vedant/OdriveCANControl/src/encoder'
+[3.475s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.476s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.807s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/vedant/OdriveCANControl/src/data_logging'
+[4.809s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.809s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vedant/OdriveCANControl/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/opt/ros/humble /usr/bin/cmake --build /home/vedant/OdriveCANControl/build/custom_msgs -- -j4 -l4
+[4.889s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vedant/OdriveCANControl/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/opt/ros/humble /usr/bin/cmake --install /home/vedant/OdriveCANControl/build/custom_msgs
+[5.387s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[5.423s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vedant/OdriveCANControl/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/opt/ros/humble /usr/bin/cmake --install /home/vedant/OdriveCANControl/build/custom_msgs
+[5.431s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/custom_msgs' for CMake module files
+[5.436s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/custom_msgs' for CMake config files
+[5.447s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[5.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[5.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[5.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[5.463s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/custom_msgs/lib'
+[5.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[5.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[5.469s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[5.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[5.476s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/custom_msgs/bin'
+[5.477s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[5.478s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/custom_msgs/lib/python3.10/site-packages'
+[5.480s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/custom_msgs/bin'
+[5.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.ps1'
+[5.487s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.dsv'
+[5.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.sh'
+[5.497s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.bash'
+[5.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.zsh'
+[5.509s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vedant/OdriveCANControl/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[5.515s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[5.517s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/custom_msgs' for CMake module files
+[5.523s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/custom_msgs' for CMake config files
+[5.530s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[5.532s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[5.534s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[5.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[5.542s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/custom_msgs/lib'
+[5.542s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[5.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[5.547s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[5.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[5.557s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/custom_msgs/bin'
+[5.558s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[5.561s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/custom_msgs/lib/python3.10/site-packages'
+[5.563s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/custom_msgs/bin'
+[5.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.ps1'
+[5.571s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.dsv'
+[5.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.sh'
+[5.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.bash'
+[5.588s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.zsh'
+[5.593s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vedant/OdriveCANControl/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[5.602s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/vedant/OdriveCANControl/src/controller' with build type 'ament_python'
+[5.603s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'ament_prefix_path')
+[5.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/controller/share/controller/hook/ament_prefix_path.ps1'
+[5.607s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/controller/share/controller/hook/ament_prefix_path.dsv'
+[5.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/controller/share/controller/hook/ament_prefix_path.sh'
+[5.616s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.617s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.641s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/vedant/OdriveCANControl/src/odrive_control_py' with build type 'ament_python'
+[5.643s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_control_py', 'ament_prefix_path')
+[5.645s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/hook/ament_prefix_path.ps1'
+[5.648s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/hook/ament_prefix_path.dsv'
+[5.651s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/hook/ament_prefix_path.sh'
+[5.655s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.656s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.023s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/vedant/OdriveCANControl/src/controller'
+[8.025s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.025s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.032s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/vedant/OdriveCANControl/src/odrive_control_py'
+[10.033s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.034s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.071s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vedant/OdriveCANControl/src/data_logging': PYTHONPATH=/home/vedant/OdriveCANControl/build/data_logging/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/data_logging build --build-base /home/vedant/OdriveCANControl/build/data_logging/build install --record /home/vedant/OdriveCANControl/build/data_logging/install.log --single-version-externally-managed install_data
+[10.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vedant/OdriveCANControl/src/encoder': PYTHONPATH=/home/vedant/OdriveCANControl/build/encoder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/encoder build --build-base /home/vedant/OdriveCANControl/build/encoder/build install --record /home/vedant/OdriveCANControl/build/encoder/install.log --single-version-externally-managed install_data
+[12.470s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/encoder' for CMake module files
+[12.473s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/encoder' for CMake config files
+[12.485s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/encoder/lib'
+[12.486s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/encoder/bin'
+[12.487s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/encoder/lib/pkgconfig/encoder.pc'
+[12.474s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vedant/OdriveCANControl/src/encoder' returned '0': PYTHONPATH=/home/vedant/OdriveCANControl/build/encoder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/encoder build --build-base /home/vedant/OdriveCANControl/build/encoder/build install --record /home/vedant/OdriveCANControl/build/encoder/install.log --single-version-externally-managed install_data
+[12.488s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages'
+[12.509s] Level 1:colcon.colcon_core.shell:create_environment_hook('encoder', 'pythonpath')
+[12.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/encoder/share/encoder/hook/pythonpath.ps1'
+[12.544s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/encoder/share/encoder/hook/pythonpath.dsv'
+[12.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/encoder/share/encoder/hook/pythonpath.sh'
+[12.567s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/encoder/bin'
+[12.568s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(encoder)
+[12.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/encoder/share/encoder/package.ps1'
+[12.581s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vedant/OdriveCANControl/install/encoder/share/encoder/package.dsv'
+[12.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/encoder/share/encoder/package.sh'
+[12.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/encoder/share/encoder/package.bash'
+[12.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/encoder/share/encoder/package.zsh'
+[12.609s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vedant/OdriveCANControl/install/encoder/share/colcon-core/packages/encoder)
+[13.564s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/data_logging' for CMake module files
+[13.567s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/data_logging' for CMake config files
+[13.570s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vedant/OdriveCANControl/src/data_logging' returned '0': PYTHONPATH=/home/vedant/OdriveCANControl/build/data_logging/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/data_logging build --build-base /home/vedant/OdriveCANControl/build/data_logging/build install --record /home/vedant/OdriveCANControl/build/data_logging/install.log --single-version-externally-managed install_data
+[13.583s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/data_logging/lib'
+[13.584s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/data_logging/bin'
+[13.585s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/data_logging/lib/pkgconfig/data_logging.pc'
+[13.586s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages'
+[13.586s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_logging', 'pythonpath')
+[13.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/data_logging/share/data_logging/hook/pythonpath.ps1'
+[13.597s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/data_logging/share/data_logging/hook/pythonpath.dsv'
+[13.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/data_logging/share/data_logging/hook/pythonpath.sh'
+[13.618s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/data_logging/bin'
+[13.620s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(data_logging)
+[13.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/data_logging/share/data_logging/package.ps1'
+[13.630s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vedant/OdriveCANControl/install/data_logging/share/data_logging/package.dsv'
+[13.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/data_logging/share/data_logging/package.sh'
+[13.648s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/data_logging/share/data_logging/package.bash'
+[13.655s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/data_logging/share/data_logging/package.zsh'
+[13.660s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vedant/OdriveCANControl/install/data_logging/share/colcon-core/packages/data_logging)
+[13.880s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vedant/OdriveCANControl/src/controller': CMAKE_PREFIX_PATH=/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/robot_launch PYTHONPATH=/home/vedant/OdriveCANControl/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/vedant/OdriveCANControl/build/controller/build install --record /home/vedant/OdriveCANControl/build/controller/install.log --single-version-externally-managed install_data
+[14.196s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vedant/OdriveCANControl/src/odrive_control_py': CMAKE_PREFIX_PATH=/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/robot_launch PYTHONPATH=/home/vedant/OdriveCANControl/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odrive_control_py build --build-base /home/vedant/OdriveCANControl/build/odrive_control_py/build install --record /home/vedant/OdriveCANControl/build/odrive_control_py/install.log --single-version-externally-managed install_data
+[16.054s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/controller' for CMake module files
+[16.056s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vedant/OdriveCANControl/src/controller' returned '0': CMAKE_PREFIX_PATH=/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/robot_launch PYTHONPATH=/home/vedant/OdriveCANControl/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/vedant/OdriveCANControl/build/controller/build install --record /home/vedant/OdriveCANControl/build/controller/install.log --single-version-externally-managed install_data
+[16.059s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/controller' for CMake config files
+[16.063s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/controller/lib'
+[16.063s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/controller/bin'
+[16.064s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/controller/lib/pkgconfig/controller.pc'
+[16.065s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages'
+[16.065s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'pythonpath')
+[16.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/controller/share/controller/hook/pythonpath.ps1'
+[16.069s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/controller/share/controller/hook/pythonpath.dsv'
+[16.071s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/controller/share/controller/hook/pythonpath.sh'
+[16.075s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/controller/bin'
+[16.075s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller)
+[16.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/controller/share/controller/package.ps1'
+[16.080s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vedant/OdriveCANControl/install/controller/share/controller/package.dsv'
+[16.082s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/controller/share/controller/package.sh'
+[16.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/controller/share/controller/package.bash'
+[16.089s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/controller/share/controller/package.zsh'
+[16.092s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vedant/OdriveCANControl/install/controller/share/colcon-core/packages/controller)
+[16.095s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vedant/OdriveCANControl/src/robot_launch' with build type 'ament_cmake'
+[16.096s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vedant/OdriveCANControl/src/robot_launch'
+[16.097s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[16.098s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.176s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vedant/OdriveCANControl/build/robot_launch': AMENT_PREFIX_PATH=/home/vedant/OdriveCANControl/install/controller:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/custom_msgs:/opt/ros/humble CMAKE_PREFIX_PATH=/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/opt/ros/humble PYTHONPATH=/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/vedant/OdriveCANControl/build/robot_launch -- -j4 -l4
+[16.279s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_control_py' for CMake module files
+[16.283s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vedant/OdriveCANControl/src/odrive_control_py' returned '0': CMAKE_PREFIX_PATH=/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/robot_launch PYTHONPATH=/home/vedant/OdriveCANControl/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/odrive_control_py build --build-base /home/vedant/OdriveCANControl/build/odrive_control_py/build install --record /home/vedant/OdriveCANControl/build/odrive_control_py/install.log --single-version-externally-managed install_data
+[16.286s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_control_py' for CMake config files
+[16.293s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_control_py/lib'
+[16.294s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_control_py/bin'
+[16.294s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_control_py/lib/pkgconfig/odrive_control_py.pc'
+[16.295s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages'
+[16.296s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_control_py', 'pythonpath')
+[16.297s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/hook/pythonpath.ps1'
+[16.300s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/hook/pythonpath.dsv'
+[16.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/hook/pythonpath.sh'
+[16.310s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/odrive_control_py/bin'
+[16.311s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_control_py)
+[16.313s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/package.ps1'
+[16.318s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/package.dsv'
+[16.323s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/package.sh'
+[16.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/package.bash'
+[16.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/odrive_control_py/share/odrive_control_py/package.zsh'
+[16.334s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vedant/OdriveCANControl/install/odrive_control_py/share/colcon-core/packages/odrive_control_py)
+[16.384s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vedant/OdriveCANControl/build/robot_launch' returned '0': AMENT_PREFIX_PATH=/home/vedant/OdriveCANControl/install/controller:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/custom_msgs:/opt/ros/humble CMAKE_PREFIX_PATH=/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/opt/ros/humble PYTHONPATH=/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/vedant/OdriveCANControl/build/robot_launch -- -j4 -l4
+[16.394s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vedant/OdriveCANControl/build/robot_launch': AMENT_PREFIX_PATH=/home/vedant/OdriveCANControl/install/controller:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/custom_msgs:/opt/ros/humble CMAKE_PREFIX_PATH=/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/opt/ros/humble PYTHONPATH=/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/vedant/OdriveCANControl/build/robot_launch
+[16.434s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_launch)
+[16.435s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/robot_launch' for CMake module files
+[16.437s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vedant/OdriveCANControl/build/robot_launch' returned '0': AMENT_PREFIX_PATH=/home/vedant/OdriveCANControl/install/controller:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/custom_msgs:/opt/ros/humble CMAKE_PREFIX_PATH=/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/opt/ros/humble PYTHONPATH=/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/vedant/OdriveCANControl/build/robot_launch
+[16.439s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/robot_launch' for CMake config files
+[16.440s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_launch', 'cmake_prefix_path')
+[16.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/hook/cmake_prefix_path.ps1'
+[16.443s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/hook/cmake_prefix_path.dsv'
+[16.446s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/hook/cmake_prefix_path.sh'
+[16.449s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/robot_launch/bin'
+[16.449s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/robot_launch/lib/pkgconfig/robot_launch.pc'
+[16.450s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/robot_launch/lib/python3.10/site-packages'
+[16.452s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/robot_launch/bin'
+[16.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/package.ps1'
+[16.456s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/package.dsv'
+[16.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/package.sh'
+[16.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/package.bash'
+[16.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/package.zsh'
+[16.464s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vedant/OdriveCANControl/install/robot_launch/share/colcon-core/packages/robot_launch)
+[16.467s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_launch)
+[16.468s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/robot_launch' for CMake module files
+[16.470s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/robot_launch' for CMake config files
+[16.472s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_launch', 'cmake_prefix_path')
+[16.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/hook/cmake_prefix_path.ps1'
+[16.475s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/hook/cmake_prefix_path.dsv'
+[16.477s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/hook/cmake_prefix_path.sh'
+[16.480s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/robot_launch/bin'
+[16.480s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/robot_launch/lib/pkgconfig/robot_launch.pc'
+[16.481s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/robot_launch/lib/python3.10/site-packages'
+[16.482s] Level 1:colcon.colcon_core.environment:checking '/home/vedant/OdriveCANControl/install/robot_launch/bin'
+[16.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/package.ps1'
+[16.486s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/package.dsv'
+[16.489s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/package.sh'
+[16.491s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/package.bash'
+[16.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/package.zsh'
+[16.496s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vedant/OdriveCANControl/install/robot_launch/share/colcon-core/packages/robot_launch)
+[16.497s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.498s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.499s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[16.499s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.523s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.523s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.524s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.563s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.565s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vedant/OdriveCANControl/install/local_setup.ps1'
+[16.568s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/vedant/OdriveCANControl/install/_local_setup_util_ps1.py'
+[16.576s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vedant/OdriveCANControl/install/setup.ps1'
+[16.585s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vedant/OdriveCANControl/install/local_setup.sh'
+[16.588s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/vedant/OdriveCANControl/install/_local_setup_util_sh.py'
+[16.591s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vedant/OdriveCANControl/install/setup.sh'
+[16.597s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vedant/OdriveCANControl/install/local_setup.bash'
+[16.599s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vedant/OdriveCANControl/install/setup.bash'
+[16.605s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vedant/OdriveCANControl/install/local_setup.zsh'
+[16.607s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vedant/OdriveCANControl/install/setup.zsh'

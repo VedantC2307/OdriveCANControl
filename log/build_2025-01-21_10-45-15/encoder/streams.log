@@ -1,0 +1,21 @@
+[7.973s] Invoking command in '/home/vedant/OdriveCANControl/src/encoder': PYTHONPATH=/home/vedant/OdriveCANControl/build/encoder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/encoder build --build-base /home/vedant/OdriveCANControl/build/encoder/build install --record /home/vedant/OdriveCANControl/build/encoder/install.log --single-version-externally-managed install_data
+[9.894s] running egg_info
+[9.904s] writing ../../build/encoder/encoder.egg-info/PKG-INFO
+[9.905s] writing dependency_links to ../../build/encoder/encoder.egg-info/dependency_links.txt
+[9.908s] writing entry points to ../../build/encoder/encoder.egg-info/entry_points.txt
+[9.909s] writing requirements to ../../build/encoder/encoder.egg-info/requires.txt
+[9.911s] writing top-level names to ../../build/encoder/encoder.egg-info/top_level.txt
+[9.917s] reading manifest file '../../build/encoder/encoder.egg-info/SOURCES.txt'
+[9.923s] writing manifest file '../../build/encoder/encoder.egg-info/SOURCES.txt'
+[9.924s] running build
+[9.925s] running build_py
+[9.926s] running install
+[9.926s] running install_lib
+[9.934s] running install_data
+[9.935s] running install_egg_info
+[9.944s] removing '/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages/encoder-0.0.0-py3.10.egg-info' (and everything under it)
+[9.948s] Copying ../../build/encoder/encoder.egg-info to /home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages/encoder-0.0.0-py3.10.egg-info
+[9.956s] running install_scripts
+[10.076s] Installing encoder_node script to /home/vedant/OdriveCANControl/install/encoder/lib/encoder
+[10.078s] writing list of installed files to '/home/vedant/OdriveCANControl/build/encoder/install.log'
+[10.283s] Invoked command in '/home/vedant/OdriveCANControl/src/encoder' returned '0': PYTHONPATH=/home/vedant/OdriveCANControl/build/encoder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/encoder build --build-base /home/vedant/OdriveCANControl/build/encoder/build install --record /home/vedant/OdriveCANControl/build/encoder/install.log --single-version-externally-managed install_data

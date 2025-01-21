@@ -1,0 +1,519 @@
+[0.000000] (-) TimerEvent: {}
+[0.001002] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.002113] (data_logging) JobQueued: {'identifier': 'data_logging', 'dependencies': OrderedDict()}
+[0.002658] (encoder) JobQueued: {'identifier': 'encoder', 'dependencies': OrderedDict()}
+[0.003134] (controller) JobQueued: {'identifier': 'controller', 'dependencies': OrderedDict([('custom_msgs', '/home/vedant/OdriveCANControl/install/custom_msgs')])}
+[0.003333] (odrive_control_py) JobQueued: {'identifier': 'odrive_control_py', 'dependencies': OrderedDict([('custom_msgs', '/home/vedant/OdriveCANControl/install/custom_msgs')])}
+[0.003627] (robot_launch) JobQueued: {'identifier': 'robot_launch', 'dependencies': OrderedDict([('custom_msgs', '/home/vedant/OdriveCANControl/install/custom_msgs'), ('encoder', '/home/vedant/OdriveCANControl/install/encoder'), ('controller', '/home/vedant/OdriveCANControl/install/controller')])}
+[0.003806] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.033281] (encoder) JobStarted: {'identifier': 'encoder'}
+[0.064088] (data_logging) JobStarted: {'identifier': 'data_logging'}
+[0.098992] (-) TimerEvent: {}
+[0.100703] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.104426] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[0.107666] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vedant/OdriveCANControl/build/custom_msgs', '--', '-j4', '-l4'], 'cwd': '/home/vedant/OdriveCANControl/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SSH_CLIENT', '192.168.0.6 35266 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/vedant/OdriveCANControl/install/custom_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant/OdriveCANControl/src'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b2609d6a-b532-4d18-bcca-3fc67b38672a.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/vedant/OdriveCANControl/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-bddb7e77dc.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/home/vedant/OdriveCANControl/install/custom_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/vedant/OdriveCANControl/build/custom_msgs'), ('SSH_CONNECTION', '192.168.0.6 35266 192.168.0.5 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/opt/ros/humble')]), 'shell': False}
+[0.199192] (-) TimerEvent: {}
+[0.299977] (-) TimerEvent: {}
+[0.402632] (-) TimerEvent: {}
+[0.505513] (-) TimerEvent: {}
+[0.608211] (-) TimerEvent: {}
+[0.711317] (-) TimerEvent: {}
+[0.814133] (-) TimerEvent: {}
+[0.916597] (-) TimerEvent: {}
+[1.018987] (-) TimerEvent: {}
+[1.121468] (-) TimerEvent: {}
+[1.225463] (-) TimerEvent: {}
+[1.326316] (-) TimerEvent: {}
+[1.427485] (-) TimerEvent: {}
+[1.528345] (-) TimerEvent: {}
+[1.629536] (-) TimerEvent: {}
+[1.730343] (-) TimerEvent: {}
+[1.776572] (custom_msgs) StdoutLine: {'line': b'[ 10%] Built target custom_msgs__rosidl_generator_c\n'}
+[1.777315] (custom_msgs) StdoutLine: {'line': b'[ 12%] Built target custom_msgs__cpp\n'}
+[1.777743] (custom_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_custom_msgs\n'}
+[1.778138] (custom_msgs) StdoutLine: {'line': b'[ 23%] Built target custom_msgs__rosidl_typesupport_introspection_c\n'}
+[1.778553] (custom_msgs) StdoutLine: {'line': b'[ 34%] Built target custom_msgs__rosidl_typesupport_fastrtps_c\n'}
+[1.778921] (custom_msgs) StdoutLine: {'line': b'[ 45%] Built target custom_msgs__rosidl_typesupport_c\n'}
+[1.779277] (custom_msgs) StdoutLine: {'line': b'[ 56%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.779632] (custom_msgs) StdoutLine: {'line': b'[ 67%] Built target custom_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.780002] (custom_msgs) StdoutLine: {'line': b'[ 78%] Built target custom_msgs__rosidl_typesupport_cpp\n'}
+[1.780377] (custom_msgs) StdoutLine: {'line': b'[ 78%] Built target custom_msgs\n'}
+[1.781022] (custom_msgs) StdoutLine: {'line': b'[ 80%] Built target custom_msgs__py\n'}
+[1.781506] (custom_msgs) StdoutLine: {'line': b'[ 89%] Built target custom_msgs__rosidl_generator_py\n'}
+[1.781881] (custom_msgs) StdoutLine: {'line': b'[ 92%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.782245] (custom_msgs) StdoutLine: {'line': b'[ 96%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.782601] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs__rosidl_typesupport_c__pyext\n'}
+[1.830522] (-) TimerEvent: {}
+[1.932123] (-) TimerEvent: {}
+[2.001011] (custom_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.004442] (custom_msgs) StdoutLine: {'line': b'writing custom_msgs.egg-info/PKG-INFO\n'}
+[2.005794] (custom_msgs) StdoutLine: {'line': b'writing dependency_links to custom_msgs.egg-info/dependency_links.txt\n'}
+[2.008160] (custom_msgs) StdoutLine: {'line': b'writing top-level names to custom_msgs.egg-info/top_level.txt\n'}
+[2.019076] (custom_msgs) StdoutLine: {'line': b"reading manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[2.022298] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[2.032496] (-) TimerEvent: {}
+[2.133917] (-) TimerEvent: {}
+[2.170161] (custom_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_custom_msgs_egg\n'}
+[2.234078] (-) TimerEvent: {}
+[2.334832] (-) TimerEvent: {}
+[2.435552] (-) TimerEvent: {}
+[2.536245] (-) TimerEvent: {}
+[2.636996] (-) TimerEvent: {}
+[2.737754] (-) TimerEvent: {}
+[2.838526] (-) TimerEvent: {}
+[2.939541] (-) TimerEvent: {}
+[3.040364] (-) TimerEvent: {}
+[3.102999] (custom_msgs) CommandEnded: {'returncode': 0}
+[3.106373] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'install'}
+[3.145691] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vedant/OdriveCANControl/build/custom_msgs'], 'cwd': '/home/vedant/OdriveCANControl/build/custom_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SSH_CLIENT', '192.168.0.6 35266 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/vedant/OdriveCANControl/install/custom_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant/OdriveCANControl/src'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b2609d6a-b532-4d18-bcca-3fc67b38672a.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/vedant/OdriveCANControl/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-bddb7e77dc.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/home/vedant/OdriveCANControl/install/custom_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/vedant/OdriveCANControl/build/custom_msgs'), ('SSH_CONNECTION', '192.168.0.6 35266 192.168.0.5 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/opt/ros/humble')]), 'shell': False}
+[3.151506] (-) TimerEvent: {}
+[3.185510] (custom_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.196115] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs\n'}
+[3.202372] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[3.202920] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[3.203328] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[3.211145] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__functions.h\n'}
+[3.218286] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__type_support.h\n'}
+[3.229295] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__struct.h\n'}
+[3.232397] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__functions.c\n'}
+[3.233000] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/o_drive_command.h\n'}
+[3.242948] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[3.254921] (-) TimerEvent: {}
+[3.256485] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/impedance_torque.h\n'}
+[3.257703] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/friction_comp.h\n'}
+[3.258507] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/motion_state.h\n'}
+[3.259095] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.259888] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[3.262531] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__struct.h\n'}
+[3.263175] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__functions.c\n'}
+[3.263923] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__functions.h\n'}
+[3.264377] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.h\n'}
+[3.264982] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__type_support.h\n'}
+[3.265673] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__struct.h\n'}
+[3.266172] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__functions.c\n'}
+[3.266686] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__struct.h\n'}
+[3.267267] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__functions.c\n'}
+[3.267721] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__functions.h\n'}
+[3.268145] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__functions.h\n'}
+[3.268563] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__type_support.h\n'}
+[3.269880] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/library_path.sh\n'}
+[3.270852] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/library_path.dsv\n'}
+[3.271447] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so\n'}
+[3.272125] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[3.272641] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[3.273206] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[3.273602] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__rosidl_typesupport_fastrtps_c.h\n'}
+[3.273954] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[3.274289] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[3.274756] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__rosidl_typesupport_fastrtps_c.h\n'}
+[3.275341] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_fastrtps_c.h\n'}
+[3.275832] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__rosidl_typesupport_fastrtps_c.h\n'}
+[3.276172] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.276528] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[3.278387] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[3.279126] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[3.279655] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[3.280186] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__type_support.c\n'}
+[3.280663] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__rosidl_typesupport_introspection_c.h\n'}
+[3.281349] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[3.282372] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[3.283040] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_introspection_c.h\n'}
+[3.283614] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__type_support.c\n'}
+[3.284110] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.c\n'}
+[3.284588] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__type_support.c\n'}
+[3.285281] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__rosidl_typesupport_introspection_c.h\n'}
+[3.285858] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__rosidl_typesupport_introspection_c.h\n'}
+[3.286322] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.286834] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so\n'}
+[3.287281] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so\n'}
+[3.287679] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[3.288338] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[3.288938] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/o_drive_command.hpp\n'}
+[3.289431] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[3.289749] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__struct.hpp\n'}
+[3.290094] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__traits.hpp\n'}
+[3.290462] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__builder.hpp\n'}
+[3.290843] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__type_support.hpp\n'}
+[3.291484] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[3.292154] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.292656] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/friction_comp.hpp\n'}
+[3.293354] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[3.293886] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__traits.hpp\n'}
+[3.294358] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__type_support.hpp\n'}
+[3.294889] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.hpp\n'}
+[3.295405] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__traits.hpp\n'}
+[3.295937] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__builder.hpp\n'}
+[3.296513] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__builder.hpp\n'}
+[3.297299] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__type_support.hpp\n'}
+[3.297942] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__traits.hpp\n'}
+[3.298450] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__struct.hpp\n'}
+[3.298915] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__struct.hpp\n'}
+[3.299417] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__struct.hpp\n'}
+[3.299892] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__builder.hpp\n'}
+[3.300452] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/impedance_torque.hpp\n'}
+[3.301199] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/motion_state.hpp\n'}
+[3.301713] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[3.302151] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[3.302599] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[3.303023] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.303496] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/dds_fastrtps\n'}
+[3.303876] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[3.304238] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.304568] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[3.305101] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.305519] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.305840] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.306179] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps\n'}
+[3.306696] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.307232] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs\n'}
+[3.307704] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv\n'}
+[3.308151] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail\n'}
+[3.308646] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.309697] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__type_support.cpp\n'}
+[3.310401] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg\n'}
+[3.310873] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail\n'}
+[3.311243] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.311710] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.312173] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__type_support.cpp\n'}
+[3.312513] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.cpp\n'}
+[3.317181] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.317752] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__type_support.cpp\n'}
+[3.318246] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[3.318744] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so\n'}
+[3.319230] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh\n'}
+[3.319754] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv\n'}
+[3.320286] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info\n'}
+[3.320831] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.321480] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.322148] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.322590] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.329848] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs\n'}
+[3.330505] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv\n'}
+[3.331028] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_o_drive_command.py\n'}
+[3.331419] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/__init__.py\n'}
+[3.331841] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_o_drive_command_s.c\n'}
+[3.332350] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so\n'}
+[3.337388] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg\n'}
+[3.341654] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_motion_state.py\n'}
+[3.345133] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_friction_comp.py\n'}
+[3.347864] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py\n'}
+[3.350977] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_friction_comp_s.c\n'}
+[3.354028] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_motion_state_s.c\n'}
+[3.356661] (-) TimerEvent: {}
+[3.357779] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_impedance_torque.py\n'}
+[3.360816] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_impedance_torque_s.c\n'}
+[3.363963] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.367876] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py\n'}
+[3.370945] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.373804] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.377055] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[3.379860] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.382630] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.457002] (-) TimerEvent: {}
+[3.559678] (-) TimerEvent: {}
+[3.597380] (custom_msgs) StdoutLine: {'line': b"Listing '/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...\n"}
+[3.599105] (custom_msgs) StdoutLine: {'line': b"Listing '/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...\n"}
+[3.599794] (custom_msgs) StdoutLine: {'line': b"Listing '/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv'...\n"}
+[3.644931] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.649579] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.657126] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.661155] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so\n'}
+[3.661804] (-) TimerEvent: {}
+[3.669218] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/msg/MotionState.idl\n'}
+[3.670363] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/msg/FrictionComp.idl\n'}
+[3.674720] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/msg/ImpedanceTorque.idl\n'}
+[3.676029] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/srv/ODriveCommand.idl\n'}
+[3.681372] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/msg/MotionState.msg\n'}
+[3.682506] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/msg/FrictionComp.msg\n'}
+[3.683315] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/msg/ImpedanceTorque.msg\n'}
+[3.684089] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/srv/ODriveCommand.srv\n'}
+[3.684658] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/srv/ODriveCommand_Request.msg\n'}
+[3.693247] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/srv/ODriveCommand_Response.msg\n'}
+[3.694021] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs\n'}
+[3.694630] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs\n'}
+[3.695237] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh\n'}
+[3.695761] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv\n'}
+[3.701177] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/path.sh\n'}
+[3.702619] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/path.dsv\n'}
+[3.703232] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/local_setup.bash\n'}
+[3.703834] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/local_setup.sh\n'}
+[3.704426] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/local_setup.zsh\n'}
+[3.705185] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/local_setup.dsv\n'}
+[3.706062] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.dsv\n'}
+[3.713198] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs\n'}
+[3.715056] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake\n'}
+[3.716690] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.717422] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.729294] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.730283] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.731501] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.732249] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake\n'}
+[3.732997] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.734435] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake\n'}
+[3.746027] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.746878] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.747391] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.747986] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.748518] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[3.753759] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.754688] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake\n'}
+[3.756293] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.757121] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[3.757691] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.762064] (-) TimerEvent: {}
+[3.769528] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.770637] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.771232] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.771794] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.772479] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.779894] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake\n'}
+[3.780728] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake\n'}
+[3.781432] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.xml\n'}
+[3.828967] (custom_msgs) CommandEnded: {'returncode': 0}
+[3.863137] (-) TimerEvent: {}
+[3.973703] (-) TimerEvent: {}
+[3.995016] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 0}
+[3.998058] (controller) JobStarted: {'identifier': 'controller'}
+[4.058834] (odrive_control_py) JobStarted: {'identifier': 'odrive_control_py'}
+[4.074483] (-) TimerEvent: {}
+[4.177063] (-) TimerEvent: {}
+[4.278088] (-) TimerEvent: {}
+[4.380445] (-) TimerEvent: {}
+[4.483424] (-) TimerEvent: {}
+[4.585784] (-) TimerEvent: {}
+[4.688094] (-) TimerEvent: {}
+[4.790384] (-) TimerEvent: {}
+[4.892750] (-) TimerEvent: {}
+[4.995210] (-) TimerEvent: {}
+[5.097013] (-) TimerEvent: {}
+[5.200973] (-) TimerEvent: {}
+[5.308969] (-) TimerEvent: {}
+[5.412948] (-) TimerEvent: {}
+[5.517090] (-) TimerEvent: {}
+[5.621025] (-) TimerEvent: {}
+[5.725031] (-) TimerEvent: {}
+[5.828994] (-) TimerEvent: {}
+[5.933081] (-) TimerEvent: {}
+[6.037016] (-) TimerEvent: {}
+[6.141022] (-) TimerEvent: {}
+[6.242350] (-) TimerEvent: {}
+[6.344081] (-) TimerEvent: {}
+[6.448903] (-) TimerEvent: {}
+[6.549923] (-) TimerEvent: {}
+[6.651071] (-) TimerEvent: {}
+[6.753549] (-) TimerEvent: {}
+[6.855007] (-) TimerEvent: {}
+[6.956298] (-) TimerEvent: {}
+[7.057206] (-) TimerEvent: {}
+[7.158290] (-) TimerEvent: {}
+[7.259526] (-) TimerEvent: {}
+[7.360564] (-) TimerEvent: {}
+[7.461935] (-) TimerEvent: {}
+[7.562838] (-) TimerEvent: {}
+[7.663830] (-) TimerEvent: {}
+[7.764697] (-) TimerEvent: {}
+[7.865870] (-) TimerEvent: {}
+[7.967157] (-) TimerEvent: {}
+[8.068106] (-) TimerEvent: {}
+[8.169102] (-) TimerEvent: {}
+[8.270195] (-) TimerEvent: {}
+[8.371554] (-) TimerEvent: {}
+[8.473343] (-) TimerEvent: {}
+[8.512433] (data_logging) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/data_logging', 'build', '--build-base', '/home/vedant/OdriveCANControl/build/data_logging/build', 'install', '--record', '/home/vedant/OdriveCANControl/build/data_logging/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/vedant/OdriveCANControl/src/data_logging', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'vedant', 'SSH_CLIENT': '192.168.0.6 35266 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/vedant/OdriveCANControl/install/custom_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/vedant', 'OLDPWD': '/home/vedant/OdriveCANControl/src', 'TERM_PROGRAM_VERSION': '1.96.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-b2609d6a-b532-4d18-bcca-3fc67b38672a.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/vedant/OdriveCANControl/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'vedant', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-bddb7e77dc.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/home/vedant/OdriveCANControl/install/custom_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/vedant/OdriveCANControl/build/data_logging', 'SSH_CONNECTION': '192.168.0.6 35266 192.168.0.5 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vedant/OdriveCANControl/build/data_logging/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/custom_msgs'}, 'shell': False}
+[8.531775] (encoder) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/encoder', 'build', '--build-base', '/home/vedant/OdriveCANControl/build/encoder/build', 'install', '--record', '/home/vedant/OdriveCANControl/build/encoder/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/vedant/OdriveCANControl/src/encoder', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'vedant', 'SSH_CLIENT': '192.168.0.6 35266 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/vedant/OdriveCANControl/install/custom_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/vedant', 'OLDPWD': '/home/vedant/OdriveCANControl/src', 'TERM_PROGRAM_VERSION': '1.96.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-b2609d6a-b532-4d18-bcca-3fc67b38672a.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/vedant/OdriveCANControl/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'vedant', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-bddb7e77dc.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/home/vedant/OdriveCANControl/install/custom_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/vedant/OdriveCANControl/build/encoder', 'SSH_CONNECTION': '192.168.0.6 35266 192.168.0.5 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vedant/OdriveCANControl/build/encoder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/custom_msgs'}, 'shell': False}
+[8.587437] (-) TimerEvent: {}
+[8.690841] (-) TimerEvent: {}
+[8.793127] (-) TimerEvent: {}
+[8.895708] (-) TimerEvent: {}
+[8.998572] (-) TimerEvent: {}
+[9.099963] (-) TimerEvent: {}
+[9.201540] (-) TimerEvent: {}
+[9.304718] (-) TimerEvent: {}
+[9.407140] (-) TimerEvent: {}
+[9.509729] (-) TimerEvent: {}
+[9.612214] (-) TimerEvent: {}
+[9.720980] (-) TimerEvent: {}
+[9.825344] (-) TimerEvent: {}
+[9.936974] (-) TimerEvent: {}
+[10.040959] (-) TimerEvent: {}
+[10.141933] (-) TimerEvent: {}
+[10.249092] (-) TimerEvent: {}
+[10.357148] (-) TimerEvent: {}
+[10.458876] (-) TimerEvent: {}
+[10.485781] (data_logging) StdoutLine: {'line': b'running egg_info\n'}
+[10.494798] (data_logging) StdoutLine: {'line': b'writing ../../build/data_logging/data_logging.egg-info/PKG-INFO\n'}
+[10.497275] (data_logging) StdoutLine: {'line': b'writing dependency_links to ../../build/data_logging/data_logging.egg-info/dependency_links.txt\n'}
+[10.500339] (data_logging) StdoutLine: {'line': b'writing entry points to ../../build/data_logging/data_logging.egg-info/entry_points.txt\n'}
+[10.501453] (data_logging) StdoutLine: {'line': b'writing requirements to ../../build/data_logging/data_logging.egg-info/requires.txt\n'}
+[10.502137] (data_logging) StdoutLine: {'line': b'writing top-level names to ../../build/data_logging/data_logging.egg-info/top_level.txt\n'}
+[10.508274] (data_logging) StdoutLine: {'line': b"reading manifest file '../../build/data_logging/data_logging.egg-info/SOURCES.txt'\n"}
+[10.514786] (data_logging) StdoutLine: {'line': b"writing manifest file '../../build/data_logging/data_logging.egg-info/SOURCES.txt'\n"}
+[10.515503] (data_logging) StdoutLine: {'line': b'running build\n'}
+[10.518624] (data_logging) StdoutLine: {'line': b'running build_py\n'}
+[10.519773] (data_logging) StdoutLine: {'line': b'running install\n'}
+[10.520671] (data_logging) StdoutLine: {'line': b'running install_lib\n'}
+[10.527150] (data_logging) StdoutLine: {'line': b'running install_data\n'}
+[10.527952] (data_logging) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.538339] (data_logging) StdoutLine: {'line': b"removing '/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages/data_logging-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[10.541436] (data_logging) StdoutLine: {'line': b'Copying ../../build/data_logging/data_logging.egg-info to /home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages/data_logging-0.0.0-py3.10.egg-info\n'}
+[10.549983] (data_logging) StdoutLine: {'line': b'running install_scripts\n'}
+[10.561995] (-) TimerEvent: {}
+[10.664741] (-) TimerEvent: {}
+[10.669609] (data_logging) StdoutLine: {'line': b"writing list of installed files to '/home/vedant/OdriveCANControl/build/data_logging/install.log'\n"}
+[10.765483] (-) TimerEvent: {}
+[10.869134] (-) TimerEvent: {}
+[10.920999] (data_logging) CommandEnded: {'returncode': 0}
+[10.969357] (-) TimerEvent: {}
+[11.027690] (data_logging) JobEnded: {'identifier': 'data_logging', 'rc': 0}
+[11.069572] (-) TimerEvent: {}
+[11.180963] (-) TimerEvent: {}
+[11.281979] (-) TimerEvent: {}
+[11.383014] (-) TimerEvent: {}
+[11.484344] (-) TimerEvent: {}
+[11.585743] (-) TimerEvent: {}
+[11.686986] (-) TimerEvent: {}
+[11.696434] (encoder) StdoutLine: {'line': b'running egg_info\n'}
+[11.706981] (encoder) StdoutLine: {'line': b'writing ../../build/encoder/encoder.egg-info/PKG-INFO\n'}
+[11.707963] (encoder) StdoutLine: {'line': b'writing dependency_links to ../../build/encoder/encoder.egg-info/dependency_links.txt\n'}
+[11.708664] (encoder) StdoutLine: {'line': b'writing entry points to ../../build/encoder/encoder.egg-info/entry_points.txt\n'}
+[11.711926] (encoder) StdoutLine: {'line': b'writing requirements to ../../build/encoder/encoder.egg-info/requires.txt\n'}
+[11.718407] (encoder) StdoutLine: {'line': b'writing top-level names to ../../build/encoder/encoder.egg-info/top_level.txt\n'}
+[11.721099] (encoder) StdoutLine: {'line': b"reading manifest file '../../build/encoder/encoder.egg-info/SOURCES.txt'\n"}
+[11.730494] (encoder) StdoutLine: {'line': b"writing manifest file '../../build/encoder/encoder.egg-info/SOURCES.txt'\n"}
+[11.731209] (encoder) StdoutLine: {'line': b'running build\n'}
+[11.731770] (encoder) StdoutLine: {'line': b'running build_py\n'}
+[11.741706] (encoder) StdoutLine: {'line': b'running install\n'}
+[11.742944] (encoder) StdoutLine: {'line': b'running install_lib\n'}
+[11.743504] (encoder) StdoutLine: {'line': b'running install_data\n'}
+[11.744198] (encoder) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.756219] (encoder) StdoutLine: {'line': b"removing '/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages/encoder-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[11.759327] (encoder) StdoutLine: {'line': b'Copying ../../build/encoder/encoder.egg-info to /home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages/encoder-0.0.0-py3.10.egg-info\n'}
+[11.770758] (encoder) StdoutLine: {'line': b'running install_scripts\n'}
+[11.804127] (-) TimerEvent: {}
+[11.900918] (encoder) StdoutLine: {'line': b'Installing encoder_node script to /home/vedant/OdriveCANControl/install/encoder/lib/encoder\n'}
+[11.904340] (-) TimerEvent: {}
+[11.905816] (encoder) StdoutLine: {'line': b"writing list of installed files to '/home/vedant/OdriveCANControl/build/encoder/install.log'\n"}
+[12.004655] (-) TimerEvent: {}
+[12.101462] (encoder) CommandEnded: {'returncode': 0}
+[12.109005] (-) TimerEvent: {}
+[12.210097] (-) TimerEvent: {}
+[12.227694] (encoder) JobEnded: {'identifier': 'encoder', 'rc': 0}
+[12.313047] (-) TimerEvent: {}
+[12.358264] (odrive_control_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/odrive_control_py', 'build', '--build-base', '/home/vedant/OdriveCANControl/build/odrive_control_py/build', 'install', '--record', '/home/vedant/OdriveCANControl/build/odrive_control_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/vedant/OdriveCANControl/src/odrive_control_py', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'vedant', 'SSH_CLIENT': '192.168.0.6 35266 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/vedant/OdriveCANControl/install/custom_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/vedant', 'OLDPWD': '/home/vedant/OdriveCANControl/src', 'TERM_PROGRAM_VERSION': '1.96.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-b2609d6a-b532-4d18-bcca-3fc67b38672a.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/vedant/OdriveCANControl/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'vedant', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-bddb7e77dc.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/home/vedant/OdriveCANControl/install/custom_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/vedant/OdriveCANControl/build/odrive_control_py', 'SSH_CONNECTION': '192.168.0.6 35266 192.168.0.5 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vedant/OdriveCANControl/build/odrive_control_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/robot_launch'}, 'shell': False}
+[12.413269] (-) TimerEvent: {}
+[12.514369] (-) TimerEvent: {}
+[12.615805] (-) TimerEvent: {}
+[12.716851] (-) TimerEvent: {}
+[12.821089] (-) TimerEvent: {}
+[12.853198] (controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/controller', 'build', '--build-base', '/home/vedant/OdriveCANControl/build/controller/build', 'install', '--record', '/home/vedant/OdriveCANControl/build/controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/vedant/OdriveCANControl/src/controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'vedant', 'SSH_CLIENT': '192.168.0.6 35266 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/vedant/OdriveCANControl/install/custom_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/vedant', 'OLDPWD': '/home/vedant/OdriveCANControl/src', 'TERM_PROGRAM_VERSION': '1.96.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-b2609d6a-b532-4d18-bcca-3fc67b38672a.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/vedant/OdriveCANControl/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'vedant', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-bddb7e77dc.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/home/vedant/OdriveCANControl/install/custom_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/vedant/OdriveCANControl/build/controller', 'SSH_CONNECTION': '192.168.0.6 35266 192.168.0.5 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vedant/OdriveCANControl/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/robot_launch'}, 'shell': False}
+[12.924995] (-) TimerEvent: {}
+[13.026645] (-) TimerEvent: {}
+[13.128973] (-) TimerEvent: {}
+[13.229846] (-) TimerEvent: {}
+[13.331024] (-) TimerEvent: {}
+[13.431981] (-) TimerEvent: {}
+[13.536212] (-) TimerEvent: {}
+[13.638549] (-) TimerEvent: {}
+[13.739796] (-) TimerEvent: {}
+[13.840757] (-) TimerEvent: {}
+[13.941728] (-) TimerEvent: {}
+[14.042701] (-) TimerEvent: {}
+[14.143613] (-) TimerEvent: {}
+[14.249001] (-) TimerEvent: {}
+[14.349965] (-) TimerEvent: {}
+[14.384986] (odrive_control_py) StdoutLine: {'line': b'running egg_info\n'}
+[14.389839] (odrive_control_py) StdoutLine: {'line': b'writing ../../build/odrive_control_py/odrive_control_py.egg-info/PKG-INFO\n'}
+[14.392554] (odrive_control_py) StdoutLine: {'line': b'writing dependency_links to ../../build/odrive_control_py/odrive_control_py.egg-info/dependency_links.txt\n'}
+[14.395131] (odrive_control_py) StdoutLine: {'line': b'writing entry points to ../../build/odrive_control_py/odrive_control_py.egg-info/entry_points.txt\n'}
+[14.395856] (odrive_control_py) StdoutLine: {'line': b'writing requirements to ../../build/odrive_control_py/odrive_control_py.egg-info/requires.txt\n'}
+[14.400091] (odrive_control_py) StdoutLine: {'line': b'writing top-level names to ../../build/odrive_control_py/odrive_control_py.egg-info/top_level.txt\n'}
+[14.408991] (odrive_control_py) StdoutLine: {'line': b"reading manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'\n"}
+[14.415145] (odrive_control_py) StdoutLine: {'line': b"writing manifest file '../../build/odrive_control_py/odrive_control_py.egg-info/SOURCES.txt'\n"}
+[14.417075] (odrive_control_py) StdoutLine: {'line': b'running build\n'}
+[14.417928] (odrive_control_py) StdoutLine: {'line': b'running build_py\n'}
+[14.425031] (odrive_control_py) StdoutLine: {'line': b'running install\n'}
+[14.425872] (odrive_control_py) StdoutLine: {'line': b'running install_lib\n'}
+[14.436953] (odrive_control_py) StdoutLine: {'line': b'running install_data\n'}
+[14.438012] (odrive_control_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[14.452969] (odrive_control_py) StdoutLine: {'line': b"removing '/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[14.453756] (-) TimerEvent: {}
+[14.454324] (odrive_control_py) StdoutLine: {'line': b'Copying ../../build/odrive_control_py/odrive_control_py.egg-info to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages/odrive_control_py-0.0.0-py3.10.egg-info\n'}
+[14.464981] (odrive_control_py) StdoutLine: {'line': b'running install_scripts\n'}
+[14.556962] (-) TimerEvent: {}
+[14.580097] (odrive_control_py) StdoutLine: {'line': b'Installing FCR_node script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py\n'}
+[14.581670] (odrive_control_py) StdoutLine: {'line': b'Installing app script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py\n'}
+[14.584318] (odrive_control_py) StdoutLine: {'line': b'Installing data_recording_node script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py\n'}
+[14.585680] (odrive_control_py) StdoutLine: {'line': b'Installing encoder_read_node script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py\n'}
+[14.586337] (odrive_control_py) StdoutLine: {'line': b'Installing odrive_control_node script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py\n'}
+[14.586744] (odrive_control_py) StdoutLine: {'line': b'Installing trial_odrive_control_node script to /home/vedant/OdriveCANControl/install/odrive_control_py/lib/odrive_control_py\n'}
+[14.592272] (odrive_control_py) StdoutLine: {'line': b"writing list of installed files to '/home/vedant/OdriveCANControl/build/odrive_control_py/install.log'\n"}
+[14.661009] (-) TimerEvent: {}
+[14.762222] (-) TimerEvent: {}
+[14.773569] (odrive_control_py) CommandEnded: {'returncode': 0}
+[14.813863] (odrive_control_py) JobEnded: {'identifier': 'odrive_control_py', 'rc': 0}
+[14.862521] (-) TimerEvent: {}
+[14.886180] (controller) StdoutLine: {'line': b'running egg_info\n'}
+[14.890686] (controller) StdoutLine: {'line': b'writing ../../build/controller/controller.egg-info/PKG-INFO\n'}
+[14.892088] (controller) StdoutLine: {'line': b'writing dependency_links to ../../build/controller/controller.egg-info/dependency_links.txt\n'}
+[14.893559] (controller) StdoutLine: {'line': b'writing entry points to ../../build/controller/controller.egg-info/entry_points.txt\n'}
+[14.894641] (controller) StdoutLine: {'line': b'writing requirements to ../../build/controller/controller.egg-info/requires.txt\n'}
+[14.895636] (controller) StdoutLine: {'line': b'writing top-level names to ../../build/controller/controller.egg-info/top_level.txt\n'}
+[14.906203] (controller) StdoutLine: {'line': b"reading manifest file '../../build/controller/controller.egg-info/SOURCES.txt'\n"}
+[14.910893] (controller) StdoutLine: {'line': b"writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'\n"}
+[14.911869] (controller) StdoutLine: {'line': b'running build\n'}
+[14.912463] (controller) StdoutLine: {'line': b'running build_py\n'}
+[14.913414] (controller) StdoutLine: {'line': b'copying src/controller/testing.py -> /home/vedant/OdriveCANControl/build/controller/build/lib/controller\n'}
+[14.915681] (controller) StdoutLine: {'line': b'copying src/controller/odrive_control.py -> /home/vedant/OdriveCANControl/build/controller/build/lib/controller\n'}
+[14.921399] (controller) StdoutLine: {'line': b'running install\n'}
+[14.922261] (controller) StdoutLine: {'line': b'running install_lib\n'}
+[14.926212] (controller) StdoutLine: {'line': b'copying /home/vedant/OdriveCANControl/build/controller/build/lib/controller/testing.py -> /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller\n'}
+[14.928247] (controller) StdoutLine: {'line': b'copying /home/vedant/OdriveCANControl/build/controller/build/lib/controller/odrive_control.py -> /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller\n'}
+[14.931885] (controller) StdoutLine: {'line': b'byte-compiling /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/testing.py to testing.cpython-310.pyc\n'}
+[14.934831] (controller) StdoutLine: {'line': b'byte-compiling /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/odrive_control.py to odrive_control.cpython-310.pyc\n'}
+[14.943297] (controller) StdoutLine: {'line': b'running install_data\n'}
+[14.944526] (controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[14.953478] (controller) StdoutLine: {'line': b"removing '/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[14.955621] (controller) StdoutLine: {'line': b'Copying ../../build/controller/controller.egg-info to /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info\n'}
+[14.965124] (-) TimerEvent: {}
+[14.967979] (controller) StdoutLine: {'line': b'running install_scripts\n'}
+[15.065371] (-) TimerEvent: {}
+[15.070838] (controller) StdoutLine: {'line': b'Installing Impedance_Control script to /home/vedant/OdriveCANControl/install/controller/lib/controller\n'}
+[15.072064] (controller) StdoutLine: {'line': b'Installing friction_compensation_node script to /home/vedant/OdriveCANControl/install/controller/lib/controller\n'}
+[15.073320] (controller) StdoutLine: {'line': b'Installing odrive_controller script to /home/vedant/OdriveCANControl/install/controller/lib/controller\n'}
+[15.076263] (controller) StdoutLine: {'line': b"writing list of installed files to '/home/vedant/OdriveCANControl/build/controller/install.log'\n"}
+[15.165878] (-) TimerEvent: {}
+[15.253057] (controller) CommandEnded: {'returncode': 0}
+[15.266290] (-) TimerEvent: {}
+[15.298088] (controller) JobEnded: {'identifier': 'controller', 'rc': 0}
+[15.303213] (robot_launch) JobStarted: {'identifier': 'robot_launch'}
+[15.366718] (-) TimerEvent: {}
+[15.371116] (robot_launch) JobProgress: {'identifier': 'robot_launch', 'progress': 'cmake'}
+[15.375695] (robot_launch) JobProgress: {'identifier': 'robot_launch', 'progress': 'build'}
+[15.377471] (robot_launch) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vedant/OdriveCANControl/build/robot_launch', '--', '-j4', '-l4'], 'cwd': '/home/vedant/OdriveCANControl/build/robot_launch', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SSH_CLIENT', '192.168.0.6 35266 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/vedant/OdriveCANControl/install/custom_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant/OdriveCANControl/src'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b2609d6a-b532-4d18-bcca-3fc67b38672a.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/vedant/OdriveCANControl/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-bddb7e77dc.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/vedant/OdriveCANControl/install/controller:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/custom_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/vedant/OdriveCANControl/build/robot_launch'), ('SSH_CONNECTION', '192.168.0.6 35266 192.168.0.5 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/opt/ros/humble')]), 'shell': False}
+[15.466917] (-) TimerEvent: {}
+[15.573137] (robot_launch) CommandEnded: {'returncode': 0}
+[15.574802] (-) TimerEvent: {}
+[15.575370] (robot_launch) JobProgress: {'identifier': 'robot_launch', 'progress': 'install'}
+[15.575599] (robot_launch) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vedant/OdriveCANControl/build/robot_launch'], 'cwd': '/home/vedant/OdriveCANControl/build/robot_launch', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'vedant'), ('SSH_CLIENT', '192.168.0.6 35266 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/vedant/OdriveCANControl/install/custom_msgs/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/vedant'), ('OLDPWD', '/home/vedant/OdriveCANControl/src'), ('TERM_PROGRAM_VERSION', '1.96.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-b2609d6a-b532-4d18-bcca-3fc67b38672a.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/vedant/OdriveCANControl/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vedant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vedant/.vscode-server/cli/servers/Stable-fabdb6a30b49f79a7aba0f2ad9df9b399473380f/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-bddb7e77dc.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/vedant/OdriveCANControl/install/controller:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/custom_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/vedant/OdriveCANControl/build/robot_launch'), ('SSH_CONNECTION', '192.168.0.6 35266 192.168.0.5 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/encoder/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/odrive_control_py/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/data_logging/lib/python3.10/site-packages:/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/vedant/OdriveCANControl/install/custom_msgs:/home/vedant/OdriveCANControl/install/robot_launch:/home/vedant/OdriveCANControl/install/odrive_control_py:/home/vedant/OdriveCANControl/install/encoder:/home/vedant/OdriveCANControl/install/data_logging:/home/vedant/OdriveCANControl/install/controller:/opt/ros/humble')]), 'shell': False}
+[15.603957] (robot_launch) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.605414] (robot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/launch\n'}
+[15.606252] (robot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/launch/robot.launch.py\n'}
+[15.607222] (robot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/robot_launch/share/ament_index/resource_index/package_run_dependencies/robot_launch\n'}
+[15.608242] (robot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/robot_launch/share/ament_index/resource_index/parent_prefix_path/robot_launch\n'}
+[15.611278] (robot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/environment/ament_prefix_path.sh\n'}
+[15.611815] (robot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/environment/ament_prefix_path.dsv\n'}
+[15.612418] (robot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/environment/path.sh\n'}
+[15.613170] (robot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/environment/path.dsv\n'}
+[15.616315] (robot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/local_setup.bash\n'}
+[15.617555] (robot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/local_setup.sh\n'}
+[15.620381] (robot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/local_setup.zsh\n'}
+[15.621217] (robot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/local_setup.dsv\n'}
+[15.624346] (robot_launch) StdoutLine: {'line': b'-- Installing: /home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/package.dsv\n'}
+[15.625219] (robot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/robot_launch/share/ament_index/resource_index/packages/robot_launch\n'}
+[15.626024] (robot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/cmake/robot_launchConfig.cmake\n'}
+[15.626550] (robot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/cmake/robot_launchConfig-version.cmake\n'}
+[15.627231] (robot_launch) StdoutLine: {'line': b'-- Up-to-date: /home/vedant/OdriveCANControl/install/robot_launch/share/robot_launch/package.xml\n'}
+[15.627890] (robot_launch) CommandEnded: {'returncode': 0}
+[15.675288] (-) TimerEvent: {}
+[15.693983] (robot_launch) JobEnded: {'identifier': 'robot_launch', 'rc': 0}
+[15.697684] (-) EventReactorShutdown: {}

@@ -1,10 +1,12 @@
 /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/friction_compensation_node.py
+/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/testing.py
 /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/impedance_control.py
 /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/control_node.py
 /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/App.py
 /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/__init__.py
 /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/odrive_control.py
 /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/__pycache__/friction_compensation_node.cpython-310.pyc
+/home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/__pycache__/testing.cpython-310.pyc
 /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/__pycache__/impedance_control.cpython-310.pyc
 /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/__pycache__/control_node.cpython-310.pyc
 /home/vedant/OdriveCANControl/install/controller/lib/python3.10/site-packages/controller/__pycache__/App.cpython-310.pyc

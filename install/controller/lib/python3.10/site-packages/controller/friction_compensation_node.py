@@ -41,7 +41,7 @@ class FrictionCompensationNode(Node):
 
     def process_data(self):
         """Process the buffered position data and publish torque commands."""
-        gain = 0.0525
+        gain = 0.0525 # Torque constant
         # Step 2: Compute compensation torque
         compensation_torque = gain * self.friction_compensation(self.velocity)  # Unit is currnt
         # Step 3: Publish the fricition comp torque

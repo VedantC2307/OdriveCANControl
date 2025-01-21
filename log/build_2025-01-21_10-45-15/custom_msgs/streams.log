@@ -1,0 +1,222 @@
+[0.093s] Invoking command in '/home/vedant/OdriveCANControl/build/custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vedant/OdriveCANControl/build/custom_msgs -- -j4 -l4
+[1.739s] [  1%] Built target custom_msgs__cpp
+[1.740s] [ 12%] Built target custom_msgs__rosidl_generator_c
+[1.741s] [ 12%] Built target ament_cmake_python_copy_custom_msgs
+[1.742s] [ 23%] Built target custom_msgs__rosidl_typesupport_cpp
+[1.744s] [ 34%] Built target custom_msgs__rosidl_typesupport_introspection_cpp
+[1.745s] [ 45%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp
+[1.745s] [ 56%] Built target custom_msgs__rosidl_typesupport_fastrtps_c
+[1.745s] [ 67%] Built target custom_msgs__rosidl_typesupport_introspection_c
+[1.746s] [ 78%] Built target custom_msgs__rosidl_typesupport_c
+[1.746s] [ 78%] Built target custom_msgs
+[1.747s] [ 80%] Built target custom_msgs__py
+[1.747s] [ 89%] Built target custom_msgs__rosidl_generator_py
+[1.747s] [ 92%] Built target custom_msgs__rosidl_typesupport_introspection_c__pyext
+[1.748s] [ 96%] Built target custom_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.748s] [100%] Built target custom_msgs__rosidl_typesupport_c__pyext
+[1.987s] running egg_info
+[1.991s] writing custom_msgs.egg-info/PKG-INFO
+[1.992s] writing dependency_links to custom_msgs.egg-info/dependency_links.txt
+[1.993s] writing top-level names to custom_msgs.egg-info/top_level.txt
+[2.005s] reading manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[2.008s] writing manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[2.153s] [100%] Built target ament_cmake_python_build_custom_msgs_egg
+[3.022s] Invoked command in '/home/vedant/OdriveCANControl/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vedant/OdriveCANControl/build/custom_msgs -- -j4 -l4
+[3.063s] Invoking command in '/home/vedant/OdriveCANControl/build/custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vedant/OdriveCANControl/build/custom_msgs
+[3.112s] -- Install configuration: ""
+[3.116s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs
+[3.123s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs
+[3.128s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv
+[3.135s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail
+[3.138s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__functions.h
+[3.142s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__type_support.h
+[3.157s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__struct.h
+[3.159s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__functions.c
+[3.162s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/o_drive_command.h
+[3.166s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[3.171s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/impedance_torque.h
+[3.177s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/friction_comp.h
+[3.182s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/motion_state.h
+[3.195s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+[3.198s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[3.201s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__struct.h
+[3.204s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__functions.c
+[3.209s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__functions.h
+[3.212s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.h
+[3.215s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__type_support.h
+[3.218s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__struct.h
+[3.221s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__functions.c
+[3.224s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__struct.h
+[3.228s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__functions.c
+[3.231s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__functions.h
+[3.235s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__functions.h
+[3.237s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__type_support.h
+[3.241s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/library_path.sh
+[3.244s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/library_path.dsv
+[3.249s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so
+[3.252s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs
+[3.254s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv
+[3.258s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail
+[3.261s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__rosidl_typesupport_fastrtps_c.h
+[3.264s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[3.267s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[3.270s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__rosidl_typesupport_fastrtps_c.h
+[3.273s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_fastrtps_c.h
+[3.276s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__rosidl_typesupport_fastrtps_c.h
+[3.279s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.281s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so
+[3.284s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs
+[3.288s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv
+[3.291s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail
+[3.296s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__type_support.c
+[3.300s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__rosidl_typesupport_introspection_c.h
+[3.303s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[3.306s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[3.309s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_introspection_c.h
+[3.311s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__type_support.c
+[3.314s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.c
+[3.316s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__type_support.c
+[3.319s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__rosidl_typesupport_introspection_c.h
+[3.322s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__rosidl_typesupport_introspection_c.h
+[3.325s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.328s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so
+[3.330s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so
+[3.333s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs
+[3.336s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv
+[3.339s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/o_drive_command.hpp
+[3.343s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail
+[3.346s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__struct.hpp
+[3.351s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__traits.hpp
+[3.354s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__builder.hpp
+[3.357s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__type_support.hpp
+[3.360s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[3.363s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.368s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/friction_comp.hpp
+[3.371s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[3.375s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__traits.hpp
+[3.378s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__type_support.hpp
+[3.380s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.hpp
+[3.383s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__traits.hpp
+[3.388s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__builder.hpp
+[3.391s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__builder.hpp
+[3.391s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__type_support.hpp
+[3.395s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__traits.hpp
+[3.398s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__struct.hpp
+[3.402s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__struct.hpp
+[3.406s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__struct.hpp
+[3.420s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__builder.hpp
+[3.421s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/impedance_torque.hpp
+[3.421s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/motion_state.hpp
+[3.422s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs
+[3.423s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv
+[3.424s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail
+[3.429s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__rosidl_typesupport_fastrtps_cpp.hpp
+[3.431s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/dds_fastrtps
+[3.434s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[3.437s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.440s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[3.443s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__rosidl_typesupport_fastrtps_cpp.hpp
+[3.446s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_fastrtps_cpp.hpp
+[3.450s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__rosidl_typesupport_fastrtps_cpp.hpp
+[3.453s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps
+[3.457s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[3.459s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs
+[3.462s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv
+[3.465s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail
+[3.468s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__rosidl_typesupport_introspection_cpp.hpp
+[3.471s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/o_drive_command__type_support.cpp
+[3.474s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg
+[3.477s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail
+[3.480s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__rosidl_typesupport_introspection_cpp.hpp
+[3.483s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__rosidl_typesupport_introspection_cpp.hpp
+[3.489s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__type_support.cpp
+[3.490s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/motion_state__type_support.cpp
+[3.490s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/friction_comp__rosidl_typesupport_introspection_cpp.hpp
+[3.491s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/impedance_torque__type_support.cpp
+[3.492s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so
+[3.497s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so
+[3.500s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh
+[3.503s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv
+[3.505s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info
+[3.508s] -- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[3.512s] -- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[3.512s] -- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.513s] -- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.513s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs
+[3.514s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv
+[3.515s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_o_drive_command.py
+[3.515s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/__init__.py
+[3.532s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv/_o_drive_command_s.c
+[3.533s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/libcustom_msgs__rosidl_generator_py.so
+[3.534s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg
+[3.534s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_motion_state.py
+[3.535s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_friction_comp.py
+[3.536s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/__init__.py
+[3.553s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_friction_comp_s.c
+[3.564s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_motion_state_s.c
+[3.565s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_impedance_torque.py
+[3.566s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg/_impedance_torque_s.c
+[3.568s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[3.585s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/__init__.py
+[3.586s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[3.587s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[3.600s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
+[3.601s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.602s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[3.602s] Listing '/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs'...
+[3.603s] Listing '/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/msg'...
+[3.604s] Listing '/home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/srv'...
+[3.621s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[3.625s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[3.629s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/local/lib/python3.10/dist-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[3.633s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so
+[3.633s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/msg/MotionState.idl
+[3.634s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/msg/FrictionComp.idl
+[3.641s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/msg/ImpedanceTorque.idl
+[3.641s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/srv/ODriveCommand.idl
+[3.642s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/msg/MotionState.msg
+[3.643s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/msg/FrictionComp.msg
+[3.643s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/msg/ImpedanceTorque.msg
+[3.644s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/srv/ODriveCommand.srv
+[3.644s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/srv/ODriveCommand_Request.msg
+[3.645s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/srv/ODriveCommand_Response.msg
+[3.653s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs
+[3.653s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs
+[3.654s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh
+[3.654s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv
+[3.655s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/path.sh
+[3.656s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/environment/path.dsv
+[3.656s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/local_setup.bash
+[3.659s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/local_setup.sh
+[3.660s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/local_setup.zsh
+[3.666s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/local_setup.dsv
+[3.669s] -- Installing: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.dsv
+[3.669s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs
+[3.673s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake
+[3.675s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake
+[3.679s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[3.680s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.680s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake
+[3.681s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.682s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake
+[3.682s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[3.683s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake
+[3.688s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.689s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.689s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[3.690s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.693s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake
+[3.699s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[3.701s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake
+[3.702s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake
+[3.705s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake
+[3.705s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.706s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.707s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[3.707s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[3.708s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.717s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.717s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake
+[3.718s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake
+[3.721s] -- Up-to-date: /home/vedant/OdriveCANControl/install/custom_msgs/share/custom_msgs/package.xml
+[3.742s] Invoked command in '/home/vedant/OdriveCANControl/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vedant/OdriveCANControl/build/custom_msgs
