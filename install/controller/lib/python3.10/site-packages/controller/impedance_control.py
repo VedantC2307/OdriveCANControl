@@ -19,8 +19,8 @@ class ImpedanceControl(Node):
         )
         
         # 파라미터 선언
-        self.declare_parameter('B', 1.0)
-        self.declare_parameter('K', 1.0)
+        self.declare_parameter('B', 0.1)
+        self.declare_parameter('K', 30.0)
         self.declare_parameter('I', 1.0)
         
         # 파라미터 가져오기
@@ -63,7 +63,7 @@ class ImpedanceControl(Node):
         # Calculate impedance control torque
         imp_torque = self.B * (self.velocity - self.velocity_e) + self.K * (self.position - self.position_e)
         imp_torque_msg = ImpedanceTorque()
-        imp_torque_msg.tau_imp = imp_torque  # 토크 값 설정
+        imp_torque_msg.tau_imp = imp_torque/9  # 토크 값 설정
         self.imp_publisher.publish(imp_torque_msg)  # 메시지 Publish
         #self.get_logger().info(f'Published Torque Command: {imp_torque}')
 

@@ -65,7 +65,7 @@ class ODriveController(Node):
         #self.get_logger().info(f'Friction Comp Tau: {self.fcomp_tau}')
 
     def imp_torque_callback(self, msg):
-        self.imp_tau = msg.tau_imp
+        self.imp_tau = -msg.tau_imp
         #self.get_logger().info(f'Impedance Tau: {self.imp_tau}')
 
     def connect_drive(self):
@@ -228,9 +228,9 @@ class ODriveController(Node):
                     success, response = self.calibrate_encoder()
                 elif message == "clear_error":
                     success, response = self.clear_errors()
-                elif message == "set_idle":
+                elif message == "idle":
                     success, response = self.set_idle_mode()
-                elif message == "set_closed_loop":
+                elif message == "closed_loop":
                     success, response = self.set_closed_loop_mode()
                 elif message == "set_torque_mode":
                     success, response = self.set_torque_control()
