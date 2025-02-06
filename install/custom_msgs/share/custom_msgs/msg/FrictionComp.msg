@@ -1,1 +1,0 @@
-float32 tau_fcomp

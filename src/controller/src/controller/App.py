@@ -9,7 +9,7 @@ class ModernApp(ctk.CTk):
 
         # Configure the main window
         self.title("Control App")
-        self.geometry("800x400")
+        self.geometry("850x400")
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("green")
 
@@ -120,6 +120,12 @@ class ModernApp(ctk.CTk):
         self.controller_btn = ctk.CTkButton(motor_frame1, text="Encoder Offset Calibration", corner_radius=10, command=self.toggle_encoder_offset_calibration)
         self.controller_btn.grid(row=1, column=1, padx=10, pady=5, sticky="ew")
 
+        self.odrive_node_btn = ctk.CTkButton(motor_frame1, text="Encoder Offset", corner_radius=10, command=self.encoder_offset_zero)
+        self.odrive_node_btn.grid(row=0, column=2, padx=10, pady=5, sticky="ew")
+
+        self.controller_btn = ctk.CTkButton(motor_frame1, text="Start Controller", corner_radius=10, command=self.start_controller)
+        self.controller_btn.grid(row=1, column=2, padx=10, pady=5, sticky="ew")
+
 
     def toggle_odrive_setup(self):
         """Toggle ODrive setup and send 'initialize' command."""
@@ -127,6 +133,15 @@ class ModernApp(ctk.CTk):
         command = "initialize"
         self.send_tcp_message(command)
 
+    def start_controller(self):
+        """Start Odrive Controller"""
+        command = "start_controller"
+        self.send_tcp_message(command)
+
+    def encoder_offset_zero(self):
+        """Encoder offset to zero"""
+        command = "encoder_offset"
+        self.send_tcp_message(command)
 
     def toggle_clear_errors(self):
         """Send the 'initialize' command without changing the button text."""

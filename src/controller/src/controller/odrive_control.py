@@ -7,6 +7,7 @@ import odrive
 from odrive.enums import *
 import time
 import socket
+from std_msgs.msg import Bool
 
 class ODriveController(Node):
     def __init__(self):
@@ -28,6 +29,8 @@ class ODriveController(Node):
         # 서비스 서버 생성
         self.srv = self.create_service(ODriveCommand, 'odrive/command', self.command_callback)
         self.get_logger().info('ODrive controller service started')
+
+        self.encoder_offset_publisher_ = self.create_publisher(Bool, 'encoder_offset_flag', 2)
 
         # friction torque subscriber
         self.command_sub = self.create_subscription(
@@ -59,6 +62,7 @@ class ODriveController(Node):
         # Client socket
         self.client_socket = None
         self.client_address = None
+        self.start_controller = False
 
     def friction_torque_callback(self, msg):
         self.fcomp_tau = msg.tau_fcomp
@@ -67,6 +71,17 @@ class ODriveController(Node):
     def imp_torque_callback(self, msg):
         self.imp_tau = -msg.tau_imp
         #self.get_logger().info(f'Impedance Tau: {self.imp_tau}')
+
+    def encoder_offset_zero_callback(self):
+        """Function to offset the encoder by publishing to the encoder topic"""
+        try:
+            msg = Bool()
+            msg.data = True  # Signal to offset the encoder value
+            self.encoder_offset_publisher_.publish(msg)
+            self.get_logger().info("Sent encoder offset command.")
+            return True, "Encoder offset zeroed"
+        except Exception as e:
+            return False, f"Error zeroing encoder offset: {str(e)}"
 
     def connect_drive(self):
         """ODrive 연결"""
@@ -98,7 +113,7 @@ class ODriveController(Node):
             # 캘리브레이션 완료 대기
             start_time = time.time()
             while self.drive.axis0.current_state != AXIS_STATE_IDLE:
-                time.sleep(0.1)
+                time.sleep(0.2)
                 if time.time() - start_time > 10.0:  # 10초 타임아웃
                     return False, "Calibration timeout"
                     
@@ -142,6 +157,9 @@ class ODriveController(Node):
         if (self.drive is None or 
             self.current_control_mode != "torque" or 
             self.drive.axis0.current_state != AXIS_STATE_CLOSED_LOOP_CONTROL):
+            return
+        
+        if not self.start_controller:
             return
             
         try:
@@ -190,6 +208,8 @@ class ODriveController(Node):
             success, message = self.calibrate_encoder()
             if not success:
                 return False, message
+            
+            time.sleep(1.0)
                 
             # 4. Set closed loop mode
             success, message = self.set_closed_loop_mode()
@@ -234,6 +254,10 @@ class ODriveController(Node):
                     success, response = self.set_closed_loop_mode()
                 elif message == "set_torque_mode":
                     success, response = self.set_torque_control()
+                elif message == "start_controller":
+                    success, response = self.start_controller = True, "Controller started"
+                elif message == "encoder_offset":
+                    success, response = self.encoder_offset_zero_callback()
                 else:
                     success = False
                     response = f"Unknown command: {message}"
@@ -283,12 +307,15 @@ class ODriveController(Node):
 
 def main(args=None):
     rclpy.init(args=args)
+    node = ODriveController()
     
     try:
-        node = ODriveController()
         while rclpy.ok():
             rclpy.spin_once(node, timeout_sec=0.1)
             node.check_socket()
+    except KeyboardInterrupt:
+        node.get_logger().info("Shutdown requested by user.")
+
     except Exception as e:
         print(f"Error: {str(e)}")
     finally:

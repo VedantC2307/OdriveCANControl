@@ -6,6 +6,7 @@ import RPi.GPIO as GPIO
 import traceback
 from collections import deque
 import numpy as np
+from std_msgs.msg import Bool
 
 class AMT102VEncoderNode(Node):
     """
@@ -27,13 +28,22 @@ class AMT102VEncoderNode(Node):
         self.get_logger().info(f'channel_a_pin: {self.channel_a_pin}')
         self.get_logger().info(f'channel_b_pin: {self.channel_b_pin}')
 
+        self.command_sub2 = self.create_subscription(
+            Bool,
+            'encoder_offset_flag',
+            self.encoder_offset_callback,
+            10
+        )
+
         # Initialize encoder position
         self.position = 0
         self.last_A = 0  # Store the last state of channel A
+        self.encoder_offset = 0
 
         # Create Publisher
         self.history_len = 5
         self.input_buffer = deque(maxlen=self.history_len)
+
         # Initialize Publisher
         self.motor_state_publisher = self.create_publisher(MotionState, 'motor_state', 10)
 
@@ -65,6 +75,15 @@ class AMT102VEncoderNode(Node):
             raise
 
         self.get_logger().info("AMT102V Encoder Node started.")
+
+
+    def encoder_offset_callback(self, msg):
+        """
+        Callback to reset encoder position to zero.
+        """
+        if msg.data is True:
+            self.encoder_offset = self.position
+            self.get_logger().info(f"Encoder offset set to {self.encoder_offset}")
 
     def encoder_callback(self, channel):
         """
@@ -113,7 +132,7 @@ class AMT102VEncoderNode(Node):
         """
         Publishes the current encoder position at the configured rate.
         """
-        pos = self.position * (3/8192) # unit radian
+        pos = (self.position - self.encoder_offset) * (3/8192) # unit radian
         
         # Compute Velocity
         self.input_buffer.append(pos)

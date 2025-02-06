@@ -59,27 +59,27 @@ class ModernApp(ctk.CTk):
         self.send_btn.grid(row=2, column=2, padx=10, pady=5)
 
         # Data Recording Frame
-        # data_frame = ctk.CTkFrame(self.gradient_frame, corner_radius=15)
-        # data_frame.grid(row=2, column=0, padx=20, pady=10, sticky="ew")
+        data_frame = ctk.CTkFrame(self.gradient_frame, corner_radius=15)
+        data_frame.grid(row=2, column=0, padx=20, pady=10, sticky="ew")
 
-        # self.topic_label = ctk.CTkLabel(data_frame, text="Topic Name:")
-        # self.topic_label.grid(row=0, column=0, padx=10, pady=5)
+        self.topic_label = ctk.CTkLabel(data_frame, text="Topic Name:")
+        self.topic_label.grid(row=0, column=0, padx=10, pady=5)
 
-        # self.topic_entry = ctk.CTkEntry(data_frame, corner_radius=10)
-        # self.topic_entry.grid(row=0, column=1, padx=10, pady=5)
+        self.topic_entry = ctk.CTkEntry(data_frame, corner_radius=10)
+        self.topic_entry.grid(row=0, column=1, padx=10, pady=5)
 
-        # self.topic_entry1 = ctk.CTkEntry(data_frame, corner_radius=10)
-        # self.topic_entry1.grid(row=1, column=1, padx=10, pady=5)
+        self.topic_entry1 = ctk.CTkEntry(data_frame, corner_radius=10)
+        self.topic_entry1.grid(row=1, column=1, padx=10, pady=5)
 
-        # self.file_label = ctk.CTkLabel(data_frame, text="File Name:")
-        # self.file_label.grid(row=0, column=2, padx=10, pady=5)
-        # self.file_entry = ctk.CTkEntry(data_frame, corner_radius=10)
-        # self.file_entry.grid(row=0, column=3, padx=10, pady=5)
+        self.file_label = ctk.CTkLabel(data_frame, text="File Name:")
+        self.file_label.grid(row=0, column=2, padx=10, pady=5)
+        self.file_entry = ctk.CTkEntry(data_frame, corner_radius=10)
+        self.file_entry.grid(row=0, column=3, padx=10, pady=5)
 
-        # # Toggle button for start/stop recording
-        # self.is_recording = False
-        # self.start_recording_btn = ctk.CTkButton(data_frame, text="Start", corner_radius=10, hover_color="#357ABD", command=self.toggle_recording)
-        # self.start_recording_btn.grid(row=0, column=4, padx=10, pady=5)
+        # Toggle button for start/stop recording
+        self.is_recording = False
+        self.start_recording_btn = ctk.CTkButton(data_frame, text="Start", corner_radius=10, hover_color="#357ABD", command=self.toggle_recording)
+        self.start_recording_btn.grid(row=0, column=4, padx=10, pady=5)
 
         # Main container frame for Motor State and Buttons
         main_container_frame = ctk.CTkFrame(self.gradient_frame, corner_radius=15)
