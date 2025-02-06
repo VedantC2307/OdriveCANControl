@@ -1,4 +1,0 @@
-string command        # initialize, clear_error, set_idle, set_closed_loop
----
-bool success         # check sucess
-string message      # results message

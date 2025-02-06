@@ -9,7 +9,7 @@ class ModernApp(ctk.CTk):
 
         # Configure the main window
         self.title("Control App")
-        self.geometry("850x400")
+        self.geometry("800x400")
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("green")
 
@@ -59,27 +59,27 @@ class ModernApp(ctk.CTk):
         self.send_btn.grid(row=2, column=2, padx=10, pady=5)
 
         # Data Recording Frame
-        # data_frame = ctk.CTkFrame(self.gradient_frame, corner_radius=15)
-        # data_frame.grid(row=2, column=0, padx=20, pady=10, sticky="ew")
+        data_frame = ctk.CTkFrame(self.gradient_frame, corner_radius=15)
+        data_frame.grid(row=2, column=0, padx=20, pady=10, sticky="ew")
 
-        # self.topic_label = ctk.CTkLabel(data_frame, text="Topic Name:")
-        # self.topic_label.grid(row=0, column=0, padx=10, pady=5)
+        self.topic_label = ctk.CTkLabel(data_frame, text="Topic Name:")
+        self.topic_label.grid(row=0, column=0, padx=10, pady=5)
 
-        # self.topic_entry = ctk.CTkEntry(data_frame, corner_radius=10)
-        # self.topic_entry.grid(row=0, column=1, padx=10, pady=5)
+        self.topic_entry = ctk.CTkEntry(data_frame, corner_radius=10)
+        self.topic_entry.grid(row=0, column=1, padx=10, pady=5)
 
-        # self.topic_entry1 = ctk.CTkEntry(data_frame, corner_radius=10)
-        # self.topic_entry1.grid(row=1, column=1, padx=10, pady=5)
+        self.topic_entry1 = ctk.CTkEntry(data_frame, corner_radius=10)
+        self.topic_entry1.grid(row=1, column=1, padx=10, pady=5)
 
-        # self.file_label = ctk.CTkLabel(data_frame, text="File Name:")
-        # self.file_label.grid(row=0, column=2, padx=10, pady=5)
-        # self.file_entry = ctk.CTkEntry(data_frame, corner_radius=10)
-        # self.file_entry.grid(row=0, column=3, padx=10, pady=5)
+        self.file_label = ctk.CTkLabel(data_frame, text="File Name:")
+        self.file_label.grid(row=0, column=2, padx=10, pady=5)
+        self.file_entry = ctk.CTkEntry(data_frame, corner_radius=10)
+        self.file_entry.grid(row=0, column=3, padx=10, pady=5)
 
-        # # Toggle button for start/stop recording
-        # self.is_recording = False
-        # self.start_recording_btn = ctk.CTkButton(data_frame, text="Start", corner_radius=10, hover_color="#357ABD", command=self.toggle_recording)
-        # self.start_recording_btn.grid(row=0, column=4, padx=10, pady=5)
+        # Toggle button for start/stop recording
+        self.is_recording = False
+        self.start_recording_btn = ctk.CTkButton(data_frame, text="Start", corner_radius=10, hover_color="#357ABD", command=self.toggle_recording)
+        self.start_recording_btn.grid(row=0, column=4, padx=10, pady=5)
 
         # Main container frame for Motor State and Buttons
         main_container_frame = ctk.CTkFrame(self.gradient_frame, corner_radius=15)
@@ -120,12 +120,6 @@ class ModernApp(ctk.CTk):
         self.controller_btn = ctk.CTkButton(motor_frame1, text="Encoder Offset Calibration", corner_radius=10, command=self.toggle_encoder_offset_calibration)
         self.controller_btn.grid(row=1, column=1, padx=10, pady=5, sticky="ew")
 
-        self.odrive_node_btn = ctk.CTkButton(motor_frame1, text="Encoder Offset", corner_radius=10, command=self.encoder_offset_zero)
-        self.odrive_node_btn.grid(row=0, column=2, padx=10, pady=5, sticky="ew")
-
-        self.controller_btn = ctk.CTkButton(motor_frame1, text="Start Controller", corner_radius=10, command=self.start_controller)
-        self.controller_btn.grid(row=1, column=2, padx=10, pady=5, sticky="ew")
-
 
     def toggle_odrive_setup(self):
         """Toggle ODrive setup and send 'initialize' command."""
@@ -133,15 +127,6 @@ class ModernApp(ctk.CTk):
         command = "initialize"
         self.send_tcp_message(command)
 
-    def start_controller(self):
-        """Start Odrive Controller"""
-        command = "start_controller"
-        self.send_tcp_message(command)
-
-    def encoder_offset_zero(self):
-        """Encoder offset to zero"""
-        command = "encoder_offset"
-        self.send_tcp_message(command)
 
     def toggle_clear_errors(self):
         """Send the 'initialize' command without changing the button text."""
