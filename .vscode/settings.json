@@ -12,5 +12,6 @@
         "/home/vedant/gaitlab_ws/install/bag_recorder_nodes_py/lib/python3.10/site-packages",
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
-    ]
+    ],
+    "idf.pythonInstallPath": "/usr/bin/python3"
 }

@@ -1,0 +1,1 @@
+/home/vedant/gaitlab_ws/OdriveCANControl/build/robot_launch/ament_cmake_environment_hooks/local_setup.bash

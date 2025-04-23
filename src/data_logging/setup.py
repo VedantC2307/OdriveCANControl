@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'data_logging = data_logging.data_recording_node:main',
         ],
     },
 )

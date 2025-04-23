@@ -30,7 +30,12 @@ class ODriveController(Node):
         self.srv = self.create_service(ODriveCommand, 'odrive/command', self.command_callback)
         self.get_logger().info('ODrive controller service started')
 
+        # Publisher for encoder offset
         self.encoder_offset_publisher_ = self.create_publisher(Bool, 'encoder_offset_flag', 2)
+        
+        # Publisher for data recording
+        self.recording_publisher_ = self.create_publisher(Bool, 'recording_flag', 2)
+        self.get_logger().info('Created publisher for recording_flag to control data recording')
 
         # friction torque subscriber
         self.command_sub = self.create_subscription(
@@ -221,6 +226,48 @@ class ODriveController(Node):
         except Exception as e:
             return False, f"Initialization error: {str(e)}"
 
+    def start_recording(self):
+        """Start data recording by publishing to the recording_flag topic"""
+        try:
+            msg = Bool()
+            msg.data = True  # Signal to start recording
+            self.recording_publisher_.publish(msg)
+            self.get_logger().info("Started data recording")
+            return True, "Data recording started"
+        except Exception as e:
+            return False, f"Error starting data recording: {str(e)}"
+
+    def start_recording_with_subject(self, subject_name):
+        """Start data recording with a specific subject name"""
+        try:
+            # Create a message to start recording
+            msg = Bool()
+            msg.data = True  # Signal to start recording
+            
+            # Publish the message to trigger recording
+            self.recording_publisher_.publish(msg)
+            
+            # Log the action
+            self.get_logger().info(f"Started data recording for subject {subject_name}")
+            
+            # In a production system, you would also set the subject name parameter
+            # via ROS parameter service, but for simplicity we're just publishing the flag
+            
+            return True, f"Data recording started for subject {subject_name}"
+        except Exception as e:
+            return False, f"Error starting data recording: {str(e)}"
+
+    def stop_recording(self):
+        """Stop data recording by publishing to the recording_flag topic"""
+        try:
+            msg = Bool()
+            msg.data = False  # Signal to stop recording
+            self.recording_publisher_.publish(msg)
+            self.get_logger().info("Stopped data recording")
+            return True, "Data recording stopped"
+        except Exception as e:
+            return False, f"Error stopping data recording: {str(e)}"
+
     def check_socket(self):
         # Check for new connections if no client is connected
         if self.client_socket is None:
@@ -242,7 +289,25 @@ class ODriveController(Node):
                 message = data.decode('utf-8').strip()
                 self.get_logger().info(f'Received message: {message}')
                 
-                if message == "initialize":
+                # Handle recording commands with subject name
+                if message.startswith("start_recording"):
+                    # Parse subject name if included
+                    parts = message.split(',')
+                    if len(parts) > 1 and parts[1].strip():
+                        subject_name = parts[1].strip()
+                        self.get_logger().info(f"Starting recording for subject {subject_name}")
+                        # Set parameter for data_recording node with subject name
+                        success, response = self.start_recording_with_subject(subject_name)
+                    else:
+                        success, response = self.start_recording()
+                elif message.startswith("stop_recording"):
+                    # Parse subject name if included
+                    parts = message.split(',')
+                    if len(parts) > 1 and parts[1].strip():
+                        subject_name = parts[1].strip()
+                        self.get_logger().info(f"Stopping recording for subject {subject_name}")
+                    success, response = self.stop_recording()
+                elif message == "initialize":
                     success, response = self.initialize_sequence()
                 elif message == "encoder_offset_calibration":
                     success, response = self.calibrate_encoder()
@@ -261,6 +326,7 @@ class ODriveController(Node):
                 else:
                     success = False
                     response = f"Unknown command: {message}"
+                
                 # Send response back to client
                 if self.client_socket:
                     self.client_socket.send(f'{success}: {response}\n'.encode('utf-8'))

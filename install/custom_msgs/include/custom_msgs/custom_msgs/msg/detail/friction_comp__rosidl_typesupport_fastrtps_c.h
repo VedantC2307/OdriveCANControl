@@ -1,0 +1,1 @@
+/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/friction_comp__rosidl_typesupport_fastrtps_c.h

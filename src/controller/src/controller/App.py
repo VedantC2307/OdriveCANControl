@@ -59,27 +59,24 @@ class ModernApp(ctk.CTk):
         self.send_btn.grid(row=2, column=2, padx=10, pady=5)
 
         # Data Recording Frame
-        # data_frame = ctk.CTkFrame(self.gradient_frame, corner_radius=15)
-        # data_frame.grid(row=2, column=0, padx=20, pady=10, sticky="ew")
+        data_frame = ctk.CTkFrame(self.gradient_frame, corner_radius=15)
+        data_frame.grid(row=2, column=0, padx=20, pady=10, sticky="ew")
 
-        # self.topic_label = ctk.CTkLabel(data_frame, text="Topic Name:")
-        # self.topic_label.grid(row=0, column=0, padx=10, pady=5)
+        # Add title to the Data Recording Frame
+        recording_label = ctk.CTkLabel(data_frame, text="Data Recording", font=("Arial", 14, "bold"))
+        recording_label.grid(row=0, column=0, padx=10, pady=5, sticky="w")
 
-        # self.topic_entry = ctk.CTkEntry(data_frame, corner_radius=10)
-        # self.topic_entry.grid(row=0, column=1, padx=10, pady=5)
+        # Changed from "Subject Number" to "Subject Name"
+        self.file_label = ctk.CTkLabel(data_frame, text="Subject Name:")
+        self.file_label.grid(row=1, column=0, padx=10, pady=5)
+        self.file_entry = ctk.CTkEntry(data_frame, corner_radius=10)
+        self.file_entry.grid(row=1, column=1, padx=10, pady=5)
+        self.file_entry.insert(0, "subject1")  # Default subject name
 
-        # self.topic_entry1 = ctk.CTkEntry(data_frame, corner_radius=10)
-        # self.topic_entry1.grid(row=1, column=1, padx=10, pady=5)
-
-        # self.file_label = ctk.CTkLabel(data_frame, text="File Name:")
-        # self.file_label.grid(row=0, column=2, padx=10, pady=5)
-        # self.file_entry = ctk.CTkEntry(data_frame, corner_radius=10)
-        # self.file_entry.grid(row=0, column=3, padx=10, pady=5)
-
-        # # Toggle button for start/stop recording
-        # self.is_recording = False
-        # self.start_recording_btn = ctk.CTkButton(data_frame, text="Start", corner_radius=10, hover_color="#357ABD", command=self.toggle_recording)
-        # self.start_recording_btn.grid(row=0, column=4, padx=10, pady=5)
+        # Toggle button for start/stop recording
+        self.is_recording = False
+        self.start_recording_btn = ctk.CTkButton(data_frame, text="Start Recording", corner_radius=10, hover_color="#357ABD", command=self.toggle_recording)
+        self.start_recording_btn.grid(row=1, column=2, padx=10, pady=5)
 
         # Main container frame for Motor State and Buttons
         main_container_frame = ctk.CTkFrame(self.gradient_frame, corner_radius=15)
@@ -219,28 +216,21 @@ class ModernApp(ctk.CTk):
             # Start recording
             self.is_recording = True
             self.start_recording()
-            self.start_recording_btn.configure(text="Stop")
+            self.start_recording_btn.configure(text="Stop Recording")
         else:
             # Stop recording
             self.is_recording = False
             self.stop_recording()
-            self.start_recording_btn.configure(text="Start")
+            self.start_recording_btn.configure(text="Start Recording")
 
     def start_recording(self):
-        topic_name = self.topic_entry.get()
-        topic_name_1 = self.topic_entry1.get()
         file_name = self.file_entry.get()
-
-        # Create the message based on the available topic names
-        message = f"{self.is_recording},{topic_name}"
-        if topic_name_1:
-            message += f",{topic_name_1}"
-        message += f",{file_name}"
+        message = f"start_recording,{file_name}"
 
         try:
             if hasattr(self, 'client_socket') and self.client_socket:
                 self.client_socket.sendall(message.encode('utf-8'))
-                print(f"Recording started for Topic: {message}")
+                print(f"Recording started for Subject: {file_name}")
             else:
                 print("No active connection. Please connect to the server first.")
         except Exception as e:
@@ -248,7 +238,7 @@ class ModernApp(ctk.CTk):
 
     def stop_recording(self):
         file_name = self.file_entry.get()
-        message = f"{self.is_recording},{file_name}"
+        message = f"stop_recording,{file_name}"
         try:
             if hasattr(self, 'client_socket') and self.client_socket:
                 self.client_socket.sendall(message.encode('utf-8'))

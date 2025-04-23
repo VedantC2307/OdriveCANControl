@@ -1,0 +1,1 @@
+/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_friction_comp_s.c

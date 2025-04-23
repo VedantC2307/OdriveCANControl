@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'encoder_node = encoder.encoder_read_node:main',
+            # 'encoder_test = encoder.encoder_test_node:main',
         ],
     },
 )
