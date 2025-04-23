@@ -1,5 +1,0 @@
-[console_scripts]
-Impedance_Control = controller.impedance_control:main
-friction_compensation_node = controller.friction_compensation_node:main
-odrive_controller = controller.odrive_control:main
-
