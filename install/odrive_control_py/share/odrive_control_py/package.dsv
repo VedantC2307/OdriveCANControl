@@ -4,6 +4,3 @@ source;share/odrive_control_py/hook/pythonpath.sh
 source;share/odrive_control_py/hook/ament_prefix_path.ps1
 source;share/odrive_control_py/hook/ament_prefix_path.dsv
 source;share/odrive_control_py/hook/ament_prefix_path.sh
-source;../../build/odrive_control_py/share/odrive_control_py/hook/pythonpath_develop.ps1
-source;../../build/odrive_control_py/share/odrive_control_py/hook/pythonpath_develop.dsv
-source;../../build/odrive_control_py/share/odrive_control_py/hook/pythonpath_develop.sh

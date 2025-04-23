@@ -1,1 +1,2 @@
-/home/vedant/gaitlab_ws/OdriveCANControl/src/custom_msgs/msg/MotionState.msg
+float32 position
+float32 velocity

@@ -1,1 +1,10 @@
-/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/custom_msgs
+msg/FrictionComp.idl
+msg/FrictionComp.msg
+msg/ImpedanceTorque.idl
+msg/ImpedanceTorque.msg
+msg/MotionState.idl
+msg/MotionState.msg
+srv/ODriveCommand.idl
+srv/ODriveCommand.srv
+srv/ODriveCommand_Request.msg
+srv/ODriveCommand_Response.msg

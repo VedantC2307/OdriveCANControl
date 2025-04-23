@@ -1,1 +1,1 @@
-/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs/rosidl_generator_py/custom_msgs/srv/__init__.py
+from custom_msgs.srv._o_drive_command import ODriveCommand  # noqa: F401

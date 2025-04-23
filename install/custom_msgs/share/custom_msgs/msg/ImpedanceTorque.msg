@@ -1,1 +1,1 @@
-/home/vedant/gaitlab_ws/OdriveCANControl/src/custom_msgs/msg/ImpedanceTorque.msg
+float32 tau_imp

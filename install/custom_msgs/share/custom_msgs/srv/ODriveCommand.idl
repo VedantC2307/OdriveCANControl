@@ -1,1 +1,23 @@
-/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs/srv/ODriveCommand.idl
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_msgs/srv/ODriveCommand.srv
+// generated code does not contain a copyright notice
+
+
+module custom_msgs {
+  module srv {
+    struct ODriveCommand_Request {
+      @verbatim (language="comment", text=
+        "initialize, clear_error, set_idle, set_closed_loop")
+      string command;
+    };
+    struct ODriveCommand_Response {
+      @verbatim (language="comment", text=
+        "check sucess")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "results message")
+      string message;
+    };
+  };
+};

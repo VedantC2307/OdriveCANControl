@@ -1,1 +1,3 @@
-/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs/rosidl_cmake/srv/ODriveCommand_Response.msg
+
+bool success         # check sucess
+string message      # results message

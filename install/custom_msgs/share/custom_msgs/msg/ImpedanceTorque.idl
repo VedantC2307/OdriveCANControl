@@ -1,1 +1,12 @@
-/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs/rosidl_adapter/custom_msgs/msg/ImpedanceTorque.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msgs/msg/ImpedanceTorque.msg
+// generated code does not contain a copyright notice
+
+
+module custom_msgs {
+  module msg {
+    struct ImpedanceTorque {
+      float tau_imp;
+    };
+  };
+};

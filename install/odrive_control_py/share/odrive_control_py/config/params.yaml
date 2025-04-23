@@ -1,1 +1,4 @@
-/home/vedant/gaitlab_ws/OdriveCANControl/build/odrive_control_py/config/params.yaml
+amt102v_encoder:
+  ros__parameters:
+    channel_a_pin: 21
+    channel_b_pin: 20

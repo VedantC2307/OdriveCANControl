@@ -1,1 +1,6 @@
-/home/vedant/gaitlab_ws/OdriveCANControl/build/controller/config/impedance_params.yaml
+/**:
+  ros__parameters:
+    M: 1.0
+    B: 0.1
+    K: 15.0 # 15
+    I: 1.0 # 0.1 0.01

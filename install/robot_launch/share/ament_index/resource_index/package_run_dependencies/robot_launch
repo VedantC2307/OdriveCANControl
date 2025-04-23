@@ -1,1 +1,1 @@
-/home/vedant/gaitlab_ws/OdriveCANControl/build/robot_launch/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_launch
+rclpy;launch;app_server;controller;encoder;custom_msgs;ros2launch;ament_lint_auto;ament_lint_common

@@ -1,1 +1,1 @@
-/home/vedant/gaitlab_ws/OdriveCANControl/build/custom_msgs/rosidl_cmake/srv/ODriveCommand_Request.msg
+string command        # initialize, clear_error, set_idle, set_closed_loop
