@@ -21,7 +21,7 @@ class GoniometerNode(Node):
         )
         
         # Create a timer that will call our callback every 0.1 seconds
-        self.timer = self.create_timer(0.001, self.timer_callback)
+        self.timer = self.create_timer(0.0025, self.timer_callback)
         self.get_logger().info('Goniometer node has started')
 
     def timer_callback(self):

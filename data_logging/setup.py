@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'data_logging = data_logging.data_recording_node_2:main',
+            'recording_flag = data_logging.recording_flag_node:main',
         ],
     },
 )

@@ -328,15 +328,12 @@ class ModernApp(ctk.CTk):
                 try:
                     # Unpack both position and boolean values from the received data
                     # Assuming format is: double (position) followed by double (boolean as 0.0 or 1.0)
-                    position, trigger_value = struct.unpack('dd', data)
-                    print(f"Unpacked position: {position}, trigger value: {trigger_value}")
+                    trigger_value = struct.unpack('d', data)
+                    print(f"trigger value: {trigger_value}")
                     
                     # Handle the trigger value for recording (existing functionality)
                     self.after(0, lambda: self.toggle_recording(external_trigger=trigger_value))
                     
-                    # Handle the position value - you can add processing here
-                    # For example, update a UI element or send to the controller
-                    self.after(0, lambda p=position: self.handle_position_update(p))
                     
                 except struct.error as e:
                     print(f"Error unpacking data: {e}. Expected format: 'dd' (two double values)")
@@ -349,18 +346,18 @@ class ModernApp(ctk.CTk):
                 print(f"Error in UDP listener: {e}")
                 time.sleep(1)  # Prevent tight loop in case of persistent errors
 
-# def handle_position_update(self, position):
-#     """Process the position value received via UDP"""
-#     print(f"Processing position update: {position}")
-#     # You can add code to handle the position value here
-#     # For example, update a display, send to the motor controller, etc.
-    
-#     # Optional: Automatically update position control value if in position mode
-#     if self.control_mode.get() == "Position":
-#         self.value_entry.delete(0, 'end')
-#         self.value_entry.insert(0, str(position))
-#         # Uncomment the next line if you want to automatically send the command
-#         # self.send_command()
+    def handle_position_update(self, position):
+        """Process the position value received via UDP"""
+        print(f"Processing position update: {position}")
+        # You can add code to handle the position value here
+        # For example, update a display, send to the motor controller, etc.
+        
+        # Optional: Automatically update position control value if in position mode
+        if self.control_mode.get() == "Position":
+            self.value_entry.delete(0, 'end')
+            self.value_entry.insert(0, str(position))
+            # Uncomment the next line if you want to automatically send the command
+            # self.send_command()
 
     def on_closing(self):
         """Clean up resources before closing"""
