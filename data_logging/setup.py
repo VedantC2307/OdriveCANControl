@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'encoder'
+package_name = 'data_logging'
 
 setup(
     name=package_name,
@@ -17,11 +17,10 @@ setup(
     maintainer_email='vedantchoudhary07@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
-    tests_require=['pytest'],
+    # tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'encoder_node = encoder.encoder_read_node:main',
-            # 'encoder_test = encoder.encoder_test_node:main',
+            'data_logging = data_logging.data_recording_node_2:main',
         ],
     },
 )

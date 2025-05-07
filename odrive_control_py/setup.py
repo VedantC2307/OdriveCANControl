@@ -20,7 +20,7 @@ setup(
     maintainer_email='vedant@todo.todo',
     description='TODO: Package description',
     license='TODO: License declaration',
-    tests_require=['pytest'],
+    # tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'odrive_control_node = odrive_control_py.control_node:main',

@@ -11,7 +11,7 @@ def generate_launch_description():
     # Launch arguments for data recording
     save_dir_arg = DeclareLaunchArgument(
         'save_dir',
-        default_value='/home/vedant/gaitlab_ws/OdriveCANControl/src/data_logging/data_logging/data',
+        default_value='/home/vedant/odrivecontrol/src/data_logging/data_logging',
         description='Directory to save recorded data'
     )
     
@@ -47,10 +47,10 @@ def generate_launch_description():
         'impedance_params.yaml'
     )
 
-    encoder_node = Node(
+    goniometer_node = Node(
         package="encoder",
-        executable="encoder_node",
-        name="AMT102_encoder_node",
+        executable="goniometer",
+        name="goniometer_node",
         output="screen"
     )
 
@@ -102,9 +102,9 @@ def generate_launch_description():
         sync_slop_arg,
     
         # Nodes
-        encoder_node,
-        friction_compensation_node,
-        impedance_control_node,
+        goniometer_node,
+        # friction_compensation_node,
+        # impedance_control_node,
         odrive_controller_node,
         data_logging_node,
     ])

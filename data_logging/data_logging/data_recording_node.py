@@ -28,19 +28,18 @@ class DataCollectorNode(Node):
         self._force_shutdown = False
         
         # Parameters
-        self.declare_parameter('save_dir', '/home/vedant/gaitlab_ws/OdriveCANControl/src/data_logging/data_logging/data')
-        self.declare_parameter('subject_name', 'subject1')  # Changed from subject_number to subject_name
+        self.declare_parameter('save_dir', '/home/vedant/odrivecontrol/src/data_logging/data_logging')
         self.declare_parameter('buffer_size', 100)  # Number of samples to buffer before writing
         self.declare_parameter('sync_slop', 0.01)   # Time tolerance for message synchronization in seconds
         
         # Get parameters
         self.save_dir = self.get_parameter('save_dir').value
-        self.subject_name = self.get_parameter('subject_name').value  # Use subject_name directly
+        self.subject_name = 'subject1'  # Fixed subject name as requested
         self.buffer_size = self.get_parameter('buffer_size').value
         self.sync_slop = self.get_parameter('sync_slop').value
         
         # Format subject name and ensure directory exists
-        # No need to format the subject name, use it directly
+        # Use fixed subject name directly
         self.subject_dir = os.path.join(self.save_dir, self.subject_name)
         if not os.path.exists(self.subject_dir):
             os.makedirs(self.subject_dir)
@@ -48,7 +47,7 @@ class DataCollectorNode(Node):
         
         # File handling variables
         self.current_trial = 1
-        self.is_recording = False
+        self.is_recording = False  # This now only tracks the recording flag value, not whether we're collecting data
         self.h5_file = None
         self.data_group = None
         
@@ -58,7 +57,8 @@ class DataCollectorNode(Node):
             'position': [],
             'velocity': [],
             'tau_fcomp': [],
-            'tau_imp': []
+            'tau_imp': [],
+            'recording_flag': []  # Added recording flag column
         }
         self.buffer_lock = threading.Lock()
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
@@ -88,7 +88,8 @@ class DataCollectorNode(Node):
         self.sync = ApproximateTimeSynchronizer(
             [self.motor_sub, self.friction_sub, self.impedance_sub],
             queue_size=30,
-            slop=self.sync_slop
+            slop=self.sync_slop,
+            allow_headerless=True  # Add this parameter to allow messages without headers
         )
         self.sync.registerCallback(self.sync_callback)
         
@@ -102,9 +103,13 @@ class DataCollectorNode(Node):
         # Register shutdown handlers
         self.register_shutdown_handlers()
         
+        # Start collecting data immediately by creating a file
+        self.create_new_file()
+        
         self.get_logger().info('Data collector node initialized')
-        self.get_logger().info(f'Recording data for subject {self.subject_name}')
-        self.get_logger().info(f'Use service "toggle_recording" or publish to "recording_flag" topic to control recording')
+        self.get_logger().info(f'Always recording data for subject {self.subject_name}')
+        self.get_logger().info(f'Publish to "recording_flag" topic to toggle recording flag value')
+        self.get_logger().info('Message synchronization configured to allow headerless messages')
 
     def register_shutdown_handlers(self):
         """Register handlers to ensure proper file closure on shutdown"""
@@ -188,6 +193,15 @@ class DataCollectorNode(Node):
                 chunks=(chunk_size,)
             )
             
+            # Add recording_flag dataset
+            self.data_group.create_dataset(
+                'recording_flag',
+                shape=(0,),
+                maxshape=(None,),
+                dtype='bool',
+                chunks=(chunk_size,)
+            )
+            
             # Store metadata
             self.data_group.attrs['start_time'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             self.data_group.attrs['subject'] = self.subject_name
@@ -203,12 +217,7 @@ class DataCollectorNode(Node):
 
     def close_current_file(self):
         """Close the current HDF5 file and flush all remaining data"""
-        if not self.is_recording:
-            return
-            
-        self.is_recording = False
-        
-        # Flush any remaining data in the buffer
+        # Always flush remaining data regardless of recording flag status
         self.flush_data_to_disk(force=True)
         
         # Close the file
@@ -227,64 +236,38 @@ class DataCollectorNode(Node):
             except Exception as e:
                 self.get_logger().error(f'Error closing file: {str(e)}')
 
-    # def toggle_recording_callback(self, request, response):
-    #     """Handle service requests to toggle recording state"""
-    #     if request.data:  # Start recording
-    #         if not self.is_recording:
-    #             if self.create_new_file():
-    #                 self.is_recording = True
-    #                 # Clear any old data from buffer
-    #                 with self.buffer_lock:
-    #                     for key in self.data_buffer:
-    #                         self.data_buffer[key] = []
-    #                 response.message = f"Started recording trial_{self.current_trial}"
-    #                 response.success = True
-    #             else:
-    #                 response.message = "Failed to create recording file"
-    #                 response.success = False
-    #         else:
-    #             response.message = "Already recording"
-    #             response.success = False
-    #     else:  # Stop recording
-    #         if self.is_recording:
-    #             self.close_current_file()
-    #             response.message = "Stopped recording"
-    #             response.success = True
-    #         else:
-    #             response.message = "Not recording"
-    #             response.success = False
-    #     return response
-
     def recording_flag_callback(self, msg):
         """Callback to handle recording flag topic messages"""
-        if msg.data:  # Start recording
-            if not self.is_recording:
-                if self.create_new_file():
-                    self.is_recording = True
-                    # Clear any old data from buffer
-                    with self.buffer_lock:
-                        for key in self.data_buffer:
-                            self.data_buffer[key] = []
-                    self.get_logger().info(f"Started recording trial_{self.current_trial}")
-                else:
-                    self.get_logger().error("Failed to create recording file")
-            else:
-                self.get_logger().info("Already recording")
-        else:  # Stop recording
-            if self.is_recording:
-                self.close_current_file()
-                self.get_logger().info("Stopped recording")
-            else:
-                self.get_logger().info("Not recording")
+        # Simply update the recording flag value - no need to create/close files
+        # Data collection is continuous regardless of flag value
+        if msg.data and not self.is_recording:
+            # Set recording flag to 1
+            self.is_recording = True
+            self.get_logger().info("Recording flag set to 1")
+        elif not msg.data and self.is_recording:
+            # Set recording flag to 0
+            self.is_recording = False
+            self.get_logger().info("Recording flag set to 0")
+        # No else needed - just maintain current state
 
     def sync_callback(self, motor_msg, friction_msg, impedance_msg):
-        """Process synchronized messages from all subscribed topics"""
-        if not self.is_recording:
-            return
-            
+        """Process synchronized messages from all subscribed topics - always collecting data"""
         try:
             # Use ROS time for precise timestamping
             timestamp = self.get_clock().now().nanoseconds / 1e9  # Convert to seconds
+            
+            # Log first data point after node startup and then periodically
+            if not hasattr(self, '_data_point_counter'):
+                self._data_point_counter = 0
+                self.get_logger().info(f"First data point received - Position: {motor_msg.position:.3f}, "
+                                      f"Velocity: {motor_msg.velocity:.3f}, "
+                                      f"Tau_fcomp: {friction_msg.tau_fcomp:.3f}, "
+                                      f"Tau_imp: {impedance_msg.tau_imp:.3f}")
+            else:
+                self._data_point_counter += 1
+                # Log every 1000 points to avoid excessive logging but still show activity
+                if self._data_point_counter % 1000 == 0:
+                    self.get_logger().info(f"Received {self._data_point_counter} data points")
             
             # Lock the buffer during update to prevent race conditions
             with self.buffer_lock:
@@ -293,6 +276,7 @@ class DataCollectorNode(Node):
                 self.data_buffer['velocity'].append(motor_msg.velocity)
                 self.data_buffer['tau_fcomp'].append(friction_msg.tau_fcomp)
                 self.data_buffer['tau_imp'].append(impedance_msg.tau_imp)
+                self.data_buffer['recording_flag'].append(self.is_recording)  # Add recording flag value (0 or 1)
                 
                 # If buffer size threshold is reached, trigger a flush
                 if len(self.data_buffer['timestamp']) >= self.buffer_size:
@@ -303,14 +287,12 @@ class DataCollectorNode(Node):
 
     def flush_data_callback(self):
         """Timer callback to periodically flush data to disk"""
-        if self.is_recording:
-            self.flush_data_to_disk()
+        # Always flush data, not just during active recording
+        self.flush_data_to_disk()
 
     def flush_data_to_disk(self, force=False):
         """Write buffered data to the HDF5 file"""
-        if not self.is_recording and not force:
-            return
-            
+        # Always save data regardless of recording flag - just check if file is available
         if self.h5_file is None or self.data_group is None:
             return
             
@@ -325,12 +307,22 @@ class DataCollectorNode(Node):
                 return
                 
             try:
+                # Log the amount of data being saved
+                self.get_logger().info(f"Saving {buffer_size} data points to file")
+                
                 # Convert buffer lists to numpy arrays for efficient writing
                 timestamp_array = np.array(self.data_buffer['timestamp'], dtype=np.float64)
                 position_array = np.array(self.data_buffer['position'], dtype=np.float64)
                 velocity_array = np.array(self.data_buffer['velocity'], dtype=np.float64)
                 tau_fcomp_array = np.array(self.data_buffer['tau_fcomp'], dtype=np.float64)
                 tau_imp_array = np.array(self.data_buffer['tau_imp'], dtype=np.float64)
+                recording_flag_array = np.array(self.data_buffer['recording_flag'], dtype=np.bool)  # Convert recording flag
+                
+                # Log a sample of the data being saved
+                if buffer_size > 0:
+                    self.get_logger().debug(f"Sample data point - Time: {timestamp_array[0]:.3f}, " 
+                                           f"Position: {position_array[0]:.3f}, "
+                                           f"Velocity: {velocity_array[0]:.3f}")
                 
                 # Resize datasets and append new data
                 dataset = self.data_group['timestamp']
@@ -354,9 +346,14 @@ class DataCollectorNode(Node):
                 dataset.resize((old_size + buffer_size,))
                 dataset[old_size:] = tau_imp_array
                 
+                dataset = self.data_group['recording_flag']  # Add recording flag dataset
+                dataset.resize((old_size + buffer_size,))
+                dataset[old_size:] = recording_flag_array
+                
                 # Periodically flush to disk to ensure data is saved
                 if buffer_size >= self.buffer_size or force:
                     self.h5_file.flush()
+                    self.get_logger().info(f"Flushed data to disk, total records: {old_size + buffer_size}")
                 
                 # Clear the buffers after successful write
                 for key in self.data_buffer:
@@ -364,6 +361,59 @@ class DataCollectorNode(Node):
                     
             except Exception as e:
                 self.get_logger().error(f'Error writing to HDF5 file: {str(e)}')
+    
+    # Add a method to check if data is actually being received from topics
+    def create_timer(self, period, callback, callback_group=None):
+        """Override create_timer to add a health check timer"""
+        if callback == self.flush_data_callback and not hasattr(self, '_health_check_timer'):
+            # Add a health check timer that runs every 5 seconds
+            self._health_check_timer = super().create_timer(
+                5.0,  # Check every 5 seconds
+                self._health_check,
+                callback_group=self.timer_callback_group
+            )
+            self._last_data_count = 0
+            self._health_checks = 0
+        
+        return super().create_timer(period, callback, callback_group)
+    
+    def _health_check(self):
+        """Periodically check if data is being received and saved"""
+        self._health_checks += 1
+        
+        # Check if message synchronization is happening
+        if hasattr(self, '_data_point_counter'):
+            current_count = self._data_point_counter
+            new_points = current_count - self._last_data_count
+            self._last_data_count = current_count
+            
+            # Log the health status
+            if new_points > 0:
+                self.get_logger().info(f"Health check #{self._health_checks}: System active - received {new_points} points in last 5 seconds")
+            else:
+                self.get_logger().warn(f"Health check #{self._health_checks}: No new data points received in last 5 seconds")
+                
+            # Check the HDF5 file status
+            if self.h5_file is not None and self.data_group is not None:
+                try:
+                    total_records = self.data_group['timestamp'].shape[0]
+                    self.get_logger().info(f"Current file contains {total_records} total records")
+                    self.get_logger().info(f"File path: {self.h5_file.filename}")
+                except Exception as e:
+                    self.get_logger().error(f"Error checking file status: {str(e)}")
+        else:
+            self.get_logger().warn(f"Health check #{self._health_checks}: No data points received yet")
+            
+            # Check if topics are being published
+            topic_names = ['/motor_state', '/friction_comp_torque', '/impedance_torque']
+            for topic in topic_names:
+                try:
+                    # This is a very basic check - just outputs the count
+                    subscriptions = self.count_subscribers(topic.lstrip('/'))
+                    publishers = self.count_publishers(topic.lstrip('/'))
+                    self.get_logger().info(f"Topic {topic}: {publishers} publishers, {subscriptions} subscribers")
+                except Exception as e:
+                    self.get_logger().error(f"Error checking topic {topic}: {str(e)}")
 
     def __del__(self):
         """Destructor to ensure files are closed"""
