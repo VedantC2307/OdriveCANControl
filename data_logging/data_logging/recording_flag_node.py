@@ -7,9 +7,9 @@ import serial
 import re
 import time
 
-class GoniometerNode(Node):
+class RecordingFlagNode(Node):
     def __init__(self):
-        super().__init__('goniometer_node')
+        super().__init__('recording_flag_node')
         
         # Create a publisher for the serial data
         self.publisher = self.create_publisher(Bool, 'recording_flag', 10)
@@ -23,7 +23,7 @@ class GoniometerNode(Node):
 
         # Create a timer that will call our callback every 0.1 seconds
         self.timer = self.create_timer(0.01, self.timer_callback)
-        self.get_logger().info(' node has started')
+        self.get_logger().info('Recording flag node has started')
 
     # def timer_callback(self):
     #     if self.serial_port.in_waiting:
@@ -67,7 +67,7 @@ class GoniometerNode(Node):
                     value = int(decoded_line)
                     current_time = time.time()
                     
-                    print(f"Time: {current_time}, Value: {value}")
+                    # print(f"Time: {current_time}, Value: {value}")
 
                     if value == 0:
                         # If the value is 0, set the flag to False
@@ -79,7 +79,7 @@ class GoniometerNode(Node):
                     # Publish the value
                     msg = Bool()
                     msg.data = value_flag
-                    # self.publisher.publish(msg)
+                    self.publisher.publish(msg)
                     self.get_logger().debug(f'Published: {value}')
         
         except Exception as e:
@@ -92,7 +92,7 @@ class GoniometerNode(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = GoniometerNode()
+    node = RecordingFlagNode()
     
     try:
         rclpy.spin(node)

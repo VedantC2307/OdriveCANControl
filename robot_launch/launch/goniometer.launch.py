@@ -93,6 +93,13 @@ def generate_launch_description():
         }]
     )
 
+    recording_node = Node(
+        package="data_logging",
+        executable="recording_flag",
+        name="recording_flag_node",
+        output="screen",
+    )
+
 
     return LaunchDescription([
         # Launch arguments
@@ -106,5 +113,6 @@ def generate_launch_description():
         # friction_compensation_node,
         # impedance_control_node,
         odrive_controller_node,
+        recording_node,
         data_logging_node,
     ])

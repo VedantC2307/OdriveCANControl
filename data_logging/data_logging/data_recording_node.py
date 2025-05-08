@@ -4,14 +4,11 @@ from rclpy.node import Node
 from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy, QoSDurabilityPolicy
 from rclpy.callback_groups import MutuallyExclusiveCallbackGroup, ReentrantCallbackGroup
 from rclpy.parameter import Parameter
-from message_filters import ApproximateTimeSynchronizer, Subscriber
-from custom_msgs.srv import ODriveCommand
-from custom_msgs.msg import FrictionComp, ImpedanceTorque, MotionState
-from std_msgs.msg import Float32MultiArray, Bool
+from std_msgs.msg import Bool, Int64
 from std_srvs.srv import SetBool
-import h5py
 import numpy as np
 import os
+import csv
 from datetime import datetime
 import signal
 import threading
@@ -30,38 +27,32 @@ class DataCollectorNode(Node):
         # Parameters
         self.declare_parameter('save_dir', '/home/vedant/odrivecontrol/src/data_logging/data_logging')
         self.declare_parameter('buffer_size', 100)  # Number of samples to buffer before writing
-        self.declare_parameter('sync_slop', 0.01)   # Time tolerance for message synchronization in seconds
         
         # Get parameters
         self.save_dir = self.get_parameter('save_dir').value
         self.subject_name = 'subject1'  # Fixed subject name as requested
         self.buffer_size = self.get_parameter('buffer_size').value
-        self.sync_slop = self.get_parameter('sync_slop').value
         
         # Format subject name and ensure directory exists
-        # Use fixed subject name directly
         self.subject_dir = os.path.join(self.save_dir, self.subject_name)
         if not os.path.exists(self.subject_dir):
             os.makedirs(self.subject_dir)
             self.get_logger().info(f'Created directory: {self.subject_dir}')
         
         # File handling variables
-        self.current_trial = 1
+        self.current_trial = 8
         self.is_recording = False  # This now only tracks the recording flag value, not whether we're collecting data
-        self.h5_file = None
-        self.data_group = None
+        self.csv_file = None
+        self.csv_writer = None
         
-        # Create data buffers for efficient batch writing
+        # Create data buffers for efficient batch writing - only recording flag and goniometer
         self.data_buffer = {
             'timestamp': [],
-            'position': [],
-            'velocity': [],
-            'tau_fcomp': [],
-            'tau_imp': [],
-            'recording_flag': []  # Added recording flag column
+            'Goniometer': [],
+            'recording_flag': []
         }
         self.buffer_lock = threading.Lock()
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                                                                                                        
         # Set up QoS profiles
         self.reliable_qos = QoSProfile(
             reliability=QoSReliabilityPolicy.RELIABLE,
@@ -70,7 +61,7 @@ class DataCollectorNode(Node):
             durability=QoSDurabilityPolicy.VOLATILE
         )
         
-        # Add a Bool topic subscriber for controlling recording (similar to encoder offset)
+        # Add a Bool topic subscriber for controlling recording
         self.recording_flag_sub = self.create_subscription(
             Bool,
             'recording_flag',  # Topic that will control recording
@@ -79,19 +70,22 @@ class DataCollectorNode(Node):
         )
         self.get_logger().info('Subscribed to recording_flag topic for controlling data recording')
         
-        # Create synchronized subscribers
-        self.motor_sub = Subscriber(self, MotionState, 'motor_state', qos_profile=self.reliable_qos)
-        self.friction_sub = Subscriber(self, FrictionComp, 'friction_comp_torque', qos_profile=self.reliable_qos)
-        self.impedance_sub = Subscriber(self, ImpedanceTorque, 'impedance_torque', qos_profile=self.reliable_qos)
-        
-        # Synchronize the messages by timestamp
-        self.sync = ApproximateTimeSynchronizer(
-            [self.motor_sub, self.friction_sub, self.impedance_sub],
-            queue_size=30,
-            slop=self.sync_slop,
-            allow_headerless=True  # Add this parameter to allow messages without headers
+        # Add goniometer subscriber
+        self.goniometer_reading = 0.0  # Store latest goniometer value
+        self.goniometer_sub = self.create_subscription(
+            Int64,
+            'goniometer_reading',
+            self.goniometer_callback,
+            self.reliable_qos
         )
-        self.sync.registerCallback(self.sync_callback)
+        self.get_logger().info('Subscribed to goniometer_reading topic')
+        
+        # Data collection timer - collect data at a regular interval
+        self.data_collection_timer = self.create_timer(
+            0.01,  # 100Hz data collection rate
+            self.collect_data_callback,
+            callback_group=self.timer_callback_group
+        )
         
         # Timer for periodically writing buffered data (at 10Hz - fine for flushing data)
         self.flush_timer = self.create_timer(
@@ -109,7 +103,6 @@ class DataCollectorNode(Node):
         self.get_logger().info('Data collector node initialized')
         self.get_logger().info(f'Always recording data for subject {self.subject_name}')
         self.get_logger().info(f'Publish to "recording_flag" topic to toggle recording flag value')
-        self.get_logger().info('Message synchronization configured to allow headerless messages')
 
     def register_shutdown_handlers(self):
         """Register handlers to ensure proper file closure on shutdown"""
@@ -137,109 +130,50 @@ class DataCollectorNode(Node):
         return True
     
     def create_new_file(self):
-        """Create a new HDF5 file with chunked datasets for efficient writing"""
+        """Create a new CSV file for data recording - only goniometer and recording flag"""
         try:
-            filename = os.path.join(self.subject_dir, f'trial_{self.current_trial}.h5')
+            filename = os.path.join(self.subject_dir, f'trial_{self.current_trial}.csv')
             
             # Ensure the file is closed if it exists
-            if self.h5_file is not None:
-                self.h5_file.close()
+            if self.csv_file is not None:
+                self.csv_file.close()
             
-            # Create new file with chunked datasets
-            self.h5_file = h5py.File(filename, 'w')
-            self.data_group = self.h5_file.create_group("TrialData")
+            # Create new CSV file
+            self.csv_file = open(filename, 'w', newline='')
+            self.csv_writer = csv.writer(self.csv_file)
             
-            # Define chunk size - optimize for 100Hz data
-            chunk_size = 100  # 1 second of data at 100Hz
-            
-            # Pre-create datasets with chunked storage for better performance
-            self.data_group.create_dataset(
-                'timestamp',
-                shape=(0,),
-                maxshape=(None,),
-                dtype='float64',
-                chunks=(chunk_size,)
-            )
-            
-            self.data_group.create_dataset(
-                'position',
-                shape=(0,),
-                maxshape=(None,),
-                dtype='float64',
-                chunks=(chunk_size,)
-            )
-            
-            self.data_group.create_dataset(
-                'velocity',
-                shape=(0,),
-                maxshape=(None,),
-                dtype='float64',
-                chunks=(chunk_size,)
-            )
-            
-            self.data_group.create_dataset(
-                'tau_fcomp',
-                shape=(0,),
-                maxshape=(None,),
-                dtype='float64',
-                chunks=(chunk_size,)
-            )
-            
-            self.data_group.create_dataset(
-                'tau_imp',
-                shape=(0,),
-                maxshape=(None,),
-                dtype='float64',
-                chunks=(chunk_size,)
-            )
-            
-            # Add recording_flag dataset
-            self.data_group.create_dataset(
-                'recording_flag',
-                shape=(0,),
-                maxshape=(None,),
-                dtype='bool',
-                chunks=(chunk_size,)
-            )
-            
-            # Store metadata
-            self.data_group.attrs['start_time'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            self.data_group.attrs['subject'] = self.subject_name
-            self.data_group.attrs['trial'] = self.current_trial
+            # Write header row only for the fields we're recording
+            header = ['timestamp', 'goniometer', 'recording_flag']
+            self.csv_writer.writerow(header)
             
             self.get_logger().info(f'Created new file: {filename}')
             
         except Exception as e:
-            self.get_logger().error(f'Failed to create HDF5 file: {str(e)}')
+            self.get_logger().error(f'Failed to create CSV file: {str(e)}')
             return False
             
         return True
 
     def close_current_file(self):
-        """Close the current HDF5 file and flush all remaining data"""
+        """Close the current CSV file and flush all remaining data"""
         # Always flush remaining data regardless of recording flag status
         self.flush_data_to_disk(force=True)
         
         # Close the file
-        if self.h5_file is not None:
+        if self.csv_file is not None:
             try:
-                # Add end time metadata
-                if self.data_group is not None:
-                    self.data_group.attrs['end_time'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                
-                self.h5_file.flush()
-                self.h5_file.close()
-                self.h5_file = None
-                self.data_group = None
-                self.get_logger().info(f'Closed trial_{self.current_trial}.h5')
+                self.csv_file.flush()
+                self.csv_file.close()
+                self.csv_file = None
+                self.csv_writer = None
+                self.get_logger().info(f'Closed trial_{self.current_trial}.csv')
                 self.current_trial += 1
             except Exception as e:
                 self.get_logger().error(f'Error closing file: {str(e)}')
 
     def recording_flag_callback(self, msg):
         """Callback to handle recording flag topic messages"""
-        # Simply update the recording flag value - no need to create/close files
-        # Data collection is continuous regardless of flag value
+        # Simply update the recording flag value
         if msg.data and not self.is_recording:
             # Set recording flag to 1
             self.is_recording = True
@@ -248,42 +182,29 @@ class DataCollectorNode(Node):
             # Set recording flag to 0
             self.is_recording = False
             self.get_logger().info("Recording flag set to 0")
-        # No else needed - just maintain current state
 
-    def sync_callback(self, motor_msg, friction_msg, impedance_msg):
-        """Process synchronized messages from all subscribed topics - always collecting data"""
+    def goniometer_callback(self, msg):
+        """Store the latest goniometer reading"""
+        self.goniometer_reading = float(msg.data)
+        
+    def collect_data_callback(self):
+        """Timer callback to periodically collect data"""
         try:
             # Use ROS time for precise timestamping
             timestamp = self.get_clock().now().nanoseconds / 1e9  # Convert to seconds
             
-            # Log first data point after node startup and then periodically
-            if not hasattr(self, '_data_point_counter'):
-                self._data_point_counter = 0
-                self.get_logger().info(f"First data point received - Position: {motor_msg.position:.3f}, "
-                                      f"Velocity: {motor_msg.velocity:.3f}, "
-                                      f"Tau_fcomp: {friction_msg.tau_fcomp:.3f}, "
-                                      f"Tau_imp: {impedance_msg.tau_imp:.3f}")
-            else:
-                self._data_point_counter += 1
-                # Log every 1000 points to avoid excessive logging but still show activity
-                if self._data_point_counter % 1000 == 0:
-                    self.get_logger().info(f"Received {self._data_point_counter} data points")
-            
             # Lock the buffer during update to prevent race conditions
             with self.buffer_lock:
                 self.data_buffer['timestamp'].append(timestamp)
-                self.data_buffer['position'].append(motor_msg.position)
-                self.data_buffer['velocity'].append(motor_msg.velocity)
-                self.data_buffer['tau_fcomp'].append(friction_msg.tau_fcomp)
-                self.data_buffer['tau_imp'].append(impedance_msg.tau_imp)
-                self.data_buffer['recording_flag'].append(self.is_recording)  # Add recording flag value (0 or 1)
+                self.data_buffer['Goniometer'].append(self.goniometer_reading)
+                self.data_buffer['recording_flag'].append(self.is_recording)
                 
                 # If buffer size threshold is reached, trigger a flush
                 if len(self.data_buffer['timestamp']) >= self.buffer_size:
                     self.flush_data_to_disk()
                     
         except Exception as e:
-            self.get_logger().error(f'Error in sync_callback: {str(e)}')
+            self.get_logger().error(f'Error in collect_data_callback: {str(e)}')
 
     def flush_data_callback(self):
         """Timer callback to periodically flush data to disk"""
@@ -291,9 +212,9 @@ class DataCollectorNode(Node):
         self.flush_data_to_disk()
 
     def flush_data_to_disk(self, force=False):
-        """Write buffered data to the HDF5 file"""
+        """Write buffered data to the CSV file"""
         # Always save data regardless of recording flag - just check if file is available
-        if self.h5_file is None or self.data_group is None:
+        if self.csv_file is None or self.csv_writer is None:
             return
             
         # Check if there's data to write
@@ -307,113 +228,27 @@ class DataCollectorNode(Node):
                 return
                 
             try:
-                # Log the amount of data being saved
-                self.get_logger().info(f"Saving {buffer_size} data points to file")
+                # Write data rows to CSV - goniometer and recording flag only
+                for i in range(buffer_size):
+                    row = [
+                        self.data_buffer['timestamp'][i],
+                        self.data_buffer['Goniometer'][i],
+                        1 if self.data_buffer['recording_flag'][i] else 0
+                    ]
+                    self.csv_writer.writerow(row)
                 
-                # Convert buffer lists to numpy arrays for efficient writing
-                timestamp_array = np.array(self.data_buffer['timestamp'], dtype=np.float64)
-                position_array = np.array(self.data_buffer['position'], dtype=np.float64)
-                velocity_array = np.array(self.data_buffer['velocity'], dtype=np.float64)
-                tau_fcomp_array = np.array(self.data_buffer['tau_fcomp'], dtype=np.float64)
-                tau_imp_array = np.array(self.data_buffer['tau_imp'], dtype=np.float64)
-                recording_flag_array = np.array(self.data_buffer['recording_flag'], dtype=np.bool)  # Convert recording flag
+                # Flush to disk
+                self.csv_file.flush()
                 
-                # Log a sample of the data being saved
-                if buffer_size > 0:
-                    self.get_logger().debug(f"Sample data point - Time: {timestamp_array[0]:.3f}, " 
-                                           f"Position: {position_array[0]:.3f}, "
-                                           f"Velocity: {velocity_array[0]:.3f}")
-                
-                # Resize datasets and append new data
-                dataset = self.data_group['timestamp']
-                old_size = dataset.shape[0]
-                dataset.resize((old_size + buffer_size,))
-                dataset[old_size:] = timestamp_array
-                
-                dataset = self.data_group['position']
-                dataset.resize((old_size + buffer_size,))
-                dataset[old_size:] = position_array
-                
-                dataset = self.data_group['velocity']
-                dataset.resize((old_size + buffer_size,))
-                dataset[old_size:] = velocity_array
-                
-                dataset = self.data_group['tau_fcomp']
-                dataset.resize((old_size + buffer_size,))
-                dataset[old_size:] = tau_fcomp_array
-                
-                dataset = self.data_group['tau_imp']
-                dataset.resize((old_size + buffer_size,))
-                dataset[old_size:] = tau_imp_array
-                
-                dataset = self.data_group['recording_flag']  # Add recording flag dataset
-                dataset.resize((old_size + buffer_size,))
-                dataset[old_size:] = recording_flag_array
-                
-                # Periodically flush to disk to ensure data is saved
-                if buffer_size >= self.buffer_size or force:
-                    self.h5_file.flush()
-                    self.get_logger().info(f"Flushed data to disk, total records: {old_size + buffer_size}")
+                # Log that we're writing data
+                self.get_logger().debug(f"Wrote {buffer_size} rows to CSV file")
                 
                 # Clear the buffers after successful write
                 for key in self.data_buffer:
                     self.data_buffer[key] = []
                     
             except Exception as e:
-                self.get_logger().error(f'Error writing to HDF5 file: {str(e)}')
-    
-    # Add a method to check if data is actually being received from topics
-    def create_timer(self, period, callback, callback_group=None):
-        """Override create_timer to add a health check timer"""
-        if callback == self.flush_data_callback and not hasattr(self, '_health_check_timer'):
-            # Add a health check timer that runs every 5 seconds
-            self._health_check_timer = super().create_timer(
-                5.0,  # Check every 5 seconds
-                self._health_check,
-                callback_group=self.timer_callback_group
-            )
-            self._last_data_count = 0
-            self._health_checks = 0
-        
-        return super().create_timer(period, callback, callback_group)
-    
-    def _health_check(self):
-        """Periodically check if data is being received and saved"""
-        self._health_checks += 1
-        
-        # Check if message synchronization is happening
-        if hasattr(self, '_data_point_counter'):
-            current_count = self._data_point_counter
-            new_points = current_count - self._last_data_count
-            self._last_data_count = current_count
-            
-            # Log the health status
-            if new_points > 0:
-                self.get_logger().info(f"Health check #{self._health_checks}: System active - received {new_points} points in last 5 seconds")
-            else:
-                self.get_logger().warn(f"Health check #{self._health_checks}: No new data points received in last 5 seconds")
-                
-            # Check the HDF5 file status
-            if self.h5_file is not None and self.data_group is not None:
-                try:
-                    total_records = self.data_group['timestamp'].shape[0]
-                    self.get_logger().info(f"Current file contains {total_records} total records")
-                    self.get_logger().info(f"File path: {self.h5_file.filename}")
-                except Exception as e:
-                    self.get_logger().error(f"Error checking file status: {str(e)}")
-        else:
-            self.get_logger().warn(f"Health check #{self._health_checks}: No data points received yet")
-            
-            # Check if topics are being published
-            topic_names = ['/motor_state', '/friction_comp_torque', '/impedance_torque']
-            for topic in topic_names:
-                try:
-                    # This is a very basic check - just outputs the count
-                    subscriptions = self.count_subscribers(topic.lstrip('/'))
-                    publishers = self.count_publishers(topic.lstrip('/'))
-                    self.get_logger().info(f"Topic {topic}: {publishers} publishers, {subscriptions} subscribers")
-                except Exception as e:
-                    self.get_logger().error(f"Error checking topic {topic}: {str(e)}")
+                self.get_logger().error(f'Error writing to CSV file: {str(e)}')
 
     def __del__(self):
         """Destructor to ensure files are closed"""
