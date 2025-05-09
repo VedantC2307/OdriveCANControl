@@ -55,7 +55,7 @@ class ImpedanceControl(Node):
         """Callback to receive position values in radians."""
         self.position = msg.position
         self.velocity = msg.velocity
-        #self.get_logger().info(f'Updated Position Buffer: {self.position}')
+        self.get_logger().info(f'Updated Position Buffer: {self.position}')
         #self.get_logger().info(f'Updated counts to radians: {self.velocity}')
 
     def ImpedanceControl(self):

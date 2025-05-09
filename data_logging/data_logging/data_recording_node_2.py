@@ -28,7 +28,7 @@ class DataCollectorNode(Node):
         self._force_shutdown = False
         
         # Parameters
-        self.declare_parameter('save_dir', '/home/vedant/odrivecontrol/src/data_logging/data_logging')
+        self.declare_parameter('save_dir', '/home/vedant/ODriveControl/src/data_logging/data_logging')
         self.declare_parameter('buffer_size', 100)  # Number of samples to buffer before writing
         self.declare_parameter('sync_slop', 0.01)   # Time tolerance for message synchronization in seconds
         self.declare_parameter('use_synchronizer', False)  # New parameter to control whether to use synchronizer
@@ -110,6 +110,8 @@ class DataCollectorNode(Node):
         
         # Add goniometer subscriber regardless of synchronizer mode
         # self.goniometer_reading = 0.0  # Store latest goniometer value
+        self.gposition = 0.0
+        self.gvelocity = 0.0
         self.goniometer_sub = self.create_subscription(
             MotionState,
             'goniometer_state',
@@ -120,7 +122,7 @@ class DataCollectorNode(Node):
         self.impedance_torque = 0.0
         self.impedance_sub = self.create_subscription(
             ImpedanceTorque, 
-            'impedance_torque',
+            'imp_torque',
             self.impedance_callback,
             self.reliable_qos
         )
@@ -233,8 +235,8 @@ class DataCollectorNode(Node):
 
     def goniometer_callback(self, msg):
         """Store the latest goniometer reading"""
-        self.goniometer_reading.position = float(msg.position)
-        self.goniometer_reading.velocity = float(msg.velocity)
+        self.gposition = msg.position
+        self.gvelocity = msg.velocity
 
     def impedance_callback(self, msg):
         """Store the latest goniometer reading"""
@@ -253,7 +255,7 @@ class DataCollectorNode(Node):
                 self.data_buffer['velocity'].append(msg.velocity)
                 self.data_buffer['tau_fcomp'].append(0.0)  # Default value
                 self.data_buffer['tau_imp'].append(self.impedance_torque)    # Default value
-                self.data_buffer['Goniometer'].append(self.goniometer_reading.position)
+                self.data_buffer['Goniometer'].append(self.gposition)
                 self.data_buffer['recording_flag'].append(self.is_recording)
                 
                 # If buffer size threshold is reached, trigger a flush
@@ -263,28 +265,28 @@ class DataCollectorNode(Node):
         except Exception as e:
             self.get_logger().error(f'Error in motor_state_callback: {str(e)}')
 
-    def sync_callback(self, motor_msg, friction_msg, impedance_msg):
-        """Process synchronized messages from all subscribed topics - always collecting data"""
-        try:
-            # Use ROS time for precise timestamping
-            timestamp = self.get_clock().now().nanoseconds / 1e9  # Convert to seconds
+    # def sync_callback(self, motor_msg, friction_msg, impedance_msg):
+    #     """Process synchronized messages from all subscribed topics - always collecting data"""
+    #     try:
+    #         # Use ROS time for precise timestamping
+    #         timestamp = self.get_clock().now().nanoseconds / 1e9  # Convert to seconds
             
-            # Lock the buffer during update to prevent race conditions
-            with self.buffer_lock:
-                self.data_buffer['timestamp'].append(timestamp)
-                # self.data_buffer['position'].append(motor_msg.position)
-                # self.data_buffer['velocity'].append(motor_msg.velocity)
-                # self.data_buffer['tau_fcomp'].append(friction_msg.tau_fcomp)
-                # self.data_buffer['tau_imp'].append(impedance_msg.tau_imp)
-                self.data_buffer['Goniometer'].append(self.goniometer_reading)
-                self.data_buffer['recording_flag'].append(self.is_recording)
+    #         # Lock the buffer during update to prevent race conditions
+    #         with self.buffer_lock:
+    #             self.data_buffer['timestamp'].append(timestamp)
+    #             # self.data_buffer['position'].append(motor_msg.position)
+    #             # self.data_buffer['velocity'].append(motor_msg.velocity)
+    #             # self.data_buffer['tau_fcomp'].append(friction_msg.tau_fcomp)
+    #             # self.data_buffer['tau_imp'].append(impedance_msg.tau_imp)
+    #             self.data_buffer['Goniometer'].append(self.goniometer_reading)
+    #             self.data_buffer['recording_flag'].append(self.is_recording)
                 
-                # If buffer size threshold is reached, trigger a flush
-                if len(self.data_buffer['timestamp']) >= self.buffer_size:
-                    self.flush_data_to_disk()
+    #             # If buffer size threshold is reached, trigger a flush
+    #             if len(self.data_buffer['timestamp']) >= self.buffer_size:
+    #                 self.flush_data_to_disk()
                     
-        except Exception as e:
-            self.get_logger().error(f'Error in sync_callback: {str(e)}')
+    #     except Exception as e:
+    #         self.get_logger().error(f'Error in sync_callback: {str(e)}')
 
     def flush_data_callback(self):
         """Timer callback to periodically flush data to disk"""
@@ -312,6 +314,10 @@ class DataCollectorNode(Node):
                 for i in range(buffer_size):
                     row = [
                         self.data_buffer['timestamp'][i],
+                        self.data_buffer['position'][i],
+                        self.data_buffer['velocity'][i],
+                        self.data_buffer['tau_fcomp'][i],  # Default value
+                        self.data_buffer['tau_imp'][i],    # Default value
                         self.data_buffer['Goniometer'][i],
                         1 if self.data_buffer['recording_flag'][i] else 0
                     ]

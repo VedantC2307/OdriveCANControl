@@ -24,9 +24,11 @@ class DataCollectorNode(Node):
         
         # Add flag to detect forced shutdown
         self._force_shutdown = False
+        self.position = 0.0
+        self.velocity = 0.0
         
         # Parameters
-        self.declare_parameter('save_dir', '/home/vedant/odrivecontrol/src/data_logging/data_logging')
+        self.declare_parameter('save_dir', '/home/vedant/ODriveControl/src/data_logging/data_logging')
         self.declare_parameter('buffer_size', 100)  # Number of samples to buffer before writing
         
         # Get parameters
@@ -186,8 +188,8 @@ class DataCollectorNode(Node):
 
     def goniometer_callback(self, msg):
         """Store the latest goniometer reading"""
-        self.goniometer_reading.position = float(msg.position)
-        self.goniometer_reading.velocity = float(msg.velocity)
+        self.position = float(msg.position)
+        self.velocity = float(msg.velocity)
         
     def collect_data_callback(self):
         """Timer callback to periodically collect data"""
@@ -198,7 +200,7 @@ class DataCollectorNode(Node):
             # Lock the buffer during update to prevent race conditions
             with self.buffer_lock:
                 self.data_buffer['timestamp'].append(timestamp)
-                self.data_buffer['Goniometer'].append(self.goniometer_state.position)
+                self.data_buffer['Goniometer'].append(self.position)
                 self.data_buffer['recording_flag'].append(self.is_recording)
                 
                 # If buffer size threshold is reached, trigger a flush

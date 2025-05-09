@@ -25,7 +25,9 @@ class GoniometerNode(Node):
         )
         
         # Create a timer that will call our callback every 0.1 seconds
-        self.timer = self.create_timer(0.0025, self.timer_callback)
+        publish_rate = 400
+        self.publish_period = 1/publish_rate
+        self.timer = self.create_timer(self.publish_period, self.timer_callback)
         self.get_logger().info('Goniometer node has started')
         self.multiplier = 1
         self.buffer = deque(maxlen=5)
@@ -52,7 +54,7 @@ class GoniometerNode(Node):
             try:
                 # Read a line from serial
                 line = self.serial_port.readline()
-                # print(line)
+                #print(line)
                 
                 decoded_line = line.decode('utf-8').strip()
                 # Use regex to extract the number after "Read: "
@@ -64,14 +66,14 @@ class GoniometerNode(Node):
                 #         self.offset = np.mean(np.array(self.buffer))
             # once we have 5 samples, compute offset
             # subtract offset to get calibrated reading
-                calibrated = int(value)*self.multiplier
+                calibrated = float(int(value)*self.multiplier)
                 self.buffer.append(calibrated)
                 velocity = self.velocity_5_point_backward(self.buffer)
                 msg = MotionState()
                 msg.position = calibrated
                 msg.velocity = velocity
                 self.publisher.publish(msg)
-                self.get_logger().info(f'Published: {calibrated},{velocity}')
+                self.get_logger().debug(f'Published: {calibrated},{velocity}')
             
             except Exception as e:
                 self.get_logger().error(f'Error reading serial data: {str(e)}')

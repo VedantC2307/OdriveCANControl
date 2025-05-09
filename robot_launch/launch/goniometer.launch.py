@@ -11,7 +11,7 @@ def generate_launch_description():
     # Launch arguments for data recording
     save_dir_arg = DeclareLaunchArgument(
         'save_dir',
-        default_value='/home/vedant/odrivecontrol/src/data_logging/data_logging',
+        default_value='/home/vedant/ODriveControl/src/data_logging/data_logging',
         description='Directory to save recorded data'
     )
     
@@ -89,7 +89,7 @@ def generate_launch_description():
     # Data logging node with updated parameters
     data_logging_node = Node(
         package="data_logging",
-        executable="data_logging",
+        executable="data_logging_goniometer",
         name="Data_Recording_node",
         output="screen",
         parameters=[{
@@ -121,6 +121,6 @@ def generate_launch_description():
         # friction_compensation_node,
         # impedance_control_node,
         # odrive_controller_node,
-        recording_node,
+        #recording_node,
         data_logging_node,
     ])
